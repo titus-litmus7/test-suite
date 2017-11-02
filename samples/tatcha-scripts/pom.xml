@@ -3,10 +3,10 @@
 	 
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.tatcha.mbs</groupId>
-	<artifactId>mbs-sl-tatcha</artifactId>
+	<artifactId>tatcha-scripts</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>tatcha-mvn-MBS-SL</name>
-	<description>Tatcha multi browser suite with Source Labs</description>
+	<description>Tatcha Test Suite Demo</description>
 	  
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
