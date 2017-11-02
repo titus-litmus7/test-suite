@@ -20,7 +20,8 @@ public class TsignUp_TC_01 {
   @Before
   public void setUp() throws Exception {
 //    driver = new FirefoxDriver();
-    driver = BrowserDriver.getFireFoxWebDriver();
+//    driver = BrowserDriver.getFireFoxWebDriver();
+    driver = BrowserDriver.getChromeWebDriver();
     baseUrl = "https://dev05-na01-tatcha.demandware.net/s/SiteGenesis/home?lang=en_US";
     driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
   }
@@ -31,13 +32,13 @@ public class TsignUp_TC_01 {
     driver.findElement(By.cssSelector("i.fa.fa-user")).click();
     driver.findElement(By.linkText("Register")).click();
     driver.findElement(By.id("dwfrm_profile_customer_firstname")).clear();
-    driver.findElement(By.id("dwfrm_profile_customer_firstname")).sendKeys("test");
+    driver.findElement(By.id("dwfrm_profile_customer_firstname")).sendKeys("test7");
     driver.findElement(By.id("dwfrm_profile_customer_lastname")).clear();
-    driver.findElement(By.id("dwfrm_profile_customer_lastname")).sendKeys("test");
+    driver.findElement(By.id("dwfrm_profile_customer_lastname")).sendKeys("test7");
     driver.findElement(By.id("dwfrm_profile_customer_email")).clear();
-    driver.findElement(By.id("dwfrm_profile_customer_email")).sendKeys("test6@gmail.com");
+    driver.findElement(By.id("dwfrm_profile_customer_email")).sendKeys("test7@gmail.com");
     driver.findElement(By.id("dwfrm_profile_customer_emailconfirm")).clear();
-    driver.findElement(By.id("dwfrm_profile_customer_emailconfirm")).sendKeys("test6@gmail.com");
+    driver.findElement(By.id("dwfrm_profile_customer_emailconfirm")).sendKeys("test7@gmail.com");
     driver.findElement(By.xpath("//div[3]/div/input")).clear();
     driver.findElement(By.xpath("//div[3]/div/input")).sendKeys("Test_001");
     driver.findElement(By.xpath("//div[4]/div/input")).clear();

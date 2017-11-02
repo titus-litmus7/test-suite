@@ -31,8 +31,9 @@
 	               <version>2.20</version>
 	               <configuration>
 	                   <includes>	
- 						  <!--  <include>com/test/TaddNew*.java</include> 	-->  
- 						    <include>com/test/TS*.java</include> 					    
+ 						  
+ 						 <!--   <include>com/litmus7/tatcha/jscripts/xlt/TsignUp*.java</include> 	--> 
+ 						    <include>com/litmus7/tatcha/jscripts/selenium/TsignUp*.java</include> 					    
 	                   </includes>
 	                   <systemPropertyVariables>
 	                       <!-- Relocate the XLT results directory under target. -->
