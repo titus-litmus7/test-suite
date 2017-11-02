@@ -9,6 +9,8 @@ import org.openqa.selenium.*;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.Select;
 
+import com.litmus7.tatcha.utils.BrowserDriver;
+
 public class TsignUp_TC_05 {
   private WebDriver driver;
   private String baseUrl;
@@ -17,7 +19,8 @@ public class TsignUp_TC_05 {
 
   @Before
   public void setUp() throws Exception {
-    driver = new FirefoxDriver();
+//    driver = new FirefoxDriver();
+	driver = BrowserDriver.getFireFoxWebDriver();
     baseUrl = "https://dev05-na01-tatcha.demandware.net/s/SiteGenesis/home?lang=en_US";
     driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
   }

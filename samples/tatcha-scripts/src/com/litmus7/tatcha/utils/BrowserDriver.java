@@ -26,7 +26,7 @@ public class BrowserDriver extends AbstractScriptTestCase {
 	public static WebDriver getFireFoxWebDriver(){
         capabilities = DesiredCapabilities.firefox();
         
-        System.setProperty("webdriver.firefox.bin", "D:/programs/FF_47/firefox.exe");
+        System.setProperty("webdriver.firefox.bin", "D:/programs/firefox/47/firefox.exe");
         System.setProperty("webdriver.firefox.driver", "D:/project/SeleniumTestScripts/geckodriver-v0.18.0-win64/geckodriver.exe");
         driver = new FirefoxDriver(capabilities);
         return driver;
