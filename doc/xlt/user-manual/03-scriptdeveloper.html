@@ -1,0 +1,1456 @@
+<!DOCTYPE html>
+<html>
+
+
+
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Script Developer</title>
+  <meta name="description" content="Xceptance LoadTest - XLT, Documentation, Manual, Howto, FAQ">
+
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,700,400italic,300italic" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:100,300,400,500,700" rel="stylesheet" type="text/css">
+
+  <link href="../css/font-awesome.min.css" rel="stylesheet" media="all"  type="text/css" />
+  <link href="../css/lightbox.css" rel="stylesheet" media="all"  type="text/css" />
+
+  <link href="../css/highlightjs/default.css" rel="stylesheet" type="text/css" />
+  <link href="../css/highlightjs/mono-blue.css" rel="stylesheet" type="text/css" />
+
+  <link href="../css/xltdoc.css" rel="stylesheet" media="all"  type="text/css" />
+
+  <script type="text/javascript" src="../js/jquery-1.11.1.min.js"></script>
+  <script type="text/javascript" src="../js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="../js/toc.min.js"></script>
+  <script type="text/javascript" src="../js/lightbox.min.js"></script>
+  <script type="text/javascript" src="../js/headroom.min.js"></script>
+
+  <!-- <script type="text/javascript" src="../js/jquery.scrollIntoView.min.js"></script -->
+  <script type="text/javascript" src="../js/xltdoc.js"></script>
+
+  <script type="text/javascript" src="../js/highlight.pack.js"></script>
+</head>
+
+
+<body data-spy="scroll" data-target="#toc" data-offset="100" class="layout-manual ">
+
+    
+
+
+<!-- Fixed navbar -->
+<nav id="header" class="navbar navbar-default">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <a class="site-title" href="../index.html">
+            <img src="../img/XLTDoc-logo-transparent-165x82.png" id="product-logo" alt="XLT Product logo" title="Xceptance LoadTest"/>
+        </a>
+    </div>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    <div id="navbar" class="navbar-collapse collapse">
+        <!-- Links to external pages -->
+        <ul id="navbar-right" class="nav navbar-nav navbar-right navbar-text">
+	<li>
+		<a href="https://lab.xceptance.de/releases/xlt/latest/apidoc/" target="_blank" title="XLT API Documentation">
+			<i class="fa fa-external-link"></i>API</a>
+	</li>
+
+    <li>
+ 		<a href="https://ask.xceptance.de/" target="_blank" title="XLT Community Forum">
+ 			<i class="fa fa-external-link"></i>Forum</a>
+ 	</li> 
+    
+	<li>
+		<a href="https://www.xceptance.com/xlt/" target="_blank" title="XLT Website">
+			<i class="fa fa-external-link"></i>XLT Home</a>		
+	</li>			
+</ul>
+
+
+        <ul id="navbar-left" class="nav navbar-nav navbar-text">
+            <li class="inactive"><a href="../getting-started/index.html">Getting Started</a></li>
+            <li class="active"><a href="../user-manual/index.html">User Manual</a></li>
+            <li class="inactive"><a href="../how-to/index.html">How-To</a></li>
+            <li class="inactive"><a href="../release-notes/index.html">Release Notes</a></li>
+            <li class="inactive"><a href="../license.html">License</a></li>
+        </ul>
+
+    </div><!--/.nav-collapse -->
+
+</nav>
+
+
+
+
+<div id="breadcrumb" class="navbar navbar-default">
+  <div>
+    <ol class="breadcrumb">
+      
+
+      
+        <li><a href="../index.html"><i class="fa fa-home"></i>Docs</a></li>
+          
+            
+            <li><a href="../user-manual/index.html">User Manual</a></li>
+          
+      
+
+      <li class="active">Script Developer</li>
+    </ol>
+  </div>
+</div>
+
+
+    
+<div id="main" class="main container-fluid">
+    <div class="row">
+        <div class="hidden-xs col-sm-4 col-md-3 sidenav-col">
+            <nav id="sidenav" class="sidenav nav">
+                <!-- TOC of all available files/pages in folder  -->
+                <ul class="nav sidenav">
+                
+
+
+
+
+
+    
+        
+            <li>
+            
+                <a href="../user-manual/01-intro.html">Introduction</a>
+                
+            </li>
+        
+    
+
+    
+
+    
+        
+            <li>
+            
+                <a href="../user-manual/02-install.html">Installation</a>
+                
+            </li>
+        
+    
+
+    
+
+    
+        
+            
+                <!-- Table of content from page headings for the currently loaded file-->
+                <li class="current-page">
+                    <a class="current-page" href="">Script Developer</a>
+                    <!-- Container for page headings TOC -->
+                    <div id="toc" class="sidenav"></div>
+                </li>
+            
+        
+    
+
+    
+        
+            <li>
+            
+                <a href="../user-manual/04-framework.html">XLT Framework</a>
+                
+            </li>
+        
+    
+
+    
+        
+            <li>
+            
+                <a href="../user-manual/05-framework-config.html">XLT Framework Configuration</a>
+                
+            </li>
+        
+    
+
+    
+        
+            <li>
+            
+                <a href="../user-manual/06-datadriven.html">Data-Driven Tests</a>
+                
+            </li>
+        
+    
+
+    
+        
+            <li>
+            
+                <a href="../user-manual/07-posters.html">Demo Application</a>
+                
+            </li>
+        
+    
+
+    
+        
+            <li>
+            
+                <a href="../user-manual/08-loadtest.html">Load and Performance Testing</a>
+                
+            </li>
+        
+    
+
+    
+        
+            <li>
+            
+                <a href="../user-manual/09-reports.html">Test Results and Reports</a>
+                
+            </li>
+        
+    
+
+    
+        
+            <li>
+            
+                <a href="../user-manual/10-command-reference.html">Command Reference</a>
+                
+            </li>
+        
+    
+
+    
+        
+            <li>
+            
+                <a href="../user-manual/11-glossary.html">Glossary</a>
+                
+            </li>
+        
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+                </ul>
+            </nav>
+        </div>
+
+        <div id="content" class="col-xs-12 col-sm-8 col-md-9 content-col">
+            <h2>Introduction</h2>
+<p><span class="caps">XLT</span> Script Developer is a Firefox extension used to create test case scripts. Script test cases are based on a simple syntax and a reduced set of operations, which makes them a perfect fit for non-programmers. Besides Script Developer, no other tool is necessary to create, edit, and manage basic script test cases.</p>
+<p>Script Developer <em>records</em> test cases, that is you simply use an application you want to test while your actions are being recorded in the background and stored to an <span class="caps">XML</span> script file. During recording, you can add commands to perform validations on the page. Any recorded value can later be extracted from the script into a test data file to separate test data from script code. Scripts may also be exported as ordinary Java code.</p>
+<p>With Script Developer, script files can be replayed in Firefox at any time to quickly check whether the test case is running successfully.</p>
+<p>Before you set up and use Script Developer, it is recommended to learn about its basic concepts.</p>
+<h2>Basic Concepts</h2>
+<p><a href="http://seleniumhq.org/">Selenium</a> is widely used for test automation of web applications. <span class="caps">XLT</span> and Script Developer rely on similar concepts, which shall be defined in the following and referred to throughout this manual:</p>
+<p>An <em>Action</em> is an atomic collection of <em>Commands</em> in a test. It may actually be split into sub-parts, but it can generally be seen as mathematically closed part of a test. Also see <a href="04-framework.html#toc-basic-concepts">here</a> because the concept of an <em>Action</em> is the same for the <span class="caps">XLT</span> framework and Script Developer. However, be aware that our definition of the term <em>Action</em> completely differs from the one used by Selenium.</p>
+<p>An <em>Assertion</em> verifies that a condition still holds true. Thus, it always consists of the formulation of an expected value that is compared to the actual value. If both values are different, the condition is violated and the test will abort with an error.</p>
+<p>A <em>Command</em> in Script Developer is the same as in Selenium. It&#8217;s a single statement in the test, for example, causing the test to sleep for some time, simulating a click, or waiting for an element to become visible.</p>
+<p>An <em>Element Locator</em> or <em>Element Identification Strategy</em> is the approach used to identify an element on a page. While in simple examples different strategies lead to the same result causing the same effort, their benefits may differ in more complex scenarios.</p>
+<p>These concepts will be repeatedly touched upon in the next chapters, especially those on test editing. See <a href="10-command-reference.html">Appendix</a> for a full list of available commands, including examples.</p>
+<h2>Settings</h2>
+<p>Before you start, make sure the Script Developer Firefox extension is installed correctly. Open the Script Developer window via the Firefox <em>Tools</em> menu or, alternatively, you can add an <span class="caps">XLT</span> icon to your toolbar via the <em>Customize</em> menu. If you start <span class="caps">XLT</span> Script Developer for the very first time, you will be asked to configure a test suite. Click OK, then select a directory that contains a <span class="caps">XLT</span> test suite or, if no test suite exists yet, select a target directory where a new test suite should be created.</p>
+<p>Next, you need to change some basic settings. In the upper left of the Script Developer window, go to <em>Script Developer</em> &gt; <em>Settings</em> to open the configuration dialog.</p>
+<p class="illustration"><a href="../img/user-manual/ScriptDev_Settings.png"><img src="../img/user-manual/ScriptDev_Settings-small.png" title="Script Developer Settings" alt="Script Developer Settings" /></a> <span class="caption">Script Developer Settings</span></p>
+<h3>Java Code Settings</h3>
+<p><strong>Generate JUnit wrapper class for test cases</strong>: Activates the generation of JUnit wrapper classes needed to run recorded scripts in your Java <span class="caps">IDE</span>. This box has to be checked if you want to run load tests using recorded test cases or if you want to automate these tests, e.g. in a build process.</p>
+<p><strong>Source Directory Name</strong>: The name of the directory where the generated Java source code is saved (<em>src</em> in most cases). The path is relative to the location of the current test suite.</p>
+<p><strong>File Encoding</strong>: The character encoding scheme for the JUnit wrapper classes. It should match the settings in your <span class="caps">IDE</span> when running test cases as JUnit tests.</p>
+<h3>Recording Settings</h3>
+<p><strong>Element Identification Strategies</strong>: Check the boxes to select element identification strategies available during test case recording. Each web element type has a default identification strategy. If you haven&#8217;t checked it, one of the other identification strategies will be used to identify the element. For example, when you deselect the <em>Name</em> checkbox, the recorder will avoid command targets like <em>name=xyz</em> and the <em>name</em> attribute in XPath expressions. Note that XPath is used as a fall-back strategy and can&#8217;t be disabled.</p>
+<p><strong>Attribute Filtering</strong>: <em>Include Patterns</em> and <em>Exclude Patterns</em> let you filter attributes used in element locators. If an <em>Include Pattern</em> is defined, then only attributes matching this filter pattern are used in element locators, whereas non-matching attributes will be avoided. On the other hand, an attribute will be avoided in element locators if it matches one of the <em>Exclude Patterns</em>. <em>Exclude Patterns</em> always take precedence over <em>Include Patterns</em> , that is an attribute will be avoided if it matches the <em>Exclude Pattern</em>, even if it also matches any <em>Include Pattern</em>. Both pattern types are available for <em>ID</em>, <em>Name</em>, and <em>Class</em> attributes and must be given as regular expressions. More than one <em>Include and Exclude Patterns</em> can be defined, separated by whitespace.</p>
+<h3>Replay Settings</h3>
+<p><strong>Command Timeout (in sec.)</strong>: Defines the default timeout for replaying <code>WaitForXyz</code> commands. When this time has elapsed and the condition is still false, the command will fail with an error message. This value can be changed for particular scripts by using the <code>setTimeout</code> command.</p>
+<p><strong>Implicit Wait Timeout (in msec)</strong>: This value defines the maximum time to wait for the target element to (dis)appear before the command is seen as failed. It is used by all commands that require a target element <strong>but not</strong> by <code>assert</code> and <code>waitFor</code> commands.</p>
+<p>The implicit wait timeout is extremely useful if your web application is very dynamic and uses asynchronous JavaScript to build and modify the page. Normally, you would use a <code>waitFor</code> command to wait for the element to appear before you can interact with it. When an implicit wait timeout is defined, most of the <code>waitFor</code> commands can be omitted, making your test cases shorter and easier to maintain.</p>
+<h3>Editor Settings</h3>
+<p><strong>Display line numbers</strong>: If checked, line numbers are shown in front of a command when a test case or module is open for editing.</p>
+<p><strong>Auto save upon replay</strong>: If checked, your test suite will be saved automatically every time you replay a test case.</p>
+<h2>UI Elements</h2>
+<p>The main window of Script Developer features the following sections and elements:</p>
+<p class="illustration"><a href="../img/user-manual/ScriptDev_MainWindow.png"><img src="../img/user-manual/ScriptDev_MainWindow-small.png" title="Script Developer" alt="Script Developer" /></a> <span class="caption">Script Developer</span></p>
+<h3>Toolbar and Record/Replay Section</h3>
+<table>
+	<tr>
+		<th>Control</th>
+		<th>Description</th>
+	</tr>
+	<tr>
+		<td> <span style="white-space:nowrap;">Script Developer</span> </td>
+		<td> Provides access to <em>Settings</em>, <em>Edit Test Suite Details</em>, <em>Manage Global Test Data</em>, <em>Online Documentation</em> and the <em>About</em> page, which has a link to the <span class="caps">XLT</span> Website.</td>
+	</tr>
+	<tr>
+		<td>Replay Speed</td>
+		<td>Controls the replay speed for test cases and modules. The selected replay speed determines how long elements addressed by commands are being highlighted during replay. Please note that this does <span class="caps">NOT</span> affect how fast those commands are being executed.</td>
+	</tr>
+	<tr>
+		<td>Replay</td>
+		<td>Replays the currently loaded test case or module.</td>
+	</tr>
+	<tr>
+		<td>Single Step Forward</td>
+		<td>Executes the currently marked command and moves to the next command.</td>
+	</tr>
+	<tr>
+		<td>Pause</td>
+		<td>Pauses the replay of a test case, and activates the <em>Continue Replay</em> and <em>Single Step Forward</em> buttons.</td>
+	</tr>
+	<tr>
+		<td>Continue Replay</td>
+		<td>Continues replay of a paused test case or module.</td>
+	</tr>
+	<tr>
+		<td>Stop</td>
+		<td>Stops recording or replay of a test case or module.</td>
+	</tr>
+	<tr>
+		<td>Record</td>
+		<td>Starts recording your actions on the web page in your active browser tab window.</td>
+	</tr>
+	<tr>
+		<td>Save</td>
+		<td>Saves the currently open test case or module.</td>
+	</tr>
+	<tr>
+		<td>Save All</td>
+		<td>Saves all open test cases and modules. </td>
+	</tr>
+	<tr>
+		<td>Reload</td>
+		<td>Reloads all test cases and modules in the test project.</td>
+	</tr>
+	<tr>
+		<td>Undo</td>
+		<td>Reverts the last change to the currently open test case since you last opened it. </td>
+	</tr>
+	<tr>
+		<td>Redo</td>
+		<td> Reverses the last <em>Undo</em>. </td>
+	</tr>
+	<tr>
+		<td>Base <span class="caps">URL</span></td>
+		<td>Displays the base <span class="caps">URL</span> that is saved for the currently open test case (in <em>italics</em>). You can temporarily change it by entering another one into the edit field or by selecting from the drop-down menu. If you enter a valid <span class="caps">URL</span>, the <span class="caps">URL</span> saved in the test case will be overridden by the new value.</td>
+	</tr>
+</table>
+<h3>Project View</h3>
+<p>The <em>project view</em> contains a tree view, the <em>script explorer</em>, that lists all available <strong>test cases</strong> and <strong>modules</strong> structured in <strong>packages</strong>. Script Developer loads all test cases and modules from <code>&lt;test-suite&gt;/scripts</code> and its sub-folders. The package structure of the script explorer is reflected by the structure of the sub-folders.</p>
+<blockquote class="note">
+<p class="note">The package structure in the script explorer also reflects the package structure of the generated JUnit wrapper classes.</p>
+</blockquote>
+<p>The drop-down box includes all test suites known to Script Developer, which lets you easily switch between projects. Use the <em>Create/Import</em> button to import existing test projects still unknown to Script Developer.</p>
+<blockquote class="note">
+<p class="note">When importing a project, make sure to choose the parent directory of the <em>scripts</em> directory, and not the <em>script</em> directory itself. To create a new project,  select an existing directory from the file dialog popping up after you&#8217;ve clicked the <em>Create/Import</em> button.</p>
+</blockquote>
+<p>You can filter the displayed test cases or modules using the input field below the script explorer. Click the small arrow icon on the left to filter the list either by name, description, tag, or any combination of these. Typed characters are case-insensitive. To reset the search result, click the <em>x</em> icon on the right side of the input field or manually delete all characters.</p>
+<p>You may change the alphabetic sorting (A-Z or Z-A) of the packages by clicking on the header of the <em>Name</em> column. The second column shows a description for each test case or module. You can add or edit the description in the <em>Edit Details</em> dialog.</p>
+<h3>Editor Tabs</h3>
+<p>To open a test case or module for editing, double-click on a script or select the context menu option <strong>Edit</strong>. The script&#8217;s commands are listed inside the work area on the right-hand side of the developer window. The <strong>Edit Details</strong> option allows you to edit particular details and displays the test case or module in the editor window to help you recognize that something has been changed. You can open more than one script at a time and select a test case or module by clicking on the respective tab above the command list. The script editor tab displays the <em>Name</em>, <em>Target</em>, and <em>Value</em> attributes of each command in three adjustable columns.</p>
+<h3>Information and Log panel</h3>
+<p>The Information tab provides context related information for the selected testcase, module or command. Among others this includes type, name, description, comment, parameters, tags, ID. All comments and descriptions of items can be written in <a href="https://help.github.com/articles/markdown-basics/">GitHub Flavored Markdown.</a> The Information panel displays the text in a formatted style which allows to easily integrate tables, lists, bold or italic text etc. to comments/descriptions.</p>
+<p>The Log tab lists all testcase or command executions and module calls.</p>
+<h2>Record and Replay</h2>
+<h3>Recording</h3>
+<p>Recording your interaction with the application you want to test is the easiest way to create test scripts. To do this, you need to:</p>
+<ol>
+	<li>Open the web page you want to start with in a Firefox tab. Make sure this tab remains active, that is the foreground tab.</li>
+	<li>Switch to Script Developer and create a new test case via the context menu in the script explorer. Provide a meaningful name. An empty script editor tab opens.</li>
+	<li>Click the <em>Start Recording</em> icon in the tool bar to start recording.</li>
+	<li>Switch back to your web page and start using it. All your interactions with the page are being recorded.</li>
+	<li>When you&#8217;re done with your test scenario, switch back to Script Developer and click the <em>Stop</em> icon to stop recording.</li>
+	<li>Don&#8217;t forget to save the new script by clicking the <em>Save</em> icon or by using the <em>Ctrl+S</em> shortcut.</li>
+</ol>
+<blockquote class="note">
+<p class="note">If you have the Firefox Add-on <em>Firebug</em>, you need to make sure it isn&#8217;t active during recording because its highlight mechanism may cause unnecessary interactions to be recorded.</p>
+</blockquote>
+<p>Note that besides recording the normal web page flow, you can also validate the correctness of pages by using assert commands. Generally, new or changed pages emerge throughout an interaction with a web page and should thus be checked. To record assertions, do the following:</p>
+<ol>
+	<li>Open the Firefox context menu and select <em>Script Developer</em> (available only during recording). A sub-menu opens.</li>
+	<li>Choose an appropriate assertion from the sub-menu. See <a href="10-command-reference.html">Command Reference</a> for a full list of available assertions.</li>
+	<li>Continue interacting with the web page as defined by your test scenario.</li>
+</ol>
+<p class="illustration"><a href="../img/user-manual/ScriptDev_CmdContextMenu.png"><img src="../img/user-manual/ScriptDev_CmdContextMenu-small.png" title="Record commands using the context menu" alt="Record commands using the context menu" /></a> <span class="caption">Record Commands Using the Context Menu</span></p>
+<p>For each assertion, there is also a variant checking whether the respective condition is <em>not</em> true. You can record as many assertions as you like.</p>
+<h3>Replay a Test Case</h3>
+<p>Once you&#8217;ve recorded a test case, it can be executed inside your browser. In the script explorer, right-click the test case to open its context menu, and then click <em>Run</em>. Alternatively, do the following:</p>
+<ol>
+	<li>Open the test case script in a test case editor tab or activate the tab if it&#8217;s already open, and</li>
+	<li>click the <em>Play</em> icon in the tool bar.</li>
+</ol>
+<p>The script is replayed in the active Firefox browser tab.</p>
+<p>While the script is running, you can watch the results of the script execution. You can see how links are being clicked, input fields are being filled, buttons and checkboxes are being clicked, etc. Inside the browser tab, actions and validations the script is currently dealing with are highlighted yellow and orange, respectively. Inside the script tab, the commands are marked with a special status icon. It&#8217;s yellow as long as the command or module is being executed. When the execution is finished, the icon will either turn green in case of success or red in case of errors. Note that the script execution will immediately stop if a command fails.</p>
+<p>If you have difficulties following the script execution, use the speed slider in the tool bar to reduce the replay speed. Increase it if you need the results as quick as possible. Be aware though that the commands are not being executed any slower or faster this way. The slider only affects the amount of time elements are being highlighted.</p>
+<p>You may stop or pause the script execution at any time. To stop a script, click the <em>Stop</em> icon in the tool bar. As a result, the script is terminated. The <em>Pause</em> icon suspends the execution of a script (after finishing the currently running command). To continue the script execution, click the <em>Continue Replay</em> icon. Alternatively, you can click the <em>Single Step Forward</em> icon, which only causes the next command to be executed.</p>
+<p>You can set a start point and one or more breakpoints for a test script. See section <a href="03-scriptdeveloper.html#toc-edit-test-suite">Edit Test Suite</a> for more information.</p>
+<blockquote class="note">
+<p class="note">Note that clicks on alert, confirmation, or prompt boxes are not recorded and thus don&#8217;t pop up during replay either. Instead, Script Developer simulates a return value of the alert() or confirm() function, which is equivalent to clicking &#8220;OK&#8221; or &#8220;Yes&#8221;. For prompt(), an empty string is returned as your input value.</p>
+</blockquote>
+<h4>Running Batch Tests</h4>
+<p>A sequence of test cases or an entire test suite can be run as batch test. Select the desired test cases from the script explorer by clicking them while holding the <em><span class="caps">CTRL</span></em> key, or, alternatively, choose one or more packages to run. Click <em>Run as Batch Test</em> from the script explorer context menu to start the batch test.</p>
+<p>The selected test cases are executed consecutively. The result is displayed in a new tab in the work area with a colored bullet for each test case indicating the current state of the test execution. Grey stands for not tested, yellow for currently running test cases, green for passed and red for failed test cases. The total number of selected test cases, the number of executed test cases, an error count, and the elapsed time is shown in the header of the batch test tab.</p>
+<p class="illustration"><a href="../img/user-manual/ScriptDev_BatchTest.png"><img src="../img/user-manual/ScriptDev_BatchTest-small.png" title="Batch Test" alt="Batch Test" /></a> <span class="caption">Batch Test</span></p>
+<p>After the batch test is completed, the <em>Rerun failed tests</em> button will become active if at least one test failed. Clicking it starts a new batch test in a new tab with all test cases that failed the previous batch test. To export the batch test result to <span class="caps">HTML</span>, click the <em>Export as <span class="caps">HTML</span></em> button and provide a meaningful name and a target location. You can then view the batch execution report in any web browser.</p>
+<p class="illustration"><a href="../img/user-manual/ScriptDev_BatchReport.png"><img src="../img/user-manual/ScriptDev_BatchReport-small.jpg" title="Batch Test HTML Report" alt="Batch Test HTML Report" /></a> <span class="caption">Batch Test <span class="caps">HTML</span> Report</span></p>
+<h2>Edit Test Suite</h2>
+<p>You can modify script test cases and modules at any time. Often enough, it&#8217;s necessary to fix mistakes made during the recording of the test scenario. For example, you may have clicked a wrong link or forgotten to add an assertion. In the first case, just go back and continue with your test scenario; the unwanted or incorrect actions can be deleted later on. In the second case, manually add the appropriate assertion commands after you&#8217;ve finished recording. To modify a test case during recording, switch to the Script Developer window, make the necessary changes, and then return to the web page to continue recording.</p>
+<h3>Editing Test Suite</h3>
+<p class="illustration"><a href="../img/user-manual/ScriptDev_TestCaseMenu.png"><img src="../img/user-manual/ScriptDev_TestCaseMenu-small.png" title="Test suite context menu" alt="Test suite context menu" /></a> <span class="caption">Test Suite Context Menu</span></p>
+<p>The right-click context menu in the script explorer offers the following options for editing the test suite and scripts (test cases or modules):</p>
+<table>
+	<tr>
+		<th colspan="2">Menu Item </th>
+		<th>Description </th>
+	</tr>
+	<tr>
+		<td rowspan="4">New </td>
+		<td> Test Case </td>
+		<td> Creates a new test case. You can define name, script package, tags, description, base <span class="caps">URL</span>, and enable test case-specific settings in the dialog that pops up. </td>
+	</tr>
+	<tr>
+		<td> Script Module </td>
+		<td> Creates a new script module. See <a href="03-scriptdeveloper.html#toc-script-modules">Script Modules</a> for details. </td>
+	</tr>
+	<tr>
+		<td> Java Module </td>
+		<td> Creates a new custom Java module. See <a href="03-scriptdeveloper.html#toc-creating-java-modules">Creating Java Modules</a> for details. </td>
+	</tr>
+	<tr>
+		<td> Script Package </td>
+		<td> Creates a new script package. The complete package name must always be specified, e.g. <em>testcases.cart.order</em>. </td>
+	</tr>
+	<tr>
+		<td> Run </td>
+		<td></td>
+		<td> Directly runs the selected test case without opening it in the editor. </td>
+	</tr>
+	<tr>
+		<td> Run as Batch Test </td>
+		<td></td>
+		<td> A sequence of test cases, packages, or an entire test suite can be run as a batch test. </td>
+	</tr>
+	<tr>
+		<td> Edit </td>
+		<td></td>
+		<td> Opens the script as a tab for editing in the work area and lists its commands. </td>
+	</tr>
+	<tr>
+		<td> Edit Details </td>
+		<td></td>
+		<td> Opens a dialog to edit script details like name, package, tags, description, base <span class="caps">URL</span>, test case-specific settings, or module parameters. </td>
+	</tr>
+	<tr>
+		<td rowspan="3">Refactor </td>
+		<td> Rename Script </td>
+		<td> Opens a dialog to rename the selected script. </td>
+	</tr>
+	<tr>
+		<td> Move Script(s) </td>
+		<td> Opens a dialog to move the selected script to another package. </td>
+	</tr>
+	<tr>
+		<td style="white-space:nowrap;">Rename Package </td>
+		<td> Opens a dialog to rename the selected script package. </td>
+	</tr>
+	<tr>
+		<td> Copy </td>
+		<td></td>
+		<td> Copies the selected testcase to the clip board. </td>
+	</tr>
+	<tr>
+		<td> Paste </td>
+		<td></td>
+		<td> Pastes a previously copied testcase from the clip board to the selected package. </td>
+	</tr>
+	<tr>
+		<td> Refresh </td>
+		<td></td>
+		<td> Like the <em>Reload</em> button in the toolbar, but only reloads the currently selected test case. </td>
+	</tr>
+	<tr>
+		<td> Enable/Disable </td>
+		<td></td>
+		<td> Enables/disables the selected tests. Disabled tests will be skipped by batch tests and annotated with @Ignore when exported to Java. </td>
+	</tr>
+	<tr>
+		<td> Export </td>
+		<td></td>
+		<td> Opens a dialog to define settings for exporting the script to Java (<em><span class="caps">XLT</span> Scripting <span class="caps">API</span></em> or <em><span class="caps">XLT</span> Action <span class="caps">API</span></em>). See <a href="03-scriptdeveloper.html#toc-export-to-java">Export Test Case to Java</a> for details. </td>
+	</tr>
+	<tr>
+		<td style="white-space:nowrap;">Manage Test Data </td>
+		<td></td>
+		<td> Opens a dialog to define test data you want to store in a separate file. See <a href="03-scriptdeveloper.html#toc-managing-test-data">Manage Test Data</a> for details. </td>
+	</tr>
+	<tr>
+		<td> Edit Data Sets </td>
+		<td></td>
+		<td> Opens a dialog that allows you to define data sets for Data-Driven tests in the selected test case. See <a href="03-scriptdeveloper.html#toc-data-sets">Data Sets</a> or <a href="06-datadriven.html">Data-Driven Tests</a> if you want to know more. </td>
+	</tr>
+	<tr>
+		<td> Delete </td>
+		<td></td>
+		<td> Deletes the selected script or package. </td>
+	</tr>
+	<tr>
+		<td> Link with Editor </td>
+		<td></td>
+		<td> When checked, if you click on a test case in the Project View, it will bring you to the Editor tab belonging to it if it&#8217;s opened and vice versa. </td>
+	</tr>
+	<tr>
+		<td> Package Presentation </td>
+		<td></td>
+		<td> Allows you to switch the view of your test suite between a <em>Flat</em> and <em>Hierarchical</em> presentation. </td>
+	</tr>
+</table>
+<h3>Editing Details</h3>
+<p>When choosing <em>Edit Details</em> from the context menu, a dialog opens that lets you edit details of the selected test case or module.</p>
+<p class="illustration"><a href="../img/user-manual/ScriptDev_EditTestCaseDetails.png"><img src="../img/user-manual/ScriptDev_EditTestCaseDetails-small.png" title="Edit Test Case Details" alt="Edit Test Case Details" /></a> <span class="caption">Edit Test Case Details</span></p>
+<p class="illustration"><a href="../img/user-manual/ScriptDev_ExtractModule.png"><img src="../img/user-manual/ScriptDev_ExtractModule-small.png" title="Edit Module Details" alt="Edit Module Details" /></a> <span class="caption">Edit Module Details</span></p>
+<table>
+	<tr>
+		<th>Control </th>
+		<th>Description </th>
+	</tr>
+	<tr>
+		<td> ID </td>
+		<td> The test case ID. In contrast to the test case name the ID must be unique across all packages. </td>
+	</tr>
+	<tr>
+		<td> Name </td>
+		<td> The name of the test case. However changing it requires to use the <em>Rename Script</em> refactoring operation from the context menu. </td>
+	</tr>
+	<tr>
+		<td> Package </td>
+		<td> The script package of the test case. However changing it requires to use the <em>Move Script(s)</em> refactoring operation from the context menu. </td>
+	</tr>
+	<tr>
+		<td> Tags </td>
+		<td> Tags to group several test cases and make them easier to find. Tags have to be separated by comma. The list of available test cases can be filtered by tags. </td>
+	</tr>
+	<tr>
+		<td> Description </td>
+		<td>  A description of the test case.</td>
+	</tr>
+	<tr>
+		<td> Base <span class="caps">URL</span> </td>
+		<td> The base <span class="caps">URL</span> for the test case. This is only used if the base <span class="caps">URL</span> input field of the Script Developer toolbar is empty or contains an invalid <span class="caps">URL</span>. The base <span class="caps">URL</span> defined here is displayed in the toolbar in <em>italics</em> and can be overridden by entering a new value. </td>
+	</tr>
+	<tr>
+		<td> Enable test case specific settings </td>
+		<td> Enables the second checkbox <em>Generate JUnit wrapper class for test case</em> to define a test case-specific setting that overrides the global value. </td>
+	</tr>
+	<tr>
+		<td> Generate JUnit wrapper class for test case </td>
+		<td> If active, the global setting for generating JUnit wrapper classes will be overridden for the current test case by the value of this checkbox. See <a href="03-scriptdeveloper.html#toc-settings">Settings</a> for more information about the global setting. </td>
+	</tr>
+	<tr>
+		<td> Parameters </td>
+		<td> The parameters of the module. </td>
+	</tr>
+</table>
+<p>Depending on whether the selected element for editing its details is a test case or a module, the dialog elements <em>Enable test case specific settings</em>, <em>Generate JUnit wrapper class for test case</em>, and <em>Parameters</em> are shown or not shown.</p>
+<blockquote class="note">
+<p class="note">All scripts and script packages are named exactly like their file/directory counterpart. However, when looking up a script/package by name, Script Developer performs this operation case-insensitively. This behavior is in contrast to the <span class="caps">XLT</span> framework and will therefore be changed in the near future. Please make sure you always use the correct casing when you have to enter a script or package name.</p>
+</blockquote>
+<h3>Editing Scripts</h3>
+<p>After opening a script (test case or module) as a tab in the work area, you can edit it by selecting one of the options from the context menu. A script may consist of actions, commands, and module calls.</p>
+<p class="illustration"><a href="../img/user-manual/ScriptDev_EditingScriptsMenu.png"><img src="../img/user-manual/ScriptDev_EditingScriptsMenu-small.png" title="Edit Script Menu" alt="Edit Script Menu" /></a> <span class="caption">Edit Script Menu Details</span></p>
+<p>The following options for editing are available (item = action, command, module call or script comment):</p>
+<table>
+	<tr>
+		<th>Command</th>
+		<th colspan="2">Description</th>
+	</tr>
+	<tr>
+		<td rowspan="4">Insert </td>
+		<td> Action </td>
+		<td> Inserts an action before the selected item. See <a href="03-scriptdeveloper.html#toc-actions">Actions</a> for details. </td>
+	</tr>
+	<tr>
+		<td> Command </td>
+		<td> Inserts a command before the selected item. Inserting a command is an alternative to recording them on the page. </td>
+	</tr>
+	<tr>
+		<td> Module </td>
+		<td> Inserts a module call before the selected item. Modules can also be inserted by dragging them from the script explorer to the script. </td>
+	</tr>
+	<tr>
+		<td> Comment </td>
+		<td> Inserts a script comment line before the selected item. </td>
+	</tr>
+	<tr>
+		<td colspan="2">Edit </td>
+		<td> Opens a dialog to edit the attributes of the selected item. Editing a module call lets you both edit its parameter values and replace the current module with another one. </td>
+	</tr>
+	<tr>
+		<td colspan="2">Open Module </td>
+		<td> Opens the called script module in a separate tab of the work area for editing. </td>
+	</tr>
+	<tr>
+		<td colspan="2">Extract Module </td>
+		<td> Saves the selected items as a module and replaces these items with a call to the new module. You can select several items by holding the <em><span class="caps">CTRL</span></em> key while clicking. Alternatively, hold the <em><span class="caps">SHIFT</span></em> key and select the commands with the arrow keys. </td>
+	</tr>
+	<tr>
+		<td colspan="2">Enable/Disable </td>
+		<td> Enables or disables the selected item. When a module call is disabled, all commands of that module will be disabled as well. </td>
+	</tr>
+	<tr>
+		<td colspan="2">Refresh </td>
+		<td> Same as <em>Refresh</em> in the script explorer context menu, refreshes the currently selected test case. </td>
+	</tr>
+	<tr>
+		<td colspan="2">Toggle Start Point </td>
+		<td> Sets/deletes a start point for replaying the script. If set, the replay starts at the marked command. </td>
+	</tr>
+	<tr>
+		<td colspan="2">Toggle Breakpoint </td>
+		<td> Sets/deletes a break point. If set, script execution will pause upon reaching the marked command. You can set multiple break points. </td>
+	</tr>
+	<tr>
+		<td colspan="2">Clear all Breakpoints </td>
+		<td> Deletes all set break points. </td>
+	</tr>
+	<tr>
+		<td colspan="2">Toggle Post-Steps Marker </td>
+		<td> Sets the test case&#8217;s post-steps marker above the currently selected command. See <a href="03-scriptdeveloper.html#toc-post-steps-for-test-cases">Post-Steps for Test Cases</a> for more info. </td>
+	</tr>
+	<tr>
+		<td colspan="2">Execute Command </td>
+		<td> Immediately executes the selected command in the currently active browser tab. </td>
+	</tr>
+	<tr>
+		<td colspan="2">Cut </td>
+		<td> Cuts the selected items from the script to insert them at another position in the same script or in another one. </td>
+	</tr>
+	<tr>
+		<td colspan="2">Copy </td>
+		<td> Copies the selected items to insert them at another position in the same script or in another one. </td>
+	</tr>
+	<tr>
+		<td colspan="2">Paste </td>
+		<td> Pastes the previously cut or copied items. </td>
+	</tr>
+	<tr>
+		<td colspan="2">Delete </td>
+		<td> Deletes the selected items. </td>
+	</tr>
+</table>
+<h3>Editing Commands</h3>
+<p>To edit a command, select <em>Edit</em> from the context menu. The <em><span class="caps">XLT</span> &#8211; Edit Command</em> dialog opens:</p>
+<p class="illustration"><a href="../img/user-manual/ScriptDev_EditCommand.png"><img src="../img/user-manual/ScriptDev_EditCommand-small.png" title="Edit command" alt="Edit command" /></a> <span class="caption">Edit Command</span></p>
+<table>
+	<tr>
+		<th colspan="2">Control </th>
+		<th>Description </th>
+	</tr>
+	<tr>
+		<td colspan="2">Command </td>
+		<td> The name of the command to be executed (interacts with the page or executes an assertion). A drop-down box next to the command input lists all available commands with a small description. See <a href="10-command-reference.html">Appendix</a> for a full list of commands. </td>
+	</tr>
+	<tr>
+		<td colspan="2">Target </td>
+		<td> Defines the target element(s) to be addressed by the command. Not all commands require a target (e.g. <em>open</em>), so this may be empty. For each generated locator, Script Developer keeps a list of alternative locators in memory. If desired, you can later switch to another locator type (or xpath variant) by using the drop-down box next to the target input field. These alternatives are not part of the script file and cleared after reloading the test case. </td>
+	</tr>
+	<tr>
+		<td colspan="2">Resolved Target </td>
+		<td> Targets may contain placeholders, e.g. module parameters (@{&#8230;}), test data (${&#8230;}), and <a href="03-scriptdeveloper.html#toc-macros">macros</a>. <em>Resolved Target</em> is a read-only field that displays the target expression where all placeholders are resolved to actual characters. Variables are resolved recursively, so you can use variables within resolved content. </td>
+	</tr>
+	<tr>
+		<td colspan="2">Value </td>
+		<td> Sets a value for a command, e.g. the page title to be asserted or the text to be typed into an input element. Not all commands require a value (e.g. <em>check</em> or <em>click</em>). For commands like <em>assertText</em> or similar, you can define an explicit text-matching strategy. </td>
+	</tr>
+	<tr>
+		<td colspan="2">Resolved Value </td>
+		<td> Values may contain placeholders, e.g. module parameters (@{&#8230;}), test data (${&#8230;}), and <a href="03-scriptdeveloper.html#toc-macros">macros</a>. The <em>Resolved Value</em> field shows the value of the command with all placeholders resolved. Variables are resolved recursively, so you can use variables within resolved content. </td>
+	</tr>
+	<tr>
+		<td colspan="2">Comment </td>
+		<td> An optional comment for the command, used to document the purpose of this test step. </td>
+	</tr>
+	<tr>
+		<td colspan="2">Context Window </td>
+		<td> The window page to look upon. </td>
+	</tr>
+	<tr>
+		<td rowspan="2">Element Lookup </td>
+		<td> Elements found </td>
+		<td> When you enter a target expression in the <em>Target</em> field, Script Developer will analyze the window page and display the number of found elements matching this target. It will also display how many of them are visible at the moment, e.g. <em>Elements found: 3 (visible: 1)</em>. If more than one element can be found on the window page, the command will be executed for the first match. </td>
+	</tr>
+	<tr>
+		<td> Highlight Element(s) </td>
+		<td> Highlights all target elements found on the set window page. </td>
+	</tr>
+	<tr>
+		<td colspan="2">Evaluate </td>
+		<td> Clicking the <em>Evaluate</em> button executes the command and shows the result (Passed or Failed) considering the resolved target and resolved value. During script debugging and script execution, you can instantly evaluate assertions without executing the whole test case to see whether or not your verification expression matches. </td>
+	</tr>
+</table>
+<h3>Start Point for Replaying Test Cases</h3>
+<p>By default, the execution of a script starts at its beginning. Sometimes, however, it might come in handy to start it from a specific command. Select the respective command and press <kbd>S</kbd> to set a start point or, alternatively, choose <em>Set Start Point</em> from the context menu. A start point marker looking like the replay icon appears next to the command. Now click the <em>Play</em> icon in the toolbar to start the execution from the marked command.</p>
+<blockquote class="note">
+<p class="note">Make sure the right page is displayed in the active Firefox tab so that the script can be started at the selected command. Otherwise, it is likely to fail.</p>
+</blockquote>
+<h3>Breakpoints</h3>
+<p>To automatically pause the script execution at a certain command, you can set a breakpoint by selecting the respective command and pressing <kbd>B</kbd>. A breakpoint marker appears next to the command. When the script is being replayed, execution will automatically pause upon reaching the command. You can go on replaying the script by clicking <em>Continue Replay</em> or <em>Single Step Forward</em> in the toolbar. To clear the breakpoint, mark the command again and press <kbd>B</kbd>. A breakpoint may also be set or deleted using the context menu or by double-clicking the breakpoint column (the grey leftmost column). When you set a breakpoint for a command inside a module that is used multiple times, the respective command in each module call will be marked with a breakpoint and the replay will pause each time one of these module calls is reached.</p>
+<blockquote class="note">
+<p class="note">Breakpoints exist in memory only. Closing the appropriate script editor tab or reloading the script clears all of its breakpoints.</p>
+</blockquote>
+<h3>Actions</h3>
+<p>As you may have noticed, Script Developer automatically inserts <em>Actions</em> while recording. An action is a sequence of steps that belong together. For example, filling in the inputs of a form, submitting the form by clicking the submit button, and checking the resulting page with assertions is typically one action. Actions are primarily used to break the page flow down into atomic steps and to give those steps a name. Action execution times are measured and reported while running load tests.</p>
+<p>Script Developer gives actions generic names, but you can rename them to facilitate script maintenance. You can also manually insert a new action at any position of your script (<em>Insert &gt; Action</em>). The start of a new action automatically ends the previous action, even if the following action is part of a module call.</p>
+<blockquote class="note">
+<p class="note">Note that actions are not meant to structure your scripts visually since they are not comments. In other words, you should <em>not</em> use actions to structure a long list of validations without loading a new page. Insert script comments instead.</p>
+<p class="note">Using actions in this context would conflict with their <a href="04-framework.html#toc-basic-concepts">basic concept</a>, namely that they should always load one new page. The misuse of actions in script test cases makes it difficult to analyze the test results because actions then fail to represent the page flow. Also remember to give your actions meaningful names (e.g. <em>Search</em>,  <em>Browse</em>, or <em>AddToCart</em>).</p>
+</blockquote>
+<h2>Script Modules</h2>
+<h3>Extracting a Module</h3>
+<p>Like test cases, script modules are sequences of commands, actions, and optional calls to other modules. They can be written from scratch, but it&#8217;s much easier to extract them from an existing test case. That means you record your test script first to identify reusable parts of that script afterwards. These parts are then factored out into separate modules.</p>
+<p>To extract a module, do the following:</p>
+<ol>
+	<li>Open the original test case.</li>
+	<li>Select the groups of commands you want to extract by clicking them while holding the <em><span class="caps">CTRL</span></em> key.</li>
+	<li>Choose <em>Extract Module</em> from the context menu.</li>
+	<li>Provide a meaningful module name and the script package.</li>
+	<li>Optionally provide tags, a description, and module parameters.</li>
+</ol>
+<p>After confirming with the OK button, you can find the new module in the script explorer. Additionally, the original test case is modified now so that the selected items are replaced by a call to the new module.</p>
+<p>Most editing options for test cases are available for modules as well, such as the editing of module properties and commands of a module. Therefore, <a href="03-scriptdeveloper.html#toc-edit-test-suite">Edit Test Suite</a> and Editing Commands also apply to modules. You can open a module in a separate tab and edit its commands there. It&#8217;s also possible to edit a module&#8217;s command from within a test case using this module. When you do so, keep in mind that editing a module&#8217;s command may also affect other test cases using this module.</p>
+<p>The script explorer context menu offers two options for creating new modules. Select <em>New Script Module</em> to create a new script module from scratch as an alternative to extracting it from a test case. <em>New Java Module</em> creates a script interface to integrate Java code into a script test case for the purpose of running the test case outside Script Developer later, but will be skipped when creating the test case using Script Developer. See <a href="03-scriptdeveloper.html#toc-advanced-topics">Creating Java modules</a> for more information.</p>
+<h3>Defining Module Parameters</h3>
+<p>You can parameterize modules to increase their reusability in other contexts and scenarios. For example, a module that logs in a user should be parameterized with the user name and password. Script module parameters are defined as part of the module&#8217;s meta-data. To use these parameters later in the module&#8217;s script code as target or value, you refer to them by using the special @{} placeholder notation (for example: @{userName} and @{password}) in the target and/or value of a command).</p>
+<p>To parameterize a module, you need to:</p>
+<ol>
+	<li>Select the module from the library and open the <em>Edit Details</em> dialog.</li>
+	<li>Declare the module parameters. You can add parameters with the <strong>+</strong> button and delete parameters with <strong>-</strong> (see figure &#8220;Edit Module Details&#8221; below).</li>
+	<li>Add a short description to make clear what the intention of each parameter is.</li>
+	<li>After confirming the changes, open the module in an editor tab in the work area.</li>
+	<li>Edit the commands that should use any of the defined parameters. Where needed, replace literal values in the target or value of the command with @{name} placeholders (see figure &#8220;Refer to module parameters in a command&#8221; below).</li>
+	<li>Save the module.</li>
+</ol>
+<p class="illustration"><a href="../img/user-manual/ScriptDev_ExtractModule.png"><img src="../img/user-manual/ScriptDev_ExtractModule-small.png" title="Edit Module Details" alt="Edit Module Details" /></a> <span class="caption">Edit Module Details</span></p>
+<p class="illustration"><a href="../img/user-manual/ScriptDev_EditModuleCommand.png"><img src="../img/user-manual/ScriptDev_EditModuleCommand-small.png" title="Refer to Module Parameters in a Command" alt="Refer to Module Parameters in a Command" /></a> <span class="caption">Refer to Module Parameters in a Command</span></p>
+<p>For all test cases using this module, you have to provide a value for each placeholder:</p>
+<ol>
+	<li>Open the test case in an editor tab.</li>
+	<li>Select <em>Edit</em> from the context menu of the module call inside the test case, then open the <em>Edit module</em> dialog.</li>
+	<li>Provide a valid value for each placeholder.</li>
+	<li>Close the <em>Edit module</em> dialog and save the test case.</li>
+</ol>
+<p class="illustration"><a href="../img/user-manual/ScriptDev_InsertModule.png"><img src="../img/user-manual/ScriptDev_InsertModule-small.png" title="Provide Values for Module Parameters" alt="Provide Values for Module Parameters" /></a> <span class="caption">Provide Values for Module Parameters</span></p>
+<h3>Modules and Actions</h3>
+<p>You can extract a module from any part of the script, but there are some basic rules you should follow when extracting modules &#8211; especially when it comes to actions. Actions are important when you run load tests because load test reports are based on actions. Always keep in mind the <a href="04-framework.html#toc-basic-concepts">basic concepts</a> of <span class="caps">XLT</span> test cases.</p>
+<p>In Script Developer, an action starts with an action line in the script and ends with the beginning of the next action, regardless of whether the next action is part of a module or not.</p>
+<p>In most cases, modules are used more than once in a test suite. Be careful of actions contained in modules. If a module starts with a sequence of commands followed by an action, the commands of this module might be part of an action of a completely different module. This won&#8217;t cause your test scripts to break, but it may lead to confusion when analyzing load test reports.</p>
+<p class="illustration"><a href="../img/user-manual/hidden_actions_1.png"><img src="../img/user-manual/hidden_actions_1-small.jpg" title="Bad style: Module call in script test case with hidden action" alt="Bad style: Module call in script test case with hidden action" /></a> <span class="caption">Bad style: Module call in a script test case with hidden action</span></p>
+<p class="illustration"><a href="../img/user-manual/hidden_actions_2.png"><img src="../img/user-manual/hidden_actions_2-small.jpg" title="Bad style: Hidden action in a module call" alt="Bad style: Hidden action in a module call" /></a> <span class="caption">Bad style: Hidden Action in a Module Call</span></p>
+<p>When extracting modules, it is recommended to follow these rules to facilitate test report analyzability:</p>
+<ul>
+	<li>Modules should either contain no actions at all <strong>or</strong> start with an action if they do contain one or more actions.</li>
+	<li>If a module contains one or more actions, then the first line after the module call in the script should also be an action.</li>
+</ul>
+<p>In other words, for each module you should decide if you</p>
+<ul>
+	<li>use a module as a reusable sequence of commands that will always be part of one enclosing action <strong>or</strong></li>
+	<li>encapsulate one or more complete actions as a module.</li>
+</ul>
+<p class="illustration"><a href="../img/user-manual/module_style_1.png"><img src="../img/user-manual/module_style_1-small.jpg" title="Good style : Module calls in a script test case" alt="Good style : Module calls in a script test case" /></a> <span class="caption">Good style : Module Calls in Script Test Case</span></p>
+<p class="illustration"><a href="../img/user-manual/module_style_2.png"><img src="../img/user-manual/module_style_2-small.jpg" title="Good style: Modules with no action at all or completely encapsulated actions" alt="Good style: Modules with no action at all or completely encapsulated actions" /></a> <span class="caption">Good style: Modules with no Action at all or Completely Encapsulated Actions</span></p>
+<h2>Managing Test Data</h2>
+<p>By default, test data is hard-coded into the test script. To simplify changing test data, the data values can be bound to variables and all occurrences can be replaced by references to the appropriate variables. These bounded test data values can be referred to as <em>test data mappings</em> since a test data variable is mapped to a certain value. All test data mappings of a script are managed using the separate data file <code>&lt;name&gt;_data.xml</code>, where <code>&lt;name&gt;</code> is the name of the corresponding script. For example, the test data file of the script <code>TSearch</code> is named <code>TSearch_data.xml</code> and stored next to the script file <code>TSearch.xml</code>. Test data can also be defined on a package level.</p>
+<p>To manage test data for a script test case, script module or package do the following:</p>
+<ol>
+	<li>Select the script or package in the explorer.</li>
+	<li>Choose <em>Manage Test Data</em> from the context menu of the script explorer&#8217;s tree view, or alternatively press <kbd>Alt</kbd>+<kbd>D</kbd>. A dialog comes up where you can add new variable mappings, edit existing ones, or remove those you don&#8217;t want to use anymore. Note that you may also use this dialog to simply check what test data mappings exist and whether they override any default value.</li>
+	<li>Close the dialog. The data file is saved automatically.</li>
+</ol>
+<p class="illustration"><a href="../img/user-manual/ScriptDev_ManageTestData.png"><img src="../img/user-manual/ScriptDev_ManageTestData-small.png" title="Manage Test Data" alt="Manage Test Data" /></a> <span class="caption">Manage Test Data</span></p>
+<p>When you open the dialog for the first time, it will show an empty map where you can add the mappings you want to use. Each mapping is represented as a 3-column row with the first column specifying the name of the test data variable and the third column specifying the value of the variable. The second column is a read-only field displaying the default value of the test data variable if one is set. Source for this inherited/default value may be a global test data mapping or a test data mapping on a package level higher up in the hierarchy.</p>
+<p>Each of the defined test data variables can be referenced arbitrarily often in the scripts by using the <code>${...}</code> syntax. For example, <code>${foobar}</code> references the variable <code>foobar</code>.</p>
+<p>As soon as you have a reference to a test data variable and you rename the variable in the <em>Manage Test Data</em> dialog, the reference is automatically adjusted in your scripts to reflect the change(s) you&#8217;ve made.</p>
+<p>Test data mappings may not only be specified for test case scripts, but also for modules. If a module has a test data file and this module is called by a test case that also has a test data file, both test data files will be used to access the required values. If several test data files contain a test data mapping with the same name but different values, the test case data file will have priority.</p>
+<blockquote class="note">
+<p class="note">Test data variables are scoped, that is a script cannot access test variables defined by a called script. Furthermore, the calling script may overwrite test data variables defined by the called script. This forms a scope chain that is defined by the call hierarchy of your scripts. The scope of global test data variables is always the end of this scope chain.</p>
+</blockquote>
+<h3>Global Test Data</h3>
+<p>Certain test data (such as user credentials or product data) are often the same for many or even for all test cases in a test suite. However, if the data needs to be changed, the test data mappings of all affected test cases would equally need to be adapted one by one. To minimize the effort of maintaining such data, you can define it as <em>global</em> test data.</p>
+<p>Each of the global test data mappings is available to all of your scripts in the current test suite and their values serve as default values that can be overridden by a script if necessary. This way, you may also specify a test data fallback, since a global test data value is used only when no script-specific test data value could be found.</p>
+<p>To edit the global test data, go to <em>Script Developer</em> and select <em>Manage Global Test Data</em>. A dialog opens that is almost identical to the <em>Manage Test Data</em> dialog (see above), except that each test data mapping is represented as a 2-column row instead of a 3-column one.</p>
+<p>All global test data is stored in the file <code>global_testdata.properties</code> located in the root directory of the respective test suite.</p>
+<h2>Data Sets</h2>
+<p>Starting with <span class="caps">XLT</span> 4.7.0, data-driven testing can also be done in Script Developer. Although the only supported format for data sets files in Script Developer is <span class="caps">XML</span>, you now have the possibility to maintain these files inside of Script Developer as well as use them to run your tests with multiple data sets.</p>
+<h3>Managing Data Sets</h3>
+<p>To edit the data sets for a given test case, select it in the Script Explorer view on the left and choose &#8216;Edit Data Sets..&#8217; from the context-menu. In case no data set is defined yet, the resulting dialog will look like <em>Manage Test Data</em>.</p>
+<p>The individual data sets are organized in columns, whereas the rows define the various data mappings. All of the test data variables are defined in the first column. The mapped values can be found in the same row and are associated with the respective data set column.</p>
+<p class="illustration"><a href="../img/user-manual/ScriptDev_EditDataSets.png"><img src="../img/user-manual/ScriptDev_EditDataSets-small.png" title="Edit Data Sets" alt="Edit Data Sets" /></a> <span class="caption">Edit Data Sets</span></p>
+<p>To insert a new key (test data variable), just press the button labeled with &#8216;Add Key&#8217; and a new row will be appended to the existing matrix. Give the new key a meaningful name, so that the red border disappears.<br />
+Move the new test data variable row up or down by using the appropriate arrow buttons in the bottom left area of the window. In order to remove a test data variable mapping, hover over the key name and click on the icon that looks like a dash in a circle.</p>
+<p>Add a new data set by pressing the button labeled with &#8216;Add Data Set&#8217;. To remove a data set, click on the icon at the bottom of the data set column.</p>
+<blockquote class="note">
+<p class="note">Similar to Test Data files, data sets files are expected to reside in the same directory as the test case that uses it. Furthermore, mappings defined in data sets files override any mapping with the same key defined in the script&#8217;s test data file.</p>
+</blockquote>
+<h3>Performing Data-Driven Tests</h3>
+<p>To run a data-driven test, select the appropriate test case in the Script Explorer view on the left and execute it by either pressing the shortcut <kbd>X</kbd>, choosing the context-menu item <em>Run</em> or clicking the <em>Play</em> icon in the toolbar.</p>
+<p>A new dialog opens, prompting you to select the data-sets to use for the test run.</p>
+<p class="illustration"><a href="../img/user-manual/ScriptDev_ChooseDataSets.png"><img src="../img/user-manual/ScriptDev_ChooseDataSets-small.png" title="Choose Data Sets" alt="Choose Data Sets" /></a> <span class="caption">Choose Data Sets</span></p>
+<p>In case you select no data set or only one, the test will be run as usual. If more than one data set is selected, the test is executed as a batch test. Each run represents one iteration of the test with one of the chosen data-sets. The total number of test runs in the batch is equal to the number of chosen data-sets.</p>
+<p class="illustration"><a href="../img/user-manual/ScriptDev_DataDrivenTest.png"><img src="../img/user-manual/ScriptDev_DataDrivenTest-small.png" title="Perform Data-Driven Test" alt="Perform Data-Driven Test" /></a> <span class="caption">Perform Data-Driven Test</span></p>
+<blockquote class="note">
+<p class="note">When you select more than one test and execute them as batch test, you won&#8217;t be prompted to choose among data sets. All available data sets will be implicitly chosen for batch test execution.</p>
+</blockquote>
+<h2>Post-Steps for Test Cases</h2>
+<p>Commonly, test cases are responsible for maintaining proper application state. A test case needs to set up prerequisites in the beginning and restore the state before ending it&#8217;s execution. State changes done by a test might break subsequent tests or prevent the same test to be executed multiple times in a row. State persistence of web applications needs to be handled carefully. Test cases that comply with a well-defined application state or are completely independent reduce the risk of unforeseen and unwanted side effects.</p>
+<p>In case a test fails, it might be necessary to roll back application state changes that have been done previously by the test. Script Developer offers the possibility to define so called Post-Steps. Post-Steps usually occur after the actual test code and are performed in each and every case. The area entirely made up of these steps is called &#8220;Post-Steps Section&#8221; in Script Developer. Each of the steps in this section is guaranteed to be executed. (This excludes disabled commands and module calls not meeting a configured condition.)</p>
+<blockquote class="note">
+<p class="note">Post-Steps are supported for test cases only and there can be only one Post-Steps Section per test. Furthermore, exporting test cases to <span class="caps">XLT</span> Action <span class="caps">API</span> is currently not supported.</p>
+</blockquote>
+<p>To define Post-Steps in Script Developer, open the test case in the editor and select the command where the Post-Steps section should start at. Open the context-menu and choose &#8216;Toggle Post-Steps Marker&#8217;. The styling of the edit view will change. A red line will visualize where the Post-Steps section begins. A slightly different coloring of commands below this line indicates that they belong to the Post-Steps section of the test and their execution is guaranteed. Differentiating Post-Steps from conventional commands is easily possible with these visual cues.</p>
+<p class="illustration"><a href="../img/user-manual/ScriptDev_PostSteps.png"><img src="../img/user-manual/ScriptDev_PostSteps-small.png" title="Test Case with Post-Steps" alt="Test Case with Post-Steps" /></a> <span class="caption">Test Case with Post-Steps</span></p>
+<p>The beginning of the Post-Steps section can be moved arbitrarily by enabling (toggling) the marker at different commands of the test case. To remove the Post-Steps section, select the command right below the red line and toggle the Post-Steps marker once more. The commands in the Post-Step section will not be modified or removed when disabling the marker.</p>
+<p>To evaluate a command of the Post-Steps section &#8211; or any command of the test case for that matter &#8211; use the context menu to select a starting point somewhere in your test case and press the <em>Play</em> icon.</p>
+<p>As mentioned above, Script Developer will execute the commands of the Post-Steps section in each and every case. A successful test case is executed command after command, which of course includes the commands of the Post-Steps section. Otherwise, if a command fails that is not a Post-Step, Script Developer will jump to the Post-Steps section and continue the execution at its first command (below the marker line). In case one of the Post-Steps commands fails, Script Developer continues with the command that directly follows the failed one. Failed module calls of the Post-Steps section will abort the module execution and the next command (at the top-level) of the Post-Steps section is run. Script Developer will print the failure reason (if set) of the very command that fails.</p>
+<p>Post-Steps sections are also supported when replaying your test cases via generated <em>JUnit</em> wrapper classes or being exported to XLT&#8217;s <a href="04-framework.html#toc-xlt-scripting-api">Scripting <span class="caps">API</span></a>. In case of generated wrapper classes, the test scripts and contained Post-Steps sections are interpreted as usual. However, when exporting your tests to Java, all commands of the script will be converted to actual Java method calls and each script module will become a separate Java class. Each defined Post-Step of your test script will be a separate method annotated with JUnit&#8217;s <em>@After</em>. Therefore only test cases can have Post-Step sections, because after converting to Java similarly only test classes allow for <em>@After</em> annotations.</p>
+<h2>Export to Java</h2>
+<p>Scripting test cases using Script Developer is easy but limited. The scripts are strictly linear and the set of available commands can&#8217;t always replace a programming language. In certain cases, it is therefore useful to take advantage of powerful programming languages such as Java. Java provides both the structure to reuse code and a wide range of available libraries. Typically, you will have to switch to Java if your tests need to act randomly, for example, if you want the TBrowseCatalog test case to not always open the same catalog but a randomly chosen one instead. This behaviour is especially convenient for load tests meant to simulate realistic traffic.</p>
+<p>The setting <em>Generate JUnit wrapper class for test cases</em> only lets you generate Java wrapper classes to execute the <span class="caps">XML</span> scripts from outside Script Developer, which is not a real export.</p>
+<p>In contrast, <strong><em>Export</em></strong> translates the test-script file into Java syntax and generates one or more classes representing the test case and modules. When exporting to Java, you can choose the <span class="caps">API</span> used for the resulting code. You may either generate code based on the <a href="04-framework.html#toc-xlt-scripting-api"><span class="caps">XLT</span> Scripting <span class="caps">API</span></a> or code based on the <a href="04-framework.html#toc-xlt-action-api"><span class="caps">XLT</span> Action <span class="caps">API</span></a>.</p>
+<p>To export a script test case or module to Java, follow these steps:</p>
+<ol>
+	<li>Select the script(s) you want to export from the script explorer.</li>
+	<li>Choose <em>Export</em> from the context menu. The <em><span class="caps">XLT</span> &#8211; Script Export</em> dialog opens.</li>
+	<li>Define the source directory, package prefix, and <span class="caps">API</span> (or accept the suggested values).</li>
+	<li>Click <em>OK</em>.</li>
+</ol>
+<p>As a result, you find the generated Java code in the specified packages.</p>
+<p class="illustration"><a href="../img/user-manual/ScriptDev_Export.png"><img src="../img/user-manual/ScriptDev_Export-small.png" title="Export Script to Java" alt="Export Script to Java" /></a> <span class="caption">Export Script to Java</span></p>
+<ul>
+	<li><strong>Source Directory</strong>: The name of the directory where the generated Java source code is saved (<code>src</code> in most cases). The path is relative to the location of the current test suite.</li>
+	<li><strong>Package prefix</strong>: The package prefix for the generated Java classes. The resulting package is composed of this prefix and the script package of the exported test case.</li>
+	<li><strong><span class="caps">API</span></strong>: The <span class="caps">API</span> for the resulting Java code, <a href="04-framework.html#toc-xlt-scripting-api"><span class="caps">XLT</span> Scripting <span class="caps">API</span></a> or <a href="04-framework.html#toc-xlt-action-api"><span class="caps">XLT</span> Action <span class="caps">API</span></a>.</li>
+</ul>
+<blockquote class="note">
+<p class="note">The <em><span class="caps">XLT</span> Action <span class="caps">API</span></em> does not support <a href="03-scriptdeveloper.html#toc-advanced-topics">Java modules</a>. When you export to <em><span class="caps">XLT</span> Action <span class="caps">API</span></em>, possible calls to Java modules are omitted in the resulting code and a comment is inserted instead.</p>
+</blockquote>
+<h3>Export to <span class="caps">XLT</span> Scripting <span class="caps">API</span></h3>
+<p>The following example shows the <em>TSearch</em> test case of the demo test suite exported to <span class="caps">XLT</span> Scripting <span class="caps">API</span> code:</p>
+<pre class="java"><code class="java">/**
+ * &lt;p&gt;Simulates storefront search.&lt;/p&gt;
+ */
+public class TSearch extends AbstractWebDriverScriptTestCase
+{
+    /**
+     * Constructor.
+     */
+    public TSearch()
+    {
+        super(new XltDriver(true), "http://localhost:8080/");
+    }</code>
+
+<code class="java">    /**
+     * Executes the test.
+     *
+     * @throws Throwable if anything went wrong
+     */
+    @Test
+    public void test() throws Throwable
+    {
+        final OpenHomepage _openHomepage = new OpenHomepage();
+        _openHomepage.execute();</code>
+
+<code class="java">        //
+        // ~~~ Search ~~~
+        //
+        startAction("Search");
+        // Store a search phrase that gives results
+        store(resolve("${searchTerm_hits}"), "searchTerm");
+        // Execute the search (module call)
+        _search.execute(resolve("${searchTerm_hits}"));</code>
+
+<code class="java">        // Validate the entered search phrase is still visible in the input
+        assertText("id=searchTextValue", resolve("${searchTerm_hits}"));
+        // Validate presence of the search results page headline
+        assertElementPresent("id=titleSearchText");
+        // Validate the headline contains the search phrase
+        assertText("id=titleSearchText", 
+			resolve("glob:*Your results for your search: '${searchTerm_hits}'*"));
+		// validate result counter
+        assertText("id=totalProductCount", resolve("${resultProductCount}"));
+        //
+        // ~~~ ViewProduct ~~~
+        //
+        startAction("ViewProduct");
+        // Assert presence of one of the product thumbnails
+        assertElementPresent("id=product0");
+        // Store the name of the first product
+        storeText("css=#product0 .pInfo .pName", "productName");
+        // Click the product ilnk to open the product detail page
+        clickAndWait("css=#product0 img");
+        // Validate it's the correct product detail page
+        assertText("css=#titleProductName", resolve("${productName}"));
+    }</code></pre>
+<p>This is the code for the module <em>Search</em>, which is called by <em>TSearch</em>:</p>
+<pre class="java"><code class="java">/**
+ * &lt;p&gt;Searches the specified term.&lt;/p&gt;
+ */
+public class Search extends AbstractWebDriverModule
+{
+    /**
+     * {@inheritDoc}
+     */
+    @Override
+    protected void doCommands(final String...parameters) throws Exception
+    {
+        final String searchTerm = parameters[0];
+        // Enter the search phrase into the input
+		click("id=header-search-trigger");
+		waitForElementPresent("id=header-menu-search");        
+		type("id=s", searchTerm);
+        // Cick the search button to submit
+        clickAndWait("id=btnSearch");
+    }
+}</code></pre>
+<p>Note that the <span class="caps">XLT</span> Scripting <span class="caps">API</span> Java code is very similar to the script code. You can refactor the code as you like and directly use lower-level APIs, such as the WebDriver <span class="caps">API</span>, to implement advanced functionality. You may also add code to randomise your tests or to retrieve test data from other sources, like the <code>GeneralDataProvider</code>. See <a href="04-framework.html#toc-xlt-scripting-api"><span class="caps">XLT</span> Scripting <span class="caps">API</span></a> for details.</p>
+<h3>Export to <span class="caps">XLT</span> Action <span class="caps">API</span></h3>
+<p>When you export to the <span class="caps">XLT</span> Action <span class="caps">API</span>, the resulting code is based on separate classes for each action of a test case. The script modules are also translated into separate classes. If a script module contains more than one action, it will be represented by a &#8220;flow&#8221;.</p>
+<p>To make this approach work smoothly, it&#8217;s very important that you follow the <a href="03-scriptdeveloper.html#toc-script-modules">rules for defining actions in the context of modules</a>. If there is an action in a module and it&#8217;s not the first item of this module, then an automatically generated action will be inserted at the beginning of the exported module code.</p>
+<h2>Run Tests outside Script Developer</h2>
+<p>As soon as your test suite is complete, you can run the test cases outside Script Developer in headless mode. This especially comes in handy for functional tests and load tests as the <span class="caps">XLT</span> framework then is responsible for interpreting the script test cases and sending the respective requests to the system under test.</p>
+<p>It is always recommended to have a JUnit wrapper class for each script test case. This facilitates working with test scripts in your preferred <span class="caps">IDE</span> since these tools generally know how to work with JUnit classes.</p>
+<h3>Inside an <span class="caps">IDE</span></h3>
+<p>To check whether your scripts are running successfully in headless mode, open the test project in your favorite <span class="caps">IDE</span>, navigate to the JUnit test classes, choose one of them, and then run it as JUnit test.</p>
+<h3>Within Build Scripts</h3>
+<p>To run all or selected script test cases as part of your functional tests, you need to make the corresponding JUnit classes available to your test framework, such as a <code>junit</code> Ant task.</p>
+<p>Typically, it&#8217;s sufficient to add the script test case wrapper classes to the list of classes you want to be run by JUnit. If you prefer not to have a wrapper class for each test script, add the class <code>com.xceptance.xlt.api.engine.scripting.ScriptTestCaseSuite</code> to the list of JUnit classes. It is a generic representative for a set of test scripts. To tell the suite class which scripts are to be executed, use the property <code>com.xceptance.xlt.api.engine.scripting.ScriptTestCaseSuite.testCases</code> and list the script names as below:</p>
+<pre class="ini"><code class="ini">com.xceptance.xlt.api.engine.scripting.ScriptTestCaseSuite.testCases = TSearch TAddToCart</code></pre>
+<p>In any case, each test script is executed once and the results are part of the JUnit test report.</p>
+<blockquote class="note">
+<p class="note">See the demo test suite in directory <code>&lt;xlt&gt;/samples/testsuite-posters</code> for an example of how to configure Ant&#8217;s <code>junit</code> task to run script test cases.</p>
+</blockquote>
+<h3>As a Load Test</h3>
+<p>Performing load tests with your script test cases is easy. Register the JUnit classes with the <span class="caps">XLT</span> load test framework and use them in your load tests like regular Java-based tests. Note that if you do so, you need a JUnit wrapper around your test script. See <a href="08-loadtest.html">Load Testing</a> for details.</p>
+<h2>Test Suite Documentation</h2>
+<p><span class="caps">XLT</span> allows to automatically generate a comprehensive documentation of your Script Developer test suite. The output is a set of <span class="caps">HTML</span> pages that give an overview on the containing packages, test cases and modules with all relevant information like test steps, variables and test data with comments and descriptions.</p>
+<p>The scriptdoc generator is a command line tool which can be found in the <code>&lt;xlt&gt;/bin</code> directory. To generate a test suite documentation, use this command:</p>
+<pre class="bash"><code class="bash">create_scriptdoc.(sh/cmd) [options] &lt;testsuite-directory&gt;</code></pre>
+<p>By default generated documentation can be found in the given test suite directory. Using the <code>-o</code> option allows to specify an alternative output directory.</p>
+<ul>
+	<li><code>-o &lt;dir&gt;</code>: an alternative output directory (optional)</li>
+</ul>
+<p>For example:</p>
+<pre class="bash"><code class="bash">./create_scriptdoc.sh -o ../scriptdoc ../samples/testsuite-posters/</code></pre>
+<h2>Advanced Topics</h2>
+<h3>Test Suite Layout</h3>
+<p>A test suite managed by Script Developer typically looks like in the figure shown below.</p>
+<p class="illustration"><a href="../img/user-manual/ScriptDev_TestSuite.png"><img src="../img/user-manual/ScriptDev_TestSuite-small.png" title="Test Suite Layout" alt="Test Suite Layout" /></a> <span class="caption">Test Suite Layout</span></p>
+<p>Please notice that data-sets files &#8211; used for data-driven tests as described <a href="06-datadriven.html">here</a> &#8211; are listed as well although they are not processed by Script Developer. This is because refactoring operations (e.g. renaming a script) treat them in the same way as script data files. For example, when you rename a test case <code>TFoo</code> to <code>TBar</code> then the corresponding data-sets file <code>TFoo_datasets.&lt;ext&gt;</code> will be renamed to <code>TBar_datasets.&lt;ext&gt;</code> as well.</p>
+<h3>File Generation</h3>
+<p>The figure below shows the different types of files generated by Script Developer when wrapper class generation is enabled. The files generated during the export to Java are not displayed.</p>
+<p class="illustration"><a href="../img/user-manual/big-picture.png"><img src="../img/user-manual/big-picture-small.jpg" title="Script Developer File Generation" alt="Script Developer File Generation" /></a> <span class="caption">Script Developer File Generation</span></p>
+<p>In the following, the sample test case <em>TSearch</em> (available in the demo application <em>testsuite-posters</em>) serves as a reference to describe all of these file types in detail.</p>
+<h4>Test Script (TSearch.xml)</h4>
+<p>All the script files recorded by Script Developer are saved in <span class="caps">XML</span> format following the naming convention <em>Testcasename.xml</em>. With reference to our sample test case, <em>TSearch.xml</em> is the test case script file that consists of all the commands and modules calls being used. The syntax is very simple and easy to understand. See below for an example:</p>
+<pre class="xml"><code class="xml">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;testcase xmlns="http://xlt.xceptance.com/xlt-script/2" version="4" baseURL="http://localhost:8080"&gt;
+  &lt;description&gt;Simulates storefront search including search result browsing.&lt;/description&gt;
+  &lt;module name="posters.functional.modules.OpenHomepage"/&gt;
+  &lt;action name="Search-NoHits"/&gt;
+  &lt;command name="store" target="${searchTerm_noHits}" value="searchTerm"&gt;
+    &lt;comment&gt;Store a search phrase that does not return any search results&lt;/comment&gt;
+  &lt;/command&gt;
+  &lt;module name="posters.functional.modules.Search"&gt;
+    &lt;comment&gt;Execute the search (module call)&lt;/comment&gt;
+    &lt;parameter name="searchTerm" value="${searchTerm}"/&gt;
+  &lt;/module&gt;
+  &lt;command name="assertElementPresent" target="id=infoMessage"&gt;
+    &lt;comment&gt;Assert presence of info maessage element&lt;/comment&gt;
+  &lt;/command&gt;
+  &lt;command name="assertText" target="xpath=id('infoMessage')/div/strong" value="*Sorry! No results found matching your search. Please try again.*"&gt;
+    &lt;comment&gt;Validate the 'no results' message&lt;/comment&gt;
+  &lt;/command&gt;
+  &lt;action name="Search"/&gt;
+  &lt;command name="store" target="${searchTerm_1}" value="searchTerm"&gt;
+    &lt;comment&gt;Store a search phrase that gives results&lt;/comment&gt;
+  &lt;/command&gt;
+  &lt;module name="posters.functional.modules.Search"&gt;
+    &lt;comment&gt;Execute the search (module call)&lt;/comment&gt;
+    &lt;parameter name="searchTerm" value="${searchTerm}"/&gt;
+  &lt;/module&gt;
+  &lt;command name="assertText" target="id=searchText" value="${searchTerm}"&gt;
+    &lt;comment&gt;Validate the entered search phrase is still visible in the input&lt;/comment&gt;
+  &lt;/command&gt;
+  &lt;command name="assertElementPresent" target="id=titleSearchText"&gt;
+    &lt;comment&gt;Validate presence of the search results page headline&lt;/comment&gt;
+  &lt;/command&gt;
+  &lt;command name="assertText" target="id=titleSearchText" value="glob:*Your results for your search: '${searchTerm}'*"&gt;
+    &lt;comment&gt;Validate the headline contains the search phrase&lt;/comment&gt;
+  &lt;/command&gt;
+  &lt;action name="ViewProduct"/&gt;
+  &lt;command name="assertElementPresent" target="id=product0"&gt;
+    &lt;comment&gt;Assert presence of one of the product thumbnails&lt;/comment&gt;
+  &lt;/command&gt;
+  &lt;command name="storeText" target="id=product0Name" value="productName"&gt;
+    &lt;comment&gt;Store the name of the first product&lt;/comment&gt;
+  &lt;/command&gt;
+  &lt;command name="clickAndWait" target="//*[@id='product0']//img"&gt;
+    &lt;comment&gt;Click the product ilnk to open the product detail page&lt;/comment&gt;
+  &lt;/command&gt;
+  &lt;command name="assertText" target="id=titleProductName" value="${productName}"&gt;
+    &lt;comment&gt;Validate it's the correct product detail page &lt;/comment&gt;
+  &lt;/command&gt;
+  &lt;action name="Search"/&gt;
+  &lt;command name="store" target="${searchTerm_2}" value="searchTerm"&gt;
+    &lt;comment&gt;Store search phrase to repeat search&lt;/comment&gt;
+  &lt;/command&gt;
+  &lt;module name="posters.functional.modules.Search"&gt;
+    &lt;comment&gt;Execute the search (module call)&lt;/comment&gt;
+    &lt;parameter name="searchTerm" value="${searchTerm}"/&gt;
+  &lt;/module&gt;
+  &lt;command name="assertText" target="id=searchText" value="${searchTerm}"&gt;
+    &lt;comment&gt;Validate the entered search phrase is still visible in the input&lt;/comment&gt;
+  &lt;/command&gt;
+  &lt;command name="assertElementPresent" target="id=titleSearchText"&gt;
+    &lt;comment&gt;Validate presence of the search results page headline&lt;/comment&gt;
+  &lt;/command&gt;
+  &lt;command name="assertText" target="id=titleSearchText" value="glob:*Your results for your search: '${searchTerm}'*"&gt;
+    &lt;comment&gt;Validate the headline contains the search phrase&lt;/comment&gt;
+  &lt;/command&gt;
+&lt;/testcase&gt;</code></pre>
+<h4>Test Data (TSearch_data.xml)</h4>
+<p>Separating test data from script code by extracting the recorded values into data files is a very useful feature. The naming convention being used is <em>Testcasename_data.xml</em>, so <em>TSearch_data.xml</em> represents the data file of the <em>TSearch</em> test case. A data file looks like this:</p>
+<pre class="xml"><code class="xml">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;data xmlns="http://xlt.xceptance.com/xlt-script-data"&gt;
+  &lt;searchTerm_1&gt;bear&lt;/searchTerm_1&gt;
+  &lt;searchTerm_2&gt;red bear&lt;/searchTerm_2&gt;
+  &lt;searchTerm_noHits&gt;gjP#IQ!&lt;/searchTerm_noHits&gt;
+&lt;/data&gt;</code></pre>
+<h4>Test Data Sets (TSearch_datasets.xml)</h4>
+<p>Similar to test data files, the naming convention for data sets files is <em>Testcasename_datasets.xml</em>, such that <em>TSearch_datasets.xml</em> defines the data sets for the test case <em>TSearch</em>.  A typical data sets file looks like the following:</p>
+<pre class="xml"><code class="xml">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;data-sets&gt;
+  &lt;data-set&gt;
+    &lt;searchTerm_1&gt;bear&lt;/searchTerm_1&gt;
+    &lt;searchTerm_2&gt;red bear&lt;/searchTerm_2&gt;
+    &lt;searchTerm_noHits&gt;gjP#IQ!&lt;/searchTerm_noHits&gt;
+  &lt;/data-set&gt;
+  &lt;data-set&gt;
+    &lt;searchTerm_1&gt;bär&lt;/searchTerm_1&gt;
+    &lt;searchTerm_2&gt;roter bär&lt;/searchTerm_2&gt;
+    &lt;searchTerm_noHits&gt;heizöhlrückstossdämpfung&lt;/searchTerm_noHits&gt;
+  &lt;/data-set&gt;
+&lt;/data-sets&gt;</code></pre>
+<h4>JUnit Test Case Wrapper (TSearch.java)</h4>
+<p>This file is generated when you enable wrapper class generation for your test cases. The generation of wrapper classes lets you run your script files outside the browser via the <span class="caps">XLT</span> framework that simulates a headless browser. This mode suits unattended test case execution, such as functional or load testing.</p>
+<h4>Custom Module (ComplexUserLoggedInCheck.java)</h4>
+<p>If some special constructs can&#8217;t be expressed due to the basic script syntax, you may create your own custom modules and use them inside your scripts. Custom modules are implemented in Java. See section &#8220;Creating Java Modules&#8221; below for an example.</p>
+<h3>Macros</h3>
+<p>When you create and run regression tests with Script Developer, you sometimes need to have unique data available to run a test over and over again. For example, user account creation always requires a new email address since the target system accepts each address only once.</p>
+<p>For the generation of timestamps and random strings or numbers, the following macros are available:</p>
+<ul>
+	<li><strong><span class="caps">NOW</span></strong>: returns the current time as time stamp (number of milliseconds elapsed since 1970-01-01)</li>
+	<li><strong><span class="caps">RANDOM</span>.String(length)</strong>: returns a random string of the given length</li>
+	<li><strong><span class="caps">RANDOM</span>.Number(max)</strong>: returns a randomly chosen integer between <em>0</em> (inclusive) and <em>max</em> (exclusive)</li>
+	<li><strong><span class="caps">RANDOM</span>.Number(min,max)</strong>: returns a randomly chosen integer between <em>min</em> (inclusive) and <em>max</em> (inclusive)</li>
+</ul>
+<p>With the <strong>${variable}</strong> notation, you can use macros in any command. If you want to input a random or unique email address, you could use one of the code lines below as a value in the <em>type</em> command:</p>
+<pre class="ini"><code class="ini">${RANDOM.String(5)}@anyserver.com</code></pre>
+<p>or</p>
+<pre class="ini"><code class="ini">${NOW}@anyserver.com</code></pre>
+<p>The resulting email addresses might look like <em>zghfu@anyserver.com</em> or <em>1295519733483@anyserver.com</em>.</p>
+<p>If you use one of these macros as a value for a module parameter, the random string or time stamp is created once for a test run and can then be used in several commands of the module with an identical value. For example, you can fill in a form with a random name, submit the form, and then validate the name on the confirmation page. This will only work if filling in the form, submitting it, and the validation are all part of the same module. The name has to be defined as a module parameter and referenced in the relevant commands with <em>@{name}</em>, where <em>${RANDOM.String(8)}</em> is the provided value for the module parameter <em>name</em>.</p>
+<h3>Creating Java Modules</h3>
+<p>The commands supported by Script Developer are sufficient to create working test scripts. However, there are some special constructs that can&#8217;t be expressed due to its restricted script syntax, for example:</p>
+<ul>
+	<li>Combining assertions by a logical OR.</li>
+	<li>Performing advanced assertions which are not available as commands yet.</li>
+	<li>Accessing and validating downloaded files.</li>
+</ul>
+<p>To overcome such limitations, you can create custom modules for test cases meant to run outside Script Developer (as a load test, as JUnit test in Eclipse, or integrated in a build process). The Java modules are skipped when you run the test case in Script Developer.</p>
+<p>Custom modules are written in Java by implementing the <code>WebDriverCustomModule</code> interface. This interface forces you to apply the required <code>execute</code> method. See below for an example:</p>
+<pre class="java"><code class="java">public class ComplexUserLoggedInCheck implements WebDriverCustomModule
+{
+    public void execute(final WebDriver webDriver, final String... parameters)
+    {
+        final WebElement webElement = webDriver.findElement(By.xpath("id('sidebar')/div[1]/div[1]/span"));
+        final String userName = parameters[0];</code>
+
+<code class="java">        Assert.assertTrue("Expected user name not found: " + userName,
+                          webElement.getText().contains(userName));
+    }
+}</code></pre>
+<p>Make sure the custom module class is compiled and made available on your test suite&#8217;s class path.</p>
+<p>To integrate Java custom modules into test scripts, you first need to register them with Script Developer. You do so by creating a new Java module script:</p>
+<ol>
+	<li>Choose <em>New | Java Module</em> from the script explorer context menu. The <em>Edit Module Details</em> dialog comes up (see the figure below).</li>
+	<li>Fill out the necessary fields as described below.</li>
+	<li>Close the dialog.</li>
+</ol>
+<p>The new Java module is now available in the script explorer and can be used in other scripts (test cases or modules) just like any other script module. Note that Java modules can&#8217;t be edited and will be skipped when you run the test case inside Script Developer.</p>
+<p class="illustration"><a href="../img/user-manual/ScriptDev_NewJavaModule.png"><img src="../img/user-manual/ScriptDev_NewJavaModule-small.png" title="New Java Module" alt="New Java Module" /></a> <span class="caption">New Java Module</span></p>
+<ul>
+	<li><strong>Name</strong>: The name of the new Java module.</li>
+	<li><strong>Script package</strong>: The script package for the new Java module.</li>
+	<li><strong>Full Class Name</strong>: The full class name (including package) of the Java class implementing the <code>WebDriverCustomModule</code> interface.</li>
+	<li><strong>Tags</strong>: Tags to group modules and make them easier to find. Tags have to be separated by a comma. The list of available modules can be filtered by tags.</li>
+	<li><strong>Description</strong>: A description of the module.</li>
+	<li><strong>Parameters</strong>: The name of the parameters the module expects when being executed.</li>
+</ul>
+<p>If you&#8217;ve defined module parameters, you need to provide a value for each parameter when using the Java module in a test case. You access the first of these parameters in your Java code by reading the value from <code>parameters[0]</code>, the second one by reading the value from <code>parameters[1]</code>, and so on. The name of the parameters defined in the Java module script of Script Developer is not displayed in Java code; only the order of the parameters is relevant.</p>
+<p>Note that you should use Java modules only if absolutely necessary because their execution will be skipped when you run the test case in Script Developer. If Script Developer comes across a Java module while replaying a script, it simply ignores it (the status icon turns grey) and continues with the next command. The next command might or might not succeed, depending on what the module does with the page. If the module leaves the page unchanged (that is it performs advanced validations only), the rest of the script will run successfully. However, if the module does change the page or loads a new page, the commands following the module are likely to fail. That&#8217;s why Java modules are mainly used for complex validations.</p>
+<blockquote class="note">
+<p class="note">Feel free to let us know about extensions you create because we might include them in a future release.</p>
+</blockquote>
+<h3>Assertions on Form Controls</h3>
+<p>When making assertions on form controls, it&#8217;s very helpful to know when to choose which kind of assertion. To be more specific, for a given form control you have to decide whether to use one of the <code>*Value</code> commands or one of the <code>*Text</code> commands.</p>
+<p>For each affected form control, the table below lists the input that will be used when checking the element either by a <code>*Value</code> or a <code>*Text</code> assertion. The input can be the element&#8217;s text content <em>T</em> or the element&#8217;s <code>value</code> attribute <em>V</em>.</p>
+<table>
+	<tr>
+		<td></td>
+		<th><code>*Value</code> </th>
+		<th><code>*Text</code> </th>
+	</tr>
+	<tr>
+		<td> textarea </td>
+		<td> <em>T</em> </td>
+		<td> <em>T</em> </td>
+	</tr>
+	<tr>
+		<td> text-input </td>
+		<td> <em>V</em> </td>
+		<td> <em>T</em> </td>
+	</tr>
+	<tr>
+		<td> submit-input </td>
+		<td> <em>V</em> </td>
+		<td> &#8211; </td>
+	</tr>
+	<tr>
+		<td> button </td>
+		<td> <em>V</em> </td>
+		<td> <em>T</em> </td>
+	</tr>
+	<tr>
+		<td> option </td>
+		<td> <em>V</em> (<em>T</em> if <code>value</code> attribute not set) </td>
+		<td> <em>T</em> </td>
+	</tr>
+	<tr>
+		<td> radio-input </td>
+		<td> <em>V</em> </td>
+		<td> &#8211; </td>
+	</tr>
+	<tr>
+		<td> checkbox-input </td>
+		<td> <em>V</em> </td>
+		<td> &#8211; </td>
+	</tr>
+</table>
+<h3>Keyboard Shortcuts</h3>
+<table>
+	<tr>
+		<th>Context</th>
+		<th>Command</th>
+		<th>Keyboard Shortcut</th>
+	</tr>
+	<tr>
+		<td style="vertical-align:top;" rowspan="16">Global</td>
+		<td>Increase Replay Speed</td>
+		<td>+</td>
+	</tr>
+	<tr>
+		<td>Decrease Replay Speed</td>
+		<td>-</td>
+	</tr>
+	<tr>
+		<td>Replay</td>
+		<td>Alt+F5</td>
+	</tr>
+	<tr>
+		<td>Single Step Forward</td>
+		<td>Alt+F6</td>
+	</tr>
+	<tr>
+		<td>Pause</td>
+		<td>Alt+F7</td>
+	</tr>
+	<tr>
+		<td>Stop</td>
+		<td>Alt+F8</td>
+	</tr>
+	<tr>
+		<td>Record</td>
+		<td>Alt+F9</td>
+	</tr>
+	<tr>
+		<td>Reload Active Script</td>
+		<td>F5</td>
+	</tr>
+	<tr>
+		<td>Reload All Scripts</td>
+		<td>Shift+F5</td>
+	</tr>
+	<tr>
+		<td>Save Active Script</td>
+		<td>Ctrl+S</td>
+	</tr>
+	<tr>
+		<td>Save All Scripts</td>
+		<td>Ctrl+Shift+S</td>
+	</tr>
+	<tr>
+		<td>Undo</td>
+		<td>Ctrl+Z</td>
+	</tr>
+	<tr>
+		<td>Redo</td>
+		<td>Ctrl+Shift+Z</td>
+	</tr>
+	<tr>
+		<td>Close Active Tab</td>
+		<td>Ctrl+W</td>
+	</tr>
+	<tr>
+		<td>Close All Tabs</td>
+		<td>Ctrl+Shift+W</td>
+	</tr>
+	<tr>
+		<td>Focus filter field</td>
+		<td>Ctrl+F</td>
+	</tr>
+	<tr>
+		<td style="vertical-align:top;" rowspan="16">Script Explorer</td>
+		<td>New Test Case</td>
+		<td>Ctrl+Shift+T</td>
+	</tr>
+	<tr>
+		<td>New Script Module</td>
+		<td>Ctrl+Shift+M</td>
+	</tr>
+	<tr>
+		<td>New Script Package</td>
+		<td>Ctrl+Shift+P</td>
+	</tr>
+	<tr>
+		<td>Run</td>
+		<td>X</td>
+	</tr>
+	<tr>
+		<td>Run as Batch Test</td>
+		<td>Shift+X</td>
+	</tr>
+	<tr>
+		<td>Edit</td>
+		<td>Return</td>
+	</tr>
+	<tr>
+		<td>Edit Details</td>
+		<td>Alt+Return</td>
+	</tr>
+	<tr>
+		<td>Rename</td>
+		<td>Alt+R</td>
+	</tr>
+	<tr>
+		<td>Copy</td>
+		<td>Ctrl+C</td>
+	</tr>
+	<tr>
+		<td>Paste</td>
+		<td>Ctrl+V</td>
+	</tr>
+	<tr>
+		<td>Refresh</td>
+		<td>F5</td>
+	</tr>
+	<tr>
+		<td>Enable/Disable Test Case</td>
+		<td>Ctrl+Shift+C</td>
+	</tr>
+	<tr>
+		<td>Export</td>
+		<td>Shift+Alt+E</td>
+	</tr>
+	<tr>
+		<td>Manage Test Data</td>
+		<td>Alt+D</td>
+	</tr>
+	<tr>
+		<td>Edit Data Set</td>
+		<td>Shift+Alt+D</td>
+	</tr>
+	<tr>
+		<td>Delete</td>
+		<td>Del</td>
+	</tr>
+	<tr>
+		<td style="vertical-align:top;" rowspan="20">Script Editor</td>
+		<td>Insert New Action (before currently selected command)</td>
+		<td>Ctrl+O</td>
+	</tr>
+	<tr>
+		<td>Insert New Command (before currently selected command)</td>
+		<td>Insert</td>
+	</tr>
+	<tr>
+		<td>Insert New Command (after currently selected command)</td>
+		<td>Shift+Insert</td>
+	</tr>
+	<tr>
+		<td>Insert New Module (before currently selected command)</td>
+		<td>Ctrl+M</td>
+	</tr>
+	<tr>
+		<td>Insert New Comment (before currently selected command)</td>
+		<td>Ctrl+P</td>
+	</tr>
+	<tr>
+		<td>Edit</td>
+		<td>Return</td>
+	</tr>
+	<tr>
+		<td>En/Disable Module/Command</td>
+		<td>Ctrl+Shift+C</td>
+	</tr>
+	<tr>
+		<td>Toggle Start Point</td>
+		<td>S</td>
+	</tr>
+	<tr>
+		<td>Toggle Breakpoint</td>
+		<td>B</td>
+	</tr>
+	<tr>
+		<td>Clear All Breakpoints</td>
+		<td>Shift+B</td>
+	</tr>
+	<tr>
+		<td>Execute Command</td>
+		<td>X</td>
+	</tr>
+	<tr>
+		<td>Cut</td>
+		<td>Ctrl+X</td>
+	</tr>
+	<tr>
+		<td>Copy</td>
+		<td>Ctrl+C</td>
+	</tr>
+	<tr>
+		<td>Paste</td>
+		<td>Ctrl+V</td>
+	</tr>
+	<tr>
+		<td>Delete</td>
+		<td>Del</td>
+	</tr>
+	<tr>
+		<td>Select All Commands</td>
+		<td>Ctrl+A</td>
+	</tr>
+	<tr>
+		<td>Move Command Up</td>
+		<td>Alt+Up</td>
+	</tr>
+	<tr>
+		<td>Move Command Down</td>
+		<td>Alt+Down</td>
+	</tr>
+	<tr>
+		<td>Multiple Select</td>
+		<td>Shift+Up/Down</td>
+	</tr>
+	<tr>
+		<td>Multiple Select Selective</td>
+		<td>Ctrl+Up/Down/Spacebar</td>
+	</tr>
+</table>
+            <div id="footer">
+	<p>Copyright © 2017 by <a href="http://www.xceptance.com/">Xceptance Software Technologies</a>. All rights reserved.</p>
+</div>
+
+
+        </div>
+    </div>
+</div>
+
+<!-- Generate the part of the TOC that contains the headings of the currently displayed page -->
+<!-- createToc (selectedHeadlines, classesTarget, classes )-->
+
+<script>createToc('h1,h2,h3', '#toc > ul', '#sidenav nav sidenav')</script>
+
+
+</body>
+
+</html>

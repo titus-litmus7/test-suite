@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testcase xmlns="http://xlt.xceptance.com/xlt-script/2" version="7" baseURL="https://dev05-na01-tatcha.demandware.net">
+  <action name="OpenStartPage"/>
+  <command name="open" value="/on/demandware.store/Sites-SiteGenesis-Site/en_US"/>
+  <action name="TaddNewCC-0"/>
+  <command name="click" target="//*[@id='navigation']//i[contains(@class,'fa') and contains(@class,'fa-user')][1]"/>
+  <command name="clickAndWait" target="link=Login"/>
+  <action name="TaddNewCC-1"/>
+  <command name="click" target="id=dwfrm_login_username_d0bpngmepheo"/>
+  <command name="type" target="id=dwfrm_login_username_d0bpngmepheo" value="titus@tatcha.com"/>
+  <command name="type" target="id=dwfrm_login_password_d0lpevfsjdjc" value="Titus_007"/>
+  <command name="clickAndWait" target="document.forms[1].dwfrm_login_login"/>
+  <action name="TaddNewCC-2"/>
+  <command name="clickAndWait" target="//*[@id='primary']//i[contains(@class,'fa') and contains(@class,'fa-money')][1]"/>
+  <action name="TaddNewCC-3"/>
+  <command name="click" target="link=Add Credit Card"/>
+  <command name="type" target="id=braintreeCardOwner" value="Titus QA Automated"/>
+  <command name="selectFrame" target="id=braintree-hosted-field-number"/>
+  <command name="type" target="id=credit-card-number" value="6304 0000 0000 0000"/>
+  <command name="click" target="id=cvv"/>
+  <command name="selectFrame" target="relative=top"/>
+  <command name="selectFrame" target="id=braintree-hosted-field-cvv"/>
+  <command name="type" target="id=cvv" value="123"/>
+  <command name="click" target="id=expiration"/>
+  <command name="selectFrame" target="relative=top"/>
+  <command name="selectFrame" target="id=braintree-hosted-field-expirationDate"/>
+  <command name="type" target="id=expiration" value="04 / 19"/>
+  <command name="selectFrame" target="relative=top"/>
+  <command name="clickAndWait" target="document.forms[15].elements[11]"/>
+  <action name="TaddNewCC-4"/>
+  <command name="click" target="id=braintreeCardOwner"/>
+  <command name="type" target="id=braintreeCardOwner" value="Sample Card1"/>
+  <command name="selectFrame" target="id=braintree-hosted-field-number"/>
+  <command name="type" target="id=credit-card-number" value="6304 0000 0000 0000"/>
+  <command name="click" target="id=cvv"/>
+  <command name="selectFrame" target="relative=top"/>
+  <command name="selectFrame" target="id=braintree-hosted-field-cvv"/>
+  <command name="type" target="id=cvv" value="123"/>
+  <command name="click" target="id=expiration"/>
+  <command name="selectFrame" target="relative=top"/>
+  <command name="selectFrame" target="id=braintree-hosted-field-expirationDate"/>
+  <command name="type" target="id=expiration" value="07 / 20"/>
+  <command name="selectFrame" target="relative=top"/>
+  <command name="clickAndWait" target="document.forms[15].elements[11]"/>
+  <action name="TaddNewCC-5"/>
+  <command name="type" target="id=braintreeCardOwner" value="Sample Card1"/>
+  <command name="selectFrame" target="id=braintree-hosted-field-number"/>
+  <command name="type" target="id=credit-card-number" value="6304 0000 0000 0000"/>
+  <command name="click" target="id=braintreeCardOwner"/>
+  <command name="selectFrame" target="relative=top"/>
+  <command name="type" target="id=braintreeCardOwner" value="Sample Card1"/>
+  <command name="selectFrame" target="id=braintree-hosted-field-number"/>
+  <command name="type" target="id=credit-card-number" value="6304 0000 0000 0000"/>
+  <command name="selectFrame" target="relative=top"/>
+  <command name="selectFrame" target="id=braintree-hosted-field-cvv"/>
+  <command name="type" target="id=cvv" value="123"/>
+  <command name="selectFrame" target="relative=top"/>
+  <command name="selectFrame" target="id=braintree-hosted-field-expirationDate"/>
+  <command name="type" target="id=expiration" value="07 / 22"/>
+  <command name="selectFrame" target="relative=top"/>
+  <command name="clickAndWait" target="document.forms[1].elements[11]"/>
+  <action name="TaddNewCC-6"/>
+  <command name="click" target="//*[@id='navigation']//i[contains(@class,'fa') and contains(@class,'fa-user')][1]"/>
+  <command name="clickAndWait" target="link=LOGOUT"/>
+</testcase>

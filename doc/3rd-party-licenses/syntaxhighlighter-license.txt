@@ -1,0 +1,5 @@
+SyntaxHighlighter is licenced under LGPL 3 (http://www.gnu.org/copyleft/lesser.html) 
+and can be found at: http://alexgorbatchev.com/wiki/SyntaxHighlighter
+
+
+

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testcase xmlns="http://xlt.xceptance.com/xlt-script/2" version="7" id="101" baseURL="https://dev05-na01-tatcha.demandware.net">
+  <action name="OpenStartPage"/>
+  <command name="open" value="/s/SiteGenesis/home?lang=en_US"/>
+  <action name="AddToCart-0"/>
+  <command name="click" target="//*[@id='navigation']//i[contains(@class,'fa') and contains(@class,'fa-user')][1]"/>
+  <command name="clickAndWait" target="//*[@id='navigation']//a[contains(@class,'null')][1]"/>
+  <action name="AddToCart-1"/>
+  <command name="clickAndWait" target="//*[@id='primary']//i[contains(@class,'fa') and contains(@class,'fa-money')][1]"/>
+  <!-- <action name="AddToCart-2"/>
+  <command name="click" target="link=Add Credit Card"/>
+  <command name="type" target="//div[@id='braintreeCreditCardFieldsContainer']/div[1]/div/div[1]/input" value="Neetu Thomas"/>
+  <command name="selectFrame" target="id=braintree-hosted-field-number"/>
+  <command name="type" target="id=credit-card-number" value="4111 1111 1111 1111"/>
+  <command name="selectFrame" target="relative=top"/>
+  <command name="selectFrame" target="id=braintree-hosted-field-cvv"/>
+  <command name="type" target="id=cvv" value="123"/>
+  <command name="selectFrame" target="relative=top"/>
+  <command name="selectFrame" target="id=braintree-hosted-field-expirationDate"/>
+  <command name="type" target="id=expiration" value="12 / 19"/>
+  <command name="selectFrame" target="relative=top"/>
+  <command name="click" target="//*[@id='addCreditCardForm']/fieldset/div[4]/button[1]"/> -->
+</testcase>

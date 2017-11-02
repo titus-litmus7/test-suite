@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<html>
+
+
+
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>4.6.x</title>
+  <meta name="description" content="Xceptance LoadTest - XLT, Documentation, Manual, Howto, FAQ">
+
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,700,400italic,300italic" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:100,300,400,500,700" rel="stylesheet" type="text/css">
+
+  <link href="../css/font-awesome.min.css" rel="stylesheet" media="all"  type="text/css" />
+  <link href="../css/lightbox.css" rel="stylesheet" media="all"  type="text/css" />
+
+  <link href="../css/highlightjs/default.css" rel="stylesheet" type="text/css" />
+  <link href="../css/highlightjs/mono-blue.css" rel="stylesheet" type="text/css" />
+
+  <link href="../css/xltdoc.css" rel="stylesheet" media="all"  type="text/css" />
+
+  <script type="text/javascript" src="../js/jquery-1.11.1.min.js"></script>
+  <script type="text/javascript" src="../js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="../js/toc.min.js"></script>
+  <script type="text/javascript" src="../js/lightbox.min.js"></script>
+  <script type="text/javascript" src="../js/headroom.min.js"></script>
+
+  <!-- <script type="text/javascript" src="../js/jquery.scrollIntoView.min.js"></script -->
+  <script type="text/javascript" src="../js/xltdoc.js"></script>
+
+  <script type="text/javascript" src="../js/highlight.pack.js"></script>
+</head>
+
+
+<body data-spy="scroll" data-target="#toc" data-offset="100" class="layout-manual ">
+
+    
+
+
+<!-- Fixed navbar -->
+<nav id="header" class="navbar navbar-default">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <a class="site-title" href="../index.html">
+            <img src="../img/XLTDoc-logo-transparent-165x82.png" id="product-logo" alt="XLT Product logo" title="Xceptance LoadTest"/>
+        </a>
+    </div>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    <div id="navbar" class="navbar-collapse collapse">
+        <!-- Links to external pages -->
+        <ul id="navbar-right" class="nav navbar-nav navbar-right navbar-text">
+	<li>
+		<a href="https://lab.xceptance.de/releases/xlt/latest/apidoc/" target="_blank" title="XLT API Documentation">
+			<i class="fa fa-external-link"></i>API</a>
+	</li>
+
+    <li>
+ 		<a href="https://ask.xceptance.de/" target="_blank" title="XLT Community Forum">
+ 			<i class="fa fa-external-link"></i>Forum</a>
+ 	</li> 
+    
+	<li>
+		<a href="https://www.xceptance.com/xlt/" target="_blank" title="XLT Website">
+			<i class="fa fa-external-link"></i>XLT Home</a>		
+	</li>			
+</ul>
+
+
+        <ul id="navbar-left" class="nav navbar-nav navbar-text">
+            <li class="inactive"><a href="../getting-started/index.html">Getting Started</a></li>
+            <li class="inactive"><a href="../user-manual/index.html">User Manual</a></li>
+            <li class="inactive"><a href="../how-to/index.html">How-To</a></li>
+            <li class="active"><a href="../release-notes/index.html">Release Notes</a></li>
+            <li class="inactive"><a href="../license.html">License</a></li>
+        </ul>
+
+    </div><!--/.nav-collapse -->
+
+</nav>
+
+
+
+
+<div id="breadcrumb" class="navbar navbar-default">
+  <div>
+    <ol class="breadcrumb">
+      
+
+      
+        <li><a href="../index.html"><i class="fa fa-home"></i>Docs</a></li>
+          
+            
+            <li><a href="../release-notes/index.html">Release Notes</a></li>
+          
+      
+
+      <li class="active">4.6.x</li>
+    </ol>
+  </div>
+</div>
+
+
+    
+<div id="main" class="main container-fluid">
+    <div class="row">
+        <div class="hidden-xs col-sm-4 col-md-3 sidenav-col">
+            <nav id="sidenav" class="sidenav nav">
+                <!-- TOC of all available files/pages in folder  -->
+                <ul class="nav sidenav">
+                
+
+
+
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        
+            <li>
+            
+                <a href="../release-notes/4.9.x.html">4.9.x</a>
+                
+            </li>
+        
+    
+
+    
+        
+            <li>
+            
+                <a href="../release-notes/4.8.x.html">4.8.x</a>
+                
+            </li>
+        
+    
+
+    
+        
+            <li>
+            
+                <a href="../release-notes/4.7.x.html">4.7.x</a>
+                
+            </li>
+        
+    
+
+    
+        
+            
+                <!-- Table of content from page headings for the currently loaded file-->
+                <li class="current-page">
+                    <a class="current-page" href="">4.6.x</a>
+                    <!-- Container for page headings TOC -->
+                    <div id="toc" class="sidenav"></div>
+                </li>
+            
+        
+    
+
+    
+        
+            <li>
+            
+                <a href="../release-notes/4.5.x.html">4.5.x</a>
+                
+            </li>
+        
+    
+
+    
+        
+            <li>
+            
+                <a href="../release-notes/4.4.x.html">4.4.x</a>
+                
+            </li>
+        
+    
+
+    
+        
+            <li>
+            
+                <a href="../release-notes/4.3.x.html">4.3.x</a>
+                
+            </li>
+        
+    
+
+    
+        
+            <li>
+            
+                <a href="../release-notes/4.2.x.html">4.2.x</a>
+                
+            </li>
+        
+    
+
+    
+        
+            <li>
+            
+                <a href="../release-notes/4.1.x.html">4.1.x</a>
+                
+            </li>
+        
+    
+
+    
+        
+            <li>
+            
+                <a href="../release-notes/4.0.x.html">4.0.x</a>
+                
+            </li>
+        
+    
+
+    
+        
+            <li>
+            
+                <a href="../release-notes/3.3.x.html">3.3.x</a>
+                
+            </li>
+        
+    
+
+    
+        
+            <li>
+            
+                <a href="../release-notes/3.2.x.html">3.2.x</a>
+                
+            </li>
+        
+    
+
+
+                </ul>
+            </nav>
+        </div>
+
+        <div id="content" class="col-xs-12 col-sm-8 col-md-9 content-col">
+            <h2><span class="caps">XLT</span> 4.6.6</h2>
+<h3>Script Developer</h3>
+<h4>Newlines in value of type command get lost when (re)loading script (#2705)</h4>
+<p>Text to be entered into <code>&lt;textarea&gt;</code> elements is usually made up of multiple lines. Although replay and saving of type commands that perform such an action works fine in Script Developer, all white-space characters were normalized upon (re)load of the script, causing all newlines in the type command to be eliminated. This is fixed now.</p>
+<h4>Loading scripts does not finish sporadically (#2713)</h4>
+<p>When loading huge test suites containing thousands of scripts, it might happen that this process does not finish at all and Script Developer becomes stuck. This phenomenon could be observed only sporadically and restarting Script Developer did help in some cases. Fixed.</p>
+<h3>Framework</h3>
+<h4>Empty url() statements break parsing of <span class="caps">URL</span> strings from <span class="caps">CSS</span> content (#2706)</h4>
+<p>If <span class="caps">XLT</span> is configured to load static content such as images, JavaScript, and <span class="caps">CSS</span> files, it parses the received content for <code>url</code> statements used in <span class="caps">CSS</span> to specify locations of additional resources to be loaded. Unfortunately, statements that do not specify any <span class="caps">URL</span>, but are just empty, e.g. <code>url('')</code> or <code>url()</code>, were not parsed correctly and caused invalid URLs to be loaded. This is fixed now.</p>
+<h4>Interpreting storeTitle command causes ScriptException (#2714)</h4>
+<p>The easiest way to execute script test cases outside of Script Developer is to let it generate JUnit wrapper classes and run them inside your favorite <span class="caps">IDE</span> (Eclipse, <span class="caps">IDEA</span>, etc.). When using this mode, any <code>storeTitle</code> command caused the test case to fail with an exception saying that the name of the variable to which the title should be stored is invalid, regardless of its actual value. This has been fixed and such an exception will now be thrown if and only if the specified variable name is indeed invalid.</p>
+<blockquote class="note">
+<p class="note">Please note that only the interpreter mode was affected. Running the same test case in Script Developer or as exported variant succeeded.</p>
+</blockquote>
+<h4>Update to latest WebDriver (#2719)</h4>
+<p>Selenium WebDriver has been updated to v2.53.1. This version fixes a compatibility issue with Firefox 47.</p>
+<blockquote class="note">
+<p class="note">Please note that Firefox 47 needs to be updated to version 47.0.1 for the fix in Selenium to become effective.</p>
+</blockquote>
+<h4>Client performance data stored to directory UnknownUser (#2707)</h4>
+<p>When running a test case via <code>XltFirefoxDriver</code> either from your <span class="caps">IDE</span> or as plain JUnit test, the browser performance data files were written to directory <em>UnknownUser</em> instead of the one named after the test case. Fixed.</p>
+<h4>Implausible request timing values recorded by Firefox add-on (#2721)</h4>
+<p>Unfortunately, the request timing values recorded by XLT&#8217;s Firefox add-on used to measure client performance were not always correct. For example, the following oddities could be observed:</p>
+<ul>
+	<li>connect time was twice as big as the <span class="caps">TTFB</span></li>
+	<li>small connect, send, wait (server busy), and receive time, but large <span class="caps">TTFB</span></li>
+	<li>incorrect send time (always zero)</li>
+	<li><span class="caps">DNS</span> lookup time and blocking time were included in connect time</li>
+</ul>
+<p>This is fixed now.</p>
+<h4>Method sendKeys not working for Chrome in headless mode (#2723)</h4>
+<p>When using the Chrome/Chromium browser in headless mode (via <code>XltChromeDriver</code>), it will be run with an own <code>Xvfb</code> display. Nevertheless, certain operations (esp. <code>sendKeys()</code>) might trigger errors like the following:</p>
+<pre><code>unknown error: an X display is required for keycode conversions, consider using Xvfb</code></pre>
+<p>This was because the driver server binary <code>chromedriver</code> needs to be run with a virtual display as well. Fixed now.</p>
+<h2><span class="caps">XLT</span> 4.6.5</h2>
+<h3>Script Developer</h3>
+<h4>Support Firefox 47 (#2699)</h4>
+<p>Script Developer has been made compatible with Firefox 47, which was released on June 6, 2016. Script Developer runs on Firefox 38/<span class="caps">ESR</span> up to 47 now.</p>
+<h4>ID field is not prepopulated when editing a script module (#2679)</h4>
+<p>Since <span class="caps">XLT</span> 4.5.0, all scripts can have an ID that is unique across the entire test suite. When editing the details of script module that already has such an ID, it was not shown in the appropriate text field as expected. This has been fixed.</p>
+<h4>Mouse down does not trigger blur (#2680)</h4>
+<p>When dispatching a <code>mousedown</code> event (explicitly via <code>mouseDown</code> or implicitly via <code>click</code>) to elements which automatically receive focus, the previously focused element was not blurred. This is fixed now.</p>
+<h4>Incorrect update of command selection after move (#2682)</h4>
+<p>Under certain circumstances, moving one or more commands up or down lead to an unexpected command selection afterwards. A similar effect was observed, when copy-pasting or removing commands. This has been fixed.</p>
+<h4>Copy log messages to clipboard not working on Mac <span class="caps">OSX</span> (#2683)</h4>
+<p>Copying messages from the <i>Log</i> panel to the clipboard by either using the keyboard shortcut <kbd>Cmd</kbd>+<kbd>C</kbd> or the context-menu item did not work on Mac <span class="caps">OSX</span> platform. Fixed.</p>
+<h2><span class="caps">XLT</span> 4.6.4</h2>
+<h3>Script Developer</h3>
+<h4>Support Firefox 46 (#2662)</h4>
+<p>Script Developer has been made compatible with Firefox 46 which was released on April 26, 2016. Script Developer runs on Firefox 38/<span class="caps">ESR</span> up to 46 now.</p>
+<h4>Module parameter evaluation dependent on provided expression (#2639)</h4>
+<p>In case you need some random (unique) data, you can use some of the built-in <code>RANDOM</code> macros, e.g. <code>RANDOM.Number(min, max)</code>. With the <code>${variable}</code> notation, you can use macros in any command, even as value for module parameters. When doing so, it is expected to be evaluated only once so that the parameter has a constant value while the module is being replayed. Unfortunately, this was only the case when all macro expressions were itself parameterized with constant values. In case, they used some test/runtime data, the entire macro statement was evaluated each time the module parameter was used and thus the overall parameter value was not constant any more. This is fixed now.</p>
+<h4>It is possible to import a test suite more than once (#2674)</h4>
+<p>Usually, you import an already existing test suite only once. But in case you did so more than once, the test suite was listed in the drop-down multiple times. With the new version, importing an already imported test suite will just select it.</p>
+<h4>Script explorer view becomes inconsistent when filter is active (#2670)</h4>
+<p>When development goes on and your test suite has grown to a certain size, it is quite hard to keep track of all your scripts. For this purpose, you can use the text input at the bottom of the explorer view and define a filter. The filter is applied to your scripts and thus refines the view above. According to the selected options, the script&#8217;s name, tag, or description is examined for a potential match and the view is updated accordingly.</p>
+<p>Unfortunately, the entire view might become inconsistent when such a filter is active and you navigate through the packages, change the sorting direction or reload the entire test suite. This is especially true when using the hierarchical view mode, because a package must not show up in the view when none of its scripts match the given filter <span class="caps">AND</span> none of its sub-packages fulfill this condition.</p>
+<p>The erroneous behavior is fixed now. Whether you are navigating through the view, re-sort it or reload the entire suite, the explorer view is consistent with respect to the applied filter.</p>
+<h4>Hierarchical package presentation has issues (#2653, #2664)</h4>
+<p>In case the hierarchical view mode is active and most of your packages are empty, it could happened that a newly created package showed up twice. Similarly, the default package was not shown at all, or packages that had been expanded before were collapsed afterwards. Please note that none of these issues had an effect on the underlying data structure of your test suite. The hierarchical package view is fixed now.</p>
+<h4>Information panel is not updated properly when re-selecting a script (#2645)</h4>
+<p>The <em>Information</em> panel below the editor area shows all relevant information about the currently selected script or command. Switching between explorer and editor view, the update of the information panel was not working properly when selecting an already selected script. This is fixed now.</p>
+<h4>Improve usability of replay speed slider (#2422)</h4>
+<p>The two labels <em>Slow</em> and <em>Fast</em> aside the replay speed slider can now be clicked to trigger the appropriate action.</p>
+<h3>Result Browser</h3>
+<h4>Missing response headers (#2649)</h4>
+<p>Due to a bug in <em>HtmlUnit</em>, response headers that specify the content length, encoding, or checksum were missing for all requests. Now the <em>Request/Response</em> tab lists all the response headers that were transported.</p>
+<h4>Result Browser source is shown for requests which associated no response content file (#2663)</h4>
+<p>All data that is necessary to render the Result Browser is given in <span class="caps">JSON</span> format and stored in a single file. Moreover, each response is associated with the appropriate request by specifying a relative path to the file where the response&#8217; content has been stored. In this way it can be displayed in the Result Browser when clicking on the <em>Response Content</em> tab. Due to a bug in the main JavaScript file, the Result Browser&#8217;s <span class="caps">HTML</span> source was shown as the response content in case such a path was given as the empty string. This is fixed now.</p>
+<h3>Load Testing</h3>
+<h4>NumberFormatException when creating the report for very short test runs (#2669)</h4>
+<p>Attempts to create load test reports might fail with an <code>NumberFormatException</code> in case the overall test run was very short. Fixed.</p>
+<h2><span class="caps">XLT</span> 4.6.3</h2>
+<h3>Script Developer</h3>
+<h4>Support for Firefox 45 (#2616)</h4>
+<p>Script Developer has been made compatible with Firefox 45 which was released on March 8, 2016. Script Developer runs on Firefox 38/<span class="caps">ESR</span> up to 45 now.</p>
+<h4>Context menu item &#8216;Delete&#8217; has no effect (#2610)</h4>
+<p>The context menu of the package explorer contains an item called <em>Delete</em>, which is used to delete the selected packages and scripts. Unfortunately, clicking this item had no effect in <span class="caps">XLT</span> Script Developer 4.6.2, while the corresponding keyboard shortcut could still be used to trigger the action. This is fixed now.</p>
+<h4>Deleting a package in hierarchical mode always deletes all sub-packages (#2611)</h4>
+<p>When removing one or more script packages, the user will be asked whether or not all sub-packages should be removed as well. However, when using the previously introduced hierarchical view mode, Script Developer did always remove all sub-packages without respecting the user&#8217;s decision. Fixed now.</p>
+<h4>Restrict copy/paste operations to scripts (#2612)</h4>
+<p>Since copy/paste of entire script packages is not supported yet, these operations have been restricted to work for scripts only. Although you are still able to select one or more script packages along with some scripts, the packages won&#8217;t end up in the clipboard upon copy. Moreover, in case no script is selected, but only packages, the <em>Copy</em> context menu item will be disabled and the keyboard shortcut won&#8217;t trigger any action.</p>
+<p>Now that you have copied one or more scripts to the clipboard, you can paste them to the package of your choice by selecting the package directly or by selecting a single script. In the latter case, the package of the selected script will become the target package of the copied scripts. If you have selected more than one target item, the <em>Paste</em> menu item and its keyboard shortcut will be disabled.</p>
+<h4>Script packages with sub-packages cannot be renamed in hierarchical view (#2613)</h4>
+<p>When using the hierarchical view mode, any attempt to rename a script package that has at least one sub-package failed, whereas doing so in flat view mode worked fine. This is fixed now.</p>
+<h4>Parameter expressions are not resolved when editing the commands of a module (#2615)</h4>
+<p>Assume you&#8217;re editing a script that has at least one module call and you would like to edit some of its commands. Before <span class="caps">XLT</span> 4.6.0, any parameter expression in the command&#8217;s target or value field was replaced with its value &#8211; as known so far &#8211; in the <em>Resolved Target</em> or <em>Resolved Value</em> field, respectively. Starting with <span class="caps">XLT</span> 4.6.0 this was not the case anymore. Fixed.</p>
+<h4>Changing module name won&#8217;t become effective until script reload (#2618)</h4>
+<p>In case you edit a module call to change the name of the called module (because it&#8217;s name was modified or you&#8217;d like to call a different module), the changes did not become entirely effective until you reloaded the script. Fixed.</p>
+<h4>&#8216;Enabled&#8217; status of some context menu items not updated (#2619)</h4>
+<p>Some of the items in the script explorer context menu change their &#8216;enabled&#8217; status depending on whether the corresponding action is allowed/possible or not. For example, when the replay of a test starts, the corresponding script will be locked (tab label turns red) and both context menu items <em>Edit Details</em> and <em>Manage Test Data</em> will be disabled. Once replay has finished, these items should be enabled again, but they weren&#8217;t. Fixed.</p>
+<h4>Typing into file input elements does not fire a change event (#2621)</h4>
+<p>Uploading one or more files is typically done by submitting a form that has one or more input elements of type <code>file</code>. You &#8216;choose&#8217; the file to upload by simply typing its absolute file path into the file input. However, although the element&#8217;s <code>value</code> changed, no <code>change</code> event was fired to signal the modification. This is fixed now.</p>
+<h4>Selection not updated on item insertion/removal (#2623)</h4>
+<p>In script editor tabs, the current item is marked by a selection bar. When inserting new items, they should be selected instead to highlight the change and allow for easy removal, if they were inserted by accident. When deleting an item, the next item should be selected automatically to allow deleting several items in a row. All this worked fine in 4.5.x, but did not in 4.6.&#215;. Fixed.</p>
+<h3>Framework</h3>
+<h4>Selenium update (#2626)</h4>
+<p>Selenium was updated to the latest available version 2.53.0.</p>
+<h4>Allow specifying the test suite home directory (#2627)</h4>
+<p>Typically, you will use at tool like Eclipse, Ant, Maven, or some other external JUnit test runner to execute your functional <span class="caps">XLT</span> tests. To pick up the configuration of your test suite, the <span class="caps">XLT</span> framework will search for a <code>config</code> sub-directory in the current working directory. However, if your test suite is not located in the current directory, but outside of it or in a sub-directory, <span class="caps">XLT</span> won&#8217;t find the configuration and will fall back to default settings which is usually not what you want.</p>
+<p>Placing your test suite in a different directory than the current directory of your test runner tool is now supported. You can configure the test suite home directory by either setting the Java system property <code>com.xceptance.xlt.testSuiteHomeDir</code> or the environment variable <code>XLT_TEST_SUITE_HOME_DIR</code>. The system property will take precedence. In case none of the two is defined, the current working directory will be used as before.</p>
+<h4>Don&#8217;t log usages of unsupported <span class="caps">CSS</span> rules (#2204)</h4>
+<p>Modern web application use <span class="caps">CSS</span> rules like <code>@keyframes</code> that are currently not supported by HtmlUnit&#8217;s <span class="caps">CSS</span> parser. This might cause a lot of warnings to be logged when load testing with <span class="caps">XLT</span>. In order to avoid polluting your log files, we&#8217;ve adjusted the log4j configuration files of all sample test suites shipped with <span class="caps">XLT</span>. Now, HtmlUnit&#8217;s strict error reporting is able to log fatal errors only, but not warnings. Just copy one of these files into your project&#8217;s configuration directory to get clean logs again.</p>
+<h4><span class="caps">HTML</span> comments are not always respected in light-weight mode (#2240)</h4>
+<p>Load tests can be performed also in light-weight mode. This means that no <span class="caps">DOM</span> tree will be constructed, and all parsing and processing has to be done by applying regular expressions on the plain <span class="caps">HTML</span> response. When searching for information on the page, any portion of the <span class="caps">HTML</span> source code that has been commented out must of course be ignored. This was not the case when searching for a base tag. Hence, base tags in <span class="caps">HTML</span> comments were incorrectly considered for computing the base <span class="caps">URL</span> of an <span class="caps">HTML</span> page. This is fixed now.</p>
+<h4>ClassCastException in case of non-<span class="caps">HTML</span> responses (#2510)</h4>
+<p>Sometimes the server might not respond with a valid <span class="caps">HTML</span> page, as expected, but with content of other types, for example with a plain-text 404 error page. In such cases, a rather technical <code>ClassCastException</code> was thrown by the various <code>loadPage*</code> methods of class <code>com.xceptance.xlt.api.actions.AbstractHtmlPageAction</code> as the returned page object was not of the expected type <code>com.gargoylesoftware.htmlunit.html.HtmlPage</code>. Now a more descriptive exception is thrown instead.</p>
+<h4>Think time simulated also after the last action (#2537)</h4>
+<p>When interacting with a web application, real users typically take their time after executing an action before they are going to perform the next one. In the context of <span class="caps">XLT</span>, this waiting time is called &#8220;thinking time&#8221;. <span class="caps">XLT</span> simulates this thinking time between actions, but it also did so after the very last action in a scenario. This caused the scenario to take longer than expected. Now think times will be simulated between consecutive actions only.</p>
+<h4>Performance fix in HtmlUnit (#2622)</h4>
+<p>HtmlUnit v2.19 introduced a small performance issue regarding the internal management of <span class="caps">DOM</span> attribute/character change listeners. The fix for this issue has been backported, so <span class="caps">XLT</span> users can benefit from it as well.</p>
+<h4>Last action listed twice in the result browser (#2593)</h4>
+<p>The result browser shows the last <em>n</em> (or even all) actions executed during a test scenario. However, for test cases that use <code>XltDriver</code>, the very last action was listed twice in the result browser. Fixed.</p>
+<h4>TypeAndWait does not submit the form (#2629)</h4>
+<p>Replaying the command <code>typeAndWait</code> in <span class="caps">XLT</span> should not only type some text into an input element, but should also submit the form to which this input element belongs. Unfortunately, the form was submitted for interpreted <span class="caps">XML</span> script test cases only, but not for script test cases exported to Java. Fixed now.</p>
+<h2><span class="caps">XLT</span> 4.6.2</h2>
+<h3>Script Developer</h3>
+<h4>Selecting script package in hierarchical view does not select scripts of sub-packages (#2595)</h4>
+<p>Before <span class="caps">XLT</span> 4.6.0 was out, all scripts and script packages were shown in a flat view only, and when you select a script package, then only the scripts in the selected package were selected. So far, so good. But when the new hierarchical representation mode comes into play, the selection should also include scripts contained in sub-packages of the selected package. Unfortunately, this was not the case and the selection included only the scripts of the selected package. This is fixed now.</p>
+<h4>Command &#8216;typeAndWait&#8217; does not submit form (#2596)</h4>
+<p>Performing a search is one typical use case for the <code>typeAndWait</code> command: you enter some search phrase into a text field and press <kbd>Enter</kbd>. However, replaying such a <code>typeAndWait</code> command in <span class="caps">XLT</span> Script Developer 4.6.1 entered the search phrase and waited for a page load. But one essential detail was missing: namely pressing the <kbd>Enter</kbd> key that submits the form and triggers the page load. Fixed.</p>
+<h4>Extracting commands into script module causes UI to break (#2597)</h4>
+<p>Script modules can be created in various ways. One of them is to select one or more commands and extract them into a separate script module that is to be newly created. In <span class="caps">XLT</span> Script Developer 4.6.0/1 this caused the UI to be somewhat broken: the selected commands were still shown in the testcase&#8217;s editor and deleting them caused a removal of these commands in the newly created script module. The only way to recover from this state was a reload of the entire test suite. Fixed.</p>
+<h4>Replay of &#8216;selectAndWait&#8217; command does not work anymore (#2598)</h4>
+<p>Replaying the command <code>selectAndWait</code> failed in <span class="caps">XLT</span> Script Developer 4.6.0/1 with the error message: &#8220;Don&#8217;t know how to handle command &#8216;selectAndWait&#8217;.&#8221; <span class="caps">XLT</span> 4.6.2 fixes this issue.</p>
+<h4>Script Developer keeps on waiting when page load is missing (#2599)</h4>
+<p>The command timeout that you can configure in the <em>Settings</em> dialog was not effective when waiting for a page load to happen. As a consequence, Script Developer did not only wait longer than it should, but it waited infinitely in case the page load did not happen at all. This is fixed now.</p>
+<h4>Script Developer hangs when trying to type into file input (#2600)</h4>
+<p>The ability to type into input elements of type <code>file</code> is essential for testing file upload functionalities. Unfortunately, this ability got lost by accident in <span class="caps">XLT</span> 4.6.0 and each attempt to do so caused Script Developer to hang. But no need to worry as <span class="caps">XLT</span> 4.6.2 restores this ability completely.</p>
+<h4>Legal element locator expression is marked as invalid (#2601)</h4>
+<p><span class="caps">HTML</span> elements often have more than one <span class="caps">CSS</span> class assigned, and in case one of these classes contains single quotes then element locator expressions, although totally legal, might be marked as invalid when using them in the <em>Command Details</em> dialog. This is because Script Developer tries to construct alternative locator expressions for the found element and this locator construction algorithm was not able to handle such &#8220;special&#8221; <span class="caps">CSS</span> classes correctly. This is fixed now.</p>
+<h4>Frame context is lost when replay is paused (#2603)</h4>
+<p>In case your application under test makes use of one or more frames, you might have already encountered the issue that proceeding a paused replay used the top-level window instead of the currently selected frame window. This was because the internal frame state &#8211; which gets lost when replay is paused &#8211; was not restored when proceeding replay. The missing restore has been added and replaying your scripts &#8211; whether paused or not &#8211; should work as expected now.</p>
+<h4>Package refactoring does not update includes of affected modules (#2609)</h4>
+<p>Consider the case that you have a test script that calls a module which itself resides in an arbitrary package. When renaming this package to something different (not just the case of the name&#8217;s letters) then the test script contained a broken include of the module although the package renaming was successful. The same effect was visible when moving the module into another package: the module landed in the correct package, but the include was broken in the test script. This is fixed now and all refactoring operations don&#8217;t lead to broken module includes anymore.</p>
+<h4>Usability Improvements</h4>
+<p><strong>New Keyboard Shortcuts for MacOSX Users</strong></p>
+<p>When using Script Developer on MacOSX, some of the existing keyboard shortcuts cannot be used at all or only when using an external keyboard. For this reason, Script Developer provides some new shortcuts that replace the existing ones to improve the entire usability for MacOSX users. Users of other platforms are not affected.</p>
+<p>In order to insert a new command at the currently selected line press <kbd>Cmd</kbd>+<kbd>I</kbd>, and in case you want to add it after this line, just press <kbd>Shift</kbd>+<kbd>Cmd</kbd>+<kbd>I</kbd>. These two new combinations replace the usual <kbd>Insert</kbd> and <kbd>Shift</kbd>+<kbd>Insert</kbd> ones that are still effective on non-MacOSX platforms.</p>
+<p>To remove commands, scripts, or entire script packages, select the items in question and press <kbd>Cmd</kbd>+<kbd>Backspace</kbd>, as an alternative to <kbd>Delete</kbd>. This new shortcut is needed since there is no <kbd>Delete</kbd> key on Apple notebooks, such as the MacBook Air for example.</p>
+<p><strong>More Effective Command Filtering</strong></p>
+<p>In the <em>Command Details</em> editor, you may not only select the command from the long drop-down list, but you can also start typing the command name to show only those commands that match your filter text. The filtering logic has been changed to perform a <em>contains</em> check now instead of a <em>starts-with</em> check. This allows to enter shorter, but more specific substrings to filter the list of commands more effectively.</p>
+<h3>Framework</h3>
+<h4>Replacing test data set programmatically not possible (#2605)</h4>
+<p>The method <code>AbstractTestCase.setTestDataSet(Map)</code> is called by the <span class="caps">XLT</span> framework to inject the current test data set in <a href="../user-manual/06-datadriven.html">data-driven tests</a>, i.e. tests that are automatically executed repeatedly with different test data sets read from an external file. If you need to programmatically replace the external test data with your own, you can call the method <code>setTestDataSet(Map)</code> in the constructor of your test case. In this case, the framework won&#8217;t inject the test data set from the external file any longer which otherwise would have overwritten your test data again.</p>
+<h4><span class="caps">HTML</span> pages in the result browser looked broken (#2606)</h4>
+<p>The result browser renders any visited <span class="caps">HTML</span> page as it would have looked in a real browser. However, sometimes the rendered pages looked broken because embedded resources such as images or <span class="caps">CSS</span> files were empty. This happened for cacheable resources that needed to be revalidated in the course of the test case. If the server responded with status code 304 (Not Modified) for a resource, the empty response body was nevertheless used to &#8220;update&#8221; the result browser files. Fixed now.</p>
+<h2><span class="caps">XLT</span> 4.6.1</h2>
+<h3>Script Developer</h3>
+<h4>Assertions are generated twice (#2583)</h4>
+<p>Although strongly discouraged, your scripts might contain actions that don&#8217;t interact with the current <span class="caps">HTML</span> page in any way, but only perform some assertions. Then, exporting these actions to XLT&#8217;s action <span class="caps">API</span> results in Java classes that contain the generated code for all of the action&#8217;s assertions twice: in the instance methods <code>preValidate()</code> and <code>postValidate()</code>. This is fixed now.</p>
+<h3>Framework</h3>
+<h4>Selenium updated (#2592)</h4>
+<p>Selenium has been updated to v2.52.0.</p>
+<h3>Load Testing</h3>
+<h4>Test suite upload fails with a recent Java 8 (#2590)</h4>
+<p>When using Java 1.8.0_72 or later on the agent machines, uploading a test suite failed with the error <em>Premature <span class="caps">EOF</span></em>:</p>
+<pre class="ini"><code class="ini">Uploading test suite...
+    Preparing:    0% ... 10% ... 20% ... 30% ... 50% ... 60% ... 70% ... 80% ... - OK
+    Uploading:    0% ... 20% ... 40% ... - FAILED!</code>
+
+<code class="ini">-&gt; Agent Controller ac001 &lt;https://localhost:8500&gt; - Premature EOF</code></pre>
+<p>The reason is that with this Java version the implementation of <code>java.net.URL</code> was changed. This caused problems when serializing/deserializing <span class="caps">URL</span> objects which is used when the master controller communicates with the agent controllers. Fixed now.</p>
+<h2><span class="caps">XLT</span> 4.6.0</h2>
+<h3>Release Overview</h3>
+<p><span class="caps">XLT</span> 4.6.0 comes with many new and improved functionalities. The first improvement &#8230; well, you are looking at it right now! We believe that the <strong>new documentation structure and design</strong> makes the documentation more accessible and more fun to read. And if you miss something in the docs, don&#8217;t forget to visit our new <a href="https://ask.xceptance.de"><strong><span class="caps">XLT</span> Community Forum</strong></a> to ask questions or discuss things with other users.</p>
+<p>But there is much more in the box. Script Developer now provides a long-long-awaited feature, <strong>undo and redo</strong>. From now on, editing scripts will be much more fun. Another just-as-long-awaited feature is to execute parts of a script under certain circumstances only. This is possible now as Script Developer supports <strong>conditional module calls</strong>. Just define a condition and your module will be executed only if the condition is met.</p>
+<p>It goes without saying that the <span class="caps">XLT</span> framework supports conditional module calls as well when replaying script test cases. Same as for Firefox, the framework now provides a specialized <strong>Web driver for Chrome</strong> that records <strong>request and event timings</strong> and lets Chrome run in <strong>headless mode</strong>. When running script test cases with native browsers, the framework supports some interesting new execution options, such as <strong>limiting page loading times</strong> and <strong>automatic retry of commands</strong> in case of stale elements. If you prefer coding test cases in Java and you don&#8217;t want an action to last until the next action begins, you can now close the action programmatically at an earlier point. Last but not least, all core libraries have been updated, especially HtmlUnit and WebDriver/Selenium. This ensures a <strong>much better browser emulation</strong> and brings <strong>support for the latest native browsers</strong>.</p>
+<p>The load test report has been improved as well. Most notably, the report supports <strong>filtering of runtime tables and chart lists</strong> by simple, yet powerful text filters. Charts can now be <strong>capped at a fixed value</strong> and different types of charts can have different capping settings. Furthermore, a configurable set of <strong>custom percentiles</strong> in the load test report may help you to better assess the performance of your system under test.</p>
+<p>Users of Amazon&#8217;s EC2 cloud will surely find it useful that the <code>ec2_admin</code> tool can now <strong>assign a key pair</strong> and <strong>pass user data</strong> when starting new instances. Moreover, instances can now be <strong>terminated across regions</strong>.</p>
+<p>Sounds interesting? Keep on reading and get all the details.</p>
+<h3>Script Developer</h3>
+<blockquote class="note">
+<p class="note">Firefox will not auto-update older versions of Script Developer to 4.6.0. You will need to do this manually. Please remove the currently installed version first &#8211; this is <strong>required</strong> as a simple re-installation won&#8217;t always work &#8211; and afterwards install the new version by simply dragging and dropping the file <code>&lt;xlt&gt;/tools/xlt-scriptdeveloper-4.6.0.xpi</code> onto Firefox. Auto-updating within the 4.6.x product line will then work as usual again.</p>
+</blockquote>
+<h4>Conditional Module Calls</h4>
+<p>Ever had the case that you needed to duplicate a whole test case because of that tiny bit of functionality deep inside the script that was different, but you would rather reuse the test case? Didn&#8217;t you sometimes wish you could simply skip the execution of a part of the script under certain circumstances? Well, now you can! No need to copy scripts around and have to maintain different test cases any longer.</p>
+<p>The heart of the feature is that modules can be called conditionally now. For a simple IF, you would add a module call and specify a condition when to call this module. By adding one or more alternative module calls and specifying proper conditions, you can extend the concept and implement IF/<span class="caps">ELSE</span> or even <span class="caps">SWITCH</span> constructs.</p>
+<p>In any case, the first step is to move the functionality in question to an own module. Next you would add a call to this module to your script. In the module call&#8217;s editor window, you can now specify the condition that needs to be met for this module to be executed. The condition is formulated as an arbitrary JavaScript expression. The module will be executed if and only if the given expression evaluates to true. The expression may also reference test data items or runtime variables via the <em>${&#8230;}</em> or <em>@{&#8230;}</em> syntax. Even though the expression can be arbitrarily complex, a typical expression will involve string comparisons only as test data items/variables are simple strings.</p>
+<p class="illustration"><img src="../img/releasenotes/4.6.0/sd_conditional_module_calls.png" title="Conditional Module Calls" alt="Conditional Module Calls" /></p>
+<blockquote class="note">
+<p class="note">Please remember that all <em>${&#8230;}</em> and <em>@{&#8230;}</em> expressions will simply be replaced with their textual value when evaluating the condition. So make sure to quote them properly, or otherwise the resulting Javascript expression will be invalid. As a rule of thumb, everything you can put into the target field of an <code>assertEval</code> command with the value <code>true</code> can be used as condition expression.</p>
+</blockquote>
+<h4>Usability Improvements</h4>
+<p><strong>Undo/Redo</strong></p>
+<p>It&#8217;s here. At last! Now any script tab maintains an own change history for editing operations. To navigate the history, use the keyboard shortcuts <kbd>Ctrl</kbd>+<kbd>Z</kbd> for undo and <kbd>Shift</kbd>+<kbd>Ctrl</kbd>+<kbd>Z</kbd> for redo. Happy editing!</p>
+<blockquote class="note">
+<p class="note">Please note that if you edit an actually included module (in-place editing), the change will be recorded in the module&#8217;s script tab and can therefore be undone only there. This is because the change affects the module script and not the script that includes it.</p>
+</blockquote>
+<p><strong>Alternative Representation of the Package Hierarchy</strong></p>
+<p>By default, Script Developer represents the package hierarchy as a <em>list</em> of package names. Depending on the structure of your hierarchy (broad vs. deep), a package <em>tree</em> would sometimes be more appropriate. That&#8217;s why Script Developer now offers a tree as an alternative way to represent the hierarchy. Right-click the package explorer, and from the pop-up menu choose the package presentation mode that suits you best.</p>
+<p><strong>Unlinking Script Editor Tabs and the Package Explorer</strong></p>
+<p>By default, the current script editor tab and the package explorer view are linked with each other. When you select a script editor tab, the corresponding script will be selected in the package view as well. This way you always have an indication in which package the current script is located. However, if you find the constantly shifting package view annoying, you can now switch off the coupling of the views. To this end, uncheck the <em>Link with Editor</em> menu item in the package view&#8217;s context menu.</p>
+<p><strong>Ignore/Remove all Breakpoints</strong></p>
+<p>During a longer debug session you might have set a lot of breakpoints in your scripts. These can now be removed all at once via the <em>Clear All Breakpoints</em> context menu item, or &#8211; much quicker &#8211; via keyboard shortcut <kbd>Shift</kbd>+<kbd>B</kbd>. Additionally, when running a batch test, you can check an option to ignore any set breakpoints during the batch test.</p>
+<h4>Test Suite Name and Description</h4>
+<p>Script test suites can now have a custom name (other than the default name, which is the directory name) and also a description. This data is stored to the new project file for script test suites, <code>&lt;testsuite&gt;/suite.xml</code>. When generating the <span class="caps">HTML</span> documentation for your script test suite, name and description will be part of it as well.</p>
+<h4>Multi-Process Firefox</h4>
+<p>In the near future, Mozilla will change the process model of Firefox from single-process to multi-process (project <em>e10s</em>, or <em>Electrolysis</em>). This means that future versions of Firefox will use separate processes for the browser UI and the web content. At the moment, this feature is highly experimental and is available in Firefox Developer Edition only. Nevertheless, Script Developer has been adapted to support both single-process and multi-process Firefox browsers.</p>
+<h4>Supported Firefox Versions</h4>
+<p>Script Developer has been made compatible with the latest available Firefox version (as of January 26, 2016), while outdated versions are not supported any longer. Thus, Script Developer runs on Firefox 38/<span class="caps">ESR</span> up to 44 now.</p>
+<h3>Framework</h3>
+<h4>Measurements with Real Browsers</h4>
+<p>In a previous release, we introduced an enhanced <code>FirefoxDriver</code> which enables you to record request and browser event timings as seen by the underlying Firefox browser and can optionally run the browser in headless mode. The same functionality is now available for <code>ChromeDriver</code> and Chrome.</p>
+<p>In order to use such an enhanced driver with <span class="caps">XML</span> script test cases, specify either <em>firefox_clientperformance</em> or <em>chrome_clientperformance</em> as the driver to use in the test suite configuration, and your test case super class will pick it up:</p>
+<pre class="ini"><code class="ini">xlt.webDriver = chrome_clientperformance</code></pre>
+<p>For plain WebDriver-based test cases you may want to create/set up the driver yourself. You will find the respective driver classes in the <span class="caps">XLT</span> <span class="caps">API</span>:</p>
+<ul>
+	<li><code>com.xceptance.xlt.api.webdriver.XltChromeDriver</code></li>
+	<li><code>com.xceptance.xlt.api.webdriver.XltFirefoxDriver</code></li>
+</ul>
+<p>There are also convenient <em>builder</em> classes that simplify parameterizing the driver in case there is no adequate constructor:</p>
+<pre class="java"><code class="java">FirefoxProfile customProfile = new FirefoxProfile();
+customProfile.setPreference("...", "...");
+XltFirefoxDriver driver = XltFirefoxDriver.builder().setProfile(customProfile).setHeadless(true).build();</code></pre>
+<h4>Scripting</h4>
+<p>The most important feature is, no doubt, that the framework understands and supports conditional module calls when replaying script test cases. But there are more improvements that might come in handy for script test cases that use a native browser.</p>
+<p><strong>Page Load/Javascript Timeout</strong></p>
+<p>From now on, the general script timeout is also used to limit the page loading time and the execution time of Javascript code in the browser in case the driver supports this feature. This ensures that the driver doesn&#8217;t wait any longer than the given script timeout for the browser to respond and to become ready again to accept new commands such as taking a screenshot for error analysis.</p>
+<p><strong>Retrying Commands in Case of Stale Elements</strong></p>
+<p>In <span class="caps">XLT</span> 4.5.6 we introduced a mechanism to retry a script command in case the target element has become &#8220;stale&#8221; while the command was being executed. Unfortunately, this mechanism was available for <span class="caps">XML</span> script test cases only. But from now on you can use it in your exported test cases as well.</p>
+<h4>Result Browser</h4>
+<p><strong>Request Filters</strong></p>
+<p>The list of requests for a certain action can get rather long. In case you are interested in special requests only, you can now filter the requests by content type, request method, or protocol.</p>
+<p class="illustration"><img src="../img/releasenotes/4.6.0/resultbrowser_filters.png" title="Request Filters in Action" alt="Request Filters in Action" /></p>
+<p><strong>Easier Copying of Response Content</strong></p>
+<p>Sometimes you may need to copy the complete text content of a response. This turns out to be more difficult than expected because the usual shortcut <code>Ctrl-A</code> does not only select the response content, but the whole result browser page. The new <em>Select All</em> button on the top comes to the rescue.</p>
+<h4>Exact Action Timings</h4>
+<p>In <span class="caps">XLT</span>, <em>Actions</em> encapsulate all the steps needed to carry out a certain interaction with the server. So actions are the basic buildings blocks of your test cases. The <span class="caps">XLT</span> framework allows different approaches to structure your test cases into actions. One of them is the <em>Action</em> concept which requires your test steps to be modeled as separate action classes (which have to inherit from <code>AbstractAction</code>).</p>
+<p>A much simpler approach is to split your test flow into actions by stating where a new action should begin. An action lasts until the next action begins. This approach is used by script test cases, and if you prefer coding Web-driver-based test cases directly in Java you will typically use it as well.</p>
+<p>However, with the latter approach the simplification that an action lasts until the next action starts may lead to imprecise action runtimes. This is because the measured action runtime does not only contain the execution time of the actual interaction, but also:</p>
+<ul>
+	<li>the time to set up/clean up the action execution,</li>
+	<li>the time to run page validations,</li>
+	<li>the time to create screenshots, and</li>
+	<li>the time to create the result browser.</li>
+</ul>
+<blockquote class="note">
+<p class="note">Test cases that use the Action concept do not suffer from this problem as the <code>execute()</code> method of an action already correctly defines the measurement boundary.</p>
+</blockquote>
+<p>For precise action runtimes, you can now be more specific where an action ends by calling the new <code>Session.stopAction()</code> method from your Java-based test cases. This method is complemented by the new <code>Session.startAction(String)</code> method which replaces the already existing &#8211; and now deprecated &#8211; method <code>Session.setWebDriverActionName(String)</code>.</p>
+<p>See below for the basic sequence of necessary steps in your code:</p>
+<pre class="java"><code class="java">...
+// set-up steps
+// pre-vaildation steps
+...
+Session.getCurrent().startAction("RefineBySize");
+...
+// implement the action: execute the necessary steps to refine by size
+...
+Session.getCurrent().stopAction();
+...
+// post-validation steps
+// clean-up steps</code></pre>
+<p>However, when taking exception/state handling into account, and you want to do this, the typical structure has to be as follows:</p>
+<pre class="java"><code class="java">...
+// set-up steps
+// pre-vaildation steps
+...
+try {
+	Session.getCurrent().startAction("RefineBySize");
+	...
+	// implement the action: execute the necessary steps to refine by size
+	...
+}
+catch (Throwable t) {
+	Session.getCurrent().setFailed(true);   // this will mark the action as failed
+	throw t;
+}
+finally {
+	Session.getCurrent().stopAction();
+}
+...
+// post-validation steps
+// clean-up steps</code></pre>
+<p>We suggest to create a helper class that automatically manages starting and stopping the action and hides the try/catch/finally construct. With this helper your code will be somewhat simpler and could look like so:</p>
+<pre class="java"><code class="java">...
+// set-up steps
+// pre-vaildation steps
+...
+new ActionHelper("RefineBySize") {
+    public void execute() throws Throwable {
+	    ...
+        // implement the action: execute the necessary steps to refine by size
+	    ...
+	}
+}.run();
+...
+// post-validation steps
+// clean-up steps</code></pre>
+<h4>Other Improvements</h4>
+<p><strong>EdgeDriver</strong></p>
+<p>Selenium now comes with a Web driver for the new <em>Edge</em> browser in Windows 10. Although the <code>EdgeDriver</code> does not support the complete Web driver <span class="caps">API</span> yet, it is time to make this driver available as a new preconfigured alternative. To use this driver in your Web-driver-based test cases, change the test suite configuration as follows:</p>
+<pre class="ini"><code class="ini">xlt.webDriver = edge
+xlt.webDriver.edge.pathToDriverServer = c:/path/to/MicrosoftWebDriver.exe</code></pre>
+<p>As already known from <code>ChromeDriver</code> and <code>InternetExplorerDriver</code>, you will need an additional driver server binary to use <code>EdgeDriver</code>. Download the latest version from <a href="https://www.microsoft.com/en-us/download/details.aspx?id=48212">Microsoft</a>.</p>
+<h3>Load Testing</h3>
+<h4>Load Test Report Enhancements</h4>
+<p><strong>Filtering Data Tables and Charts</strong></p>
+<p>The request table in the load test report can get rather long, and the list of charts below the table as well. So finding the information you are looking for may involve a lot of scrolling. But don&#8217;t despair, you&#8217;ve got filters now! Simply type a filter expression and the table will show only those rows whose names match the filter. Same for the charts. This works not only for requests, but also for transactions, actions, custom timers, and agents.</p>
+<p>For advanced filter expressions, you can specify more than one filter substring in the filter input field, separated by space. A table row (and its corresponding chart) remains visible only if the name matches all specified substrings (<span class="caps">AND</span>). Note that case <em>does</em> matter. When prefixing a substring with the &#8216;-&#8217; character, the name must not contain the substring to remain visible. The filter syntax allows OR-ed filter expressions as well. Just use the &#8216;|&#8217; character to start a new alternative.</p>
+<p class="illustration"><img src="../img/releasenotes/4.6.0/report_filters.png" title="Text Filters" alt="Text Filters" /></p>
+<p><strong>Extended Chart Capping Options</strong></p>
+<p>The already existing dynamic chart capping at the n-fold of the mean is a useful feature, but sometimes it is desirable to have a fix capping at a certain value instead. This way, it becomes easier to compare charts visually as all charts represent the same value range. On the other hand, you may need to adjust the capping value more often between runs if the performance varies significantly. Such a fix capping value can now be configured as an alternative to a capping factor.</p>
+<p>By default, the report generator won&#8217;t cap a chart if a capping is not necessary at all, for instance if the maximum value in the chart is far below the configured capping value. But sometimes you may want to &#8220;cap&#8221; a chart deliberately at that higher value, for instance, to make charts comparable. That&#8217;s why you can force a capping now by setting the respective capping mode.</p>
+<p>Often it is necessary to have different capping settings for the different types of runtime charts. For instance, the capping value for transaction charts will usually be higher than the one for request charts. Therefore, the capping value/factor/mode can not only be specified at a global level, but also specifically per chart type, thereby overriding the global settings.</p>
+<p>For example, to always cap request charts at 5000 milliseconds and all other runtime charts only if needed and at 5 times the mean value your configuration would look as follows:</p>
+<pre class="ini"><code class="ini">com.xceptance.xlt.reportgenerator.charts.cappingFactor = 5
+com.xceptance.xlt.reportgenerator.charts.cappingValue.requests = 5000
+com.xceptance.xlt.reportgenerator.charts.cappingMode.requests = always</code></pre>
+<p>See the <a href="../user-manual/09-reports.html">User Manual</a> for more information.</p>
+<p><strong>Configurable Percentiles</strong></p>
+<p>Up to now, the runtime data tables showed just one percentile, the median. However, other percentiles may be of interest as well, especially &#8220;at the slow end&#8221;. That&#8217;s why you can now configure what percentiles will be shown in the report. Since the percentile values are a nice counterpart to the runtime segmentation values, they are presented similarly and next to the runtime segmentation values in an own main column. The now obsolete median column has been removed.</p>
+<p class="illustration"><img src="../img/releasenotes/4.6.0/report_percentiles.png" title="Percentiles" alt="Percentiles" /></p>
+<p>To configure the list of percentiles to be shown, adjust the corresponding property in file <code>&lt;xlt&gt;/config/reportgenerator.properties</code> as needed:</p>
+<pre class="ini"><code class="ini">com.xceptance.xlt.reportgenerator.runtimePercentiles = 50, 95, 99, 99.9</code></pre>
+<blockquote class="note">
+<p class="note">In order to optimize the calculation of percentiles, percentile values have a precision of 10 milliseconds only. That&#8217;s why the shown percentile values may be (slightly) smaller than the actual value. That also explains why a percentile could sometimes even be smaller than the minimum value and P100 could be smaller than the maximum value.</p>
+</blockquote>
+<p><strong>Precomputed External Data</strong></p>
+<p>To have all relevant information in one place, the report generator allows to include data that has been generated externally. Previously, this was possible for <em>sampled data</em> only, but  <em>precomputed data</em> is now supported as well. In contrast to sampled data, any further data processing, such as calculating statistics, does not make sense for precomputed data. The data just needs to be displayed as a nice data table in the load test report.</p>
+<p>For example, see the following precomputed data that summarizes the request statistics per application tier:</p>
+<pre class="ini"><code class="ini">863,4783678,12333,0.258,Web Servers
+663,1146273,11780,1.027,App Servers
+273,516711,47,0.009,Database</code></pre>
+<p>After configuring the report generator accordingly, the resulting load test report presents this data as shown below:</p>
+<p class="illustration"><img src="../img/releasenotes/4.6.0/report_precomputed_data.png" title="Precomputed External Data" alt="Precomputed External Data" /></p>
+<p>See the <a href="../user-manual/09-reports.html">User Manual</a> for more information on this topic.</p>
+<p><strong>Other Improvements</strong></p>
+<p>The <em>Errors</em> section now lists the name of the current action for a certain error. No need to manually extract this information from the error trace any longer! If the shown action name is empty, the error must have occurred outside of an action.</p>
+<p>The list of URLs that appears when hovering with the mouse over a request name and the list of result browser directories are sorted now. This way finding a certain entry is easier.</p>
+<h4>ec2_admin</h4>
+<p>In case you work a lot with Amazon&#8217;s Elastic Compute Cloud and use our <code>ec2_admin</code> tool to manage your machine instances, you may find the following improvements useful.</p>
+<p><strong>Terminating Instances Across <span class="caps">AWS</span> Regions</strong></p>
+<p>Running machine instances with the same name tag assigned can now be terminated all at once, even across regions. This saves you going through each region separately. Simply specify multiple regions separated by comma when prompted.</p>
+<p><strong>Assigning a Key Pair</strong></p>
+<p>In order to be able to log on an EC2 machine, a key pair must have been assigned to the machine during startup. <code>ec2_admin</code> has been enhanced to provide this feature when starting machines. The key pair to use for a certain <span class="caps">AWS</span> region can be configured in <code>&lt;xlt&gt;/config/ec2_admin.properties</code>, but can also be specified on the command line.</p>
+<p><strong>Passing User Data When Starting Instances</strong></p>
+<p>In case your <span class="caps">AWS</span> EC2 instances need some custom configuration data (<em>user data</em>, in Amazon speak), you can now specify this data during startup. There are three supported alternatives to pass the user data:</p>
+<ol>
+	<li>Store the user data to a file and pass its name as a command line argument (<code>-uf &lt;file&gt;</code>).</li>
+	<li>Pass the data as a command line argument (<code>-u "..."</code>).</li>
+	<li>When prompted by <code>ec2_admin</code>, enter the user data.</li>
+</ol>
+<p>Choose the approach that suits you best, however, the first approach will be the one to use in most cases.</p>
+<p><strong>Summary of Configuration Options</strong></p>
+<p><code>ec2_admin</code> now summarizes the chosen options for you to verify them before actually starting the instances:</p>
+<pre class="ini"><code class="ini">Configuration:
+  AMI               : ami-93b1afff - Xceptance XLT 4.6.0 - BETA - 2016/01/14, Java 8, Ubuntu 14.04, 64bit, IPv6, CP
+  Region            : eu-central-1
+  Availability zone : &lt;unspecified&gt;
+  Type              : c3.2xlarge
+  Count             : 5
+  Name              : LPT
+  Key-pair          : xc-eu-central-1
+  User data         : &lt;none&gt;</code>
+
+<code class="ini">Do you want to run the instance(s) with the above configuration? [y/n] =&gt;</code></pre>
+<p><strong>Data Center in Seoul</strong></p>
+<p>Recently, Amazon opened a new data center in Seoul, Republic of Korea (<em>ap-northeast-2</em> ). This new data center is now fully supported in <code>ec2_admin</code>.</p>
+<h3>Tools</h3>
+<h4><span class="caps">XLT</span> Jenkins Plug-in</h4>
+<blockquote class="note">
+<p class="note">The <span class="caps">XLT</span> plug-in for Jenkins facilitates running regular load tests as part of your Jenkins-based continuous integration processes. In order to run successfully, the plug-in requires Jenkins v1.580.1 or later. The plug-in archive can be found in directory <code>&lt;xlt&gt;/tools</code>. For more information about installing and using this plug-in see the <a href="../how-to/jenkins-plugin.html">Jenkins Plug-in</a> page.</p>
+</blockquote>
+<p>Previously, the load test suite to be run by the plug-in was expected to be located directly in the root of the job&#8217;s workspace, but can now live deeper inside the job&#8217;s workspace or even outside. Just configure the path to the test suite, either relative to the workspace or absolute.</p>
+<p>If you use Amazon EC2 machines as load generators, the EC2 credentials needed to start/stop machines can now also be maintained directly in Jenkins. In Jenkins, choose <em>Manage Jenkins &gt; Manage Credentials &gt; Add Credentials &gt; <span class="caps">XLT</span> <span class="caps">AWS</span> Credentials</em> and specify a name and a pair of secret / access key. In your build job&#8217;s configuration, you can now select the credentials to be used:</p>
+<p class="illustration"><img src="../img/releasenotes/4.6.0/jenkins_aws_creds.png" title="How to create and use AWS credentials" alt="How to create and use AWS credentials" /></p>
+<p>The load test reports will now be generated with links to the result browsers of failed transactions. In addition to any violated success criteria, a build&#8217;s summary page will now also show information about the test cases that failed as well as the slowest requests. This often helps to evaluate the results at a glance without having to dig into the load test report.</p>
+<h4><span class="caps">XLT</span> Proxy Recorder</h4>
+<blockquote class="note">
+<p class="note"><span class="caps">XLT</span> Proxy Recorder can be used to record <span class="caps">HTTP</span> traffic and to generate scripts ready to be run by the <a href="https://github.com/Xceptance/testsuite-nocoding">NoCoding test suite</a> to replay the recorded traffic. The proxy recorder archive can be found in directory <code>&lt;xlt&gt;/tools</code>.</p>
+</blockquote>
+<p>The recorder has been improved as well. For instance, it supports an upstream proxy now. This feature allows for proper proxy chaining and is needed to use the recorder in environments which are behind a proxy themselves. Furthermore, Proxy Recorder now provides an additional export template for the new <span class="caps">YAML</span>-based syntax of the NoCoding test suite.</p>
+<h3>Incompatible Changes</h3>
+<h4>Java <span class="caps">API</span> Changes</h4>
+<p>This release comes with some <span class="caps">API</span> changes which potentially might break your code. In order to support precomputed external data (which can now be strings as well), we had to widen the type of values in a <code>ValueSet</code> from <code>Double</code> to <code>Object</code>. Please review your custom parsers for external data. We also had to make sure that important helper methods in some of our test case base classes are not overridden by accident, which would cause unexpected behavior. See below for a complete list of breaking changes.</p>
+<table>
+	<tr>
+		<td> Class </td>
+		<td> Old Method Signature</td>
+		<td> New Method Signature</td>
+	</tr>
+	<tr>
+		<td style="vertical-align:top;" rowspan="2"><code>com.xceptance.xlt.api.report.external</code><br><code>ValueSet</code></td>
+		<td><code>public Map&lt;String, Double&gt; getValues()</code></td>
+		<td><code>public Map&lt;String, Object&gt; getValues()</code></td>
+	</tr>
+	<tr>
+		<td><code>public void addValue(String, double)</code></td>
+		<td><code>public void addValue(String, Object)</code></td>
+	</tr>
+	<tr>
+		<td style="vertical-align:top;" rowspan="2"><code>com.xceptance.xlt.api.engine.scripting</code><br><code>AbstractHtmlUnitScriptTestCase</code></td>
+		<td><code>public void pushScope()</code></td>
+		<td><code>public final void __setUpAbstractHtmlUnitScriptTestCase()</code></td>
+	</tr>
+	<tr>
+		<td><code>public void popScope()</code></td>
+		<td><code>public final void __cleanUpAbstractHtmlUnitScriptTestCase()</code></td>
+	</tr>
+	<tr>
+		<td style="vertical-align:top;" rowspan="2"><code>com.xceptance.xlt.api.engine.scripting</code><br><code>AbstractWebDriverScriptTestCase</code></td>
+		<td><code>public void init()</code></td>
+		<td><code>public final void __setUpAbstractWebDriverScriptTestCase()</code></td>
+	</tr>
+	<tr>
+		<td><code>public void shutdown()</code></td>
+		<td><code>public final void __cleanUpAbstractWebDriverScriptTestCase()</code></td>
+	</tr>
+</table>
+<h4>Old Script Library Structure Not Supported Any Longer</h4>
+<p>Before we introduced script packages, the script library was structured into two main subdirectories, <code>testcases</code> and <code>modules</code>. Since script packages have entered the stage, these special directories were still supported for backward compatibility. Now years have passed, so we decided to eventually abandon the support for the old structure, both in Script Developer and the <span class="caps">XLT</span> framework. Please use regular script packages instead to separate scripts and modules.</p>
+            <div id="footer">
+	<p>Copyright © 2017 by <a href="http://www.xceptance.com/">Xceptance Software Technologies</a>. All rights reserved.</p>
+</div>
+
+
+        </div>
+    </div>
+</div>
+
+<!-- Generate the part of the TOC that contains the headings of the currently displayed page -->
+<!-- createToc (selectedHeadlines, classesTarget, classes )-->
+
+<script>createToc('h1,h2,h3', '#toc > ul', '#sidenav nav sidenav')</script>
+
+
+</body>
+
+</html>

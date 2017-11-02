@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html>
+
+  
+
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Real-Time Reporting with Graphite</title>
+  <meta name="description" content="Xceptance LoadTest - XLT, Documentation, Manual, Howto, FAQ">
+
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,700,400italic,300italic" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:100,300,400,500,700" rel="stylesheet" type="text/css">
+
+  <link href="../css/font-awesome.min.css" rel="stylesheet" media="all"  type="text/css" />
+  <link href="../css/lightbox.css" rel="stylesheet" media="all"  type="text/css" />
+
+  <link href="../css/highlightjs/default.css" rel="stylesheet" type="text/css" />
+  <link href="../css/highlightjs/mono-blue.css" rel="stylesheet" type="text/css" />
+
+  <link href="../css/xltdoc.css" rel="stylesheet" media="all"  type="text/css" />
+
+  <script type="text/javascript" src="../js/jquery-1.11.1.min.js"></script>
+  <script type="text/javascript" src="../js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="../js/toc.min.js"></script>
+  <script type="text/javascript" src="../js/lightbox.min.js"></script>
+  <script type="text/javascript" src="../js/headroom.min.js"></script>
+
+  <!-- <script type="text/javascript" src="../js/jquery.scrollIntoView.min.js"></script -->
+  <script type="text/javascript" src="../js/xltdoc.js"></script>
+
+  <script type="text/javascript" src="../js/highlight.pack.js"></script>
+</head>
+
+
+  <body data-spy="scroll" data-target="#toc" data-offset="100">
+
+    
+
+
+<!-- Fixed navbar -->
+<nav id="header" class="navbar navbar-default">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <a class="site-title" href="../index.html">
+            <img src="../img/XLTDoc-logo-transparent-165x82.png" id="product-logo" alt="XLT Product logo" title="Xceptance LoadTest"/>
+        </a>
+    </div>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    <div id="navbar" class="navbar-collapse collapse">
+        <!-- Links to external pages -->
+        <ul id="navbar-right" class="nav navbar-nav navbar-right navbar-text">
+	<li>
+		<a href="https://lab.xceptance.de/releases/xlt/latest/apidoc/" target="_blank" title="XLT API Documentation">
+			<i class="fa fa-external-link"></i>API</a>
+	</li>
+
+    <li>
+ 		<a href="https://ask.xceptance.de/" target="_blank" title="XLT Community Forum">
+ 			<i class="fa fa-external-link"></i>Forum</a>
+ 	</li> 
+    
+	<li>
+		<a href="https://www.xceptance.com/xlt/" target="_blank" title="XLT Website">
+			<i class="fa fa-external-link"></i>XLT Home</a>		
+	</li>			
+</ul>
+
+
+        <ul id="navbar-left" class="nav navbar-nav navbar-text">
+            <li class="inactive"><a href="../getting-started/index.html">Getting Started</a></li>
+            <li class="inactive"><a href="../user-manual/index.html">User Manual</a></li>
+            <li class="active"><a href="../how-to/index.html">How-To</a></li>
+            <li class="inactive"><a href="../release-notes/index.html">Release Notes</a></li>
+            <li class="inactive"><a href="../license.html">License</a></li>
+        </ul>
+
+    </div><!--/.nav-collapse -->
+
+</nav>
+
+
+
+
+<div id="breadcrumb" class="navbar navbar-default">
+  <div>
+    <ol class="breadcrumb">
+      
+
+      
+        <li><a href="../index.html"><i class="fa fa-home"></i>Docs</a></li>
+          
+            
+            <li><a href="../how-to/index.html">How-To</a></li>
+          
+      
+
+      <li class="active">Real-Time Reporting with Graphite</li>
+    </ol>
+  </div>
+</div>
+
+
+
+    <div class="main">
+		  <div clas="row">
+			<div id="content" class="col-md-9">			
+				<h1>Real-Time Reporting with Graphite</h1>
+<p>While a load test is running, the master controller only shows basic information about the load test status. In interactive mode, you could at least download intermediate results and generate a report to see how the test is going. In automated environments, however, you would have to wait until the test run is finished before you can actually do so.</p>
+<p>Wouldn&#8217;t it be great if you could watch the results in real time and see how the performance varies over time while the test is still running? To this end, we have added the support of <a href="http://graphite.readthedocs.org/en/latest/overview.html">Graphite</a>, a well-known data collection and graphing tool. During a load test, <span class="caps">XLT</span> could push selected metrics to Graphite. Using Graphite&#8217;s graphing capabilities or another graphing/dashboard tool on top of Graphite, you can watch the most important performance data instantly:</p>
+<p><img src="../img/releasenotes/xlt450/realtime-reporting.png" style="width: 100%;" title="Load Testing Dashboard" alt="Load Testing Dashboard" /></p>
+<p>See below for the <span class="caps">XLT</span> settings needed to enable and configure real-time reporting:</p>
+<pre class="plain"><code class="plain">
+## Whether real-time reporting is enabled (default: false).
+xlt.reporting.enabled = true</code>
+
+<code class="plain">## The time period [s] after which updated metrics are sent to the 
+## reporting system (default: 5).
+xlt.reporting.interval = 15</code>
+
+<code class="plain">## The text to be prepended to the name of any reported metric (default: "").
+## Use this prefix to create a separate metrics branch for each XLT load test
+## project in your reporting system.
+xlt.reporting.metricNamePrefix = xlt.MyProject.</code>
+
+<code class="plain">## The Graphite Carbon server's host and port (default: localhost/2003).
+xlt.reporting.graphite.host = my.graphite.machine
+xlt.reporting.graphite.port = 2003</code></pre>
+<p>If enabled, <span class="caps">XLT</span> reports the following metrics to Graphite:</p>
+<ul>
+	<li>runtime statistics (in total and per name), errors (in total and per name) and counts (in total) for
+	<ul>
+		<li>transactions,</li>
+		<li>actions,</li>
+		<li>requests, and</li>
+		<li>custom timers,</li>
+	</ul></li>
+	<li>arrival rates (in total and per transaction name),</li>
+	<li>bytes/sent received (in total and per request name),</li>
+	<li>event count (in total), and</li>
+	<li>agent metrics such as the total <span class="caps">CPU</span> usage and heap usage.</li>
+</ul>
+<p>Since not all performance details are sent to Graphite, you will only get a first impression of the application&#8217;s behavior. For a detailed analysis, the load test report is still the tool of choice.</p>
+<blockquote class="note">
+<p class="note"><a href="http://graphite.readthedocs.org/en/latest/install.html">Graphite</a> is not bundled with <span class="caps">XLT</span>. You need to install, configure, and run it yourself.</p>
+</blockquote>
+				<div id="footer">
+	<p>Copyright © 2017 by <a href="http://www.xceptance.com/">Xceptance Software Technologies</a>. All rights reserved.</p>
+</div>
+
+
+			</div>
+			<div id="sidenav" class="col-md-3 hidden-xs">
+				<nav class="sidenav nav">
+					<!-- TOC of all available files/pages in folder '/how-to' -->
+						<ul class="nav sidenav">
+						
+						  
+						
+						  
+						
+						  
+						
+						  
+						
+						  
+						
+						  
+						
+						  
+						
+						  
+						
+						  
+						
+						  
+						
+						  
+						
+						  
+						
+						  
+						
+						  
+						
+						  
+						
+						  
+						
+						  
+						
+						  
+						
+						  
+						
+						  
+						
+						  
+						
+						  
+						
+						  
+						
+						  
+						
+						  
+						
+						  
+						
+						  
+						
+						  
+							  <!-- Table of content from page headings for the currently loaded file-->
+								<li class="current-page">
+									<a class="current-page" href="">Real-Time Reporting with Graphite</a>
+									<!-- Container for page headings TOC -->
+									<div id="toc" class="sidenav"></div>
+								</li>
+						  
+						
+						  
+						
+						  
+						
+						  
+						
+						  
+						
+						  
+						
+						  
+						
+						  
+						
+						  
+						
+						  
+						
+						  
+						
+						  
+						
+						  
+						
+						</ul>
+				</nav>
+			</div>
+		  </div>
+
+      </div>
+    </div>
+
+
+	<!-- Generate the part of the TOC that contains the headings of the currently displayed page -->
+    <!-- createToc (selectedHeadlines, classesTarget, classes )-->
+	<script>createToc('h1,h2,h3', '#toc > ul', 'nav sidenav')</script>
+
+  </body>
+
+</html>

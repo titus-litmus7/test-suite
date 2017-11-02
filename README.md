@@ -1,2 +1,2 @@
-# test-suite
-Test suite to check xlt and selenium scripts
+# xlt-tatcha
+XLT scripts of Tatcha

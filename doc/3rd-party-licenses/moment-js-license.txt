@@ -1,0 +1,4 @@
+Moment.js
+============================================================
+License: MIT License
+Where: http://momentjs.com/

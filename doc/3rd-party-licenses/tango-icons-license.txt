@@ -1,0 +1,7 @@
+Tango Icons
+
+We are proudly using icons from the Tango Project. All icons are licensed under Public Domain.
+"The Tango base icon theme is released to the Public Domain. The palette is in public domain. 
+Developers, feel free to ship it along with your application."
+
+For more information, see the project page: http://tango.freedesktop.org/Tango_Desktop_Project

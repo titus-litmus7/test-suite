@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html>
+
+
+
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Continuous Load Testing with XLT Plugin for Jenkins</title>
+  <meta name="description" content="Xceptance LoadTest - XLT, Documentation, Manual, Howto, FAQ">
+
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,700,400italic,300italic" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:100,300,400,500,700" rel="stylesheet" type="text/css">
+
+  <link href="../css/font-awesome.min.css" rel="stylesheet" media="all"  type="text/css" />
+  <link href="../css/lightbox.css" rel="stylesheet" media="all"  type="text/css" />
+
+  <link href="../css/highlightjs/default.css" rel="stylesheet" type="text/css" />
+  <link href="../css/highlightjs/mono-blue.css" rel="stylesheet" type="text/css" />
+
+  <link href="../css/xltdoc.css" rel="stylesheet" media="all"  type="text/css" />
+
+  <script type="text/javascript" src="../js/jquery-1.11.1.min.js"></script>
+  <script type="text/javascript" src="../js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="../js/toc.min.js"></script>
+  <script type="text/javascript" src="../js/lightbox.min.js"></script>
+  <script type="text/javascript" src="../js/headroom.min.js"></script>
+
+  <!-- <script type="text/javascript" src="../js/jquery.scrollIntoView.min.js"></script -->
+  <script type="text/javascript" src="../js/xltdoc.js"></script>
+
+  <script type="text/javascript" src="../js/highlight.pack.js"></script>
+</head>
+
+
+<body data-spy="scroll" data-target="#toc" data-offset="100" class="layout-manual how-to">
+
+    
+
+
+<!-- Fixed navbar -->
+<nav id="header" class="navbar navbar-default">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <a class="site-title" href="../index.html">
+            <img src="../img/XLTDoc-logo-transparent-165x82.png" id="product-logo" alt="XLT Product logo" title="Xceptance LoadTest"/>
+        </a>
+    </div>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    <div id="navbar" class="navbar-collapse collapse">
+        <!-- Links to external pages -->
+        <ul id="navbar-right" class="nav navbar-nav navbar-right navbar-text">
+	<li>
+		<a href="https://lab.xceptance.de/releases/xlt/latest/apidoc/" target="_blank" title="XLT API Documentation">
+			<i class="fa fa-external-link"></i>API</a>
+	</li>
+
+    <li>
+ 		<a href="https://ask.xceptance.de/" target="_blank" title="XLT Community Forum">
+ 			<i class="fa fa-external-link"></i>Forum</a>
+ 	</li> 
+    
+	<li>
+		<a href="https://www.xceptance.com/xlt/" target="_blank" title="XLT Website">
+			<i class="fa fa-external-link"></i>XLT Home</a>		
+	</li>			
+</ul>
+
+
+        <ul id="navbar-left" class="nav navbar-nav navbar-text">
+            <li class="inactive"><a href="../getting-started/index.html">Getting Started</a></li>
+            <li class="inactive"><a href="../user-manual/index.html">User Manual</a></li>
+            <li class="active"><a href="../how-to/index.html">How-To</a></li>
+            <li class="inactive"><a href="../release-notes/index.html">Release Notes</a></li>
+            <li class="inactive"><a href="../license.html">License</a></li>
+        </ul>
+
+    </div><!--/.nav-collapse -->
+
+</nav>
+
+
+
+
+<div id="breadcrumb" class="navbar navbar-default">
+  <div>
+    <ol class="breadcrumb">
+      
+
+      
+        <li><a href="../index.html"><i class="fa fa-home"></i>Docs</a></li>
+          
+            
+            <li><a href="../how-to/index.html">How-To</a></li>
+          
+      
+
+      <li class="active">Continuous Load Testing with XLT Plugin for Jenkins</li>
+    </ol>
+  </div>
+</div>
+
+
+    
+<div id="main" class="main container-fluid">
+    <div class="row">
+        <div class="hidden-xs col-sm-4 col-md-3 sidenav-col">
+            <nav id="sidenav" class="sidenav nav">
+                <!-- TOC of all available files/pages in folder  -->
+                <ul class="nav sidenav">
+                
+
+
+
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        
+            <li>
+            
+                <a href="../how-to/basic-rules-for-test-suite.html">Basic rules for a Script Developer Test Suite</a>
+                
+            </li>
+        
+    
+
+    
+        
+            <li>
+            
+                <a href="../how-to/choosing-a-test-approach.html">Choose a Test Suite Approach</a>
+                
+            </li>
+        
+    
+
+    
+        
+            <li>
+            
+                <a href="../how-to/graphite.html">Real-Time Reporting with Graphite</a>
+                
+            </li>
+        
+    
+
+    
+        
+            <li>
+            
+                <a href="../how-to/how-to-structure-test-suites.html">Structuring Test Suite and Test Cases</a>
+                
+            </li>
+        
+    
+
+    
+        
+            <li>
+            
+                <a href="../how-to/importing-XLT-projects-into-eclipse.html">Run Script Test Suite From Within Eclipse</a>
+                
+            </li>
+        
+    
+
+    
+
+    
+
+    
+
+    
+        
+    
+
+    
+
+    
+        
+            <li>
+            
+                <a href="../how-to/integrating-XLT-with-Maven-and-Ivy.html">Integrating XLT with Maven and Ivy</a>
+                
+            </li>
+        
+    
+
+    
+        
+            
+                <!-- Table of content from page headings for the currently loaded file-->
+                <li class="current-page">
+                    <a class="current-page" href="">Continuous Load Testing with XLT Plugin for Jenkins</a>
+                    <!-- Container for page headings TOC -->
+                    <div id="toc" class="sidenav"></div>
+                </li>
+            
+        
+    
+
+    
+
+    
+        
+            <li>
+            
+                <a href="../how-to/properties-include-concept.html">Including Additional Property Files</a>
+                
+            </li>
+        
+    
+
+    
+
+
+                </ul>
+            </nav>
+        </div>
+
+        <div id="content" class="col-xs-12 col-sm-8 col-md-9 content-col">
+            <h2>Introduction</h2>
+<h3>About this Document</h3>
+<p>This document describes how to establish continuous load testing with the <span class="caps">XLT</span> plug-in for the <a href="http://jenkins-ci.org">Jenkins</a> continuous integration system. To work effectively with this plug-in, a basic understanding of <span class="caps">XLT</span>, load testing with <span class="caps">XLT</span> and Jenkins may be helpful.</p>
+<h3>Continuous Load Testing</h3>
+<p>Load testing is usually done as one of the last steps in a project, often only a few weeks before release. This is somewhat problematic since serious performance issues sometimes require architectural changes. If these changes are not tested thoroughly, the risk of undetected bugs increases tremendously.</p>
+<p>To spot performance problems early, ideally while the project is still under development, load testing should take place on a regular basis. If you are willing to invest time up front to establish continuous load testing, it will surely pay out later on. <span class="caps">XLT</span> provides the tools to make continuous load testing an engineering habit.</p>
+<h3>Jenkins</h3>
+<p>Jenkins is a widely used continuous integration system. It helps you set up and control automated build and deployment processes, which can be run regularly. Jenkins can be extended by plug-ins. The <span class="caps">XLT</span> plug-in for Jenkins brings load testing and continuous integration together. In Jenkins terms, an <span class="caps">XLT</span> load test project is a build project, while an individual load test run is a build.</p>
+<h3><span class="caps">XLT</span> Plug-In Features</h3>
+<p><strong>Easy integration of <span class="caps">XLT</span> load tests</strong> &#8211; The plug-in makes it easy for you to run a load test. You simply configure some basic settings via the Jenkins UI and the plug-in will then take care of carrying out the necessary steps with the parameters you have provided. You don&#8217;t have to deal with <span class="caps">XLT</span> tools directly, that is you don&#8217;t need to write shell scripts to drive the load test. Furthermore, the plug-in automatically stores the results, creates load test reports, and updates trend reports for you.</p>
+<p><strong>Automatic evaluation of the load test results</strong> &#8211; Don&#8217;t think you&#8217;re all set if you just run a load test on a regular basis. You also need to check if the test results are actually acceptable. Doing this manually after each test run doesn&#8217;t really fit into the work processes of continuous development; it should therefore be automated as well. To this end, you can define success criteria. For example, you may verify that no errors occurred, that the maximum request runtime was below 10 seconds, and that page X took less than 2 seconds to load. The plug-in tests these criteria after each load test. If a criterion has not been fulfilled, the build will be marked as unstable. This should encourage you to have a closer look at the results and find out what went wrong.</p>
+<p><strong>Visualization of the performance trend</strong> &#8211; To show you when the application behavior has changed and to which extend, the plug-in can visualize a long-term trend across multiple builds. Simply define the values that you would like to watch over time, for example the response time of page X, and the plug-in will then visualize the trend in overview charts on the project page. For an in-depth evaluation of all data, the plug-in can also generate two different types of trend reports which contain all the details.</p>
+<p>The plug-in enriches the standard Jenkins project and build pages. On a build&#8217;s page, the corresponding load test report is available as well as a list of any success criterion that may have been violated during this build. The project page shows the trend charts and provides links to access the trend reports.</p>
+<h2>Installation Instructions</h2>
+<p>First, check the version of Jenkins you are using. The <span class="caps">XLT</span> plug-in requires v1.580.1 or later.</p>
+<p>To install the <span class="caps">XLT</span> plug-in into Jenkins, simply copy the plug-in file <code>&lt;xlt&gt;/tools/xlt-jenkins-plugin-X.X.X/xlt-jenkins-plugin.hpi</code> to the <code>plugins</code> sub-directory of your Jenkins installation. Restart Jenkins for the plug-in to be picked up.</p>
+<p>Note that you will also need an <span class="caps">XLT</span> installation on the Jenkins machine. This installation acts as a template and will be copied to a temporary location for each load test. To accelerate this step, remove any sub-directory from the installation folder that is not necessary for load testing, such as <code>doc</code>, <code>samples</code>, or <code>tools</code>.</p>
+<h2>Setting Up an Automated Load Test</h2>
+<h3>Develop an <span class="caps">XLT</span> Load Test Project</h3>
+<p>A regular <span class="caps">XLT</span> load test project will be the foundation for your automated load tests, so simply design and implement a load test suite for your application as usual. This is completely independent of Jenkins, there is nothing special to do or to consider.</p>
+<p>In case you use Maven or Ivy as dependency management tool, you might take a look at this <a href="integrating-XLT-with-Maven-and-Ivy.html">How-To</a> on how to integrate <span class="caps">XLT</span> into your project as dependency.</p>
+<p>When the code is complete, prepare the test configurations for which you want to run automatic load tests as separate properties files (for example, <code>smoketest.properties</code> and <code>nightly.properties</code>). Note that you can also do this or other fine-tuning later on.</p>
+<p>Now, test your load test suite and configurations thoroughly. Everything should work as expected when being run manually.</p>
+<h3>Create a Load Test Build Project</h3>
+<p>An automated load test suite requires a separate build project to be set up. The reason is that the test suite itself needs to be retrieved from a version control system and the code needs to be compiled. This is best accomplished in an own build project, so let&#8217;s create one now. In Jenkins, create the load test project and give it a meaningful name and description. Choose &#8220;free-style project&#8221; as the project type. Now the project needs to be configured.</p>
+<p><strong>Step 1 &#8211; Connect to your version control system</strong></p>
+<p>Every time a load test is to be executed, the latest version of the test suite will be retrieved from a version control system first. So select the adapter for your favourite version control system and configure access credentials and the path to your test suite.</p>
+<p><strong>Step 2 &#8211; Compile your test suite</strong></p>
+<p>Now configure the way how your test suite is compiled. Typically, you would do this via <em>Ant</em> or <em>Maven</em>. Whatever tool you choose, make sure an appropriate build file (<code>build.xml</code> for Ant, <code>pom.xml</code> for Maven) is available in the root of your test suite project. Add the appropriate build step to your project and enter the build target that compiles your test suite.</p>
+<p><strong>Step 3 &#8211; Configure your load test</strong></p>
+<p>Now add the <span class="caps">XLT</span> plug-in as a new build step to your project and configure it as follows:</p>
+<ul>
+	<li>Specify the full path to the <span class="caps">XLT</span> installation template on the Jenkins machine.</li>
+	<li>Enter the name of the properties file with the load test configuration settings (for example, <code>smoketest.properties</code>). This file will be searched for in the <code>config</code> folder of your test suite.</li>
+	<li>In the agent controller section, check the radio button &#8220;Use a single embedded agent controller&#8221;.</li>
+	<li>Go with the defaults for all other settings for now.</li>
+</ul>
+<blockquote class="note">
+<p class="note">Please note that with the default configuration the load test will be driven from the Jenkins machine, so the configured load profile should not be too demanding. See below for an overview of what else can be configured.</p>
+</blockquote>
+<p>To generate higher load it might be not enough to run one <span class="caps">XLT</span> agent controller from the Jenkins machine. Dedicated load generating machines are recommended. When configuring the <span class="caps">XLT</span> plug-in the agent controller section offers several options one of them beeing &#8220;Start agent machines in Amazon&#8217;s EC2&#8221;. This allows to automatically start Amazon machine images (<span class="caps">AMI</span>) in Amazon&#8217;s Elastic Compute Cloud (EC2) that can be used to generate the load. Typically, you will use one of the machine images with <span class="caps">XLT</span> already installed. For the current list of <span class="caps">AMI</span> IDs, see the <a href="https://www.xceptance.com/en/xlt/download.html">Xceptance homepage</a>.</p>
+<blockquote class="note">
+<p class="note">When using the option &#8220;Start agent machines in Amazon&#8217;s EC2&#8221; the <span class="caps">XLT</span> master controller has to wait for the remote agent controller EC2 machines to come up. This can take several minutes. This is why you should adjust the <span class="caps">XLT</span> property <code>com.xceptance.xlt.mastercontroller.initialResponseTimeout</code> to a value that is useful for the described scenario.</p>
+</blockquote>
+<p><strong>Step 4 &#8211; Other project settings</strong></p>
+<p>Configure any other project setting you might find useful. For example, specify for how long/for how many builds you want to keep the load test results. You may also want to configure email notification (as a post-build step) to get a message whenever the build was not successful.</p>
+<p>Once you&#8217;re done with the configuration, start your build project manually to verify that everything works as expected. If all went well, your build should show <span style="color:darkblue;"><span class="caps">SUCCESS</span></span>. If the load test could not be executed for whatever reason (wrong configuration, etc.), the build will be marked as <span style="color:red;"><span class="caps">FAILED</span></span>. If the load test ran to completion, but the configured success criteria were violated, the build will be marked as <span style="color:orange;"><span class="caps">UNSTABLE</span></span>.</p>
+<h3>Define a Trigger for the Load Test</h3>
+<p>To run your load test automatically, you need to define the event that should trigger the load test build project. You basically have two options:</p>
+<ol>
+	<li>You can run the load test once another build project completed successfully, for example after your application has been built and deployed. To this end, configure your load test project to depend on the application&#8217;s main build project.</li>
+	<li>You might also run your load test periodically, for example every night, as an independent or stand-alone project. In this case, you would need to configure a time pattern that defines the times when the project will be executed by Jenkins.</li>
+</ol>
+<h2>Advanced Configuration</h2>
+<p>Many other details of the <span class="caps">XLT</span> plug-in functionality can be configured. This includes:</p>
+<ul>
+	<li>Agent Controllers</li>
+	<li>Report Options</li>
+	<li>Trend Charts and Success Criteria</li>
+	<li>Chart Options</li>
+</ul>
+<p>Each configuration value provides an extensive help text, so make sure to click the <em>Help</em> icon next to the value if in doubt what can be configured there.</p>
+<blockquote class="note">
+<p class="note">Please note that the <span class="caps">XLT</span> plug-in can be added to a project not only once, but multiple times. This allows to run multiple tests with the same test suite in a row, for example a short smoke test, followed by a longer performance test. In this case, each <span class="caps">XLT</span> build step has to be configured individually.</p>
+</blockquote>
+            <div id="footer">
+	<p>Copyright © 2017 by <a href="http://www.xceptance.com/">Xceptance Software Technologies</a>. All rights reserved.</p>
+</div>
+
+
+        </div>
+    </div>
+</div>
+
+<!-- Generate the part of the TOC that contains the headings of the currently displayed page -->
+<!-- createToc (selectedHeadlines, classesTarget, classes )-->
+
+<script>createToc('h1,h2,h3', '#toc > ul', '#sidenav nav sidenav')</script>
+
+
+</body>
+
+</html>

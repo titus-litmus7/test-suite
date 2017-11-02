@@ -1,0 +1,740 @@
+<!DOCTYPE html>
+<html>
+
+
+
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>3.2.x</title>
+  <meta name="description" content="Xceptance LoadTest - XLT, Documentation, Manual, Howto, FAQ">
+
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,700,400italic,300italic" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:100,300,400,500,700" rel="stylesheet" type="text/css">
+
+  <link href="../css/font-awesome.min.css" rel="stylesheet" media="all"  type="text/css" />
+  <link href="../css/lightbox.css" rel="stylesheet" media="all"  type="text/css" />
+
+  <link href="../css/highlightjs/default.css" rel="stylesheet" type="text/css" />
+  <link href="../css/highlightjs/mono-blue.css" rel="stylesheet" type="text/css" />
+
+  <link href="../css/xltdoc.css" rel="stylesheet" media="all"  type="text/css" />
+
+  <script type="text/javascript" src="../js/jquery-1.11.1.min.js"></script>
+  <script type="text/javascript" src="../js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="../js/toc.min.js"></script>
+  <script type="text/javascript" src="../js/lightbox.min.js"></script>
+  <script type="text/javascript" src="../js/headroom.min.js"></script>
+
+  <!-- <script type="text/javascript" src="../js/jquery.scrollIntoView.min.js"></script -->
+  <script type="text/javascript" src="../js/xltdoc.js"></script>
+
+  <script type="text/javascript" src="../js/highlight.pack.js"></script>
+</head>
+
+
+<body data-spy="scroll" data-target="#toc" data-offset="100" class="layout-manual ">
+
+    
+
+
+<!-- Fixed navbar -->
+<nav id="header" class="navbar navbar-default">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <a class="site-title" href="../index.html">
+            <img src="../img/XLTDoc-logo-transparent-165x82.png" id="product-logo" alt="XLT Product logo" title="Xceptance LoadTest"/>
+        </a>
+    </div>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    <div id="navbar" class="navbar-collapse collapse">
+        <!-- Links to external pages -->
+        <ul id="navbar-right" class="nav navbar-nav navbar-right navbar-text">
+	<li>
+		<a href="https://lab.xceptance.de/releases/xlt/latest/apidoc/" target="_blank" title="XLT API Documentation">
+			<i class="fa fa-external-link"></i>API</a>
+	</li>
+
+    <li>
+ 		<a href="https://ask.xceptance.de/" target="_blank" title="XLT Community Forum">
+ 			<i class="fa fa-external-link"></i>Forum</a>
+ 	</li> 
+    
+	<li>
+		<a href="https://www.xceptance.com/xlt/" target="_blank" title="XLT Website">
+			<i class="fa fa-external-link"></i>XLT Home</a>		
+	</li>			
+</ul>
+
+
+        <ul id="navbar-left" class="nav navbar-nav navbar-text">
+            <li class="inactive"><a href="../getting-started/index.html">Getting Started</a></li>
+            <li class="inactive"><a href="../user-manual/index.html">User Manual</a></li>
+            <li class="inactive"><a href="../how-to/index.html">How-To</a></li>
+            <li class="active"><a href="../release-notes/index.html">Release Notes</a></li>
+            <li class="inactive"><a href="../license.html">License</a></li>
+        </ul>
+
+    </div><!--/.nav-collapse -->
+
+</nav>
+
+
+
+
+<div id="breadcrumb" class="navbar navbar-default">
+  <div>
+    <ol class="breadcrumb">
+      
+
+      
+        <li><a href="../index.html"><i class="fa fa-home"></i>Docs</a></li>
+          
+            
+            <li><a href="../release-notes/index.html">Release Notes</a></li>
+          
+      
+
+      <li class="active">3.2.x</li>
+    </ol>
+  </div>
+</div>
+
+
+    
+<div id="main" class="main container-fluid">
+    <div class="row">
+        <div class="hidden-xs col-sm-4 col-md-3 sidenav-col">
+            <nav id="sidenav" class="sidenav nav">
+                <!-- TOC of all available files/pages in folder  -->
+                <ul class="nav sidenav">
+                
+
+
+
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        
+            <li>
+            
+                <a href="../release-notes/4.9.x.html">4.9.x</a>
+                
+            </li>
+        
+    
+
+    
+        
+            <li>
+            
+                <a href="../release-notes/4.8.x.html">4.8.x</a>
+                
+            </li>
+        
+    
+
+    
+        
+            <li>
+            
+                <a href="../release-notes/4.7.x.html">4.7.x</a>
+                
+            </li>
+        
+    
+
+    
+        
+            <li>
+            
+                <a href="../release-notes/4.6.x.html">4.6.x</a>
+                
+            </li>
+        
+    
+
+    
+        
+            <li>
+            
+                <a href="../release-notes/4.5.x.html">4.5.x</a>
+                
+            </li>
+        
+    
+
+    
+        
+            <li>
+            
+                <a href="../release-notes/4.4.x.html">4.4.x</a>
+                
+            </li>
+        
+    
+
+    
+        
+            <li>
+            
+                <a href="../release-notes/4.3.x.html">4.3.x</a>
+                
+            </li>
+        
+    
+
+    
+        
+            <li>
+            
+                <a href="../release-notes/4.2.x.html">4.2.x</a>
+                
+            </li>
+        
+    
+
+    
+        
+            <li>
+            
+                <a href="../release-notes/4.1.x.html">4.1.x</a>
+                
+            </li>
+        
+    
+
+    
+        
+            <li>
+            
+                <a href="../release-notes/4.0.x.html">4.0.x</a>
+                
+            </li>
+        
+    
+
+    
+        
+            <li>
+            
+                <a href="../release-notes/3.3.x.html">3.3.x</a>
+                
+            </li>
+        
+    
+
+    
+        
+            
+                <!-- Table of content from page headings for the currently loaded file-->
+                <li class="current-page">
+                    <a class="current-page" href="">3.2.x</a>
+                    <!-- Container for page headings TOC -->
+                    <div id="toc" class="sidenav"></div>
+                </li>
+            
+        
+    
+
+
+                </ul>
+            </nav>
+        </div>
+
+        <div id="content" class="col-xs-12 col-sm-8 col-md-9 content-col">
+            <h2><span class="caps">XLT</span> 3.2.2</h2>
+<p class="lead">A complete list of changes can be found at <a href="https://lab.xceptance.de/versions/21"><span class="caps">XLT</span> Information Center &#8211; Release 3.2.2</a>. Please note that only customers and partners with a valid login can access the Information Center. If you are a customer or partner and you have not gotten access yet, feel free to send an email to Xceptance Support.</p>
+<h3>Improvements</h3>
+<p>This section lists all improvements to existing features including a short documentation of how you can benefit from it.</p>
+<h4>Master controller reports total time and progress (#445)</h4>
+<p>The master controller reports the total test runtime and the progress independent of the current iteration progress now. Previously, only an iteration update triggered a progress update.</p>
+<h4>Script recorder support for Firefox 3.5 (#479)</h4>
+<p>The script recorder supports all Mozilla Firefox versions up to 3.5 now.</p>
+<h4><span class="caps">HTTP</span> header information in result <span class="caps">HTML</span> files (#446)</h4>
+<p><span class="caps">XLT</span> saves &#8211; when configured &#8211; all received responses to disk for further evaluation. For <span class="caps">HTML</span> responses, <span class="caps">XLT</span> added request/response header information as <span class="caps">HTML</span> comment to the top of the file. Sometimes this is inconvenient, especially when referencing line information from error messages. Therefore all header information is now written to the end of the file to keep the line number references intact.</p>
+<h3>Bug Fixes</h3>
+<p>This sections covers all the important defects that were fixed with this release.</p>
+<h4>Result Browser did not render results correctly when served via web (#356)</h4>
+<p>The data from the result browser could not be served via a web server, because the content types of the data objects were unknown. This has been fixed.</p>
+<h4>Exception when saving pages to disk (#507)</h4>
+<p>Several problems have been fixed, when pages could not be saved to disk for later display with the result browser.</p>
+<h4>Static resources are not loaded using parallel threads (#470)</h4>
+<p><span class="caps">XLT</span> loads static resources, such as images or <span class="caps">CSS</span> files, asynchronously using parallel threads. However, sometimes just one thread is busy loading resources while the others do nothing. This has been fixed now. <span class="caps">XLT</span> is using all configured threads now to load static content concurrently.</p>
+<h4>Number of parallel connection per host was limited (#503)</h4>
+<p>The number of parallel connections for downloading static content was limited to two, even though the thread count was set higher. Reason was the internal connection handling of the <span class="caps">HTTP</span> client per host. This limitation has been removed.</p>
+<h4>Report generator failed to load reports from archives (#458)</h4>
+<p>The report generator is able to load report data from archives. The archive path was not detected correctly and the archive could not be opened. This has been fixed now. Archives, such as <span class="caps">ZIP</span>, <span class="caps">JAR</span>, <span class="caps">TAR</span>, compressed <span class="caps">TAR</span> can be used to read report data from.</p>
+<h4>Undefined actions were recorded (#490)</h4>
+<p>Under rare circumstances, the recorder created undefined actions. This has been fixed.</p>
+<h4><span class="caps">XLT</span> was caching to aggressively (#483)</h4>
+<p>When the server did not send any caching hints as part of the response headers, <span class="caps">XLT</span> assumed that the response is cache-able forever. However, browsers do not cache the response in this case. The standard says:</p>
+<blockquote class="note">
+<p class="note">If none of Expires, Cache-Control: max-age, or Cache-Control: s-maxage (see section 14.9.3) appears in the response, and the response does not include other restrictions on caching, the cache <span class="caps">MAY</span> compute a freshness lifetime using a heuristic. The cache <span class="caps">MUST</span> attach Warning 113 to any response whose age is more than 24 hours if such warning has not already been added.</p>
+</blockquote>
+<p>If no caching hint was sent by the server, the cache does no longer assume that the response is cache-able forever. Instead, if a Last-Modified response header is present, the cache uses some heuristics to derive an appropriate expiration time from it (10% of the resource&#8217;s current age). Otherwise, the response is not cached at all.</p>
+<h2><span class="caps">XLT</span> 3.2.1</h2>
+<p>A complete list of changes can be found at <a href="https://lab.xceptance.de/versions/20"><span class="caps">XLT</span> Information Center &#8211; Release 3.2.1</a>. Please note that only customers and partners with a valid login can access the Information Center. If you are a customer or partner and you have not gotten access yet, feel free to send an email to Xceptance Support.</p>
+<h3>Improvements</h3>
+<p>This section lists all improvements to existing features including a short documentation of how you can benefit from it.</p>
+<h4>Enhanced merge rules for request reporting (#435)</h4>
+<p>To allow more flexibility in the automated processing of requests, especially when sorting implicit background calls which have not been named correctly, the request merge rules have been enhanced. Now they permit  you to specify multiple capturing groups, which can then be used to compose the name based on the captured data. Additionally the processing can be continued after a rule matches. The data can be passed through several rules and more than one rule can be applied. This can be useful when requests have to be <i>renamed</i> first and afterwards <i>regrouped</i>.</p>
+<pre class="ini"><code class="ini">com.xceptance.xlt.reportgenerator.requestMergeRules.0.newName = {n:1} CSS
+com.xceptance.xlt.reportgenerator.requestMergeRules.0.namePattern = ([^.]+)
+com.xceptance.xlt.reportgenerator.requestMergeRules.0.contentTypePattern =
+com.xceptance.xlt.reportgenerator.requestMergeRules.0.statusCodePattern =
+com.xceptance.xlt.reportgenerator.requestMergeRules.0.urlPattern = \\.css$
+com.xceptance.xlt.reportgenerator.requestMergeRules.0.stopOnMatch = true</code></pre>
+<p>This example shows that the <code>newName</code> parameter can contain placeholders. The placeholder content is fed by the capturing groups within <code>namePattern</code>, <code>contentTypePattern</code>,  <code>statusCodePattern</code>,  and <code>urlPattern</code>. The raw syntax is: <code>{&lt;patternId&gt;:&lt;capturingGroupIndex&gt;}</code>, where patternId is one of the following letters:</p>
+<pre class="ini"><code class="ini">"n" (for namePattern),
+"c" (for contentTypePattern),
+"s" (for statusCodePattern), and
+"u" (for urlPattern)</code></pre>
+<p>The capturingGroupIndex indicates which capturing group from your expression is used. 0 stands for the entire matching string, even without any group specified. All other numbers indicate the group to use. If a group is not available or the syntax of the string is wrong, no error message is thrown.</p>
+<p>The new parameter <code>stopOnMatch</code> allows chaining of rules. By default, the processing of the rules will stop as soon as a rule matches (<code>stopOnMatch = true</code>). In case you want to apply several rules one after the other, just specify <code>stopOnMatch = false</code> for the rule. Keep in mind that the first matching rule with a true will stop the request merging.</p>
+<blockquote class="warning">
+<p class="warning">The improvement breaks the existing merge rules, because before they implicitly included the capture group from the name in the composition of the new name. Please adjust your rules accordingly. Most of the time it is only necessary to explicitly include the <code>namePattern</code> capture output in the <code>newName</code> definition, such as <code>newName = {n:0} Images</code>.</p>
+</blockquote>
+<h5>Example for Groups</h5>
+<p>For instance,  if the pattern <code>urlPattern = (http[s]{0,1})://([^/]+)/.*</code> is specified and the <span class="caps">URL</span> is <code>http://www.mytest.net/</code>, the placeholder <code>{n:0}</code> will  return <code>http://www.mytest.net/</code>, <code>{n:1}</code> will return <code>http</code>, and <code>{n:2}</code> will return <code>www.mytest.net</code>.</p>
+<h5>Example for Chaining</h5>
+<p>This example shows how you can use the chaining of rules to apply several merging rules. The first rule splits the requests by protocol to build up individual buckets. The second rule marks requests when a redirect response code was issued, such as 301 and 302.</p>
+<pre class="ini"><code class="ini">com.xceptance.xlt.reportgenerator.requestMergeRules.0.newName = {n:1} - {u:1}
+com.xceptance.xlt.reportgenerator.requestMergeRules.0.namePattern = ([^.]+)
+com.xceptance.xlt.reportgenerator.requestMergeRules.0.contentTypePattern =
+com.xceptance.xlt.reportgenerator.requestMergeRules.0.statusCodePattern =
+com.xceptance.xlt.reportgenerator.requestMergeRules.0.urlPattern = ^(http[s]*)://
+com.xceptance.xlt.reportgenerator.requestMergeRules.0.stopOnMatch = false</code>
+
+<code class="ini">com.xceptance.xlt.reportgenerator.requestMergeRules.1.newName = {n:1} - {s:1}
+com.xceptance.xlt.reportgenerator.requestMergeRules.1.namePattern = ([^.]+)
+com.xceptance.xlt.reportgenerator.requestMergeRules.1.contentTypePattern =
+com.xceptance.xlt.reportgenerator.requestMergeRules.1.statusCodePattern = (30[12])
+com.xceptance.xlt.reportgenerator.requestMergeRules.1.urlPattern =
+com.xceptance.xlt.reportgenerator.requestMergeRules.1.stopOnMatch = false</code></pre>
+<p>Just some URLs with their initial name and response code:</p>
+<pre class="ini"><code class="ini">Homepage http://www.mytest.org/ [301]
+Homepage.1 http://www.mytest.org/landing - [200]
+Catalog http://www.mytest.org/catalog1.html - [200]
+Catalog http://www.mytest.org/catalog2.html - [200]
+MyAccount http://www.mytest.org/account - [200]
+MyAccount https://www.mytest.org/registerme - [200]</code></pre>
+<p>After the processing, the resulting set of request names will look like this. The <span class="caps">URL</span> listed in parentheses after the name is not part of the name; it just illustrates where the URLs ended up.</p>
+<pre class="ini"><code class="ini">Homepage - http  (http://www.mytest.org/landing)
+Homepage - http - 301 (http://www.mytest.org/)
+Catalog - http (http://www.mytest.org/catalog1.html, http://www.mytest.org/catalog2.html)
+MyAccount - http (http://www.mytest.org/account)
+MyAccount - https (https://www.mytest.org/account)</code></pre>
+<h3>Bug Fixes</h3>
+<p>This sections covers all the important defects that were fixed with this release.</p>
+<h4>Incorrect loading of static content (#425)</h4>
+<p>Some static resources were not loaded when included via the style attribute in the <span class="caps">HTML</span> code. Now these resources will be picked up and loaded correctly.</p>
+<h4>Incorrect loading of content form link tags (#423)</h4>
+<p>Some resources referenced via <link> tags were being loaded, even though they were marked as alternate content. This content is now  excluded from static content loading.</p>
+<pre class="html"><code class="html">&lt;link rel="alternate" media="handheld" href="http://www.abcdefg24.com/"&gt;</code></pre>
+<h4>Problems with curly braces in properties (#436)</h4>
+<p>The handling of curly braces in properties was too strict and has now been relaxed. Curly braces permit the replacement of data in properties with another property.</p>
+<h5>Example</h5>
+<pre class="ini"><code class="ini">com.test.host = www.test.org
+com.test.url = http://${com.test.host}/</code></pre>
+<h4>Agent process did not stop (#422)</h4>
+<p>Under some circumstances, an agent process did not stop, because a thread was hanging in a sleep() operation. This is probably OS or <span class="caps">JDK</span> related, but a workaround has been implemented to reduce the likelihood of its happening.</p>
+<h2><span class="caps">XLT</span> 3.2.0</h2>
+<p>A complete list of changes can be found at <a href="https://lab.xceptance.de/versions/1"><span class="caps">XLT</span> Information Center &#8211; Release 3.2.0</a>. Please note that only customers and partners with a valid login can access the Information Center. If you are a customer or partner and you have not gotten access yet, feel free to send an email to Xceptance Support.</p>
+<h3>Features</h3>
+<p>This section documents all new features and additions to Xceptance LoadTest.</p>
+<h4>Script Recorder</h4>
+<p>The <span class="caps">XLT</span> Script Recorder Firefox extension has been significantly reworked. There are many new enhancements and fixes. The major highlights are:</p>
+<ul>
+	<li>Improved user interface.</li>
+	<li>Enhanced recording capabilities for web sites that use JavaScript extensively.</li>
+	<li>The generated Java classes are shorter and more comprehensible.</li>
+	<li>The script recorder updates automatically if a new version is published on the <span class="caps">XLT</span> web site.</li>
+</ul>
+<p>Note that, for older versions of the recorder that are already installed in Firefox, the automatic update mechanism is not available. Simply install the new <code>.xpi</code> file manually in this case. You will find this file in <code>&lt;xlt&gt;/tools</code>. Furthermore, only patch releases (e.g. v3.2.1) will be installed automatically. To upgrade to a new major version (e.g. v3.3.0) in the future, you will still have to install the extension manually.</p>
+<h4>Loading of Static Resources from <span class="caps">CSS</span> (#61)</h4>
+<p><span class="caps">XLT</span> will now load static resources from referenced <span class="caps">CSS</span> files when the property <code>com.xceptance.xlt.loadStaticContent</code> is set to <code>true</code>. This makes the performance characteristics of <span class="caps">XLT</span> more comparable to real browsers.</p>
+<p class="info">All static resources from <span class="caps">CSS</span> files will be loaded even if the resource is not used on the current page.</p>
+<h4>Configurable User-Agent (#60)</h4>
+<p>The user agent name that is sent to the server with every request can now be configured. Please use the new property <code>com.xceptance.xlt.browser.userAgent</code>. The agent name will not be altered in any way. This means that you will not be able to distinguish <span class="caps">XLT</span> requests from normal browser requests on the server side.</p>
+<p>Setting this property does not change the internal browser handling that can be configured using the known property <code>com.xceptance.xlt.browser</code>. Only the transferred agent name will change.</p>
+<p>A list of typical agent names can be obtained from <a href="http://www.user-agents.org/">User-Agents.org</a>.</p>
+<pre class="ini"><code class="ini">## The user agent string that will be sent to the server. By default, the user
+## agent string is derived from the configured browser, but can be overridden
+## with this setting.
+#com.xceptance.xlt.browser.userAgent =</code></pre>
+<h5>Example</h5>
+<pre class="ini"><code class="ini">com.xceptance.xlt.browser.userAgent = Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.9.0.10) Gecko/2009042316 Firefox/3.0.10
+com.xceptance.xlt.browser.userAgent = Test User-Agent sent by Xceptance LoadTest</code></pre>
+<h3>Improvements</h3>
+<p>This section lists all improvements to existing features including a short documentation of how you can benefit from them.</p>
+<h4>Bypass Proxy Rules (#111)</h4>
+<p>You can now specify a rule to bypass your proxy settings for certain machines by setting <code>com.xceptance.xlt.proxy.bypassForHosts</code>. This property supports regular expressions.</p>
+<h5>Example</h5>
+<p>The following example will exclude the hosts <code>localhost</code>, <code>127.0.0.1</code>, and all hosts starting with 192.168.</p>
+<pre class="ini"><code class="ini">com.xceptance.xlt.proxy.bypassForHosts = localhost 127\\.0\\.0\\.1 ^192\\.168</code></pre>
+<blockquote class="note">
+<p class="note">The example escapes the dot for the regular expression engine so as to use it as a normal character and not as a regexp command. Due to the Java property syntax a <code>\</code> has to be escaped with another <code>\</code> to be passed and recognized.</p>
+</blockquote>
+<h4>Support for development mode specific properties (#88)</h4>
+<p>Now <span class="caps">XLT</span> tries to load an additional property file during development mode (meaning when it is not in load test mode):  <code>dev.properties</code>.</p>
+<h5>Load Test Mode</h5>
+<p>During a load test, the properties files in <code>testsuite/config</code> are read in this order:</p>
+<ol>
+	<li><code>default.properties</code></li>
+	<li><code>project.properties</code></li>
+	<li>test-specific property file, e.g. <code>test.properties</code></li>
+</ol>
+<p>If the same property is specified in multiple files, the last settings from the last file read will be used.</p>
+<h5>Development Mode</h5>
+<p>During development, these files are loaded and the properties are set up accordingly:</p>
+<ol>
+	<li><code>default.properties</code></li>
+	<li><code>project.properties</code></li>
+	<li>test specific property file, e.g. <code>test.properties</code></li>
+	<li><code>dev.properties</code></li>
+</ol>
+<p class="note">It is not possible to unset a property in a later property file. Its value can only be set to empty.</p>
+<h4>Full debug mode for page during development (#114)</h4>
+<p>In development mode, i.e. when developing/running/testing test cases, the received responses and the parsed pages will always be written to disk, regardless of what the current dump mode configuration is. Having the data on disk is usually a big help during development. This helps to manage the configuration for load testing and development, because it is no longer possible to accidently keep the dump mode enabled while running a load test (assuming it is set to onError by default).</p>
+<h4>Library updates</h4>
+<p>The underlying libraries of HtmlUnit, JUnit, Log4J, NekoHtml have been updated with the latest or newer versions.</p>
+<blockquote class="warning">
+<p class="warning">Please do not update the libraries yourself, because certain dependencies have to be maintained, and some defects have been fixed which may or may not be part of the next official library release.</p>
+</blockquote>
+<h4>Garbage collection reporting for Agents (#122)</h4>
+<p>Now additional GC statistics are shown in the agent part of the test report. This includes GC activity numbers, separated in full and minor GC phase. Furthermore, the <span class="caps">CPU</span> chart shows the <span class="caps">CPU</span> usage of the GC next to the total <span class="caps">CPU</span> usage.</p>
+<p class="note">Note that, when the <span class="caps">CMS</span> GC is used (<code>-XX:+UseConcMarkSweepGC</code>), no values are available for the full GC phase on some OS. This is a known <a href="http://bugs.sun.com/bugdatabase/view_bug.do?bug_id=6580448"><span class="caps">JVM</span> defect</a>.</p>
+<p class="illustration"><a href="../img/releasenotes/agents-gc-and-cpu-information-large.png"><img src="../img/releasenotes/agents-gc-and-cpu-information-small.jpg" alt="" /></a> <span class="caption">The agent <span class="caps">CPU</span> and GC overview table</span></p>
+<p class="illustration"><a href="../img/releasenotes/agent-cpu-usage-chart-large.png"><img src="../img/releasenotes/agent-cpu-usage-chart-small.jpg" alt="" /></a> <span class="caption">The <span class="caps">CPU</span> usage chart for an agent</span></p>
+<h4>Redesign of the Test Report (#124)</h4>
+<p>The test report has been completely redesigned. A new navigation section saves valuable screen space and a new color scheme improves the visual impression and presentation. Additionally the entire report is <a href="http://jquery.com/">jQuery</a> based. This allows easier adaptations to project needs and allows the use of other jQuery plug-ins.</p>
+<p class="illustration"><a href="../img/releasenotes/new-test-report-design-large.jpg"><img src="../img/releasenotes/new-test-report-design-small.jpg" alt="" /></a> <span class="caption">A screenshot of the new report layout</span></p>
+<blockquote class="note">
+<p class="note">jQuery is a fast and concise JavaScript Library that simplifies <span class="caps">HTML</span> document traversing, event handling, animating, and Ajax interactions for rapid web development. jQuery is designed to change the way that you write JavaScript.</p>
+</blockquote>
+<h4>New Result Browser (#123)</h4>
+<p>The concept of the result browser has been completely reworked. The new result browser displays the entire session (or the last actions when used for capturing load test errors) with such important details as request and response parameters, loaded resources, executed sub-requests, and the final rendered image of the web page.</p>
+<p class="illustration"><a href="../img/releasenotes/new-result-browser-overview-large.jpg"><img src="../img/releasenotes/new-result-browser-overview-small.jpg" alt="" /></a> <span class="caption">The new result browser interface</span></p>
+<p class="note">The web site in the result browser might not match the real web site when actively browsing it. Reasons for this are the suppressed execution of some JavaScript, as well as missing cookies.</p>
+<h4>Do not mark requests with a response code of 4xx as failed (#396)</h4>
+<p>Older versions of <span class="caps">XLT</span> marked a request as failed when the <span class="caps">HTTP</span> status code was &gt;= 400. It then also appeared as failed in the test report. Additionally the framework might have thrown a <code>FailingHttpStatusCodeException</code> (if configured using <code>com.xceptance.xlt.stopTestOnHttpErrors.page</code>, with true as default). This effectively aborted the test.</p>
+<p>Because it is not  illegal to serve valid content with a status code other than 200, and the post validation can resolve whether or not it is an error, XLT&#8217;s behavior was changed. It now no longer throws a <code>FailingHttpStatusCodeException</code>  and it will not be marked as failed.</p>
+<p>All status codes starting with 500 are still considered an error and will throw an exception and be logged in the final test report.</p>
+<h4>Event count in reports and console (#355)</h4>
+<p><span class="caps">XLT</span> now displays the event count for a transaction in the report and on the console. This allows for quick feedback and simplifies the evaluation of running load tests.</p>
+<p class="illustration"><a href="../img/releasenotes/events-on-console-large.png"><img src="../img/releasenotes/events-on-console-small.jpg" alt="" /></a> <span class="caption">Events on the console output</span></p>
+<h4>Performance Improvements (#352)</h4>
+<p>Several areas of <span class="caps">XLT</span> have been optimized to utilize the available hardware much better. Contention points in several components have been reduced or removed.</p>
+<h4>Concurrent User Chart for Transactions (#331)</h4>
+<p>For each transaction, a new chart is displayed in the reports showing the number of concurrent users over the testing period. This helps in better understanding the changing load situations and improves error diagnostics.</p>
+<p class="illustration"><a href="../img/releasenotes/new-concurrent-user-chart-in-transaction-large.png"><img src="../img/releasenotes/new-concurrent-user-chart-in-transaction-small.jpg" alt="" /></a> <span class="caption">The new concurrent user chart</span></p>
+<h4>Improved Time Formats (#130)</h4>
+<p><span class="caps">XLT</span> now supports more intuitive time settings for the load profile and will also display the time in reports in a more readable format.</p>
+<h5>Display in Reports</h5>
+<p class="illustration"><a href="../img/releasenotes/new-time-format-settings-large.png"><img src="../img/releasenotes/new-time-format-settings-small.jpg" alt="" /></a> <span class="caption">Time formatting in reports</span></p>
+<h5>Usage in Load Definition</h5>
+<p>All time period values can be specified in one of the following formats (single quotes are not part of the definition):</p>
+<ul>
+	<li>Total number of seconds, such as &#8216;1234s&#8217; or &#8216;1234&#8217;.</li>
+	<li>Natural style, such as &#8216;0h 12m 00s&#8217;, &#8216;0h 12m&#8217;, &#8216;12m 0s&#8217; or &#8216;12m&#8217;</li>
+	<li>Digit style, such as &#8216;1:23&#8217;, &#8216;01:23&#8217;, &#8216;0:1:23&#8217; or &#8216;0:01:23&#8217;</li>
+</ul>
+<h4>Reworked Load Test Configuration (#131)</h4>
+<p>Configuring the load profile is much easier now. Instead of defining an over-all duration and then splitting it up into several periods, we now simply define these periods, which in turn will add up to the final duration. This avoids those little calculation errors that may happen so easily and will save you from having to repeat a wrongly configured load test.</p>
+<h5>Definitions</h5>
+<ul>
+	<li>users &#8211; the (maximum) number of threads that run the test in parallel (<strong>required</strong>)</li>
+	<li>iterations &#8211; the number of iterations per thread</li>
+	<li>arrivalRate &#8211; the number of transactions per hour</li>
+	<li>initialDelay &#8211; the number of seconds to wait at the beginning</li>
+	<li>warmUpPeriod &#8211; the number of seconds to run without performing measurements</li>
+	<li>measurementPeriod &#8211; the number of seconds to perform measurements (<strong>required</strong>)</li>
+	<li>shutdownPeriod &#8211; the number of seconds to continue without performing measurements</li>
+	<li>rampUpPeriod &#8211; the number of seconds to steadily increase the user count</li>
+	<li>rampUpStepSize &#8211; the number of users to step-wise increase the load during ramp-up</li>
+</ul>
+<p>The <em>arrivalRate</em> value influences the way the load is generated. If omitted, the system generates a constant load based on the number of concurrent users. If specified, the system generates load with a cluster-wide constant arrival rate. In the latter case, the maximum load is limited by the number of concurrent users. Note that an arrival rate is only supported for non-iteration based load tests.</p>
+<p>The following figure shows the relationship between the various settings:</p>
+<p>pre..</p>
+: initialDelay :   warmUpPeriod   : measurementPeriod : shutdownPeriod :
+:              :                  :                   :                :
+^              :                  :                   :                :
+L |              :                  :                   :                :
+o |              :                  :                   :                :
+a |              :                ****************************************
+d |              :            ****:
+|              :        ****    :
+|              :    ****        :
+|              :****            :
++&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;*&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8594;
+:              :                :                                      Time
+: initialDelay :  rampUpPeriod  :
+<p>The <em>warmUpPeriod</em> is the time we will give the load to level out before taking measurements, and starts directly after the <em>initialDelay</em>. This is done to minimize discrepancies that could be caused by applications and other systems starting up and not yet operating at an optimal level. Once this time has elapsed, the stable load will be measured during the <em>measurementPeriod</em>. To ensure a constant load until the very end of the measurement period, a <em>shutdownPeriod</em> can be set in which the users will continue to run before stopping abruptly. The <em>rampUpPeriod</em> setting is independent of the  <em>warmUpPeriod</em>, <em>measurementPeriod</em>,  and  <em>shutdownPeriod</em> settings and dictates the time that it will take for the load to increase to 100% after the initial delay.</p>
+<h5>Example 1</h5>
+<p>Imagine a load test with two test cases: TAuthor and TVisitor. First we will define when measurements will take place and when not. We don&#8217;t want to measure before the system has reached a steady state, so we define a warm-up period of 20 minutes. After this time, we perform measurements for one hour. After the measurement period we want the test to continue for another 5 minutes, so we define the shutdown period appropriately.</p>
+<p>Second, we will define the way the load is generated. For TVisitor, we define a constant load generated by 10 users. The TAuthor scenario, however, should be executed 200 times per hour. To exactly generate this load, <span class="caps">XLT</span> can use up to 20 users. We will set the settings for TAuthor appropriately. Since we do not want to start with the maximum load, we let the load increase steadily by defining a ramp-up period. Note that the ramp-up period is 15 minutes &#8211; slightly smaller than the warm-up period &#8211; to give the system another 5 minutes to level out before measurements begin.</p>
+<p>The necessary configuration is shown here:</p>
+<pre class="ini"><code class="ini">## Default configuration.
+com.xceptance.xlt.loadtests.default.initialDelay = 0
+com.xceptance.xlt.loadtests.default.warmUpPeriod = 20m
+com.xceptance.xlt.loadtests.default.measurementPeriod = 60m
+com.xceptance.xlt.loadtests.default.shutdownPeriod = 5m
+com.xceptance.xlt.loadtests.default.rampUpPeriod = 15m</code>
+
+<code class="ini">## Test case specific configuration.
+com.xceptance.xlt.loadtests.TVisitor.users = 10
+com.xceptance.xlt.loadtests.TAuthor.users = 20
+com.xceptance.xlt.loadtests.TAuthor.arrivalRate = 200</code></pre>
+<p>Now have a look at the timeline:</p>
+<pre><code>   :   warmUpPeriod   : measurementPeriod : sh :
+   :                  :                   :    :
+   ^                  :                   :    :
+ L |                  :                   :    :
+ o |                  :                   :    :
+ a |                ****************************
+ d |            ****:
+   |        ****    :
+   |    ****        :
+   |****            :
+   *-----------------------------------------------------------&gt;
+   :                :                                      Time
+   :  rampUpPeriod  :</code></pre>
+<h5>Example 2</h5>
+<p>This time we want to load test the TAuthor scenario only. Again, we define the measurement time first, 30 minutes this time. As we are especially interested in how the system behaves when the load increases, we do not define a warm-up period. We also do not define a shutdown period. Concerning the load, we configure a maximum number of 200 users, which will be reached after 20 minutes.</p>
+<p>This is what the respective configuration would look like:</p>
+<pre class="ini"><code class="ini">## Default configuration.
+com.xceptance.xlt.loadtests.default.initialDelay = 0
+com.xceptance.xlt.loadtests.default.measurementPeriod = 30m
+com.xceptance.xlt.loadtests.default.rampUpPeriod = 20m</code>
+
+<code class="ini">## Test case specific configuration.
+com.xceptance.xlt.loadtests.TAuthor.users = 200</code></pre>
+<p>This illustration shows what is going on:</p>
+<pre><code>   :    measurementPeriod    :
+   :                         :
+   ^                         :
+ L |                         :
+ o |                         :
+ a |                **********
+ d |            ****:
+   |        ****    :
+   |    ****        :
+   |****            :
+   *-----------------------------------------------------------&gt;
+   :                :                                      Time
+   :  rampUpPeriod  :</code></pre>
+<h4>Generate report from compressed test results (#192)</h4>
+<p>The report generator has been extended to read test results not only from a directory, but also from compressed files, like <code>.zip</code> or <code>.tgz</code> files. This is useful if the results come already compressed from another machine or have been archived to save disk space. The  following archive formats are supported:</p>
+<ul>
+	<li><code>.tar.gz</code> / <code>.tgz</code></li>
+	<li><code>.tar.bz2</code> / <code>.tbz2</code></li>
+	<li><code>.tar</code></li>
+	<li><code>.zip</code> / <code>.jar</code></li>
+</ul>
+<p>Compressed files to be accepted must reproduce exactly the same directory layout as the uncompressed results, i.e. the archive has to contain exactly one root directory, such as <code>20090212-153406</code>.</p>
+<p>Now the report generator can be called either with a directory or with a file that has to have one of the supported extensions:</p>
+<pre class="cmd"><code class="cmd">create_report.cmd ..\results\20090212-153406
+create_report.cmd ..\results\20090212-153406.zip
+create_report.cmd ..\results\mytestresults.tgz</code></pre>
+<p>Note that the time to create the report from compressed files varies significantly depending on the archive format used. In our experience, using <code>.zip</code> files gives the best performance (comparable with a plain directory), while <code>.tbz2</code> / <code>.tar.bz2</code> files need several times longer.</p>
+<h4>Reduce memory consumption during report generation (#162)</h4>
+<p>Especially for longer load tests (days), the memory needed to create the corresponding test report could easily exceed the available system memory. As a consequence, report generation was aborted with an <code>OutOfMemoryError</code>. The problem was that <em>all</em> timer files generated during a load test were read into memory <em>at once</em>.</p>
+<p>Now the timer objects are read and processed one-by-one. This means that the report framework reads a line from the timer <span class="caps">CSV</span> file, parses it, and passes the resulting timer object to each registered report provider for immediate processing. If a report provider is interested in this type of timer object, it updates some internal state, and otherwise it simply does nothing with it. Afterwards, the timer object is released and the next timer line is read. This way, arbitrary amounts of data can be processed without any memory problems.</p>
+<p>Unfortunately, switching to a one-by-one timer processing model was only possible by incompatibly changing the <span class="caps">API</span> of <code>com.xceptance.xlt.api.report.ReportProvider</code> and <code>com.xceptance.xlt.api.report.AbstractReportProvider</code>. However, your code will be affected only if you created custom report providers.</p>
+<h5>Migrating Your Custom Report Provider</h5>
+<p>As long as a report provider calculates just basic statistics (such as mean, minimum, maximum, etc.) which can be updated incrementally, everything is easy to migrate. However, now and then the whole data set is actually needed, for example to calculate the median of values, to draw a chart, or to generate a sorted <span class="caps">CSV</span> file. Storing the whole data internally in the report provider re-introduces the memory problem, so report providers are obliged to use as little memory as possible. There are some strategies to reduce the memory usage:</p>
+<ul>
+	<li>Try to combine multiple values into one.</li>
+	<li>Use highly optimized data structures (in terms of memory).</li>
+	<li>Trade absolute precision for low memory consumption. Often an approximation is sufficient.</li>
+	<li>Charts have a limited resolution anyway, so do not draw each value but only a few.</li>
+</ul>
+<p>These approaches save memory <em>and</em> <span class="caps">CPU</span> at the same time. The standard <span class="caps">XLT</span> report providers now work this way.</p>
+<h4><span class="caps">API</span> Changes</h4>
+<p>In order to keep the <span class="caps">XLT</span> <span class="caps">API</span> as clean and comprehensive as possible, several classes/methods have been renamed or refactored. Typically, the old classes/methods are still available (and should still work), but have been marked as deprecated and are likely to be removed in the next major <span class="caps">XLT</span> release (v3.3.0). Please update your test suite code.</p>
+<h5>Deprecated Classes</h5>
+<table>
+	<tr>
+		<th>Deprecated Class </th>
+		<th>Replacement Class </th>
+	</tr>
+	<tr>
+		<td> com.xceptance.xlt.api.actions.UnexpectedPageType </td>
+		<td> com.xceptance.xlt.api.actions.UnexpectedPageTypeException </td>
+	</tr>
+	<tr>
+		<td> com.xceptance.xlt.api.data.AbstractData </td>
+		<td> &#8211; </td>
+	</tr>
+	<tr>
+		<td> com.xceptance.xlt.api.data.CustomDataProvider </td>
+		<td> com.xceptance.xlt.api.data.DataProvider </td>
+	</tr>
+	<tr>
+		<td> com.xceptance.xlt.api.engine.Statistics </td>
+		<td> com.xceptance.xlt.api.engine.Data </td>
+	</tr>
+	<tr>
+		<td> com.xceptance.xlt.api.engine.StatisticsManager </td>
+		<td> com.xceptance.xlt.api.engine.DataManager </td>
+	</tr>
+	<tr>
+		<td> com.xceptance.xlt.api.engine.AbstractStatistics </td>
+		<td> com.xceptance.xlt.api.engine.AbstractData </td>
+	</tr>
+	<tr>
+		<td> com.xceptance.xlt.api.engine.ActionStatistics </td>
+		<td> com.xceptance.xlt.api.engine.ActionData </td>
+	</tr>
+	<tr>
+		<td> com.xceptance.xlt.api.engine.CustomStatistics </td>
+		<td> com.xceptance.xlt.api.engine.CustomData </td>
+	</tr>
+	<tr>
+		<td> com.xceptance.xlt.api.engine.EventStatistics </td>
+		<td> com.xceptance.xlt.api.engine.EventData </td>
+	</tr>
+	<tr>
+		<td> com.xceptance.xlt.api.engine.RequestStatistics </td>
+		<td> com.xceptance.xlt.api.engine.RequestData </td>
+	</tr>
+	<tr>
+		<td> com.xceptance.xlt.api.engine.TimerStatistics </td>
+		<td> com.xceptance.xlt.api.engine.TimerData </td>
+	</tr>
+	<tr>
+		<td> com.xceptance.xlt.api.engine.TransactionStatistics </td>
+		<td> com.xceptance.xlt.api.engine.TransactionData </td>
+	</tr>
+	<tr>
+		<td> com.xceptance.xlt.api.htmlunit.XltHtmlPage </td>
+		<td> com.gargoylesoftware.htmlunit.html.HtmlPage </td>
+	</tr>
+	<tr>
+		<td> com.xceptance.xlt.api.htmlunit.XltXmlPage </td>
+		<td> com.gargoylesoftware.htmlunit.xml.XmlPage </td>
+	</tr>
+	<tr>
+		<td> com.xceptance.xlt.api.util.HtmlFormUtils </td>
+		<td> com.xceptance.xlt.api.util.HtmlPageUtils </td>
+	</tr>
+	<tr>
+		<td> com.xceptance.xlt.api.validators.Validator </td>
+		<td> &#8211; </td>
+	</tr>
+	<tr>
+		<td> com.xceptance.xlt.api.validators.LightWeightPageValidator </td>
+		<td> &#8211; </td>
+	</tr>
+</table>
+<h5>Incompatible Changes</h5>
+<ul>
+	<li>com.xceptance.xlt.api.report.ReportProvider</li>
+	<li>com.xceptance.xlt.api.report.AbstractReportProvider</li>
+</ul>
+<h3>Bug Fixes</h3>
+<p>This sections covers all important defects that have been fixed with this release.</p>
+<h4>Number of active download threads incorrect (#58)</h4>
+<p><span class="caps">XLT</span> was not precisely following the static content download thread limit as specified with<br />
+<code>com.xceptance.xlt.staticContent.downloadThreads</code>. This has now been fixed.</p>
+<h4>Support for spaces in the installation path (#110)</h4>
+<p><span class="caps">XLT</span> can now be used when installed in a directory structure containing spaces. However, it is still recommended to avoid spaces due to added difficulties when writing scripts.</p>
+<h4>Cookies got lost sporadically (#198)</h4>
+<p>Due to a concurrency problem in one of the third-party libraries used, cookies were removed during concurrent content loading. This problem has been fixed and set cookies will be obeyed.</p>
+<h4>User did not finish execution (#310)</h4>
+<p>It could happen that a user did not end the execution of a load test due to an infinite loop. This problem has been fixed and all users will correctly stop the load test at the configured end time.</p>
+            <div id="footer">
+	<p>Copyright © 2017 by <a href="http://www.xceptance.com/">Xceptance Software Technologies</a>. All rights reserved.</p>
+</div>
+
+
+        </div>
+    </div>
+</div>
+
+<!-- Generate the part of the TOC that contains the headings of the currently displayed page -->
+<!-- createToc (selectedHeadlines, classesTarget, classes )-->
+
+<script>createToc('h1,h2,h3', '#toc > ul', '#sidenav nav sidenav')</script>
+
+
+</body>
+
+</html>

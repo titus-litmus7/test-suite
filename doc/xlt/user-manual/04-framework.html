@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html>
+
+
+
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>XLT Framework</title>
+  <meta name="description" content="Xceptance LoadTest - XLT, Documentation, Manual, Howto, FAQ">
+
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,700,400italic,300italic" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:100,300,400,500,700" rel="stylesheet" type="text/css">
+
+  <link href="../css/font-awesome.min.css" rel="stylesheet" media="all"  type="text/css" />
+  <link href="../css/lightbox.css" rel="stylesheet" media="all"  type="text/css" />
+
+  <link href="../css/highlightjs/default.css" rel="stylesheet" type="text/css" />
+  <link href="../css/highlightjs/mono-blue.css" rel="stylesheet" type="text/css" />
+
+  <link href="../css/xltdoc.css" rel="stylesheet" media="all"  type="text/css" />
+
+  <script type="text/javascript" src="../js/jquery-1.11.1.min.js"></script>
+  <script type="text/javascript" src="../js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="../js/toc.min.js"></script>
+  <script type="text/javascript" src="../js/lightbox.min.js"></script>
+  <script type="text/javascript" src="../js/headroom.min.js"></script>
+
+  <!-- <script type="text/javascript" src="../js/jquery.scrollIntoView.min.js"></script -->
+  <script type="text/javascript" src="../js/xltdoc.js"></script>
+
+  <script type="text/javascript" src="../js/highlight.pack.js"></script>
+</head>
+
+
+<body data-spy="scroll" data-target="#toc" data-offset="100" class="layout-manual ">
+
+    
+
+
+<!-- Fixed navbar -->
+<nav id="header" class="navbar navbar-default">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <a class="site-title" href="../index.html">
+            <img src="../img/XLTDoc-logo-transparent-165x82.png" id="product-logo" alt="XLT Product logo" title="Xceptance LoadTest"/>
+        </a>
+    </div>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    <div id="navbar" class="navbar-collapse collapse">
+        <!-- Links to external pages -->
+        <ul id="navbar-right" class="nav navbar-nav navbar-right navbar-text">
+	<li>
+		<a href="https://lab.xceptance.de/releases/xlt/latest/apidoc/" target="_blank" title="XLT API Documentation">
+			<i class="fa fa-external-link"></i>API</a>
+	</li>
+
+    <li>
+ 		<a href="https://ask.xceptance.de/" target="_blank" title="XLT Community Forum">
+ 			<i class="fa fa-external-link"></i>Forum</a>
+ 	</li> 
+    
+	<li>
+		<a href="https://www.xceptance.com/xlt/" target="_blank" title="XLT Website">
+			<i class="fa fa-external-link"></i>XLT Home</a>		
+	</li>			
+</ul>
+
+
+        <ul id="navbar-left" class="nav navbar-nav navbar-text">
+            <li class="inactive"><a href="../getting-started/index.html">Getting Started</a></li>
+            <li class="active"><a href="../user-manual/index.html">User Manual</a></li>
+            <li class="inactive"><a href="../how-to/index.html">How-To</a></li>
+            <li class="inactive"><a href="../release-notes/index.html">Release Notes</a></li>
+            <li class="inactive"><a href="../license.html">License</a></li>
+        </ul>
+
+    </div><!--/.nav-collapse -->
+
+</nav>
+
+
+
+
+<div id="breadcrumb" class="navbar navbar-default">
+  <div>
+    <ol class="breadcrumb">
+      
+
+      
+        <li><a href="../index.html"><i class="fa fa-home"></i>Docs</a></li>
+          
+            
+            <li><a href="../user-manual/index.html">User Manual</a></li>
+          
+      
+
+      <li class="active">XLT Framework</li>
+    </ol>
+  </div>
+</div>
+
+
+    
+<div id="main" class="main container-fluid">
+    <div class="row">
+        <div class="hidden-xs col-sm-4 col-md-3 sidenav-col">
+            <nav id="sidenav" class="sidenav nav">
+                <!-- TOC of all available files/pages in folder  -->
+                <ul class="nav sidenav">
+                
+
+
+
+
+
+    
+        
+            <li>
+            
+                <a href="../user-manual/01-intro.html">Introduction</a>
+                
+            </li>
+        
+    
+
+    
+
+    
+        
+            <li>
+            
+                <a href="../user-manual/02-install.html">Installation</a>
+                
+            </li>
+        
+    
+
+    
+
+    
+        
+            <li>
+            
+                <a href="../user-manual/03-scriptdeveloper.html">Script Developer</a>
+                
+            </li>
+        
+    
+
+    
+        
+            
+                <!-- Table of content from page headings for the currently loaded file-->
+                <li class="current-page">
+                    <a class="current-page" href="">XLT Framework</a>
+                    <!-- Container for page headings TOC -->
+                    <div id="toc" class="sidenav"></div>
+                </li>
+            
+        
+    
+
+    
+        
+            <li>
+            
+                <a href="../user-manual/05-framework-config.html">XLT Framework Configuration</a>
+                
+            </li>
+        
+    
+
+    
+        
+            <li>
+            
+                <a href="../user-manual/06-datadriven.html">Data-Driven Tests</a>
+                
+            </li>
+        
+    
+
+    
+        
+            <li>
+            
+                <a href="../user-manual/07-posters.html">Demo Application</a>
+                
+            </li>
+        
+    
+
+    
+        
+            <li>
+            
+                <a href="../user-manual/08-loadtest.html">Load and Performance Testing</a>
+                
+            </li>
+        
+    
+
+    
+        
+            <li>
+            
+                <a href="../user-manual/09-reports.html">Test Results and Reports</a>
+                
+            </li>
+        
+    
+
+    
+        
+            <li>
+            
+                <a href="../user-manual/10-command-reference.html">Command Reference</a>
+                
+            </li>
+        
+    
+
+    
+        
+            <li>
+            
+                <a href="../user-manual/11-glossary.html">Glossary</a>
+                
+            </li>
+        
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+                </ul>
+            </nav>
+        </div>
+
+        <div id="content" class="col-xs-12 col-sm-8 col-md-9 content-col">
+            <h2>Basic Concepts</h2>
+<p>When you perform web-based application tests, the possible paths from page to page define the web page flow. The web page flow can be depicted as a directed graph with the vertices representing the web pages and the transitions representing the actions to get from one page to another. Typically, a test scenario covers a certain part of the page flow only, such as a specific path through the application.</p>
+<p><span class="caps">XLT</span> provides a programming paradigm that makes use of a three-level architecture (transactions, actions, and requests). These levels are illustrated in the following sections.</p>
+<h3>Transaction</h3>
+<p>A transaction is the execution of exactly one test case or test scenario. To perform the scenario, the page flow is modeled in code. The test scenario is implemented as a test case which itself executes a sequence of one or more actions.</p>
+<h3>Action</h3>
+<p>An action can be defined as one irreducible step within a test case. Thus, an action interacts with the <strong>current</strong> page and &#8211; as a result &#8211; loads the <strong>next</strong> page. The resulting page is associated with this action and becomes the <strong>current</strong> page for the next action in the test scenario. Generally, an action triggers one or more requests.</p>
+<h3>Request</h3>
+<p>This level is equivalent to the <span class="caps">HTTP</span> request level used in web browsers or in any other application that relies on <span class="caps">HTTP</span> communication. You don&#8217;t have to deal with requests directly because they are automatically generated by the underlying HtmlUnit framework when you perform actions on <span class="caps">HTML</span> elements.</p>
+<h3>Validation</h3>
+<p>As you&#8217;re testing the functionality of applications or pieces of software, you have to check the correctness of all responses. It is strongly recommended that you handle all potential situations and use validations as often as possible. It&#8217;s better to have too many checks rather than too few! They can&#8217;t do any harm and will increase your confidence that your application works correctly. Thus, make sure you insert as much validation as necessary to detect any abnormal application behavior of the software being tested.</p>
+<h4>Pre-validation</h4>
+<p>Each action should have a pre-validation section that checks whether or not all of the required data is available to interact with that page and allow for the advance to the next one. From the end user&#8217;s point of view, you simply look for the information on the page that you need to continue your web experience, such as a form to fill in or a link to click. In case the required information can&#8217;t be found, an exception is thrown. If you run a load test, <span class="caps">XLT</span> will catch this exception and log all relevant information. This lets you evaluate the results after running the test and narrow down error conditions.</p>
+<h4>Post-validation</h4>
+<p>Post-validations work similarly to pre-validations. They are used to validate the result of the interaction and ensure that the data matches the expectations.</p>
+<h3>Example</h3>
+<p>The following example illustrates a very simple scenario to help you understand the terminology. It is based on the <a href="07-posters.html">demo application</a> shipped with <span class="caps">XLT</span>. Imagine a typical user searching the shop for products. The user will possibly:</p>
+<ul>
+	<li>Open the shop&#8217;s home page,</li>
+	<li>Search for a keyword but without results,</li>
+	<li>Search for another keyword, this time with some results</li>
+	<li>Select one of the shown products and open the product detail page</li>
+</ul>
+<p class="illustration"><a href="../img/user-manual/TSearchPageFlow.png"><img src="../img/user-manual/TSearchPageFlow-small.png" title="Test Case And Actions" alt="Test Case And Actions" /></a> <span class="caption">Test Case and Actions</span></p>
+<p>In this example, the <strong>test scenario</strong> is modeled as <strong>test case</strong> <code>TSearch</code>. A single execution of this test case is a single <strong>transaction</strong>. <code>OpenHomepage</code>, <code>Search</code> and <code>ViewProductDetails</code> are the <strong>actions</strong> of this page flow to go from one page to the next. <strong>Validations</strong> after each page transition ensure you arrived on the right page with the right content.</p>
+<h2>Available Programming Interfaces</h2>
+<h3>Overview</h3>
+<p><span class="caps">XLT</span> offers different approaches for writing test cases in Java. Several programming interfaces are available when using the <span class="caps">XLT</span> framework. Built on each other, they represent different abstraction levels.</p>
+<p>You can extend your test suite using the <span class="caps">XLT</span> Scripting <span class="caps">API</span>. It lets you start with Java code that has automatically been generated from the recorded Script Developer test cases, and features a high-level command scripting <span class="caps">API</span> with a very intuitive syntax. You may also directly access the <a href="http://seleniumhq.org/docs/03_webdriver.html#selenium-webdriver-api-commands-and-operations">WebDriver <span class="caps">API</span></a> underlying the <span class="caps">XLT</span> Scripting <span class="caps">API</span> to write more advanced tests.</p>
+<p>XltDriver, which is also part of the <span class="caps">XLT</span> framework, is a WebDriver implementation extending the HtmlUnitDriver. Both in turn are built on the <a href="http://htmlunit.sourceforge.net/">HtmlUnit <span class="caps">API</span></a>. HtmlUnit is a headless browser offering a low-level <span class="caps">API</span> that lets you have full control when creating web tests.</p>
+<p>To serve as the main framework when creating HtmlUnit-based tests, <span class="caps">XLT</span> provides the <a href="04-framework.html#toc-xlt-action-api"><span class="caps">XLT</span> Action <span class="caps">API</span></a> that structures the code in action classes and test case classes.</p>
+<p class="illustration"><a href="../img/user-manual/XLT_Framework_API.PNG"><img src="../img/user-manual/XLT_Framework_API-small.jpg" title="XLT Framework API" alt="XLT Framework API" /></a> <span class="caption"><span class="caps">XLT</span> Framework <span class="caps">API</span></span></p>
+<h3><span class="caps">XLT</span> Test Cases are JUnit4 Tests</h3>
+<p>Except for script test cases exclusively springing from Script Developer, <span class="caps">XLT</span> test cases use a Java test case class with one <code>test()</code> method, regardless of the chosen approach for test writing.</p>
+<p>The <code>test()</code> method of each test case class has a <em>@Test</em> annotation (see TSearch code example line 12). <span class="caps">XLT</span> builds upon JUnit4 principles and its annotations to implement and tag test cases. This way, each <span class="caps">XLT</span> test is in fact a JUnit test enabling <span class="caps">XLT</span> tests to be executed just like any other unit test in the <span class="caps">IDE</span> or within an existing build process. The sole difference between <span class="caps">XLT</span> and standard JUnit4 tests is that <span class="caps">XLT</span> tests can only take one active test method per test class. That means that, although there can be an arbitrary number of methods within a class, only one method is permitted to be annotated with <em>@Test</em>. However, this limitation rather serves the purpose of simplification than leading to actual restrictions.</p>
+<p>Implementing the test case as a JUnit4 test also lets you use standard JUnit assertion to validate the page, mainly when you create test cases using the HtmlUnit <span class="caps">API</span>.</p>
+<h2><span class="caps">XLT</span> Scripting <span class="caps">API</span></h2>
+<p>When exporting a Script Developer test case to Java (see <a href="03-scriptdeveloper.html#toc-export-to-java">Export test cases to Java</a>), you may choose the resulting code to be based on the <span class="caps">XLT</span> Scripting <span class="caps">API</span>. This <span class="caps">API</span> is an easy-to-use programming interface with a simple syntax deriving from the <a href="10-command-reference.html">commands</a> available in Script Developer.</p>
+<p>You can write test cases from scratch using the <span class="caps">XLT</span> Scripting <span class="caps">API</span>. However, the most common way is to record a test case with Script Developer and, after exporting it to Java, extend it with the <span class="caps">XLT</span> Scripting <span class="caps">API</span>.</p>
+<p>The following screenshot shows how the test case <code>TSearch</code> introduced in the section above may look like if it would have been recorded using Script Developer. Note that this test case uses validation rather poorly to keep the example short and simple; a real test should have more validations to ensure correct page display.</p>
+<p class="illustration"><a href="../img/user-manual/TSearchScriptTestCase.png"><img src="../img/user-manual/TSearchScriptTestCase-small.png" title="TSearch Demo Script Test Case" alt="TSearch Demo Script Test Case" /></a> <span class="caption">TSearch Demo Script Test Case</span></p>
+<p>The automatically generated Java code of the <code>TSearch</code> test case after the export is shown below:</p>
+<pre class="java"><code class="java">/**
+ * &lt;p&gt;Simulates storefront search.&lt;/p&gt;
+ */
+public class TSearch extends AbstractWebDriverScriptTestCase
+{
+    /**
+     * Constructor.
+     */
+    public TSearch()
+    {
+        super(new XltDriver(true), "http://localhost:8080/");
+    }</code>
+
+<code class="java">    /**
+     * Executes the test.
+     *
+     * @throws Throwable if anything went wrong
+     */
+    @Test
+    public void test() throws Throwable
+    {
+        // Open the homepage and delete cookies (module call)
+        final OpenHomepage _openHomepage = new OpenHomepage();
+        _openHomepage.execute();</code>
+
+<code class="java">        //
+        // ~~~ Search ~~~
+        //
+        startAction("Search");
+        // Store a search phrase that gives results
+        store(resolve("${searchTerm_hits}"), "searchTerm");
+        // Execute the search (module call)
+		final Search _search = new Search();
+        _search.execute(resolve("${searchTerm_hits}"));</code>
+
+<code class="java">        // Validate the entered search phrase is still visible in the input
+        assertText("id=searchTextValue", resolve("${searchTerm_hits}"));
+        // Validate presence of the search results page headline
+        assertElementPresent("id=titleSearchText");
+        // Validate the headline contains the search phrase
+        assertText("id=titleSearchText",
+              resolve("glob:*Your results for your search: '${searchTerm_hits}'*"));
+		// validate result counter
+        assertText("id=totalProductCount", resolve("${resultProductCount}"));
+        //
+        // ~~~ ViewProduct ~~~
+        //
+        startAction("ViewProduct");
+        // Assert presence of one of the product thumbnails
+        assertElementPresent("id=product0");
+        // Store the name of the first product
+        storeText("css=#product0 .pInfo .pName", "productName");
+        // Click the product link to open the product detail page
+        clickAndWait("css=#product0 img");
+        // Validate it's the correct product detail page
+        assertText("css=#titleProductName", resolve("${productName}"));
+    }</code></pre>
+<p>Note that the code is structured in blocks embodying the actions. Each action starts with a <code>startAction()</code> command. The other commands are very similar to the commands available in Script Developer. Each Script Developer command has an appropriate counterpart in the <span class="caps">XLT</span> Scripting <span class="caps">API</span>. The generated test case class extends the abstract class <code>AbstractWebDriverScriptTestCase</code>; it inherits the methods that represent the scripting commands to interact with the page and perform validations.</p>
+<p>See package <code>com.xceptance.xlt.api.engine.scripting</code> for more information about the available scripting commands of the <span class="caps">XLT</span> Scripting <span class="caps">API</span>.</p>
+<h3>Script Modules</h3>
+<p>You may have noticed that a <em>Search</em> action in <code>TSearch</code> appears twice, first time with no hits and then again with hits. To prevent implementing the search<br />
+related steps twice Script Developer allows to extract parts of the script as a module &#8211; a convenient feature that, in the present example, can be easily applied to the <em>Search</em> action.</p>
+<p>When exporting the script to Java, <span class="caps">XLT</span> generates a class for each of the modules that extends <code>AbstractWebDriverScriptModule</code> and extracts the code to reuse it in the test case. Using the <code>execute()</code> method, the module can be called in the test case after creating an instance of the module class. It also possible to pass parameter to a module.</p>
+<p>Modules can embed submodules, that is they can be called by test cases or by other modules. That&#8217;s why the module class needs two different constructors, one that takes a test case and another one that takes a module as parameter.</p>
+<h2>WebDriver <span class="caps">API</span></h2>
+<p><a href="http://seleniumhq.org/docs/03_webdriver.html#selenium-webdriver-api-commands-and-operations">WebDriver</a> is a tool for automated tests of web applications. It was originally introduced by Google and features a simple and efficient <span class="caps">API</span> permitting control of real web browsers, such as Firefox, Internet Explorer, Safari, and the HtmlUnit headless browser.</p>
+<p>The <span class="caps">XLT</span> framework incorporates the WebDriver <span class="caps">API</span> so that external test cases using the WebDriver <span class="caps">API</span> can generally run in the <span class="caps">XLT</span> framework as well. <span class="caps">XLT</span>-based WebDriver tests can&#8217;t be executed with a stand-alone WebDriver because the <span class="caps">XLT</span>-WebDriver <span class="caps">API</span> integrates the concept of action names.</p>
+<p>When being exported from Script Developer, the generated Java code originates from the <span class="caps">XLT</span> Scripting <span class="caps">API</span>, which in turn is built upon WebDriver. When you look at the TSearch example, you may notice that its strictly linear approach is limited. Using the lower-level WebDriver <span class="caps">API</span> in combination with the <span class="caps">XLT</span> scripting <span class="caps">API</span> is a good way to overcome possible limitations.</p>
+<p>When you run the <code>TSearch</code> example as functional or load test, your test scenario actually turns out to be somewhat unrealistic since we open the product details page always for the same product. Randomising the <em>ViewProductDetails</em> action would allow you to browse to different products and select the posters randomly.</p>
+<p>The exported code uses an <code>XltDriver</code> to simulate users. Additionally, the WebDriver <span class="caps">API</span> lets you easily switch to other WebDrivers to imitate real-world browsers, like Chrome, FirefoxDriver, or Internet Explorer. The XltDriver extends the HtmlUnitDriver implementation of the WebDriver <span class="caps">API</span>.</p>
+<p>The following code is an example of how to use the WebDriver <span class="caps">API</span> to introduce random factors. The WebDriver functionality is refactored into a method allowing it to be reused for random product selection. The example also contains a JUnit4 assertion and shows how you can use standard Java functionality.</p>
+<p>The refactored code described above could look like this:</p>
+<pre class="java"><code class="java">/**
+ * &lt;p&gt;Simulates storefront search.&lt;/p&gt;
+ */
+public class TSearch extends AbstractWebDriverScriptTestCase
+{
+    /**
+     * Constructor.
+     */
+    public TSearch()
+    {
+        super(new XltDriver(true), "http://localhost:8080/");
+    }</code>
+
+<code class="java">   /**
+    * This method randomly picks one of the web elements that match the given xpath
+    * It uses the WebDriver API and a JUnit assertion
+    */
+    private WebElement findWebElementsAndPickOne(String xpath)
+    {
+        // get all elements that match the given expression
+        final List&lt;WebElement&gt; articleLinks = getWebDriver().findElements(By.xpath(xpath));</code>
+
+<code class="java">        //Make sure there is at least one element; This is a pure JUnit assertion
+        Assert.assertFalse("No elements found", articleLinks.isEmpty());</code>
+
+<code class="java">        // grab one of the elements randomly
+        WebElement element = articleLinks.get(XltRandom.nextInt(articleLinks.size()));</code>
+
+<code class="java">        //return the element
+        return element;
+    }</code>
+
+<code class="java">    /**
+     * Executes the test.
+     *
+     * @throws Throwable if anything went wrong
+     */
+    @Test
+    public void test() throws Throwable
+    {
+        // Open the homepage and delete cookies (module call)
+        final OpenHomepage _openHomepage = new OpenHomepage();
+        _openHomepage.execute();</code>
+
+<code class="java">        //
+        // ~~~ Search ~~~
+        //
+        startAction("Search");
+        // Store a search phrase that gives results
+        store(resolve("${searchTerm_hits}"), "searchTerm");
+        // Execute the search (module call)
+		final Search _search = new Search();
+        _search.execute(resolve("${searchTerm_hits}"));</code>
+
+<code class="java">        // Validate the entered search phrase is still visible in the input
+        assertText("id=searchTextValue", resolve("${searchTerm_hits}"));
+        // Validate presence of the search results page headline
+        assertElementPresent("id=titleSearchText");
+        // Validate the headline contains the search phrase
+        assertText("id=titleSearchText",
+              resolve("glob:*Your results for your search: '${searchTerm_hits}'*"));
+		// validate result counter
+        assertText("id=totalProductCount", resolve("${resultProductCount}"));
+        //
+        // ~~~ ViewProduct ~~~
+        //
+        startAction("ViewProduct");
+        //Find all product links by xpath, pick one randomly and click the link
+        findWebElementsAndPickOne("id('productOverview')/div/ul[@class='thumbnails']/li/div/div/a").click();
+    }</code></pre>
+<p>See file <code>&lt;XLT&gt;/doc/xlt-&lt;version&gt;-javadoc.zip</code> for a full documentation of the <span class="caps">XLT</span> framework, including information on the WebDriver support.</p>
+<h2><span class="caps">XLT</span> Action <span class="caps">API</span></h2>
+<p>Besides the components described above, the <span class="caps">XLT</span> framework supports one more approach for modeling test scenarios in Java code. The test cases and action classes can be implemented in Java from scratch or they may be generated automatically while being exported from Script Developer. This approach is based on special action classes and makes use of the <em><span class="caps">XLT</span> Action <span class="caps">API</span></em>.</p>
+<p>To test web-based applications, the <span class="caps">XLT</span> Action <span class="caps">API</span> relies on the HtmlUnit framework, which also includes the Mozilla Rhino engine for JavaScript support. Web tests are executed by a low-level web browser simulation. Basically, this means that &#8211; as in real browsers &#8211; a  web page is translated into a <span class="caps">DOM</span> (Document Object Model) tree. Analysis, validation, and any other access is performed afterwards on this <span class="caps">DOM</span> tree construction.</p>
+<p>The <span class="caps">XLT</span> Action <span class="caps">API</span> provides a programming paradigm to translate a test scenario into a unit test. The test scenario is implemented as a test case class which itself executes a sequence of one or more actions.</p>
+<h3>Test Case and Action Classes</h3>
+<p>All test case classes should inherit the abstract class <code>AbstractTestCase</code> which supplies some basic features, like logging the test results to disk and easy access to properties.</p>
+<p>As a test case models a transaction and as transactions rely on actions, defining the appropriate actions is the first step.</p>
+<p>All actions must inherit the abstract class <code>AbstractAction</code> which forces you to implement the three methods <code>execute()</code>, <code>preValidate()</code>, and <code>postValidate()</code>. As mentioned earlier, the <code>preValidate()</code> and <code>postValidate()</code> methods perform validations before and after the execution of that action itself. Therefore, the call sequence of an action generated by the <span class="caps">XLT</span> framework is always:</p>
+<ol>
+	<li><code>preValidate()</code></li>
+	<li><code>execute()</code></li>
+	<li><code>postValidate()</code></li>
+</ol>
+<p>This call sequence will be executed exactly once when the instance method <code>run()</code> of an action is called.</p>
+<p>Note that the <span class="caps">XLT</span> Action <span class="caps">API</span> forces you to implement the validation methods and that is the whole purpose of testing: validating data. Therefore, implementing the abstract validation methods in a non-trivial way (that is not leaving them empty) is strongly recommended. Otherwise, you will sacrifice test quality.</p>
+<p>Each of the three methods may throw an exception which always indicates a problem. To check if an action can be executed safely, the abstract class <code>AbstractAction</code> provides a method called <code>preValidateSafe()</code>. This method internally calls <code>preValidate()</code> and catches any thrown exception. If no exception is thrown, <code>preValidateSafe()</code> returns true; otherwise it returns false. This helps you determine if the prerequisites are fulfilled to continue the page flow in a certain direction. A simple example is the flow through a catalog with nested categories. As you don&#8217;t know the nesting level up-front when you create a dynamic and random test, it might be necessary to call <code>preValidateSafe()</code> before trying to go to the next level of categories.</p>
+<p>Note that <code>AbstractAction</code> doesn&#8217;t offer any web support. Therefore, any web-based test should inherit the abstract class <code>AbstractHtmlPageAction</code>, which is a specialization of <code>AbstractAction</code> and which does offer support for web testing.</p>
+<h3>Validation</h3>
+<h4>Assertion</h4>
+<p>JUnit provides the concept of assertions and <span class="caps">XLT</span> uses this concept for all validations. Since <span class="caps">XLT</span> doesn&#8217;t change JUnit in any way, you can use assertions just as you&#8217;re used from JUnit.</p>
+<h4>Pre-validation</h4>
+<p><span class="caps">XLT</span> offers two ways of using the <code>preValidate()</code> method. Any exception on the direct path stops the test with an error message. In case you just want to check whether or not a requirement is fulfilled, you can call the <code>preValidate</code> in a safe way (by using <code>preValidateSafe()</code>) so that any exception is caught and no error is reported. Should you accidentally cause a Java exception different to <code>AssertionException</code>, such as <code>NullPointerException</code> or <code>IndexOutOfBoundException</code>, <span class="caps">XLT</span> issues a warning because the code might contain a problem from a programming point of view. Errors from the application under test should always come up as assertion failures.</p>
+<h4>Post-validation</h4>
+<p>The <code>postValidate()</code> method works similarly to <code>preValidate()</code>. It is used to validate the page just loaded in <code>execute()</code> and ensures that the data matches the expectations. The full set of JUnit assertions is available.</p>
+<p>You can&#8217;t explicitly call the <code>postValidate()</code> method; the framework does so instead. Additionally, error messages can&#8217;t be suppressed. If a page has different outcomes based on random data or states, you have to explicitly handle that in your validation code.</p>
+<h4>Validators</h4>
+<p>We strongly encourage you to write individual validation classes for easy reuse. As soon as a certain check has to be done more than once, it is suited for a validator implementation. This simplifies the maintenance of tests and makes them less error-prone because copy-paste causes typical programming errors.</p>
+<p>Some common validation routines are already covered by default validators, such as a <span class="caps">HTTP</span> response code, <span class="caps">HTML</span> end tag, and <span class="caps">HTTP</span> content length validation. See package <code>com.xceptance.xlt.api.validators</code> in the <span class="caps">API</span> documentation for more information on this topic.</p>
+<h3>Example</h3>
+<p>Let&#8217;s imagine a poster search test case again to illustrate the <span class="caps">XLT</span> Action <span class="caps">API</span>. The most important action would be to &#8220;search&#8221;, that is to fill in the search phrase and then click &#8220;Go&#8221;, &#8220;Search&#8221;, or something similar that loads a list of results. The preconditions are the existence of a search input field and of an appropriate button labeled <strong>Search</strong> or <strong>Go</strong>. The <code>execute()</code> method should fill in the search phrase and click the button.</p>
+<p>After the new page has been loaded, the result should be validated. This validation consists of general validation, performed by validators, and action-specific validation.</p>
+<p>The resulting implementation of the search action would then look like this:</p>
+<pre class="java"><code class="java">/**
+ * Enter the given search phrase in the site's search bar and submit the form.
+ */
+public class Search extends AbstractHtmlPageAction
+{
+    /**
+     * Search phrase.
+     */
+    private final String phrase;</code>
+
+<code class="java">    /**
+     * Search form.
+     */
+    private HtmlForm searchForm;</code>
+
+<code class="java">    /**
+     * Search option ({@link SearchOption#HITS} or {@link SearchOption#NO_HITS} ).
+     */
+    private final SearchOption searchOption;</code>
+
+<code class="java">    /**
+     * Constructor
+     *
+     * @param previousAction
+     *            The previously performed action
+     * @param phrase
+     *            The search phrase
+     * @param option
+     *            The search option that defines if we expect a hit or a no-hit
+     */
+    public Search(final AbstractHtmlPageAction previousAction,
+                  final String phrase,
+                  final SearchOption option)
+    {
+        super(previousAction, null);
+        this.phrase = phrase;
+        searchOption = option;
+    }</code>
+
+<code class="java">    /**
+     * Validation prior to execution.
+     * @throws Exception
+     *             if some of the required input elements couldn't be found.
+     */
+    @Override
+    public void preValidate() throws Exception
+    {
+        // Get the current page.
+        final HtmlPage page = getPreviousAction().getHtmlPage();
+        Assert.assertNotNull("Failed to get page from previous action.", page);</code>
+
+<code class="java">        // Check that the search form is available
+        Assert.assertTrue("Search form not found.", HtmlPageUtils.isElementPresent(page, "id('search')"));</code>
+
+<code class="java">        // Remember the search form
+        searchForm = HtmlPageUtils.findSingleHtmlElementByID(page, "search");
+    }</code>
+
+<code class="java">    /**
+     * Executes the search. Primarily this includes the input of the search
+     * phrase and a click on the proper search button.
+     * @throws Exception
+     *             if some of the inputs have become invalid or setting the
+     *             value attribute of the search input field has failed.
+     */
+    @Override
+    protected void execute() throws Exception
+    {
+        // Fill the search form with the given phrase
+        HtmlPageUtils.setInputValue(searchForm, "searchText", phrase);</code>
+
+<code class="java">        // Submit the search
+        loadPageByFormSubmit(searchForm);
+    }</code>
+
+<code class="java">    /**
+     * Validation after search has become complete.
+     * @throws Exception
+     *             if no search result block element could be found
+     */
+    @Override
+    protected void postValidate() throws Exception
+    {
+        // Get the result of the action
+        final HtmlPage page = getHtmlPage();</code>
+
+<code class="java">        // Basic checks - see action 'Homepage' for some more details how and when to use these validators
+        HttpResponseCodeValidator.getInstance().validate(page);
+        ContentLengthValidator.getInstance().validate(page);
+        HtmlEndTagValidator.getInstance().validate(page);</code>
+
+<code class="java">        HeaderValidator.getInstance().validate(page);</code>
+
+<code class="java">        // Check that the desired option result was achieved.
+        switch (searchOption)
+        {
+            case HITS:
+                Assert.assertNotNull("Expected at least one hit for '" + phrase + "'.",
+                                     HtmlPageUtils.findSingleHtmlElementByID(page, "productOverview"));
+                break;</code>
+
+<code class="java">            case NO_HITS:
+                Assert.assertFalse("Search phrase '" + phrase + "' should result in no hits.",
+                                   HtmlPageUtils.isElementPresent(page, "productOverview"));
+                break;</code>
+
+<code class="java">            default:
+                Assert.fail("Unknown search option.");
+                break;
+        }
+    }
+}</code></pre>
+<p>Note that the constructor of this class has two parameters. One of them is the search phrase the action has to know about. The other parameter is the previously performed action. To enable a flow, all the actions that will be used in page flows need to provide a constructor with a parameter representing the previous action. Without passing the previous action, each action would be stand-alone and behave as if you had just opened a new web browser. Normally, only the start action does so.</p>
+<p>You&#8217;ll notice that the <code>postValidate()</code> method uses some of the predefined validators. <span class="caps">XLT</span> also offers a <code>StandardValidator</code> performing the most common validations in one go. This includes:</p>
+<ul>
+	<li><span class="caps">HTTP</span> response code validation,</li>
+	<li><span class="caps">HTML</span> end tag validation,</li>
+	<li>content length validation, and</li>
+	<li><span class="caps">XHTML</span> validation.</li>
+</ul>
+<p>Having the search action at hand, the implementation of a test case using this action is almost done. A very simple test case would be a repeated search for some phrases. These phrases can be stored in a data file and obtained using the <span class="caps">XLT</span> data provider mechanism:</p>
+<pre class="java"><code class="java">public class TSearch extends AbstractTestCase
+{
+    // Container that holds all the search phrases
+    private static DataProvider phrases = null;</code>
+
+<code class="java">    @Before
+    public void initialize() throws Exception
+    {
+        // Data container already initialized?
+        if(phrases != null) return;
+        // No. Go for it.
+        phrases = DataProvider.getInstance(getProperty("searchphrases.filename", "phrases.txt"));
+    }</code>
+
+<code class="java">    @Test
+    public void search() throws Throwable
+    {
+        // Start on Homepage.
+        Startpage start = new Startpage();
+        start.run();</code>
+
+<code class="java">        for (int i = 0; i &lt; XltRandom.nextInt(10); i++)
+        {
+            // Take a random search phrase.
+            String searchPhrase = phrases.getRandomRow(false);</code>
+
+<code class="java">            // Search.
+            Search search = new Search(start,searchPhrase);
+            search.run();
+        }
+    }
+}</code></pre>
+<p>The example above also demonstrates the use of the <code>XltRandom</code> class offering some convenient randomization features. See the package <code>com.xceptance.xlt.api.util</code> for additional functionality that may help implementing tests.</p>
+<p>Each execution of the search action requires an appropriate search phrase obtained from a <code>DataProvider</code> object. This class offers a generic mechanism to handle and provide test data that is stored in a text file. The location of the text file is specified as relative path to the directory <code>&lt;testsuite&gt;/config/data</code> and passed as parameter to the static method <code>getInstance()</code>. When the class is instantiated, all data is kept in memory, allowing easy and fast access. <span class="caps">XLT</span> is shipped with a predefined set of data files containing email addresses, first and last names, street and city names, and so on. This data can be acquired from the <code>GeneralDataProvider</code> class that uses the appropriate text files located in directory <code>&lt;testsuite&gt;/config/data</code> with <code>&lt;testsuite&gt;</code> referring to your test project directory.</p>
+<p>Last but not least, the present example illustrates how you can use JUnit4 annotations in the standard manner.</p>
+            <div id="footer">
+	<p>Copyright © 2017 by <a href="http://www.xceptance.com/">Xceptance Software Technologies</a>. All rights reserved.</p>
+</div>
+
+
+        </div>
+    </div>
+</div>
+
+<!-- Generate the part of the TOC that contains the headings of the currently displayed page -->
+<!-- createToc (selectedHeadlines, classesTarget, classes )-->
+
+<script>createToc('h1,h2,h3', '#toc > ul', '#sidenav nav sidenav')</script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testcase xmlns="http://xlt.xceptance.com/xlt-script/2" version="7" id="TC_02" baseURL="http://demo-na01-tatcha.demandware.net">
+  <action name="OpenStartPage"/>
+  <command name="open" value="/s/SiteGenesis/home?lang=en_US"/>
+  <action name="TC_02-0"/>
+  
+  <command name="clickAndWait" target="//div[@id='wrapper']/div[2]/h1/a/img"/>
+</testcase>

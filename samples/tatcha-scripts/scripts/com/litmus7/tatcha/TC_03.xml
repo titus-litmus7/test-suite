@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testcase xmlns="http://xlt.xceptance.com/xlt-script/2" version="7" id="TC_03" baseURL="http://demo-na01-tatcha.demandware.net">
+  <action name="OpenStartPage"/>
+  
+  <command name="open" value="/s/SiteGenesis/home?lang=en_US"/>
+  <action name="TC_03-0"/>
+  <command name="clickAndWait" target="link=NEW ARRIVALS"/>
+  <action name="TC_03-1"/>
+  <command name="clickAndWait" target="link=Womens"/>
+  <action name="TC_03-2"/>
+  <command name="clickAndWait" target="link=NEW ARRIVALS"/>
+  <action name="TC_03-3"/>
+  <command name="clickAndWait" target="//nav[@id='navigation']/ul[1]/li[1]/div/ul/li[2]/a"/>
+  <action name="TC_03-4"/>
+  <command name="clickAndWait" target="//nav[@id='navigation']/ul[1]/li[1]/div/ul/li[3]/a"/>
+  <action name="TC_03-5"/>
+  <command name="clickAndWait" target="link=WOMENS"/>
+  <action name="TC_03-6"/>
+  <command name="clickAndWait" target="//nav[@id='navigation']/ul[1]/li[2]/div/ul/li[1]/a"/>
+  <action name="TC_03-7"/>
+  <command name="clickAndWait" target="//nav[@id='navigation']/ul[1]/li[2]/div/ul/li[1]/ul/li[2]/a"/>
+  <action name="TC_03-8"/>
+  <command name="clickAndWait" target="//nav[@id='navigation']/ul[1]/li[2]/div/ul/li[1]/ul/li[3]/a"/>
+  <action name="TC_03-9"/>
+  <command name="clickAndWait" target="//nav[@id='navigation']/ul[1]/li[2]/div/ul/li[1]/ul/li[4]/a"/>
+  <action name="TC_03-10"/>
+  <command name="clickAndWait" target="//nav[@id='navigation']/ul[1]/li[2]/div/ul/li[1]/ul/li[5]/a"/>
+  <action name="TC_03-11"/>
+  <command name="clickAndWait" target="//nav[@id='navigation']/ul[1]/li[2]/div/ul/li[1]/ul/li[6]/a"/>
+  <action name="TC_03-12"/>
+  <command name="clickAndWait" target="//nav[@id='navigation']/ul[1]/li[2]/div/ul/li[2]/a"/>
+  <action name="TC_03-13"/>
+  <command name="clickAndWait" target="//nav[@id='navigation']/ul[1]/li[2]/div/ul/li[2]/ul/li[1]/a"/>
+  <action name="TC_03-14"/>
+  <command name="clickAndWait" target="//nav[@id='navigation']/ul[1]/li[2]/div/ul/li[2]/ul/li[2]/a"/>
+  <action name="TC_03-15"/>
+  <command name="clickAndWait" target="//nav[@id='navigation']/ul[1]/li[2]/div/ul/li[2]/ul/li[3]/a"/>
+</testcase>

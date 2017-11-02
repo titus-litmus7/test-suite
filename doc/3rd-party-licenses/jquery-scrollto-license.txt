@@ -1,0 +1,6 @@
+JQuery ScrollTo
+============================================================
+License: MIT License
+Where: http://code.google.com/p/flesler-plugins/
+More: http://flesler.blogspot.com/2007/10/jqueryscrollto.html
+

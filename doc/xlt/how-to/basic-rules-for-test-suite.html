@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html>
+
+
+
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Basic rules for a Script Developer Test Suite</title>
+  <meta name="description" content="Xceptance LoadTest - XLT, Documentation, Manual, Howto, FAQ">
+
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,700,400italic,300italic" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:100,300,400,500,700" rel="stylesheet" type="text/css">
+
+  <link href="../css/font-awesome.min.css" rel="stylesheet" media="all"  type="text/css" />
+  <link href="../css/lightbox.css" rel="stylesheet" media="all"  type="text/css" />
+
+  <link href="../css/highlightjs/default.css" rel="stylesheet" type="text/css" />
+  <link href="../css/highlightjs/mono-blue.css" rel="stylesheet" type="text/css" />
+
+  <link href="../css/xltdoc.css" rel="stylesheet" media="all"  type="text/css" />
+
+  <script type="text/javascript" src="../js/jquery-1.11.1.min.js"></script>
+  <script type="text/javascript" src="../js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="../js/toc.min.js"></script>
+  <script type="text/javascript" src="../js/lightbox.min.js"></script>
+  <script type="text/javascript" src="../js/headroom.min.js"></script>
+
+  <!-- <script type="text/javascript" src="../js/jquery.scrollIntoView.min.js"></script -->
+  <script type="text/javascript" src="../js/xltdoc.js"></script>
+
+  <script type="text/javascript" src="../js/highlight.pack.js"></script>
+</head>
+
+
+<body data-spy="scroll" data-target="#toc" data-offset="100" class="layout-manual how-to">
+
+    
+
+
+<!-- Fixed navbar -->
+<nav id="header" class="navbar navbar-default">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <a class="site-title" href="../index.html">
+            <img src="../img/XLTDoc-logo-transparent-165x82.png" id="product-logo" alt="XLT Product logo" title="Xceptance LoadTest"/>
+        </a>
+    </div>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    <div id="navbar" class="navbar-collapse collapse">
+        <!-- Links to external pages -->
+        <ul id="navbar-right" class="nav navbar-nav navbar-right navbar-text">
+	<li>
+		<a href="https://lab.xceptance.de/releases/xlt/latest/apidoc/" target="_blank" title="XLT API Documentation">
+			<i class="fa fa-external-link"></i>API</a>
+	</li>
+
+    <li>
+ 		<a href="https://ask.xceptance.de/" target="_blank" title="XLT Community Forum">
+ 			<i class="fa fa-external-link"></i>Forum</a>
+ 	</li> 
+    
+	<li>
+		<a href="https://www.xceptance.com/xlt/" target="_blank" title="XLT Website">
+			<i class="fa fa-external-link"></i>XLT Home</a>		
+	</li>			
+</ul>
+
+
+        <ul id="navbar-left" class="nav navbar-nav navbar-text">
+            <li class="inactive"><a href="../getting-started/index.html">Getting Started</a></li>
+            <li class="inactive"><a href="../user-manual/index.html">User Manual</a></li>
+            <li class="active"><a href="../how-to/index.html">How-To</a></li>
+            <li class="inactive"><a href="../release-notes/index.html">Release Notes</a></li>
+            <li class="inactive"><a href="../license.html">License</a></li>
+        </ul>
+
+    </div><!--/.nav-collapse -->
+
+</nav>
+
+
+
+
+<div id="breadcrumb" class="navbar navbar-default">
+  <div>
+    <ol class="breadcrumb">
+      
+
+      
+        <li><a href="../index.html"><i class="fa fa-home"></i>Docs</a></li>
+          
+            
+            <li><a href="../how-to/index.html">How-To</a></li>
+          
+      
+
+      <li class="active">Basic rules for a Script Developer Test Suite</li>
+    </ol>
+  </div>
+</div>
+
+
+    
+<div id="main" class="main container-fluid">
+    <div class="row">
+        <div class="hidden-xs col-sm-4 col-md-3 sidenav-col">
+            <nav id="sidenav" class="sidenav nav">
+                <!-- TOC of all available files/pages in folder  -->
+                <ul class="nav sidenav">
+                
+
+
+
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        
+            
+                <!-- Table of content from page headings for the currently loaded file-->
+                <li class="current-page">
+                    <a class="current-page" href="">Basic rules for a Script Developer Test Suite</a>
+                    <!-- Container for page headings TOC -->
+                    <div id="toc" class="sidenav"></div>
+                </li>
+            
+        
+    
+
+    
+        
+            <li>
+            
+                <a href="../how-to/choosing-a-test-approach.html">Choose a Test Suite Approach</a>
+                
+            </li>
+        
+    
+
+    
+        
+            <li>
+            
+                <a href="../how-to/graphite.html">Real-Time Reporting with Graphite</a>
+                
+            </li>
+        
+    
+
+    
+        
+            <li>
+            
+                <a href="../how-to/how-to-structure-test-suites.html">Structuring Test Suite and Test Cases</a>
+                
+            </li>
+        
+    
+
+    
+        
+            <li>
+            
+                <a href="../how-to/importing-XLT-projects-into-eclipse.html">Run Script Test Suite From Within Eclipse</a>
+                
+            </li>
+        
+    
+
+    
+
+    
+
+    
+
+    
+        
+    
+
+    
+
+    
+        
+            <li>
+            
+                <a href="../how-to/integrating-XLT-with-Maven-and-Ivy.html">Integrating XLT with Maven and Ivy</a>
+                
+            </li>
+        
+    
+
+    
+        
+            <li>
+            
+                <a href="../how-to/jenkins-plugin.html">Continuous Load Testing with XLT Plugin for Jenkins</a>
+                
+            </li>
+        
+    
+
+    
+
+    
+        
+            <li>
+            
+                <a href="../how-to/properties-include-concept.html">Including Additional Property Files</a>
+                
+            </li>
+        
+    
+
+    
+
+
+                </ul>
+            </nav>
+        </div>
+
+        <div id="content" class="col-xs-12 col-sm-8 col-md-9 content-col">
+            <h2>Basic rules</h2>
+<p class="note">Keep it short, keep it simple, reduce dependencies, stress re-usability and clean up when you&#8217;re finished!</p>
+<h3>Do not overload the scripts!</h3>
+<p>Focus on the (one) key purpose of the test case. It is better to create a lot of short scripts than only a few large test cases covering too many features to test. This helps to maintain and debug the scripts and it is also much easier to locate the root cause of real problems if a test case fails.</p>
+<h3>Do not test the same feature again and again!</h3>
+<p>If possible, do not test the same feature again and again in several test cases but find the shortest way to get to a specific page! For example when testing different shopping bag or checkout features in several test cases, try to avoid searching product and browsing to product detail page. Instead, start the test case with opening the product detail page directly. In case search does not work, only the test case covering search will fail. If search is used in all the test cases, all of them will fail and debug is needed to find out what&#8217;s wrong.</p>
+<h3>Use modules to perform repeating sequences!</h3>
+<p>If you realize that you&#8217;re recording an identical sequence of several commands more then once, then think about extracting it to a module. Not only does it save you time when creating the test cases but also makes maintenance much easier. Adjusting an xpath then only has to be done once in the module instead of repeating fixes in each single test case script. Typical sequences that have to be done in many test cases and are worth a module are logging-in or adding products to cart.</p>
+<h3>Be consistent in using the modules you created!</h3>
+<p>For example, do not perform login using the module in some test cases and without using the module in other test cases. You will lose control!</p>
+<h3>Name your actions!</h3>
+<p>The automatically generated action names are not very helpful when analyzing reports or test results. Edit the action names immediately after recording as long as you can remember. Do not use the same action name for different actions.</p>
+<h3>Add comments to your script commands!</h3>
+<p>Write comments to document the purpose of each command as long as you can remember. At least describe the target element addressed by the command with a clear name. Reading and understanding a test case script for maintaining or debugging purpose can be tricky if you just see <code>click("xpath=/html/body/div[3]/div[2]/div/ul/li[2]/a")</code>. It definitely helps to read a comment like <em>Click &#8216;Login&#8217; button</em>.</p>
+<h3>Clean up at the end of your test case!</h3>
+<p>For example, after adding products to cart or addresses to address book make sure that the test case itself does remove them at the end. make sure each test execution starts under identical conditions. Validations may fail for the second test run if the previous one did not clean up all artifacts.</p>
+<h3>Be prepared if the previous test run did not clean up and add some randomization where needed!</h3>
+<p>Test cases may fail because they try to add something that is already existing. The test case might add something during a failed test run that has not been finished (and therefore the clean up at the end of the test case has not been performed). Replace object names or list entries with a macro like ${RANDOM.String(4)} to get a random string of four characters. Even in case the clean up did not work properly, the next execution has at least a chance to pass.</p>
+<h3>Use robust xpath expression!</h3>
+<p>Xpaths or generated IDs are likely to change. To avoid test case maintenance after a new build of the tested application you should rework the recorded target element locators directly after recording. For example for the cart link, instead of <code>html/body/div[3]/div[2]/div/ul/li[5]/div/div[3]/div[1]/div/a</code><br />
+you should better use something like <code>//div[</code>id=&#8216;cart&#8217;]/div<sup class="footnote" id="fnr1"><a href="#fn1">1</a></sup>@. <span class="caps">XLT</span> Script Developer 4.1 offers a nice new feature to select one of several possible xpaths from a list in command edit window after executing the command and also allows to avoid specific element locators while recording.</p>
+<h3>Do not let your test cases end with a clickAndWait command!</h3>
+<p>In the context of test automation this doesn&#8217;t make sense without any validation/assertions. For example, in most cases it is not necessary to close dialog windows or returning back to start page at the end of the script. If you want to check if e.g. a &#8216;Back&#8217; button is existing then it is enough to validate this and that&#8217;s it. You don&#8217;t need to click it. This can save significant time during test execution because it saves you a lot of page loads. If it is necessary to check if returning to home page works as expected, then you have to add some assertions after the last clicAndWait command.</p>
+<p>There are exceptions from this rule of course (<em>let your test cases end with a clickAndWait command!</em>): If you clean up, then clicking a &#8216;Delete&#8217; button as the last command could make sense. Also if it&#8217;s necessary to log-out, then clicking the log-out link as the last command is acceptable. But again: Why not add an assertion that makes sure that you were successful with that click?</p>
+<h3>Be patient and wait&#8230; (forElementPresent)!</h3>
+<p><em>clickAndWait</em> waits for the page being loaded completely. But today&#8217;s dynamically created web applications are full of JavaScript that is adding elements to the page even after the page is loaded completely. If adding an assert, click or select command directly after the clickAndWait, you will likely face race conditions and success of the test case is depending on replay speed. The first command after a new page has been loaded should always be a waitFor&#8230;</p>
+            <div id="footer">
+	<p>Copyright © 2017 by <a href="http://www.xceptance.com/">Xceptance Software Technologies</a>. All rights reserved.</p>
+</div>
+
+
+        </div>
+    </div>
+</div>
+
+<!-- Generate the part of the TOC that contains the headings of the currently displayed page -->
+<!-- createToc (selectedHeadlines, classesTarget, classes )-->
+
+<script>createToc('h1,h2,h3', '#toc > ul', '#sidenav nav sidenav')</script>
+
+
+</body>
+
+</html>

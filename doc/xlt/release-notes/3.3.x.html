@@ -1,0 +1,797 @@
+<!DOCTYPE html>
+<html>
+
+
+
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>3.3.x</title>
+  <meta name="description" content="Xceptance LoadTest - XLT, Documentation, Manual, Howto, FAQ">
+
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,700,400italic,300italic" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:100,300,400,500,700" rel="stylesheet" type="text/css">
+
+  <link href="../css/font-awesome.min.css" rel="stylesheet" media="all"  type="text/css" />
+  <link href="../css/lightbox.css" rel="stylesheet" media="all"  type="text/css" />
+
+  <link href="../css/highlightjs/default.css" rel="stylesheet" type="text/css" />
+  <link href="../css/highlightjs/mono-blue.css" rel="stylesheet" type="text/css" />
+
+  <link href="../css/xltdoc.css" rel="stylesheet" media="all"  type="text/css" />
+
+  <script type="text/javascript" src="../js/jquery-1.11.1.min.js"></script>
+  <script type="text/javascript" src="../js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="../js/toc.min.js"></script>
+  <script type="text/javascript" src="../js/lightbox.min.js"></script>
+  <script type="text/javascript" src="../js/headroom.min.js"></script>
+
+  <!-- <script type="text/javascript" src="../js/jquery.scrollIntoView.min.js"></script -->
+  <script type="text/javascript" src="../js/xltdoc.js"></script>
+
+  <script type="text/javascript" src="../js/highlight.pack.js"></script>
+</head>
+
+
+<body data-spy="scroll" data-target="#toc" data-offset="100" class="layout-manual ">
+
+    
+
+
+<!-- Fixed navbar -->
+<nav id="header" class="navbar navbar-default">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <a class="site-title" href="../index.html">
+            <img src="../img/XLTDoc-logo-transparent-165x82.png" id="product-logo" alt="XLT Product logo" title="Xceptance LoadTest"/>
+        </a>
+    </div>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    <div id="navbar" class="navbar-collapse collapse">
+        <!-- Links to external pages -->
+        <ul id="navbar-right" class="nav navbar-nav navbar-right navbar-text">
+	<li>
+		<a href="https://lab.xceptance.de/releases/xlt/latest/apidoc/" target="_blank" title="XLT API Documentation">
+			<i class="fa fa-external-link"></i>API</a>
+	</li>
+
+    <li>
+ 		<a href="https://ask.xceptance.de/" target="_blank" title="XLT Community Forum">
+ 			<i class="fa fa-external-link"></i>Forum</a>
+ 	</li> 
+    
+	<li>
+		<a href="https://www.xceptance.com/xlt/" target="_blank" title="XLT Website">
+			<i class="fa fa-external-link"></i>XLT Home</a>		
+	</li>			
+</ul>
+
+
+        <ul id="navbar-left" class="nav navbar-nav navbar-text">
+            <li class="inactive"><a href="../getting-started/index.html">Getting Started</a></li>
+            <li class="inactive"><a href="../user-manual/index.html">User Manual</a></li>
+            <li class="inactive"><a href="../how-to/index.html">How-To</a></li>
+            <li class="active"><a href="../release-notes/index.html">Release Notes</a></li>
+            <li class="inactive"><a href="../license.html">License</a></li>
+        </ul>
+
+    </div><!--/.nav-collapse -->
+
+</nav>
+
+
+
+
+<div id="breadcrumb" class="navbar navbar-default">
+  <div>
+    <ol class="breadcrumb">
+      
+
+      
+        <li><a href="../index.html"><i class="fa fa-home"></i>Docs</a></li>
+          
+            
+            <li><a href="../release-notes/index.html">Release Notes</a></li>
+          
+      
+
+      <li class="active">3.3.x</li>
+    </ol>
+  </div>
+</div>
+
+
+    
+<div id="main" class="main container-fluid">
+    <div class="row">
+        <div class="hidden-xs col-sm-4 col-md-3 sidenav-col">
+            <nav id="sidenav" class="sidenav nav">
+                <!-- TOC of all available files/pages in folder  -->
+                <ul class="nav sidenav">
+                
+
+
+
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        
+            <li>
+            
+                <a href="../release-notes/4.9.x.html">4.9.x</a>
+                
+            </li>
+        
+    
+
+    
+        
+            <li>
+            
+                <a href="../release-notes/4.8.x.html">4.8.x</a>
+                
+            </li>
+        
+    
+
+    
+        
+            <li>
+            
+                <a href="../release-notes/4.7.x.html">4.7.x</a>
+                
+            </li>
+        
+    
+
+    
+        
+            <li>
+            
+                <a href="../release-notes/4.6.x.html">4.6.x</a>
+                
+            </li>
+        
+    
+
+    
+        
+            <li>
+            
+                <a href="../release-notes/4.5.x.html">4.5.x</a>
+                
+            </li>
+        
+    
+
+    
+        
+            <li>
+            
+                <a href="../release-notes/4.4.x.html">4.4.x</a>
+                
+            </li>
+        
+    
+
+    
+        
+            <li>
+            
+                <a href="../release-notes/4.3.x.html">4.3.x</a>
+                
+            </li>
+        
+    
+
+    
+        
+            <li>
+            
+                <a href="../release-notes/4.2.x.html">4.2.x</a>
+                
+            </li>
+        
+    
+
+    
+        
+            <li>
+            
+                <a href="../release-notes/4.1.x.html">4.1.x</a>
+                
+            </li>
+        
+    
+
+    
+        
+            <li>
+            
+                <a href="../release-notes/4.0.x.html">4.0.x</a>
+                
+            </li>
+        
+    
+
+    
+        
+            
+                <!-- Table of content from page headings for the currently loaded file-->
+                <li class="current-page">
+                    <a class="current-page" href="">3.3.x</a>
+                    <!-- Container for page headings TOC -->
+                    <div id="toc" class="sidenav"></div>
+                </li>
+            
+        
+    
+
+    
+        
+            <li>
+            
+                <a href="../release-notes/3.2.x.html">3.2.x</a>
+                
+            </li>
+        
+    
+
+
+                </ul>
+            </nav>
+        </div>
+
+        <div id="content" class="col-xs-12 col-sm-8 col-md-9 content-col">
+            <h2><span class="caps">XLT</span> 3.3.5</h2>
+<p class="lead">This section lists and documents all important fixes in Xceptance LoadTest 3.3.5. Registered customers can access an overview of changes and the latest roadmap at the <a href="https://lab.xceptance.de/versions/29"><span class="caps">XLT</span> Information Center</a>.</p>
+<h3>Features and Improvements</h3>
+<h4>Add waitForElement() method (#597)</h4>
+<p>It is quite common in today&#8217;s web applications that a page is not just loaded by a single request, but the page is assembled from the responses of multiple (<span class="caps">AJAX</span>) requests. Furthermore, the page might be constantly updated by JavaScript jobs, scheduled via <code>window.setTimeout()</code> and <code>window.setInterval()</code>. From the framework&#8217;s perspective it is hard to tell whether a page is loaded completely now, or at least &#8220;complete enough&#8221; to continue with the test case. A better way is to leave that decision to the test case designer, who has to specify when to go on with the test case. Formerly, the framework could only be instructed to wait until all JS jobs are finished or a certain timeout period had exceeded, but this was not flexible enough and could lead to longer waiting times, and hence, longer test case execution times. Now the test case designer can also instruct the framework to wait for a certain <span class="caps">HTML</span> element to appear on the page before going on, no matter whether there are still JS background jobs running or pending.</p>
+<p>The solution is twofold. First, we need a method which waits until that special element (addressed by an XPath expression) appears on the page:</p>
+<pre class="java"><code class="java">public static List&lt;HtmlElement&gt; waitForHtmlElements(HtmlPage page, String xpath, long timeout);</code></pre>
+<p>As its result, the method returns all elements that were located by the specified XPath. In order to not wait forever in case of an error, a maximum waiting time has to be given, after which an exception will be thrown. This method is now part of <code>HtmlPageUtils</code>.</p>
+<p>Second, we have to deal with the fact that the existing <code>loadPageXYZ()</code> methods <em>cancel</em> any already scheduled, but not yet running JS job before returning. This means that the above method alone was not enough, as the JS code that creates the element might not get executed at all. Formerly, one could only control, for <em>how long</em> the <code>loadPageXYZ()</code> methods will wait for the completion of JS jobs (also including periodic jobs) before canceling these jobs, but not whether these jobs should be canceled at all. In order to support this new behavior, the allowed value range of the timeout parameter was extended:</p>
+<ul>
+	<li><code>loadPageByClick(button)</code> [already available] &#8594; waits at most XX s (XX as configured in <code>default.properties</code>) for running JS jobs to finish and after that time cancels any <em>pending</em> jobs</li>
+	<li><code>loadPageByClick(button, 0)</code> [already available] &#8594; as above, but with XX := 0 s</li>
+	<li><code>loadPageByClick(button, 10000)</code> [already available] &#8594; as above, but with XX := 10 s</li>
+	<li><code>loadPageByClick(button, -1)</code> <strong>[new]</strong> &#8594; returns immediately <em>without</em> waiting for jobs to finish or canceling pending jobs</li>
+</ul>
+<p>In combination, a typical code snippet might look like this:</p>
+<pre class="java"><code class="java">protected void execute() throws Exception
+{
+    // get and click the button
+    HtmlPage previousPage = getPreviousAction().getHtmlPage();
+    HtmlElement button = HtmlPageUtils.findHtmlElements(previousPage, "id('foo')");
+    loadPageByClick(button, -1);</code>
+
+<code class="java">    // wait 20 secs for the result to appear on the page
+    HtmlPage currentPage = getHtmlPage();
+    HtmlPageUtils.waitForHtmlElements(currentPage, "id('bar')/div", 20000);
+}</code></pre>
+<h4>New method AbstractHtmlPageAction.setHtmlPage() introduced (#1005)</h4>
+<p>Formerly, the resulting page of an action was only implicitly set &#8211; by one of the <code>loadPage...()</code> methods. However, there are situations when one would like to set a different page, for example if an action implicitly opens a pop-up page, but not the pop-up page, but the main page should be the result of the action. Now there is a new method <code>AbstractHtmlPageAction#setHtmlPage()</code>, which can be used to override the resulting page of an action.</p>
+<h3>Bug Fixes</h3>
+<h4>Wrong page returned from HtmlSelect#setSelectedAttribute() (#912)</h4>
+<p>When selecting an option from a select box on a certain page (via <code>HtmlSelect#setSelectedAttribute()</code>), the resulting page was <em>always</em> the original page, which is wrong in case some JavaScript code changed the document location, opened a pop-up window, etc. Fixed now.</p>
+<h4>NumberFormatException during report creation (#977)</h4>
+<p>When logging events, the name of the test case which produced the event has to be provided. As the test case name the current virtual user&#8217;s name is expected (as returned from <code>Session.getCurrent().getUserName()</code>). It is important that exactly this name is specified as otherwise the event cannot be associated with a test case in the test report. If a different name is specified, for example the test case&#8217;s fully-qualified class name, we will get a new transaction with that name in the report, for which events but no run time values exist. This caused a NumberFormatException during report generation. Fixed now.</p>
+<p>In order to avoid giving an event a wrong test case name, the method <code>DataManager#logEvent(String eventName, String testCaseName, String message)</code> has been deprecated in favor of the new method <code>DataManager#logEvent(String eventName, String message)</code>, which implicitly sets the correct test case name.</p>
+<h4>Wrong per-X values in test report when using sequential mode (#1004)</h4>
+<p>A load test can be run in sequential mode (<code>mastercontroller ... -sequential</code>). In this mode, all configured test cases are not run in parallel, but sequentially. A separate results directory will be created for each test case. If the master controller was configured to automatically create a load test report from the results (<code>mastercontroller ... -sequential -report</code>), all per-X values were wrong for all reports except the first.</p>
+<p>The reason for this misbehavior was that the start time of the respective test was not newly determined when calculating the test report for each test case, but the start time of the first test was taken for all reports. This way, the test duration got longer with each test case, messing up all values that rely on the duration.</p>
+<p>Note that this issue did not occur if the test reports were created afterwards, separately for each test case. This is also the way to go to correct wrong reports: simply recreate them.</p>
+<h4>Time to First/Last is extremely large in case of socket timeouts (#1073)</h4>
+<p>In the test report, we can see the network timing statistics for each type of request. However, the minimum and maximum values for <em>Time-to-first-bytes</em> and <em>Time-to-last-bytes</em> were sometimes implausible (either negative or extremely large), especially in case of socket read time-outs. Fixed now.</p>
+<h4>Trend report refers to wrong charts directory for custom timers (#1127)</h4>
+<p>The charts directory of trend reports was incorrect for custom timers. Charts were generated to the &#8216;customTimers&#8217; directory, but they should go to the &#8216;custom&#8217; directory. Fixed now.</p>
+<h2><span class="caps">XLT</span> 3.3.4</h2>
+<p>This section lists and documents all important fixes in Xceptance LoadTest 3.3.4. Registered customers can access an overview of changes and the latest roadmap at the <a href="https://lab.xceptance.de/versions/28"><span class="caps">XLT</span> Information Center</a>.</p>
+<h3>Bug Fixes</h3>
+<h4>StackOverflowError when handling onblur events (#940)</h4>
+<p>Under certain circumstances, the <code>onblur</code> handler of an <span class="caps">HTML</span> element might be called recursively, causing a <code>StackOverflowError</code>. Fixed now.</p>
+<h2><span class="caps">XLT</span> 3.3.3</h2>
+<p>This section lists and documents all new features, improvements, and important fixes in Xceptance LoadTest 3.3.3. Registered customers can access an overview of changes and the latest roadmap at the <a href="https://lab.xceptance.de/versions/26"><span class="caps">XLT</span> Information Center</a>.</p>
+<h3>Features</h3>
+<h4>Simple front-end application to manage <span class="caps">AWS</span> EC2 instances (#695)</h4>
+<p>The Amazon Elastic Compute Cloud service is a perfect fit for on-demand load testing. <span class="caps">XLT</span> agents can easily be run from EC2 instances. Up to now, configuring the master controller to use the new agents was a tedious job, especially if many agent machines were involved, as it includes to manually get the current IP address of each machine and create a corresponding line in the mastercontroller&#8217;s configuration. Now there is a command-line tool that simplifies the handling of Amazon EC2 instances in general. It provides the following functionality:</p>
+<ul>
+	<li>start new instances (with only a few options)</li>
+	<li>stop running instances</li>
+	<li>list running instances (and print a corresponding agent controller configuration ready to be pasted into <code>mastercontroller.properties</code>)</li>
+</ul>
+<p>Note that this tool is not intended to replace the <a href="http://aws.amazon.com/"><span class="caps">AWS</span> console</a> or similar tools.</p>
+<p>Before you can use the tool, you have to configure it appropriately. There is a new configuration file: <code>&lt;xlt&gt;/config/ec2_admin.properties</code>. The most important settings are your <span class="caps">AWS</span> credentials. These are needed to authorize any <span class="caps">AWS</span> operation, which is executed on your behalf.</p>
+<pre class="ini"><code class="ini">## Your AWS credentials.
+aws.accessKey = &lt;enter your access key&gt;
+aws.secretKey = &lt;enter your secret key&gt;</code>
+
+<code class="ini">## The protocol to use (defaults to https).
+#aws.protocol = https</code>
+
+<code class="ini">## HTTP proxy settings.
+#aws.proxy.host = localhost
+#aws.proxy.port = 8888
+#aws.proxy.userName =
+#aws.proxy.password =</code></pre>
+<p>You may also configure a proxy if one is required to be used in your environment.</p>
+<p>To run the tool, call one of the two scripts <code>&lt;xlt&gt;/bin/ec2_admin.sh</code> or <code>&lt;xlt&gt;\bin\ec2_admin.cmd</code> depending on your OS choice. The tool will guide you through the available operations via a menu-based UI. Keep in mind, that you can easily run <span class="caps">XLT</span> in a heterogeneous environment and control Linux based agents from a Microsoft Windows environment.</p>
+<blockquote class="note">
+<p class="note">Note that when creating <span class="caps">AWS</span> instances from AMIs you will see your own AMIs to choose from, but you may also see public AMIs provided by Xceptance. These AMIs are pre-packaged systems, which are optimized for load testing and have <span class="caps">XLT</span> already installed. Using one of these AMIs may save you the work to create and maintain your own AMIs, but may also impose additional costs. See the AMI&#8217;s description for more details.</p>
+</blockquote>
+<blockquote class="warning">
+<p class="warning">When using the new EC2 management UI for <span class="caps">XLT</span>, please be aware of the fact, that <span class="caps">XLT</span> does not distinguish between instances it started and instance you have started manually when using the stop command. For fine-grained control, we recommend the <a href="http://aws.amazon.com/"><span class="caps">AWS</span> Management Console</a>.</p>
+</blockquote>
+<h3>Improvements</h3>
+<h4>Extensive network statistics (#448)</h4>
+<p>Now the load test report features extensive network statistics on the <em>Requests</em> page displaying data for bandwidth utilization and socket timing information.</p>
+<p class="illustration"><a href="../img/releasenotes/xlt333/network-statistics-large.png"><img src="../img/releasenotes/xlt333/network-statistics-small.jpg" alt="" /></a> <span class="caption">The new network statistics section</span></p>
+<p>The bandwidth tab displays information about the use incoming and outgoing bandwidth per request. <span class="caps">XLT</span> measures on socket level and therefore the real transfered data out and in of the application is measured. <span class="caps">XLT</span> does not analyze or modify that data when taking the measurements. Bytes Sent comprises all data that is sent out of the application including overhead such as http(s) headers and <span class="caps">SSL</span> protocol data. Bytes Received includes all received data and the connected overhead. There is no measurement difference between sent and received data.</p>
+<p>Network Timing reports all low level network timing data that have been measured on socket level. Each measurement point contains information about minimum and maximum times occurred as well as the mean of all gathered data.</p>
+<ul>
+	<li>Connect Time: Time needed to establish a connection to the other system. Please note when using keep-alive semantics during testing, the connect time will mainly be 0 except for the first request of a transaction.</li>
+	<li>Send Time: Time required to send the request to the other system. Depending on the payload and the network speed, this data is often zero or very small.</li>
+	<li>Server Busy Time: This indicated the time waiting after sending the last bytes till the first bytes are received.</li>
+	<li>Receive Time: The time spent receiving data. Measured from the first bytes received till the last bytes received.</li>
+	<li>Time to First Bytes: Total time from the connection start till the first bytes are received. Includes Connect, Send, Server Busy, and Receive Time.</li>
+	<li>Time to Last Bytes: Total time from the connection start till the last bytes are received. This is the time needed to connect, send, and receive data. Often this time is called network runtime. The request runtime in comparison contains the network runtime and the application time needed to process header and protocol information and transfer the data from socket level to the application level.</li>
+</ul>
+<h4>Consistent host names (#589)</h4>
+<p>A load agent uses its host name/IP address to qualify the name under which resource usage values are stored. The agent used to determine its local IP address itself. However, the result is not necessarily the same address as the one configured at the master controller, in case:</p>
+<ul>
+	<li>the machine has more than one address, or</li>
+	<li>the machine&#8217;s externally visible address is different than the internal one (<span class="caps">NAT</span>).</li>
+</ul>
+<p>This can be confusing. Now the master controller passes the host name to the agent, and the agents always use that name/address when writing resource usage data. So all host names in the test report should be consistent with the master controller&#8217;s configuration now.</p>
+<h4><span class="caps">API</span> to access agent information (#669)</h4>
+<p>Sometimes it is required to let an agent know what its name is and how many other agents take part in a load test. This information is especially useful when managing agent-specific resources, such as test data, which is exclusive to a certain agent. Now the <code>Session</code> class provides additional methods to access agent information:</p>
+<ul>
+	<li><code>Session.getAgentID()</code> &#8211; the name of the current agent, as configured in <code>config/mastercontroller.properties</code></li>
+	<li><code>Session.getTotalAgentCount()</code> &#8211; the total count of agents participating in the load test</li>
+	<li><code>Session.getAgentNumber()</code> &#8211; the number (or index) of the current agent (ranges from 0 to total agent count &#8211; 1)</li>
+</ul>
+<p>You can use these values to access different test data files for and from your test cases or to partition a test data set into agent-specific chunks.</p>
+<h4>Relaxed cookie implementation to be compatible with browsers (#701)</h4>
+<p>Internet browsers, such as Internet Explorer or Firefox, accept cookies even if the path attribute specified in the cookie does not match the request. <span class="caps">XLT</span> rejects such cookies by default (as mandated by the <span class="caps">HTTP</span> specification), however, it can be re-configured now to behave exactly like the real browsers if needed. Now there is a new property <code>com.xceptance.xlt.http.acceptCookiesWithInvalidPath</code> in file <code>default.properties</code>, which controls whether cookies with invalid paths are accepted (true) or rejected (false). The property value defaults to false.</p>
+<h4>Credentials for <span class="caps">HTTP</span> authentication configurable (#757)</h4>
+<p>If the target server requires <span class="caps">HTTP</span> user authentication, the necessary credentials could only be set programmatically. Similar to the proxy authentication, you can use these new properties from the file <code>config/default.properties</code> now:</p>
+<pre class="ini"><code class="ini">com.xceptance.xlt.auth.userName = &lt;your_name&gt;
+com.xceptance.xlt.auth.password = &lt;your_password&gt;
+#com.xceptance.xlt.auth.domain = &lt;your_domain&gt;</code></pre>
+<p>The <code>domain</code> setting is necessary for the <span class="caps">NTLM</span> authentication scheme only.</p>
+<p>Note that these settings are <em>global</em> settings and will be used for <em>all</em> servers that require authentication. If you need different credentials for different servers, you still have to set them programmatically.</p>
+<h2><span class="caps">XLT</span> 3.3.2</h2>
+<p>This section lists and documents all new features, improvements, and important fixes in Xceptance LoadTest 3.3.2. Registered customers can access an overview of changes and the latest roadmap at the <a href="https://lab.xceptance.de/versions/24"><span class="caps">XLT</span> Information Center</a>.</p>
+<h3>Improvements</h3>
+<h4>Script Recorder compatible with Firefox 3.6 (#657)</h4>
+<p>Now the <span class="caps">XLT</span> script recorder is also compatible with Firefox 3.6.&#215;.</p>
+<h4>Alternative loadPage() method for light-weight mode (#666)</h4>
+<p>The class <code>AbstractHtmlPageAction</code> already supports a variant of the <code>loadPage(URL)</code> method, which gives finer control how a request is actually executed:</p>
+<pre class="ini"><code class="ini">protected void loadPage(final URL url, final List&lt;NameValuePair&gt; requestParameters, final HttpMethod method)</code></pre>
+<p>Via this method, the test case designer can choose the <span class="caps">HTTP</span> method to be used and pass additional request/form parameters. Now the same functionality is available for <code>AbstractLightWeightPageAction</code> as well.</p>
+<h2><span class="caps">XLT</span> 3.3.1</h2>
+<h3>Features</h3>
+<p>This section lists and documents all new features and additions to Xceptance LoadTest 3.3.1. Registered customers can access an overview of changes and the latest roadmap at the <a href="https://lab.xceptance.de/versions/23"><span class="caps">XLT</span> Information Center</a>.</p>
+<h4>Commenting tests and test executions (#105)</h4>
+<p>Testing is documenting, therefore <span class="caps">XLT</span> delivers a new feature that permits to add custom comments to the project and to the test execution. This improves the documentation quality and helps to make load testing more efficient.</p>
+<p class="illustration"><img src="../img/releasenotes/xlt331/xlt-comments.png" alt="" /> <span class="caption">Some example text demonstrating the comment  feature</span></p>
+<p>Project comments are comments that have been added to the property files by using the new property <code>com.xceptance.xlt.loadtests.comment</code>. Comments can stretch across multiple lines in the property files, when the line break is escaped with a backslash (\). This line break will not cause a line break in the test report.</p>
+<pre class="ini"><code class="ini">com.xceptance.xlt.loadtests.comment = This configuration tests the reaction on heavily changing thinktimes. \
+Therefore the user count is extremely high to accommodate that.</code></pre>
+<p>Besides  the comment property, a comment can be entered during test execution. On the command line, the master controller supports the new option <code>-comment</code>. The command line comment will be added to the test property file automatically to be available for a later report creation or re-creation. When running the master controller in interactive mode, you will be asked whether or not you want to add a comment to the last test execution.</p>
+<pre class="ini"><code class="ini">./mastercontroller.sh -auto -comment "Using two additional web servers for this test."</code></pre>
+<p>The comment feature supports <span class="caps">HTML</span>  to give you the ability to express test comments in a more structured way.</p>
+<pre class="ini"><code class="ini">com.xceptance.xlt.loadtests.comment = This configuration tests the reaction on heavily changing &lt;em&gt;thinktimes&lt;/em&gt;.&lt;br/&gt; \
+Therefore the user count is &lt;span style="color: Red;"&gt;extremely&lt;/span&gt; high to accommodate that.</code></pre>
+<blockquote class="warning">
+<p class="warning">All  comments will be placed without sanitation into the report. Therefore broken <span class="caps">HTML</span> code can break the report. If this happens, the comment <span class="caps">HTML</span> can be fixed by editing the property files and re-creating the report. The command line comment was automatically appended to the test property file used, so any mistake made can also be easily fixed later on.</p>
+</blockquote>
+<p>If you would like to apply several different comments, such as a comment in the project property file and one or more additional comments in your test property file, you can add numbers to the comments. The comments will be included in their natural order. This means <code>com.xceptance.xlt.loadtests.comment</code> comes first, after that all numbered comments, such as <code>...comment.1</code> or <code>...comment.8</code>. The comment from the command line will be placed at the end.</p>
+<pre class="ini"><code class="ini">com.xceptance.xlt.loadtests.comment.1 = This is a comment.
+com.xceptance.xlt.loadtests.comment.2 = This is another comment.
+com.xceptance.xlt.loadtests.comment.9 = Here comes another one, completely out of order, but valid.</code></pre>
+<h3>Improvements</h3>
+<h4>Support a weight factor for load machines (#634)</h4>
+<p>By default, the configured load is distributed equally across all agent machines. If some of the agent machines are slower than the others, the load tester has to manually assign the number of users to agent machines to achieve an equal load level on each machine. When the total number of users changes often, this approach is uncomfortable and error-prone. Now a &#8220;weight&#8221; factor can be defined once for each participating agent machine and that weight is taken into consideration when automatically distributing the load across machines.</p>
+<p>Now the master controller&#8217;s configuration looks like this:</p>
+<pre class="ini"><code class="ini">com.xceptance.xlt.mastercontroller.agentcontrollers.ac1.url = https://agentmachine1:8500
+com.xceptance.xlt.mastercontroller.agentcontrollers.ac1.weight = 5
+com.xceptance.xlt.mastercontroller.agentcontrollers.ac2.url = https://agentmachine2:8500
+com.xceptance.xlt.mastercontroller.agentcontrollers.ac2.weight = 20</code></pre>
+<p>In this case, <code>agentmachine2</code> gets four times the load of <code>agentmachine1</code>.</p>
+<h4>Improved and streamlined WebDriver support (#626)</h4>
+<p>WebDriver is finally merging with Selenium. Therefore we decided to further improve the WebDriver support. Now <span class="caps">XLT</span> does not only support the main <span class="caps">API</span> and its principles, it is also compatible with the <code>HtmlUnitDriver</code>. Therefore it can be used as a drop-in replacement.  Additionally the streamlined <span class="caps">API</span> guarantees compatibility with browser drivers, such as the <code>FirefoxDriver</code> or the <code>ChromeDriver</code>.</p>
+<blockquote class="note">
+<p class="note">The principles how to use the WebDriver and how to inject the needed data to have a corresponding action concept in place have changed.</p>
+</blockquote>
+<p>The XltDriver has to be created like a normal driver now: <code>new XltDriver()</code>. The previously available method <code>setActionName(String)</code> was dropped because it made it impossible to replace the XltDriver with any other driver. Please use this <span class="caps">XLT</span>-<span class="caps">API</span> method <code>Session.getCurrent().setWebDriverActionName(String)</code> instead. This method will only have an effect for <code>XltDriver</code>-based test cases. For all other drivers as well as the action-based test cases, it will not be active. Any set data will be ignored.</p>
+<h5>Previous <span class="caps">XLT</span> WebDriver support</h5>
+<pre class="java"><code class="java">// get web driver
+final XltDriver driver = getDriver();</code>
+
+<code class="java">// turn off Javascript because we want to run a resource-friendly load test
+driver.getWebClient().setJavaScriptEnabled(false);</code>
+
+<code class="java">// start page
+driver.setActionName("Homepage");
+driver.get(blogUrl);</code></pre>
+<h5>New <span class="caps">XLT</span> WebDriver support</h5>
+<pre class="java"><code class="java">// get web driver
+final XltDriver driver = new XltDriver();</code>
+
+<code class="java">// turn off Javascript because we want to run a resource-friendly load test
+driver.setJavascriptEnabled(false);</code>
+
+<code class="java">// start page
+Session.getCurrent().setWebDriverActionName("Homepage");
+driver.get(blogUrl);</code></pre>
+<blockquote class="note">
+<p class="note">Make sure you take a look at the provided test cases in the <code>sample/testsuite-pebble</code> directory. They show how to interact with the XltDriver. Basically now it is no difference anymore whether you work with the drivers provided by the WebDriver project or the XltDriver.</p>
+</blockquote>
+<p>More material about WebDriver and especially documentation how to work with WebDriver, can be found in the official documentation under <a href="http://seleniumhq.org/docs/09_webdriver.html">Selenium 2.0 and WebDriver</a>.</p>
+<h4>Pool Threads Renamed (#619)</h4>
+<p><span class="caps">XLT</span> maintains a pool of threads, which are responsible for downloading static content in parallel.  The naming of these threads was rather generic, as can be seen here:</p>
+<pre class="ini"><code class="ini">[2009/11/15-00:17:36,904] ERROR [pool-8289-thread-2] runtime - Failed to load static content from: http://www.mysystem.de../img/sky.gif</code></pre>
+<p>These names make it hard to associate the pool threads with a certain virtual user, especially during load tests with multiple virtual users. Now the thread name contains the virtual user&#8217;s ID:</p>
+<pre class="ini"><code class="ini">[2009/11/15-00:17:36,904] ERROR [TUpload-0-pool-2] runtime - Failed to load static content from: http://www.mysystem.de../img/sky.gif</code></pre>
+<h4>Error percentage in master controller&#8217;s output (#592)</h4>
+<p>To inform the user about the stability of the current test run the master controller&#8217;s output has been extended to display not only the total number of errors, but also the error rate in percent.</p>
+<h4>Automatic status update in interactive mode (#580)</h4>
+<p>When running the master controller in auto mode the agent status is printed to the screen continuously. The same behavior has been implemented for the interactive mode now, so there is no need any longer to refresh the status manually.</p>
+<h4>Changed user behavior during shutdown period (#572)</h4>
+<p>Previously, <span class="caps">XLT</span> stopped measurements when the shutdown period started, but kept the full load until the end of the shutdown period was reached. Now with the begin of the shutdown period all measurements are stopped, but no new test case executions are triggered. This makes the load fade out during the shutdown period. At the end of the shutdown period all still running tests are forced to stop to ensure that the load test ends in time.</p>
+<p>In case the shutdown period is not specified or has a zero length, all test executions started before the measurement period ended are completed and no new transactions will be started. No test is forced to stop.</p>
+<h4>Enable HtmlUnit&#8217;s JavaScript debugger (#565)</h4>
+<p>HtmlUnit ships with a simple JavaScript debugger, which logs all function calls made. Now there is a new property <code>com.xceptance.xlt.js.debugger.enabled</code> in file <code>default.properties</code> and <code>dev.properties</code>, respectively, which controls whether the JavaScript debugger is enabled.</p>
+<h4>Show baseline values in trend report (#562)</h4>
+<p>The first column of a trend report table shows the absolute measured values of the baseline measurement now instead of the value <em>0.0%</em>.</p>
+<h3>Bug Fixes</h3>
+<p>This sections covers all important defects that have been fixed with this release.</p>
+<h4>Memory leaks in crawler demo scenario (#570)</h4>
+<p>The crawler demo scenarios accidently instantiated the web client too often, causing a memory leak because web client instances are only destroyed when the test finishes.</p>
+<h4>Loading a page by pressing keys (#568)</h4>
+<p>Page loading can also be triggered via JavaScript by simply typing keys. This is supported now. Use the new method <code>AbstractHtmlPageAction.loadPageByTypingKeys(HtmlElement, String)</code> and pass the keys to be entered as the second parameter.</p>
+<h4>Ruby tests run in load test mode (#563)</h4>
+<p>When running Ruby tests from the command line via the provided <code>jruby</code> script, <span class="caps">XLT</span> was accidentally working in load test mode, i.e. the development mode configuration was not applied. Fixed now.</p>
+<h4>Browser shutdown activities did not appear in test report (#560)</h4>
+<p>The transaction&#8217;s run time did not include the time needed to shutdown the browser. This time can be significant as arbitrary JavaScript code may be executed when closing web windows (&#8220;onunload&#8221; events). Furthermore, requests may be triggered by JavaScript, which did not appear in the test report. This has been fixed. A new timer name &#8220;BrowserShutdown&#8221; has been introduced to represent all shutdown activities.</p>
+<h4>Cookies are not displayed correctly in result viewer (#553)</h4>
+<p>When opening the request information tab for a certain request in the results viewer, the cookie information was displayed with a wrong formatting. Fixed now.</p>
+<h4>Improved naming of JavaScript background threads (#550)</h4>
+<p>In order to ease debugging multi-frame <span class="caps">HTML</span> pages which perform JavaScript background jobs the naming of the corresponding threads has been improved to contain the name of the window they are running in.</p>
+<h4>Notification when <span class="caps">HTML</span> page uses non-unique IDs (#549)</h4>
+<p>If an <span class="caps">HTML</span> page contains elements with the same ID, <span class="caps">XLT</span> logs a warning now as non-unique IDs are not allowed and can cause hard-to-understand behavior (e.g. clicking the wrong element).</p>
+<h4>Unexpected behavior if number of users is not specified (#426)</h4>
+<p>If the number of virtual users was unspecified for a certain test case, <span class="caps">XLT</span> assumed zero users. So a load test might stop immediately right after the start, which was correct but somewhat surprising behavior. Now an appropriate error message is printed and the load test will not start.</p>
+<h4>Modified pages dumped in error case (#378)</h4>
+<p>If the output mode is set to <code>onError</code>, pages shown in the result viewer for a certain action might not always represent exactly the same page  as generated by this action, but a later page. This happens only if an action does not load a new page, but only modifies the current page (via JavaScript). As a consequence, the page associated with the previous action is modified too. This is a side effect of the <span class="caps">HTML</span> page dumping mechanism, which tries to store an internal copy of the page as late as possible to improve performance.</p>
+<p>Not having the exact page for a certain action might be a problem during test case development, but note that in this case the output mode is usually set to <code>always</code>, which does not show this behavior as a separate page is always dumped after each action.</p>
+<p>While load testing, however, the output mode is typically set to <code>onError</code>. In this case, the load tester must decide when the framework should dump pages to disk. Therefore, there is a new property <code>com.xceptance.xlt.output2disk.onError.dumpMode</code>, which controls whether a page is to be saved after each action (value <code>modifiedAndFinalPages</code>) or only before loading a completely new page (value <code>finalPagesOnly</code>). By default, the property value is <code>finalPagesOnly</code>. Note that <code>modifiedAndFinalPages</code> should be used with care as saving many intermediate pages is time and memory consuming.</p>
+<h2><span class="caps">XLT</span> 3.3.0</h2>
+<h3>Features</h3>
+<p>This section lists and documents all new features and additions to Xceptance LoadTest 3.3.0. Registered customers can access an overview of changes and the latest roadmap at the <a href="https://lab.xceptance.de/versions/13"><span class="caps">XLT</span> Information Center</a>.</p>
+<h4>Comparison Reports (#461)</h4>
+<p>One of the most important activities during load and performance testing is the evaluation of changes respectively to performance changes. Because comparing reports manually is tiresome and error-prone, <span class="caps">XLT</span> delivers a new and sophisticated report type &#8211; the comparison report.</p>
+<p class="illustration"><a href="../img/releasenotes/xlt33/comparison-report-actions-large.png"><img src="../img/releasenotes/xlt33/comparison-report-actions-small.jpg" alt="" /></a> <span class="caption">An example for comparing action performance</span></p>
+<p>The <span class="caps">XLT</span> comparison report feature helps you identify differences between test runs and derive the right actions from it. It visualizes differences on all measurement levels (transactions, actions, requests, and custom timers). A color code helps you to find the biggest difference quickly. Therefore you can easily combine it with the setup of your test and derive the next actions from it.</p>
+<p>For instance, you increased the memory limits of your server&#8217;s Java virtual machine and you ran the same test again. By comparing the results before and after the server configuration change, you can easily determine how much improvement you got. Of course, the results might have an error margin of 5-10%, in this case, you should question your test and asked yourself, if you measure the right things over the right time period.</p>
+<h5>How to create it</h5>
+<p>Comparison reports are created similar to normal load test reports. The command line tool <code>create_diff_report.sh</code> located in <code>&lt;xlt&gt;/bin</code> starts the creation process. You simply pass the two reports you want to compare. The first report is the baseline, the second one will be compared to that baseline.</p>
+<p>You  can specify an alternate output directory with the <code>-o</code> option. By default, the new report is placed in the <code>reports</code> directory of your current <span class="caps">XLT</span> installation.</p>
+<pre class="ini"><code class="ini">create_diff_report.sh &lt;baseline_report_dir&gt; &lt;second_report_dir&gt; [-o &lt;alternative_output_dir&gt;]</code></pre>
+<blockquote class="note">
+<p class="note">On Windows, the respective program is called <code>create_diff_report.cmd</code>.</p>
+</blockquote>
+<h5>How to interpret it</h5>
+<p>Interpreting a comparison report is simple, because its colors indicate the performance development and make it easy to see any development. Green cells indicate an improvement, red cells a performance degradation. The intensity of the color corresponds to the percentage value of the difference. The more the darker. Color values in the range of -10% to +10% are close to neutral white, because changes in that range are often measurement errors or normal fluctuations.</p>
+<p>All data is relative and differences are reported in percentages. Hover the cursor over cells to see the measurement values of both reports. These details allow you evaluate the performance difference further by seeing the real values and hence the real difference. This means, a 100% difference can be OK, when the measurement values are small enough in the first place, such as 10 msec for instance. The second measurement reported 20 msec and therefore the performance dropped significantly in percent but not in milliseconds. A difference of 10 msec can be caused by a small network latency  and might be normal white noise during testing.</p>
+<blockquote class="warning">
+<p class="warning">The comparison report requires load test reports generated with <span class="caps">XLT</span> 3.3 or higher, because the underlying result data schema has changed. To compare older data, you can rerun the report creation with <span class="caps">XLT</span> 3.3, if you saved the result data directories.</p>
+</blockquote>
+<h4>Trend Reports (#472)</h4>
+<p>Comparison reports are good to see the performance difference between two test runs in the greatest detail possible. However, quite often a <em>series</em> of test runs has to be compared to see how the application under test has changed over time in terms of performance. This is especially important for applications which are under active development. For this, <span class="caps">XLT</span> provides <em>trend</em> reports.</p>
+<h5>How to create it</h5>
+<p>As you might have already guessed, creating a trend report is as easy as creating comparison or normal load test reports. Just run the command line tool <code>create_trend_report.sh</code> located in <code>&lt;xlt&gt;/bin</code>. As arguments you simply pass the load test report directories, which you want to be included in the trend report. Instead of naming the directories one by one, you may also use the shell&#8217;s wild card characters to specify a bunch of reports at once. The trend report will be generated to XLT&#8217;s <code>reports</code> directory by default. You can specify an alternate output directory with the <code>-o</code> option.</p>
+<pre class="ini"><code class="ini">create_trend_report.sh &lt;report_dir_1&gt; &lt;report_dir_2&gt; ... &lt;report_dir_N&gt; [-o &lt;alternative_output_dir&gt;]</code></pre>
+<blockquote class="note">
+<p class="note">On Windows, the respective program is called <code>create_trend_report.cmd</code>.</p>
+</blockquote>
+<h5>How to interpret it</h5>
+<p>For trend reports, it is typically sufficient to have only the most important performance numbers at hand &#8211; the run time statistics. These values are primarily shown as graphs, which makes it easy to recognize the application behavior over time.</p>
+<p class="illustration"><a href="../img/releasenotes/xlt33/trend-report-chart-large.png"><img src="../img/releasenotes/xlt33/trend-report-chart-small.png" alt="" /></a> <span class="caption">A trend chart</span></p>
+<p>Additionally, the run time difference values (in percent) are displayed in two tables with color-coded cells, as seeen in the comparison reports. The first table gives information how each test run behaved compared to the <em>first test run</em> in the series. Red table cells indicate that the last test run took longer than the first run. Green cells indicate an improvement.</p>
+<p class="illustration"><a href="../img/releasenotes/xlt33/trend-report-requests-large.png"><img src="../img/releasenotes/xlt33/trend-report-requests-small.png" alt="" /></a> <span class="caption">The run time differences relative to the first test run</span></p>
+<p>The second table visualizes the difference between the current test run and the <em>previous test run</em>, again using color-coded cells. This table gives you a more <em>local</em> view on all performance changes.</p>
+<blockquote class="note">
+<p class="note">The table cells will not show percentage values if the number of values included in the trend report is too high. This avoids excessive scrolling when viewing the report. However, the cell background color will still give you an indication whether the current test run performed better or worse. Note that the numeric values are always available in the cell&#8217;s tool tip text, so just move the mouse over the cell to see the details.</p>
+</blockquote>
+<blockquote class="warning">
+<p class="warning">The trend report requires load test reports generated with <span class="caps">XLT</span> 3.3 or higher, because the underlying result data schema changed.</p>
+</blockquote>
+<h4>Support for Google WebDriver (#464)</h4>
+<p>A team at Google introduced a new simpler <span class="caps">API</span> for composing web regression tests, the WebDriver <span class="caps">API</span>. WebDriver supports HtmlUnit as one possible browser. <span class="caps">XLT</span> integrates the WebDriver <span class="caps">API</span> now and enables you to leverage existing WebDriver automation skills. The integration gives <span class="caps">XLT</span> a second <span class="caps">API</span>, besides the Action Concept <span class="caps">API</span>. Additionally <span class="caps">XLT</span> gives you the ability to write WebDriver test cases and run them as load tests.</p>
+<blockquote class="note">
+<p class="note">More information about Google WebDriver can be found on the home page of the project: <a href="http://code.google.com/p/webdriver/">Google WebDriver</a> and in an article on the Google Open Source Blog: <a href="http://google-opensource.blogspot.com/2009/05/introducing-webdriver.html">Introducing WebDriver</a></p>
+</blockquote>
+<p>The usage of WebDriver with <span class="caps">XLT</span> is demonstrated in sample test cases which can be found in the test suite (<code>&lt;xlt&gt;/samples/testsuite</code>). All test cases are one-to-one adaptations of the standard  <span class="caps">XLT</span> demonstration test cases, which utilize  the action concept.</p>
+<h5>WebDriver vs. Actions</h5>
+<p>The action concept separates, encapsulates and isolates a step in the page flow. Its <span class="caps">API</span> is designed to guide you to achieve perfect test validation and optimal reuse. Although this results in various classes (one class per action), the effective test code is short, easy to read, and to maintain. Additionally you have full access to the powerful HtmlUnit <span class="caps">API</span>, that offers you control over nearly every aspect of the simulated web browser.</p>
+<p>In contrast, the WebDriver concept only offers an <span class="caps">API</span> to access basic elements and does not guide you on how to write a test. But because of its low complexity, it is perfectly suited to write test very quickly. This is important for rapid prototyping and software projects which have not reached enough <span class="caps">HTML</span>/<span class="caps">CSS</span>/JavaScript stability to justify the investment in reuse and full test coverage.  The WebDriver <span class="caps">API</span> looks familiar to users of Selenium, Watir, and other comparable projects. Therefore the switch from one of these products to <span class="caps">XLT</span> is easy. Due to the fact that the WebDriver concept is based on the reduction to basic user operations, the <span class="caps">API</span> is not as powerful as HtmlUnit&#8217;s <span class="caps">API</span> but easier to learn and to use.</p>
+<p><a href="http://code.google.com/p/webdriver">WebDriver</a> intends to act as an <em>idealized web browser</em>, so its <span class="caps">API</span> offers methods to perform actions that web browser users normally do (navigating, clicking, typing etc.).  Implementors of the WebDriver <span class="caps">API</span> are called <em>drivers</em> which perform all requested operations in a more or less specific way. Following this concept, the only difference between testing on web browsers like <em>Internet Explorer</em> and <em>Mozilla Firefox</em> is the usage of a different driver, because the whole test code uses the common WebDriver <span class="caps">API</span>.</p>
+<h5>Example</h5>
+<p>This example demonstrates the usage of the WebDriver <span class="caps">API</span> for a very common situation: the submission of a form. This form is embedded in an <span class="caps">HTML</span> page which obviously has to be loaded before we can go ahead.</p>
+<p>For this example we assume that the form to be submitted has the ID <em>sampleForm</em> and the input elements, whose values should be submitted, have the name <em>name</em>.</p>
+<p>First of all, we have to obtain the <span class="caps">XLT</span> driver instance. This is done by calling the method <code>getDriver()</code>, that is defined in the test super class <code>com.xceptanxe.xlt.api.tests.AbstractTestCase</code>. After that, we can use the instance method <code>get(String)</code> of the <span class="caps">XLT</span> driver to load the desired page.</p>
+<p>The resulting page contains the <span class="caps">HTML</span> form we are looking for. So we try to get the form by instructing the driver to locate it for us by calling the instance method <code>findHtmlElement(By)</code>. This method expects an argument of the type <code>By</code>, which represents the searching strategy to be used. The appropriate class <code>By</code> provides various static methods to construct a searching strategy. We will use <code>By.id(String)</code>.</p>
+<p>Having obtained the form, we can use it to identify the enclosed input elements by using the methods: <code>findHtmlElements</code> or <code>findHtmlElement</code>. We will use the first one, because we are looking for more than one element. But this time the searching strategy has changed. We have to identify the elements by name instead of by ID. As the result of the call, we get a list of elements. This list should contain exactly two elements. This will be validated using the <code>assertEquals</code> method of the JUnit class <code>org.junit.Assert</code>.</p>
+<p>Now we have to set the new values of the input elements. The WebDriver <span class="caps">API</span> offers a convenient method to do this: the method <code>sendKeys</code> simulates the typing on a keyboard. This method is available for all <span class="caps">HTML</span> elements that accept keyboard input.</p>
+<p>Once the new values have been set, we are ready to submit the form. This can be achieved in two ways: Either we localize an input element that triggers the form submission or we just use the instance method <code>submit</code> of the found form that does the magic for us. To avoid to much typing, we pick the second option.</p>
+<blockquote class="warning">
+<p class="warning">Depending on the <span class="caps">HTML</span> page logic, it might be necessary to click on a specific button to trigger the correct flow of actions. A lot of elements have <code>onclick</code> methods to add JavaScript to the form processing. Additionally server frameworks make assumption about the flow by evaluating the button value.</p>
+</blockquote>
+<p>The resulting code looks like this:</p>
+<pre class="java"><code class="java">package com.xceptance.xlt.samples.test;</code>
+
+<code class="java">import com.xceptance.xlt.api.tests.AbstractTestCase;
+import com.xceptance.xlt.api.webdriver.XltDriver;</code>
+
+<code class="java">import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;</code>
+
+<code class="java">import org.junit.Assert;
+import org.junit.Test;</code>
+
+<code class="java">public class FormSubmitTest extends AbstractTestCase
+{
+    @Test
+    public void submitForm() throws Throwable
+    {
+        // get the XLT webdriver instance
+        final XltDriver driver = getDriver();</code>
+
+<code class="java">        // load the page
+        driver.get("http://www.example.com");</code>
+
+<code class="java">        // get the form to be submitted
+        // no validation necessary, since an NoSuchElementException is thrown, when no element could be found
+        final WebElement sampleForm = driver.findElement(By.id("sampleForm"));</code>
+
+<code class="java">        // get the required input elements
+        // and make sure that we got exactly two elements
+        final List&lt;WebElement&gt; nameInputs = sampleForm.findElements(By.name("name"));
+        Assert.assertEquals(2, nameInputs.size());</code>
+
+<code class="java">    // fill in the form by setting the new values of the found input elements
+        nameInputs.get(0).sendKeys("Bob");
+        nameInputs.get(1).sendKeys("Marley");</code>
+
+<code class="java">    // submit the form and we are done
+        sampleForm.submit();
+    }
+}</code></pre>
+<h4>Ruby as scripting language for test cases (#441)</h4>
+<p>Dynamic languages like <a href="http://www.ruby-lang.org">Ruby</a> are becoming more and more popular. As a consequence, the demand has increased to use a dynamic language as the scripting language for developing and running load and regression tests. Because scripting languages pair greatly with rapid prototyping approaches, <span class="caps">XLT</span> supports Ruby as a scripting language now. Ruby scripts can be used like any other Java test case. The ruby integration supports both <span class="caps">API</span> flavors &#8211; the action concept and the WebDriver <span class="caps">API</span>.</p>
+<blockquote class="note">
+<p class="note"><a href="http://www.jruby.org/">JRuby</a> is a 100% pure-Java implementation of the ruby programming language which enables the execution of Ruby code inside Java code and vice versa. The Ruby code benefits from <span class="caps">JIT</span>-compilation and optimization, high performance, real threading and a gigantic amount of Java libraries. For more detailed information about JRuby and its use see the <a href="http://www.jruby.org/">official home page</a>.</p>
+</blockquote>
+<p><span class="caps">XLT</span> ships JRuby 1.3.1 as a single Java archive which can be found in the <span class="caps">XLT</span> library directory. The appropriate licenses are located at the 3rd party license directory. JRuby is licensed under the three-license model <span class="caps">CPL</span>/<span class="caps">LPGL</span>/<span class="caps">GPL</span>.</p>
+<h5>JRuby Test Scripts</h5>
+<p>Tests for <span class="caps">XLT</span> are created by sub-classing the abstract Java class <em>com.xceptance.xlt.api.tests.AbstractTestCase</em>. This is identical to writing a plain Java test case. Furthermore, your test scripts must contain exactly one class which declares exactly one method the name of which starts with <em>test</em> to satisfy the JUnit part of the testing.</p>
+<p>The name of your test script must be the same as the name of the class it is declaring followed by the Ruby script extension <em>.rb</em>. For example, if you declare a JRuby test class named <em>Regression</em> then your script must be named <em>Regression.rb</em>. The location where you store your JRuby test scripts is important because it is identified using the naming scheme of Java packages. This way, all of your test scripts &#8211; Java or JRuby &#8211; use the same organizational structure and are configured in the same way.</p>
+<p>When you design your test scripts you can choose between two concepts: action-based or WebDriver-based tests. As for the language, it doesn&#8217;t matter if you are writing your test scripts in Java or in Ruby because the general procedure is the same in either case: Actions have to subclass the appropriate abstract Java class and implement the methods <em>preValidate</em>, <em>postValidate</em> and <em>execute</em> whereas WebDriver-based tests simply use the provided <span class="caps">API</span> as described above.</p>
+<p>To demonstrate the usage of JRuby as scripting language for <span class="caps">XLT</span> you may want to have a look at the sample test suite which contains a number of ruby tests in the <em>rubysamples</em> part.</p>
+<h5>JRuby Test Runner</h5>
+<p>When you develop the test scripts it is often useful to run them out of the box just to check for proper functioning. Therefore we provide a <span class="caps">UNIX</span> shell script named <em>jruby.sh</em> and a Windows batch file named <em>jruby.cmd</em> which enable command line execution of one or more Ruby tests. Both scripts are located in the binary directory of your <span class="caps">XLT</span> installation (<code>&lt;xlt&gt;/bin</code>).</p>
+<p>The Ruby test runner scripts use the format <code>jruby [-I&lt;path&gt;|&lt;test&gt;]+</code> where <code>&lt;test&gt;</code> refers to a JRuby test &#8211; using the same naming scheme as mentioned above &#8211; and where <code>&lt;path&gt;</code> refers to a directory that should be added to the JRuby load path. The first example command line starts the <em>TVisitor</em> test, while the second example executes two tests one after the another. First the action-based Ruby version of TVisitor, after that the WebDriver version of it. You have to run the test cases from the main directory of your test suite by referring to the jruby start script of your <span class="caps">XLT</span> installation.</p>
+<pre class="ini"><code class="ini">../../bin/jruby.sh com.xceptance.xlt.samples.tests.jruby.TVisitor
+../../bin/jruby.sh com.xceptance.xlt.samples.tests.jruby.TVisitor com.xceptance.xlt.samples.tests.webdriver.jruby.TVisitor</code></pre>
+<blockquote class="note">
+<p class="note">Please note, that the configured test suite directory is used for looking up files. So, please make sure, that the property file <code>&lt;xlt&gt;/config/mastercontroller.properties</code> is up-to-date and the property value of the key <code>com.xceptance.xlt.mastercontroller.agentfiles</code> points to the directory containing your test classes and configuration.</p>
+</blockquote>
+<blockquote class="warning">
+<p class="warning">In contrast to the normal test execution via Eclipse or another <span class="caps">IDE</span>, where the test results are placed in the <code>results</code> directory of the test suite, an execution via the JRuby test runner will place the results in the <code>results</code> directory of the <span class="caps">XLT</span> installation you are using.</p>
+</blockquote>
+<h5>Example</h5>
+<p>Let&#8217;s use the previous example from the WebDriver section again, which opens a page, fills in the embedded form, and submits it afterwards.</p>
+<p>Remember, the Ruby test script must be named exactly as the declared class followed by the Ruby extension <em>.rb</em>. Having this in mind, we create a new file named <em>FormSubmit.rb</em> in a sub directory of <em>src/com/xceptance/xlt/samples/tests</em> of the sample test suite. For this example, just use <em>jruby</em> as the name of the sub directory.</p>
+<p>Open the newly created file with your favorite text editor and add the following lines to it:</p>
+<pre class="ruby"><code class="ruby">require 'java'</code>
+
+<code class="ruby">import com.xceptance.xlt.api.tests.AbstractTestCase
+import org.openqa.selenium.By
+import org.junit.Assert</code>
+
+<code class="ruby">class FormSubmit &lt; AbstractTestCase</code>
+
+<code class="ruby">  def test_submit()
+    # test code comes here
+  end</code>
+
+<code class="ruby">end</code></pre>
+<p>Now, it&#8217;s time to implement the test. What we have to do:</p>
+<ol>
+	<li>Get the webdriver instance,</li>
+	<li>Open the desired page,</li>
+	<li>Identify the <span class="caps">HTML</span> form that has to be submitted along with the two <span class="caps">HTML</span> input elements named <em>name</em>,</li>
+	<li>Fill in the form by setting the values for the two <span class="caps">HTML</span> input elements,</li>
+	<li>Submit the form.</li>
+</ol>
+<p>The resulting code looks like this:</p>
+<pre class="ruby"><code class="ruby">require 'java'</code>
+
+<code class="ruby">import com.xceptance.xlt.api.tests.AbstractTestCase
+import org.openqa.selenium.By
+import org.junit.Assert</code>
+
+<code class="ruby">class FormSubmit &lt; AbstractTestCase</code>
+
+<code class="ruby">  def test_submit()
+    # get the webdriver instance
+    driver = get_driver()</code>
+
+<code class="ruby">    # open the page
+    driver.get("http://www.example.com")</code>
+
+<code class="ruby">    # get the HTML form
+    form = driver.find_element_by_id("sampleForm")</code>
+
+<code class="ruby">    # get the input elements
+    input_list = form.find_elements_by_name("name")
+    Assert.assert_equals(2, input_list.size())</code>
+
+<code class="ruby">    # fill in the form
+    input_list.at(0).send_keys("Bob")
+    input_list.at(1).send_keys("Marley")</code>
+
+<code class="ruby">    # submit the form
+    form.submit()
+  end</code>
+
+<code class="ruby">end</code></pre>
+<h4>New and extensive Showcases (#451)</h4>
+<p>This release of <span class="caps">XLT</span> features a new extensive library of examples of typical use cases, such as handling of popups and alerts, dealing with frames and downloads. The examples are located in a separate project called <em>showcases</em>. You can find it in the <code>&lt;xlt&gt;/samples</code> directory. Simply use it like you have used the <em>testsuite</em> before.</p>
+<blockquote class="note">
+<p class="note">A detailed list with all test cases and a short description can be found on the <a href="showcases.html">showcase</a> documentation page.</p>
+</blockquote>
+<h4>Script Recorder Preferences (#23)</h4>
+<p>Now the script recorder provides a <em>Preferences</em> dialog, where various settings can be made, especially for code generation. This includes default values for:</p>
+<ul>
+	<li>test suite directory</li>
+	<li>package name</li>
+	<li>file encoding</li>
+</ul>
+<p>When saving a test case as Java code, these values are used to pre-fill the code generation settings dialog.</p>
+<p>The Preferences dialog can be accessed either via the <em><span class="caps">XLT</span> Script Recorder</em> drop-down menu or via <em>Add-ons | <span class="caps">XLT</span> Script Recorder | Options</em>. The settings are stored to the user&#8217;s Firefox profile directory on disk.</p>
+<h3>Improvements</h3>
+<h4>Enhanced loading of static content</h4>
+<p>In previous releases, images referenced by <span class="caps">CSS</span> style sheets have been downloaded independently of their usage. Although this may be useful in some cases, the user may want to have only those images which are actually referenced downloaded.</p>
+<p><span class="caps">XLT</span> introduces a new property named <code>com.xceptance.xlt.css.download.images</code>. The user has the opportunity to control the download behavior with it. Depending on the specified property value (which is case-insensitive) images referenced by <span class="caps">CSS</span> style sheets are downloaded:</p>
+<ul>
+	<li>never,</li>
+	<li>onDemand, or</li>
+	<li>always.</li>
+</ul>
+<blockquote class="note">
+<p class="note">If you don&#8217;t specify one of the property values mentioned above, <em>never</em> is assumed. This property will be ignored, if <span class="caps">CSS</span> is disabled (<code>com.xceptance.xlt.cssEnabled = false</code>). To be able to download images referenced by <span class="caps">CSS</span> style sheets on demand, JavaScript has to be enabled.</p>
+</blockquote>
+<blockquote class="warning">
+<p class="warning">Due to the nature of the usage detection of static content and the need for JavaScript, this feature should used with great care when load testing. The resource demands are higher and therefore small machines might be overwhelmed executing the tests, therefore influencing the load test results negatively.</p>
+</blockquote>
+<h4>Default waiting time for JavaScript background activity (#469)</h4>
+<p>Previously, to wait for any JavaScript background activity when loading pages, a timeout had to be specified. Now, a global property controls the waiting time when no timeout value is specified. This value will be used if no waiting time is passed to any of the <code>AbstractHtmlPageAction#loadPageXYZ()</code> methods.</p>
+<pre class="ini"><code class="ini">## The default time (in ms) to wait for JavaScript background jobs to finish.
+## Default value is 0, if not set.
+com.xceptance.xlt.js.backgroundActivity.waitingTime = 10000</code></pre>
+<blockquote class="warning">
+<p class="warning">This property changes the behavior of the <code>loadPageXYZ</code> method when it is not passed an explicitly specified timeout value. Previously when no waiting time was specified, no waiting was performed at all. Now, the specified default timeout will be obeyed. To load a page without any timeout, 0 has to be specified as the timeout value explicitly when the method is called.</p>
+</blockquote>
+<h4>Support for proxy authentication (#59)</h4>
+<p><span class="caps">XLT</span> is able to route traffic through an <span class="caps">HTTP</span> proxy. If the proxy requires user authentication, the credentials needed can now be configured as additional properties in the file <code>default.properties</code>:</p>
+<pre class="ini"><code class="ini">com.xceptance.xlt.proxy.userName = myUserName
+com.xceptance.xlt.proxy.password = myPassword</code></pre>
+<h4>HtmlUnit updated to v2.5 (#360)</h4>
+<p><span class="caps">XLT</span> now uses the latest stable version of HtmlUnit &#8211; 2.5 &#8211; with many important improvements and fixes. See the <a href="http://htmlunit.sourceforge.net/">HtmlUnit web site</a> for a complete list of enhancements. <span class="caps">XLT</span> includes additional bug fixes from coming HtmlUnit versions, as well as load test specific modifications.</p>
+<p class="warning">Please refrain from updating HtmlUnit yourself to avoid incompatibilities and defects.</p>
+<h4>Destination directory command line switch (#533)</h4>
+<p>All command lines for the creation of reports have been enhanced to use the same command line switch <code>-o</code>. This switch is used to specify an alternate output directory when creating reports. Please note, that this is the target directory and is created if it does not exist. No additional sub directory for the report is created automatically.</p>
+<h3>Bug Fixes</h3>
+<p>This sections covers all important defects that have been fixed with this release.</p>
+<h4>Incorrect actions recorded when multiple browser are open (#430)</h4>
+<p>The recorder incorrectly recorded some actions when multiple windows or browser tabs were opened in Firefox. This has been fixed and the recorder obeys the context now. It will stop recording when another tab is set active.</p>
+<h4>Auto-completed form information not captured (#434)</h4>
+<p>Previous version of the <span class="caps">XLT</span> recorder did not capture values of auto-completed form fields correctly.</p>
+            <div id="footer">
+	<p>Copyright © 2017 by <a href="http://www.xceptance.com/">Xceptance Software Technologies</a>. All rights reserved.</p>
+</div>
+
+
+        </div>
+    </div>
+</div>
+
+<!-- Generate the part of the TOC that contains the headings of the currently displayed page -->
+<!-- createToc (selectedHeadlines, classesTarget, classes )-->
+
+<script>createToc('h1,h2,h3', '#toc > ul', '#sidenav nav sidenav')</script>
+
+
+</body>
+
+</html>

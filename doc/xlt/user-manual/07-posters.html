@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html>
+
+
+
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Demo Application</title>
+  <meta name="description" content="Xceptance LoadTest - XLT, Documentation, Manual, Howto, FAQ">
+
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,700,400italic,300italic" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:100,300,400,500,700" rel="stylesheet" type="text/css">
+
+  <link href="../css/font-awesome.min.css" rel="stylesheet" media="all"  type="text/css" />
+  <link href="../css/lightbox.css" rel="stylesheet" media="all"  type="text/css" />
+
+  <link href="../css/highlightjs/default.css" rel="stylesheet" type="text/css" />
+  <link href="../css/highlightjs/mono-blue.css" rel="stylesheet" type="text/css" />
+
+  <link href="../css/xltdoc.css" rel="stylesheet" media="all"  type="text/css" />
+
+  <script type="text/javascript" src="../js/jquery-1.11.1.min.js"></script>
+  <script type="text/javascript" src="../js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="../js/toc.min.js"></script>
+  <script type="text/javascript" src="../js/lightbox.min.js"></script>
+  <script type="text/javascript" src="../js/headroom.min.js"></script>
+
+  <!-- <script type="text/javascript" src="../js/jquery.scrollIntoView.min.js"></script -->
+  <script type="text/javascript" src="../js/xltdoc.js"></script>
+
+  <script type="text/javascript" src="../js/highlight.pack.js"></script>
+</head>
+
+
+<body data-spy="scroll" data-target="#toc" data-offset="100" class="layout-manual ">
+
+    
+
+
+<!-- Fixed navbar -->
+<nav id="header" class="navbar navbar-default">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <a class="site-title" href="../index.html">
+            <img src="../img/XLTDoc-logo-transparent-165x82.png" id="product-logo" alt="XLT Product logo" title="Xceptance LoadTest"/>
+        </a>
+    </div>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    <div id="navbar" class="navbar-collapse collapse">
+        <!-- Links to external pages -->
+        <ul id="navbar-right" class="nav navbar-nav navbar-right navbar-text">
+	<li>
+		<a href="https://lab.xceptance.de/releases/xlt/latest/apidoc/" target="_blank" title="XLT API Documentation">
+			<i class="fa fa-external-link"></i>API</a>
+	</li>
+
+    <li>
+ 		<a href="https://ask.xceptance.de/" target="_blank" title="XLT Community Forum">
+ 			<i class="fa fa-external-link"></i>Forum</a>
+ 	</li> 
+    
+	<li>
+		<a href="https://www.xceptance.com/xlt/" target="_blank" title="XLT Website">
+			<i class="fa fa-external-link"></i>XLT Home</a>		
+	</li>			
+</ul>
+
+
+        <ul id="navbar-left" class="nav navbar-nav navbar-text">
+            <li class="inactive"><a href="../getting-started/index.html">Getting Started</a></li>
+            <li class="active"><a href="../user-manual/index.html">User Manual</a></li>
+            <li class="inactive"><a href="../how-to/index.html">How-To</a></li>
+            <li class="inactive"><a href="../release-notes/index.html">Release Notes</a></li>
+            <li class="inactive"><a href="../license.html">License</a></li>
+        </ul>
+
+    </div><!--/.nav-collapse -->
+
+</nav>
+
+
+
+
+<div id="breadcrumb" class="navbar navbar-default">
+  <div>
+    <ol class="breadcrumb">
+      
+
+      
+        <li><a href="../index.html"><i class="fa fa-home"></i>Docs</a></li>
+          
+            
+            <li><a href="../user-manual/index.html">User Manual</a></li>
+          
+      
+
+      <li class="active">Demo Application</li>
+    </ol>
+  </div>
+</div>
+
+
+    
+<div id="main" class="main container-fluid">
+    <div class="row">
+        <div class="hidden-xs col-sm-4 col-md-3 sidenav-col">
+            <nav id="sidenav" class="sidenav nav">
+                <!-- TOC of all available files/pages in folder  -->
+                <ul class="nav sidenav">
+                
+
+
+
+
+
+    
+        
+            <li>
+            
+                <a href="../user-manual/01-intro.html">Introduction</a>
+                
+            </li>
+        
+    
+
+    
+
+    
+        
+            <li>
+            
+                <a href="../user-manual/02-install.html">Installation</a>
+                
+            </li>
+        
+    
+
+    
+
+    
+        
+            <li>
+            
+                <a href="../user-manual/03-scriptdeveloper.html">Script Developer</a>
+                
+            </li>
+        
+    
+
+    
+        
+            <li>
+            
+                <a href="../user-manual/04-framework.html">XLT Framework</a>
+                
+            </li>
+        
+    
+
+    
+        
+            <li>
+            
+                <a href="../user-manual/05-framework-config.html">XLT Framework Configuration</a>
+                
+            </li>
+        
+    
+
+    
+        
+            <li>
+            
+                <a href="../user-manual/06-datadriven.html">Data-Driven Tests</a>
+                
+            </li>
+        
+    
+
+    
+        
+            
+                <!-- Table of content from page headings for the currently loaded file-->
+                <li class="current-page">
+                    <a class="current-page" href="">Demo Application</a>
+                    <!-- Container for page headings TOC -->
+                    <div id="toc" class="sidenav"></div>
+                </li>
+            
+        
+    
+
+    
+        
+            <li>
+            
+                <a href="../user-manual/08-loadtest.html">Load and Performance Testing</a>
+                
+            </li>
+        
+    
+
+    
+        
+            <li>
+            
+                <a href="../user-manual/09-reports.html">Test Results and Reports</a>
+                
+            </li>
+        
+    
+
+    
+        
+            <li>
+            
+                <a href="../user-manual/10-command-reference.html">Command Reference</a>
+                
+            </li>
+        
+    
+
+    
+        
+            <li>
+            
+                <a href="../user-manual/11-glossary.html">Glossary</a>
+                
+            </li>
+        
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+                </ul>
+            </nav>
+        </div>
+
+        <div id="content" class="col-xs-12 col-sm-8 col-md-9 content-col">
+            <h2>Running Posters</h2>
+<p><span class="caps">XLT</span> ships with a real-world demo web application (<em>Posters</em>) as the system under test and a test suite to test this application. Both can be found in the directory <code>&lt;XLT&gt;/samples</code>.</p>
+<p><em>Posters</em> is a shop software written in Java. Being small and easy to deploy, it is well suited to demonstrate testing with <span class="caps">XLT</span>.</p>
+<p>To start the demo application open a terminal (or command prompt window) and type the following command sequence:</p>
+<pre class="bash"><code class="bash">cd &lt;XLT&gt;/samples/app-server/bin
+./start.sh</code></pre>
+<blockquote class="note">
+<p class="note">Windows users have to use the appropriate <code>.cmd</code> file located in the same directory by entering <code>start.cmd</code> into the command prompt.</p>
+</blockquote>
+<p>This starts an application server containing the <em>Posters</em> application. To access it, open a browser with this <span class="caps">URL</span>: <a href="http://localhost:8080/posters/">http://localhost:8080/posters/</a>. Please take some time to become familiar with <em>Posters</em>.</p>
+<h2>The Posters Test Suite</h2>
+<p><span class="caps">XLT</span> lets you create test cases using different approaches, that is test cases can be written directly in Java with your favourite <span class="caps">IDE</span> or they can be recorded as simple scripts with Script Developer. A test suite may contain test cases created with either approach, and so does the <em>Posters</em> test suite. Even though the number of test scenarios is limited here, our sample project perfectly demonstrates the differences between the two approaches, and &#8211; for Java-based test cases &#8211; what APIs are available to implement them.</p>
+<h3>Directory Structure</h3>
+<p>An <span class="caps">XLT</span> test project has a simple directory structure. The following directories have to exist in order for everything to run smoothly:</p>
+<ul>
+	<li><code>&lt;project&gt;/classes</code> contains the compiled code of your project. Normally, your <span class="caps">IDE</span> will do the job and place the files there. You can optionally build a <span class="caps">JAR</span> and place it in the <code>&lt;project&gt;/lib</code> directory.</li>
+	<li><code>&lt;project&gt;/config</code> contains all the properties files used to configure the project.</li>
+	<li>There can be an optional <code>&lt;project&gt;/config/data</code> directory where you can place any data file you need for the test, such as address data, logins, and so on. All files are uploaded to the agent before a load test takes place. The programming <span class="caps">API</span> provides easy access to this data.</li>
+	<li>You can place all your required libraries in <code>&lt;project&gt;/lib</code>. The content is uploaded to the runtime agent and included in the class path. For your local development within an <span class="caps">IDE</span>, you have to manually add the libraries to the class path of your project.</li>
+	<li>The <code>&lt;project&gt;/src</code> directory holds the Java-based test cases of your project. This code is compiled into classes by your <span class="caps">IDE</span> or build environment. It&#8217;s organized in main packages, typically one package for test cases, one for actions, and one for utility classes. Make sure the compiled classes end up in <code>project/classes</code> because this is the directory <span class="caps">XLT</span> configures as class path for your test.</li>
+	<li>The <code>&lt;project&gt;/scripts</code> directory contains test scenarios as script test cases. Again, the code is organized in main packages, one package for test cases, a.k.a. scenarios, and one for reusable modules.</li>
+</ul>
+<h3>Understanding the Test Scenarios</h3>
+<p>Since <em>Posters</em> is a shop software, our test scenarios cover the typical use of an online shop:</p>
+<ul>
+	<li><strong>Visitor</strong>: A visitor arrives on the homepage, and that&#8217;s it.</li>
+	<li><strong>Browse</strong>: The visitor arrives on the homepage, then starts browsing some main- and sub-categories and views a random product detail page.</li>
+	<li><strong>Search</strong>: The visitor arrives on the homepage and enters one or more search phrases, then opens the product detail page for one of the search result items.</li>
+	<li><strong>Register</strong>: A visitor creates an account.</li>
+	<li><strong>Add To Cart</strong>: <strong>Browse</strong> extended by adding the shown product to the cart and viewing the cart.</li>
+	<li><strong>Guest Checkout</strong>: <strong>Add To Cart</strong> with a subsequent checkout process but without submitting the order.</li>
+	<li><strong>Checkout</strong>: <strong>Add To Cart</strong> with a subsequent checkout process as registered user and, again, without submitting the order.</li>
+	<li><strong>Guest Order</strong>: <strong>Guest Checkout</strong> with a completed checkout including submission of the order.</li>
+	<li><strong>Order</strong>: <strong>Checkout</strong> including submission of the order.</li>
+</ul>
+<p>Note that the scenarios share some common steps, thus allowing a clear demonstration of how to reuse code across test cases.</p>
+<h2>Running Script Test Cases in Firefox</h2>
+<p>To run the script test cases in Firefox, import the test project into Script Developer first.</p>
+<h3>Importing the <em>Posters</em> Test Suite into Script Developer</h3>
+<ol>
+	<li>Open Script Developer.</li>
+	<li>Click the folder-like toolbar button and choose &#8216;Import&#8230;&#8217; to open a file system explorer window.</li>
+	<li>Navigate to <code>&lt;XLT&gt;/samples</code>, mark <code>testsuite-posters</code>, and then click <em>Select Folder</em>.</li>
+</ol>
+<p>The tree view on the left-hand side displays all available script test cases and modules.</p>
+<h3>Executing Script Test Cases in Script Developer</h3>
+<p>Open Script Developer. All script test cases and modules are listed in the script explorer. Double-click the <code>TSearch</code> test case to open it and see the list of its commands and called modules inside the work area. Click the <em>Play</em> icon to start replaying the script in Firefox. Alternatively, right-click on the test case in the tree view and choose <em>Run</em> from the context menu.</p>
+<h2>Running Java Test Cases in Headless Mode</h2>
+<p>Java-based test cases are executed in headless mode, that is in a simulated browser that doesn&#8217;t perform page rendering. Script test cases may also be run in this mode via Java wrapper classes. Before you can do so, you need to import the sample test suite into your Java <span class="caps">IDE</span>.</p>
+<h3>Importing the <em>Posters</em> Test Suite into Eclipse</h3>
+<p>After starting Eclipse and creating a workspace, do the following:</p>
+<ol>
+	<li>Open the import dialog (<em>File</em> &gt; <em>Import</em> &gt; <em>General</em> &gt; <em>Existing Project Into Workspace</em>).</li>
+	<li>Select the root directory to search in and point to <code>&lt;XLT&gt;/samples</code>.</li>
+	<li>Select the test suite project <code>testsuite-posters</code> from the list.</li>
+	<li>Click <em>Finish</em>.</li>
+</ol>
+<p>Since the imported project has dependencies on the libraries of <span class="caps">XLT</span>, you have to adjust these dependencies.</p>
+<ol>
+	<li>Right-click on your project and select <em>Properties</em>.</li>
+	<li>Click <em>Java Build Path</em>.</li>
+	<li>Select the <em>Libraries</em> tab, then click <em>Add External JARs</em>.</li>
+	<li>Go to <code>&lt;XLT&gt;/lib</code> and select all JARs. Then click <em>Open</em>.</li>
+	<li>A list of all these JARs is displayed. Close the dialog with <em>OK</em>.</li>
+</ol>
+<p>Eclipse will rebuild the project and shouldn&#8217;t report any build problems if configured properly.</p>
+<blockquote class="note">
+<p class="note">Users of other IDEs have to carry out similar steps.</p>
+</blockquote>
+<h2>Executing Java Test Cases in Eclipse</h2>
+<p>Any Java test case can be directly run in Eclipse in headless browser mode. Go to package <code>com.xceptance.xlt.samples.tests</code>, select the test case class (e.g. <code>TSearch</code>), and run it as JUnit test via the Eclipse class file context menu.</p>
+            <div id="footer">
+	<p>Copyright © 2017 by <a href="http://www.xceptance.com/">Xceptance Software Technologies</a>. All rights reserved.</p>
+</div>
+
+
+        </div>
+    </div>
+</div>
+
+<!-- Generate the part of the TOC that contains the headings of the currently displayed page -->
+<!-- createToc (selectedHeadlines, classesTarget, classes )-->
+
+<script>createToc('h1,h2,h3', '#toc > ul', '#sidenav nav sidenav')</script>
+
+
+</body>
+
+</html>

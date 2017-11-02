@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html>
+
+
+
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Run Script Test Suite From Within Eclipse</title>
+  <meta name="description" content="Xceptance LoadTest - XLT, Documentation, Manual, Howto, FAQ">
+
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,700,400italic,300italic" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:100,300,400,500,700" rel="stylesheet" type="text/css">
+
+  <link href="../css/font-awesome.min.css" rel="stylesheet" media="all"  type="text/css" />
+  <link href="../css/lightbox.css" rel="stylesheet" media="all"  type="text/css" />
+
+  <link href="../css/highlightjs/default.css" rel="stylesheet" type="text/css" />
+  <link href="../css/highlightjs/mono-blue.css" rel="stylesheet" type="text/css" />
+
+  <link href="../css/xltdoc.css" rel="stylesheet" media="all"  type="text/css" />
+
+  <script type="text/javascript" src="../js/jquery-1.11.1.min.js"></script>
+  <script type="text/javascript" src="../js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="../js/toc.min.js"></script>
+  <script type="text/javascript" src="../js/lightbox.min.js"></script>
+  <script type="text/javascript" src="../js/headroom.min.js"></script>
+
+  <!-- <script type="text/javascript" src="../js/jquery.scrollIntoView.min.js"></script -->
+  <script type="text/javascript" src="../js/xltdoc.js"></script>
+
+  <script type="text/javascript" src="../js/highlight.pack.js"></script>
+</head>
+
+
+<body data-spy="scroll" data-target="#toc" data-offset="100" class="layout-manual how-to">
+
+    
+
+
+<!-- Fixed navbar -->
+<nav id="header" class="navbar navbar-default">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <a class="site-title" href="../index.html">
+            <img src="../img/XLTDoc-logo-transparent-165x82.png" id="product-logo" alt="XLT Product logo" title="Xceptance LoadTest"/>
+        </a>
+    </div>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    <div id="navbar" class="navbar-collapse collapse">
+        <!-- Links to external pages -->
+        <ul id="navbar-right" class="nav navbar-nav navbar-right navbar-text">
+	<li>
+		<a href="https://lab.xceptance.de/releases/xlt/latest/apidoc/" target="_blank" title="XLT API Documentation">
+			<i class="fa fa-external-link"></i>API</a>
+	</li>
+
+    <li>
+ 		<a href="https://ask.xceptance.de/" target="_blank" title="XLT Community Forum">
+ 			<i class="fa fa-external-link"></i>Forum</a>
+ 	</li> 
+    
+	<li>
+		<a href="https://www.xceptance.com/xlt/" target="_blank" title="XLT Website">
+			<i class="fa fa-external-link"></i>XLT Home</a>		
+	</li>			
+</ul>
+
+
+        <ul id="navbar-left" class="nav navbar-nav navbar-text">
+            <li class="inactive"><a href="../getting-started/index.html">Getting Started</a></li>
+            <li class="inactive"><a href="../user-manual/index.html">User Manual</a></li>
+            <li class="active"><a href="../how-to/index.html">How-To</a></li>
+            <li class="inactive"><a href="../release-notes/index.html">Release Notes</a></li>
+            <li class="inactive"><a href="../license.html">License</a></li>
+        </ul>
+
+    </div><!--/.nav-collapse -->
+
+</nav>
+
+
+
+
+<div id="breadcrumb" class="navbar navbar-default">
+  <div>
+    <ol class="breadcrumb">
+      
+
+      
+        <li><a href="../index.html"><i class="fa fa-home"></i>Docs</a></li>
+          
+            
+            <li><a href="../how-to/index.html">How-To</a></li>
+          
+      
+
+      <li class="active">Run Script Test Suite From Within Eclipse</li>
+    </ol>
+  </div>
+</div>
+
+
+    
+<div id="main" class="main container-fluid">
+    <div class="row">
+        <div class="hidden-xs col-sm-4 col-md-3 sidenav-col">
+            <nav id="sidenav" class="sidenav nav">
+                <!-- TOC of all available files/pages in folder  -->
+                <ul class="nav sidenav">
+                
+
+
+
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        
+            <li>
+            
+                <a href="../how-to/basic-rules-for-test-suite.html">Basic rules for a Script Developer Test Suite</a>
+                
+            </li>
+        
+    
+
+    
+        
+            <li>
+            
+                <a href="../how-to/choosing-a-test-approach.html">Choose a Test Suite Approach</a>
+                
+            </li>
+        
+    
+
+    
+        
+            <li>
+            
+                <a href="../how-to/graphite.html">Real-Time Reporting with Graphite</a>
+                
+            </li>
+        
+    
+
+    
+        
+            <li>
+            
+                <a href="../how-to/how-to-structure-test-suites.html">Structuring Test Suite and Test Cases</a>
+                
+            </li>
+        
+    
+
+    
+        
+            
+                <!-- Table of content from page headings for the currently loaded file-->
+                <li class="current-page">
+                    <a class="current-page" href="">Run Script Test Suite From Within Eclipse</a>
+                    <!-- Container for page headings TOC -->
+                    <div id="toc" class="sidenav"></div>
+                </li>
+            
+        
+    
+
+    
+
+    
+
+    
+
+    
+        
+    
+
+    
+
+    
+        
+            <li>
+            
+                <a href="../how-to/integrating-XLT-with-Maven-and-Ivy.html">Integrating XLT with Maven and Ivy</a>
+                
+            </li>
+        
+    
+
+    
+        
+            <li>
+            
+                <a href="../how-to/jenkins-plugin.html">Continuous Load Testing with XLT Plugin for Jenkins</a>
+                
+            </li>
+        
+    
+
+    
+
+    
+        
+            <li>
+            
+                <a href="../how-to/properties-include-concept.html">Including Additional Property Files</a>
+                
+            </li>
+        
+    
+
+    
+
+
+                </ul>
+            </nav>
+        </div>
+
+        <div id="content" class="col-xs-12 col-sm-8 col-md-9 content-col">
+            <h2>Introduction</h2>
+<p>A script test suite created with <span class="caps">XLT</span> Script Developer is a perfect starting point for all the other great things you can do with the <span class="caps">XLT</span> Framework. The example below describes how to run the tests as JUnit tests from within an Java <span class="caps">IDE</span>.</p>
+<p>From there it&#8217;s a waltz to do cross-browser testing or integrate the tests into a continuous integration process. Running the same test suite as a load and performance test or data-driven test is also possible. You can even export the test cases to Java code to add more advanced functionality like handling conditions, execution branches and random factors. For this you can choose from multiple APIs like WebDriver or HtmlUnit &#8211; which is great if you&#8217;re already familiar with one of those.</p>
+<p>You see, <span class="caps">XLT</span> is a powerful tool. For almost all of those approaches the Script Developer is a good starting point. So let&#8217;s take the test suite we created in the <a href="../getting-started/01-test-automation.html">Script Developer Quick-Start</a> and do some more great stuff with it.</p>
+<blockquote class="note">
+<p class="note">We are using Eclipse <span class="caps">IDE</span> in this example. If you prefer another Java <span class="caps">IDE</span> some of the steps below might differ but the principles are the same.</p>
+</blockquote>
+<h3>1. Create a New Test Suite Directory</h3>
+<p>If you just use the <span class="caps">XLT</span> Script Developer and nothing else then one simple folder is enough to hold the script test suite &#8211; as seen in the <em>Getting Started With Script Developer</em> example above. However, if you want to do more with the <span class="caps">XLT</span> Framework it requires test suite directory structure as shown below. Note that it can&#8217;t be changed:</p>
+<p>bc(java).<br />
+<testsuite-MySite><br />
+|&#8212;config<br />
+|  |&#8212;data<br />
+|&#8212;lib<br />
+|&#8212;scripts<br />
+|&#8212;src</p>
+<p>You don&#8217;t need to create the mandatory directory structure and configuration files on your own. <span class="caps">XLT</span> ships with an empty test suite project, which can be used as a template for your own projects. This template project is located in <code>&lt;xlt&gt;/samples/testsuite-template</code>. Simply copy the complete <code>testsuite-template</code> directory to a location of your choice and rename it, for example <code>c:\test-suites\testsuite-MySite</code>. This directory is referred to as <code>&lt;testsuite&gt;</code> throughout the next sections.</p>
+<blockquote class="note">
+<p class="note">It is recommended to store your test suite in a directory that is <strong>not</strong> a subdirectory of your <span class="caps">XLT</span> installation. This facilitates updating to newer <span class="caps">XLT</span> versions because it reduces the risk of overwriting your test cases during an update.</p>
+</blockquote>
+<h3>2. Move Scripts to New Test Suite</h3>
+<p>If you already created one or more test cases as described in the  <em>Getting Started With Script Developer</em> section above then now is the time to move them to a new home. You should copy them into the <code>&lt;testsuite-MySite&gt;/scripts</code> folder. When using Script Developer for the next time don&#8217;t forget to also switch to the new scripts directory there by clicking the folder icon and then &#8216;Import&#8217;. Then select the new location and click OK.</p>
+<p class="illustration"><a href="../img/quickstart/QuickStart_SDImport.png"><img src="../img/quickstart/QuickStart_SDImport-small.png" title="Import Test Suite" alt="Import Test Suite" /></a></p>
+<h3>3. Generate wrapper classes</h3>
+<p>To be able to run the script test cases in Eclipse it is necessary to let Script Developer generate JUnit wrapper classes. This is just a wrapper around the original script. The tests still can be edited in Script Developer.</p>
+<p>Open the Script Developer settings dialog by clicking &#8216;<span class="caps">XLT</span> Script Developer&#8217;:</p>
+<p class="illustration"><a href="../img/quickstart/QuickStart_OpenSDSettings.png"><img src="../img/quickstart/QuickStart_OpenSDSettings-small.png" title="Open Script Developer Settings" alt="Open Script Developer Settings" /></a></p>
+<p>Tick the checkbox <strong>Generate JUnit wrapper classes for test cases</strong> and confirm by clicking OK:</p>
+<p class="illustration"><a href="../img/quickstart/QuickStart_GenerateWrapper.png"><img src="../img/quickstart/QuickStart_GenerateWrapper-small.png" title="Generate JUnit Wrapper Classes" alt="Generate JUnit Wrapper Classes" /></a></p>
+<p>The automatically created wrapper classes can be found in the <code>&lt;testsuite&gt;/src</code> folder.</p>
+<h3>4. Import Project into Eclipse</h3>
+<p>Now import your project into Eclipse and change the displayed project name <em>testsuite_template</em> to <em>testsuite-MySite</em> via Eclipse&#8217;s refactoring functionality.</p>
+<ol>
+	<li>Open Eclipse</li>
+	<li>Click <em>File | Import</em> in main menu</li>
+	<li>Select <em>Import existing project into workspace</em> from the list (can be found in folder <em>General</em>) and click <em>Next</em></li>
+	<li>In the next dialog window click button <em>Browse</em> and select your <code>&lt;testsuite&gt;</code> directory</li>
+	<li>Click button <em>Finish</em>. Your test suite should now be imported as an Eclipse project. With errors, though. We&#8217;ll fix this in a minute.</li>
+</ol>
+<p class="illustration"><a href="../img/quickstart/QuickStart_EclipseImport.png"><img src="../img/quickstart/QuickStart_EclipseImport-small.png" title="Import project into Eclipse" alt="Import project into Eclipse" /></a></p>
+<p>Change the displayed project name by following the steps below.</p>
+<ol>
+	<li>Right-click on the project name and select <em>Refactor | Rename</em> from context menu</li>
+	<li>Provide a new name for the test suite project and confirm by clicking OK.</li>
+</ol>
+<p class="illustration"><a href="../img/quickstart/QuickStart_Rename.png"><img src="../img/quickstart/QuickStart_Rename-small.png" title="Rename Test Suite Project" alt="Rename Test Suite Project" /></a></p>
+<h3>5. Add <span class="caps">XLT</span> Libraries to the Test Suite</h3>
+<p>To get rid of the displayed build errors for our new test suite we have to add the <span class="caps">XLT</span> libraries to the project. Like so:</p>
+<ol>
+	<li>Right-click on the project name and select <em>Properties</em></li>
+	<li>In the properties dialog select <em>Java Build Path</em> on the left side</li>
+	<li>Select the <em>Libraries</em> tab and click button <em>Add External JARs&#8230;</em></li>
+	<li>In the <em><span class="caps">JAR</span> selection</em> dialog browse to the <span class="caps">XLT</span> installation directory. Got to <code>&lt;xlt&gt;/lib</code> sub-directory and and select all files in there (e.g. press <kbd>Ctrl</kbd>+<kbd>A</kbd>).</li>
+	<li>Confirm by clicking OK in both of the opened dialogs</li>
+</ol>
+<p class="illustration"><a href="../img/quickstart/QuickStart_AddLibs.png"><img src="../img/quickstart/QuickStart_AddLibs-small.png" title="Add XLT Libraries to Test Suite" alt="Add XLT Libraries to Test Suite" /></a></p>
+<h3>6. Run the Test</h3>
+<p>Now you&#8217;re finally ready to run the tests! The generated wrapper for the script test case is a JUnit test. You can benefit from all the nice JUnit-supporting features build into Eclipse when running your <span class="caps">XLT</span> test suite.</p>
+<p>To run one of the test cases use the Eclipse <em>Package Explorer</em> to browse to <code>&lt;testsuite-MySite&gt;/src/(default package)</code>. There you will find a JUnit wrapper classes for each of your test cases created in Script Developer.</p>
+<ol>
+	<li>Right-click on one of the test case classes</li>
+	<li>Select <em>Run As&#8230; | JUnit Test</em> from context menu</li>
+	<li>See result of the test in the JUnit tab</li>
+</ol>
+<p class="illustration"><a href="../img/quickstart/QuickStart_RunJUnit.png"><img src="../img/quickstart/QuickStart_RunJUnit-small.png" title="Run XLT test in Eclipse" alt="Run XLT test in Eclipse" /></a></p>
+<p class="illustration"><a href="../img/quickstart/QuickStart_JUnit.png"><img src="../img/quickstart/QuickStart_JUnit-small.png" title="JUnit Test Result" alt="JUnit Test Result" /></a></p>
+<h2>How To Move On</h2>
+<p><strong>Cross-browser testing</strong> or integrating the tests into a <strong>continuous integration</strong> process? Running a <a href="../getting-started/02-performance-testing.html"><strong>load and performance test</strong></a> or <strong>data-driven tests</strong>?</p>
+<p>Find more information on all of those topics in the <a href="index.html">How-To section</a> and the <a href="../user-manual/index.html">User Manual</a>!</p>
+            <div id="footer">
+	<p>Copyright © 2017 by <a href="http://www.xceptance.com/">Xceptance Software Technologies</a>. All rights reserved.</p>
+</div>
+
+
+        </div>
+    </div>
+</div>
+
+<!-- Generate the part of the TOC that contains the headings of the currently displayed page -->
+<!-- createToc (selectedHeadlines, classesTarget, classes )-->
+
+<script>createToc('h1,h2,h3', '#toc > ul', '#sidenav nav sidenav')</script>
+
+
+</body>
+
+</html>

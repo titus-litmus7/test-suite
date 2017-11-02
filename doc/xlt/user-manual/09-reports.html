@@ -1,0 +1,1025 @@
+<!DOCTYPE html>
+<html>
+
+
+
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Test Results and Reports</title>
+  <meta name="description" content="Xceptance LoadTest - XLT, Documentation, Manual, Howto, FAQ">
+
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,700,400italic,300italic" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:100,300,400,500,700" rel="stylesheet" type="text/css">
+
+  <link href="../css/font-awesome.min.css" rel="stylesheet" media="all"  type="text/css" />
+  <link href="../css/lightbox.css" rel="stylesheet" media="all"  type="text/css" />
+
+  <link href="../css/highlightjs/default.css" rel="stylesheet" type="text/css" />
+  <link href="../css/highlightjs/mono-blue.css" rel="stylesheet" type="text/css" />
+
+  <link href="../css/xltdoc.css" rel="stylesheet" media="all"  type="text/css" />
+
+  <script type="text/javascript" src="../js/jquery-1.11.1.min.js"></script>
+  <script type="text/javascript" src="../js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="../js/toc.min.js"></script>
+  <script type="text/javascript" src="../js/lightbox.min.js"></script>
+  <script type="text/javascript" src="../js/headroom.min.js"></script>
+
+  <!-- <script type="text/javascript" src="../js/jquery.scrollIntoView.min.js"></script -->
+  <script type="text/javascript" src="../js/xltdoc.js"></script>
+
+  <script type="text/javascript" src="../js/highlight.pack.js"></script>
+</head>
+
+
+<body data-spy="scroll" data-target="#toc" data-offset="100" class="layout-manual ">
+
+    
+
+
+<!-- Fixed navbar -->
+<nav id="header" class="navbar navbar-default">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <a class="site-title" href="../index.html">
+            <img src="../img/XLTDoc-logo-transparent-165x82.png" id="product-logo" alt="XLT Product logo" title="Xceptance LoadTest"/>
+        </a>
+    </div>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    <div id="navbar" class="navbar-collapse collapse">
+        <!-- Links to external pages -->
+        <ul id="navbar-right" class="nav navbar-nav navbar-right navbar-text">
+	<li>
+		<a href="https://lab.xceptance.de/releases/xlt/latest/apidoc/" target="_blank" title="XLT API Documentation">
+			<i class="fa fa-external-link"></i>API</a>
+	</li>
+
+    <li>
+ 		<a href="https://ask.xceptance.de/" target="_blank" title="XLT Community Forum">
+ 			<i class="fa fa-external-link"></i>Forum</a>
+ 	</li> 
+    
+	<li>
+		<a href="https://www.xceptance.com/xlt/" target="_blank" title="XLT Website">
+			<i class="fa fa-external-link"></i>XLT Home</a>		
+	</li>			
+</ul>
+
+
+        <ul id="navbar-left" class="nav navbar-nav navbar-text">
+            <li class="inactive"><a href="../getting-started/index.html">Getting Started</a></li>
+            <li class="active"><a href="../user-manual/index.html">User Manual</a></li>
+            <li class="inactive"><a href="../how-to/index.html">How-To</a></li>
+            <li class="inactive"><a href="../release-notes/index.html">Release Notes</a></li>
+            <li class="inactive"><a href="../license.html">License</a></li>
+        </ul>
+
+    </div><!--/.nav-collapse -->
+
+</nav>
+
+
+
+
+<div id="breadcrumb" class="navbar navbar-default">
+  <div>
+    <ol class="breadcrumb">
+      
+
+      
+        <li><a href="../index.html"><i class="fa fa-home"></i>Docs</a></li>
+          
+            
+            <li><a href="../user-manual/index.html">User Manual</a></li>
+          
+      
+
+      <li class="active">Test Results and Reports</li>
+    </ol>
+  </div>
+</div>
+
+
+    
+<div id="main" class="main container-fluid">
+    <div class="row">
+        <div class="hidden-xs col-sm-4 col-md-3 sidenav-col">
+            <nav id="sidenav" class="sidenav nav">
+                <!-- TOC of all available files/pages in folder  -->
+                <ul class="nav sidenav">
+                
+
+
+
+
+
+    
+        
+            <li>
+            
+                <a href="../user-manual/01-intro.html">Introduction</a>
+                
+            </li>
+        
+    
+
+    
+
+    
+        
+            <li>
+            
+                <a href="../user-manual/02-install.html">Installation</a>
+                
+            </li>
+        
+    
+
+    
+
+    
+        
+            <li>
+            
+                <a href="../user-manual/03-scriptdeveloper.html">Script Developer</a>
+                
+            </li>
+        
+    
+
+    
+        
+            <li>
+            
+                <a href="../user-manual/04-framework.html">XLT Framework</a>
+                
+            </li>
+        
+    
+
+    
+        
+            <li>
+            
+                <a href="../user-manual/05-framework-config.html">XLT Framework Configuration</a>
+                
+            </li>
+        
+    
+
+    
+        
+            <li>
+            
+                <a href="../user-manual/06-datadriven.html">Data-Driven Tests</a>
+                
+            </li>
+        
+    
+
+    
+        
+            <li>
+            
+                <a href="../user-manual/07-posters.html">Demo Application</a>
+                
+            </li>
+        
+    
+
+    
+        
+            <li>
+            
+                <a href="../user-manual/08-loadtest.html">Load and Performance Testing</a>
+                
+            </li>
+        
+    
+
+    
+        
+            
+                <!-- Table of content from page headings for the currently loaded file-->
+                <li class="current-page">
+                    <a class="current-page" href="">Test Results and Reports</a>
+                    <!-- Container for page headings TOC -->
+                    <div id="toc" class="sidenav"></div>
+                </li>
+            
+        
+    
+
+    
+        
+            <li>
+            
+                <a href="../user-manual/10-command-reference.html">Command Reference</a>
+                
+            </li>
+        
+    
+
+    
+        
+            <li>
+            
+                <a href="../user-manual/11-glossary.html">Glossary</a>
+                
+            </li>
+        
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+                </ul>
+            </nav>
+        </div>
+
+        <div id="content" class="col-xs-12 col-sm-8 col-md-9 content-col">
+            <h2>Collected Values</h2>
+<p>When running a load test, the <span class="caps">XLT</span> framework automatically collects a lot of information about the transactions, actions, and requests being executed and certain events. Additional custom timers and events can be added programmatically using the <span class="caps">XLT</span> <span class="caps">API</span>. Last but not least, each agent process monitors its resource usage and logs these values as well. All this data will later be the source for the <span class="caps">XLT</span> load test report.</p>
+<p>These values are stored &#8212; separately for each test case and each virtual user &#8212; in a file named <code>results/&lt;TestCaseName&gt;/&lt;UserNo&gt;/timers.csv</code>. Agent resource usage data will be written to <code>results/Agent-JVM-Monitor/0/timers.csv</code>. As the name already suggests, the file format is <span class="caps">CSV</span>. See the following snippet for an example:</p>
+<pre class="ini"><code class="ini">R,PublishArticle.1,1366360224994,25,false,566,48930,200,http://localhost:8080/pebble/manageBlogEntry.secureaction,text/html,0,0,15,8,15,23
+R,PublishArticle.7,1366360225027,19,false,456,653,200,http://localhost:8080/pebble/dwr/interface/Pebble.js,text/plain,0,0,2,0,2,2
+R,PublishArticle.3,1366360225027,22,false,446,43876,200,http://localhost:8080/pebble/dwr/engine.js,text/javascript,0,0,5,0,5,5
+E,Failed to download resource,1366360225027,TAuthor,==[404]== http://localhost:8080/themes/default/../img/favicon.ico
+A,PublishArticle,1366360224993,76,false
+R,ConfirmPublishing.1,1366360225141,62,false,609,134,302,http://localhost:8080/pebble/publishBlogEntry.secureaction,,0,0,60,0,60,60
+R,ConfirmPublishing.2,1366360225189,15,false,462,55555,200,http://localhost:8080/pebble/2013/04/19/1366360200018.html,text/html,0,0,9,5,9,14
+R,ConfirmPublishing.8,1366360225221,15,false,457,653,200,http://localhost:8080/pebble/dwr/interface/Pebble.js,text/plain,0,0,2,0,2,2
+R,ConfirmPublishing.4,1366360225221,16,false,447,43876,200,http://localhost:8080/pebble/dwr/engine.js,text/javascript,0,0,3,0,3,3
+A,ConfirmPublishing,1366360225141,108,false
+R,Logout.1,1366360225348,19,false,489,200,302,http://localhost:8080/pebble/logout.action?redirectUrl=http://localhost:8080/pebble/,,0,0,3,0,3,3
+R,Logout.2,1366360225364,35,false,477,51601,200,http://localhost:8080/pebble/,text/html,0,0,15,8,15,23
+R,Logout.8,1366360225395,5,false,471,653,200,http://localhost:8080/pebble/dwr/interface/Pebble.js,text/plain,0,0,1,0,1,1
+R,Logout.4,1366360225395,6,false,461,43876,200,http://localhost:8080/pebble/dwr/engine.js,text/javascript,0,0,2,0,2,2
+A,Logout,1366360225347,74,false
+T,TAuthor,1366360222893,2599,false,</code></pre>
+<p>As you can see, the lines can have a different number of columns as they represent different types of information. The following table explains the meaning of each column depending on the data record type:</p>
+<table>
+	<tr>
+		<th>Column</th>
+		<th>Transaction</th>
+		<th>Action</th>
+		<th>Request</th>
+		<th>Custom Timer</th>
+		<th>Event</th>
+		<th>Agent Resource Usage</th>
+		<th>Custom Value</th>
+	</tr>
+	<tr>
+		<td style="text-align:justify;"><strong>1</strong></td>
+		<td>type code (T)</td>
+		<td>type code (A)</td>
+		<td>type code (R)</td>
+		<td>type code (C)</td>
+		<td>type code (E)</td>
+		<td>type code (J)</td>
+		<td>type code (V)</td>
+	</tr>
+	<tr>
+		<td style="text-align:justify;"><strong>2</strong></td>
+		<td>name</td>
+		<td>name</td>
+		<td>name</td>
+		<td>name</td>
+		<td>name</td>
+		<td>agent name</td>
+		<td>name</td>
+	</tr>
+	<tr>
+		<td style="text-align:justify;"><strong>3</strong></td>
+		<td>start time</td>
+		<td>start time</td>
+		<td>start time</td>
+		<td>start time</td>
+		<td>time</td>
+		<td>time</td>
+		<td>time</td>
+	</tr>
+	<tr>
+		<td style="text-align:justify;"><strong>4</strong></td>
+		<td>run time [ms]</td>
+		<td>run time [ms]</td>
+		<td>run time [ms]</td>
+		<td>run time [ms]</td>
+		<td>transaction name</td>
+		<td>current <span class="caps">CPU</span> usage (agent only) [%]</td>
+		<td>value</td>
+	</tr>
+	<tr>
+		<td style="text-align:justify;"><strong>5</strong></td>
+		<td>failed flag</td>
+		<td>failed flag</td>
+		<td>failed flag</td>
+		<td>failed flag</td>
+		<td>event message</td>
+		<td>used main memory (absolute)</td>
+		<td> &#8211; </td>
+	</tr>
+	<tr>
+		<td style="text-align:justify;"><strong>6</strong></td>
+		<td>exception stack trace if failed</td>
+		<td> &#8211; </td>
+		<td>bytes sent</td>
+		<td> &#8211; </td>
+		<td> &#8211; </td>
+		<td>current main memory usage (relative) [%]</td>
+		<td> &#8211; </td>
+	</tr>
+	<tr>
+		<td style="text-align:justify;"><strong>7</strong></td>
+		<td>name of last action if failed</td>
+		<td> &#8211; </td>
+		<td>bytes received</td>
+		<td> &#8211; </td>
+		<td> &#8211; </td>
+		<td>used heap memory (absolute)</td>
+		<td> &#8211; </td>
+	</tr>
+	<tr>
+		<td style="text-align:justify;"><strong>8</strong></td>
+		<td> &#8211; </td>
+		<td> &#8211; </td>
+		<td>response code</td>
+		<td> &#8211; </td>
+		<td> &#8211; </td>
+		<td>total heap memory (absolute)</td>
+		<td> &#8211; </td>
+	</tr>
+	<tr>
+		<td style="text-align:justify;"><strong>9</strong></td>
+		<td> &#8211; </td>
+		<td> &#8211; </td>
+		<td>request <span class="caps">URL</span></td>
+		<td> &#8211; </td>
+		<td> &#8211; </td>
+		<td>current heap memory usage (relative) [%]</td>
+		<td> &#8211; </td>
+	</tr>
+	<tr>
+		<td style="text-align:justify;"><strong>10</strong></td>
+		<td> &#8211; </td>
+		<td> &#8211; </td>
+		<td>response content type</td>
+		<td> &#8211; </td>
+		<td> &#8211; </td>
+		<td>threads in state &#8220;runnable&#8221;</td>
+		<td> &#8211; </td>
+	</tr>
+	<tr>
+		<td style="text-align:justify;"><strong>11</strong></td>
+		<td> &#8211; </td>
+		<td> &#8211; </td>
+		<td>connect time [ms]</td>
+		<td> &#8211; </td>
+		<td> &#8211; </td>
+		<td>threads in state &#8220;blocked&#8221;</td>
+		<td> &#8211; </td>
+	</tr>
+	<tr>
+		<td style="text-align:justify;"><strong>12</strong></td>
+		<td> &#8211; </td>
+		<td> &#8211; </td>
+		<td>send time [ms]</td>
+		<td> &#8211; </td>
+		<td> &#8211; </td>
+		<td>threads in state &#8220;waiting&#8221; or &#8220;timed waiting&#8221;</td>
+		<td> &#8211; </td>
+	</tr>
+	<tr>
+		<td style="text-align:justify;"><strong>13</strong></td>
+		<td> &#8211; </td>
+		<td> &#8211; </td>
+		<td>server busy time [ms]</td>
+		<td> &#8211; </td>
+		<td> &#8211; </td>
+		<td>minor GC cycles since start</td>
+		<td> &#8211; </td>
+	</tr>
+	<tr>
+		<td style="text-align:justify;"><strong>14</strong></td>
+		<td> &#8211; </td>
+		<td> &#8211; </td>
+		<td>receive time [ms]</td>
+		<td> &#8211; </td>
+		<td> &#8211; </td>
+		<td>minor GC time since start [ms]</td>
+		<td> &#8211; </td>
+	</tr>
+	<tr>
+		<td style="text-align:justify;"><strong>15</strong></td>
+		<td> &#8211; </td>
+		<td> &#8211; </td>
+		<td>time to first bytes [ms]</td>
+		<td> &#8211; </td>
+		<td> &#8211; </td>
+		<td>current minor GC <span class="caps">CPU</span> usage [%]</td>
+		<td> &#8211; </td>
+	</tr>
+	<tr>
+		<td style="text-align:justify;"><strong>16</strong></td>
+		<td> &#8211; </td>
+		<td> &#8211; </td>
+		<td>time to last bytes [ms]</td>
+		<td> &#8211; </td>
+		<td> &#8211; </td>
+		<td>full GC cycles since start</td>
+		<td> &#8211; </td>
+	</tr>
+	<tr>
+		<td style="text-align:justify;"><strong>17</strong></td>
+		<td> &#8211; </td>
+		<td> &#8211; </td>
+		<td>request ID</td>
+		<td> &#8211; </td>
+		<td> &#8211; </td>
+		<td>full GC time since start [ms]</td>
+		<td> &#8211; </td>
+	</tr>
+	<tr>
+		<td style="text-align:justify;"><strong>18</strong></td>
+		<td> &#8211; </td>
+		<td> &#8211; </td>
+		<td><span class="caps">HTTP</span> method<sup class="footnote" id="fnr1"><a href="#fn1">1</a></sup></td>
+		<td> &#8211; </td>
+		<td> &#8211; </td>
+		<td>current full GC <span class="caps">CPU</span> usage [%]</td>
+		<td> &#8211; </td>
+	</tr>
+	<tr>
+		<td style="text-align:justify;"><strong>19</strong></td>
+		<td> &#8211; </td>
+		<td> &#8211; </td>
+		<td>form data encoding<sup class="footnote" id="fnr1"><a href="#fn1">1</a></sup></td>
+		<td> &#8211; </td>
+		<td> &#8211; </td>
+		<td>minor GC time since last update [ms]</td>
+		<td> &#8211; </td>
+	</tr>
+	<tr>
+		<td style="text-align:justify;"><strong>20</strong></td>
+		<td> &#8211; </td>
+		<td> &#8211; </td>
+		<td>form data<sup class="footnote" id="fnr1"><a href="#fn1">1</a></sup></td>
+		<td> &#8211; </td>
+		<td> &#8211; </td>
+		<td>full GC time since last update [ms]</td>
+		<td> &#8211; </td>
+	</tr>
+	<tr>
+		<td style="text-align:justify;"><strong>21</strong></td>
+		<td> &#8211; </td>
+		<td> &#8211; </td>
+		<td>domain lookup time [ms]</td>
+		<td> &#8211; </td>
+		<td> &#8211; </td>
+		<td>minor GC cycles since last update</td>
+		<td> &#8211; </td>
+	</tr>
+	<tr>
+		<td style="text-align:justify;"><strong>22</strong></td>
+		<td> &#8211; </td>
+		<td> &#8211; </td>
+		<td> &#8211; </td>
+		<td> &#8211; </td>
+		<td> &#8211; </td>
+		<td>full GC cycles since last update</td>
+		<td> &#8211; </td>
+	</tr>
+	<tr>
+		<td style="text-align:justify;"><strong>23</strong></td>
+		<td> &#8211; </td>
+		<td> &#8211; </td>
+		<td> &#8211; </td>
+		<td> &#8211; </td>
+		<td> &#8211; </td>
+		<td>current <span class="caps">CPU</span> usage (total) [%]</td>
+		<td> &#8211; </td>
+	</tr>
+</table>
+<p class="footnote" id="fn1"><a href="#fnr1"><sup>1</sup></a> These values are only present if the property <strong>com.xceptance.xlt.results.data.request.collect.formData</strong> is enabled, otherwise they are blank.</p>
+<blockquote class="note">
+<p class="note">Note that the file format might be changed or extended in future <span class="caps">XLT</span> releases.</p>
+</blockquote>
+<h2><span class="caps">XLT</span> Result Browser</h2>
+<p>When running test cases outside Script Developer, that is either in Eclipse as a load test or as an Ant build, you can save the page output to disk. The relevant property is <code>com.xceptance.xlt.output2disk</code>. By default, it is set to <code>never</code>. If you want to enable page output to disk, copy the following lines to <code>dev.properties</code> or <code>test.properties</code>:</p>
+<pre class="ini"><code class="ini">## Enables page output to disk. Possible values are:
+## - never ..... pages are never logged
+## - onError ... pages are logged only if the transaction had errors
+## - always .... pages are logged always
+com.xceptance.xlt.output2disk = always</code></pre>
+<p>All saved results can be found in the <code>&lt;testsuite&gt;/results</code> directory. See the lines below for details of the results subdirectory structure:</p>
+<pre class="default"><code class="default">---+ results
+   `---+ [testcase]
+       `---+ [virtual-user]
+           `---+ output
+               `---+ [transaction-ID]
+                   |---- css
+                   |---- images
+                   |---+ pages
+                   |   `--- cache
+                   `---- responses</code></pre>
+<p>In the folders for each test run (<code>results/[testcase]/[virtual-user]/output/[transaction-ID]</code>), you find an <code>index.html</code> containing the <em><span class="caps">XLT</span> Result Browser</em>. The result browser offers an integrated navigation to browse the complete page output of the transaction and to look at every single request in detail. The file <code>last.html</code> in the output folder <code>results/[testcase]/[virtual-user]/output</code> references the result browser for the last executed transaction of this virtual user.</p>
+<p>The result browser navigation will only permit access to the pages of a transaction if they are directly related to actions. Therefore, defining actions correctly is very important to make the most effective use of the result browser. For details on how to structure test cases and create actions, also see <a href="04-framework.html#toc-basic-concepts">Basic Concepts</a> and <a href="../how-to/how-to-structure-test-suites.html">Code Structuring Recommendations.</a></p>
+<p class="illustration"><a href="../img/user-manual/result-browser_1.png"><img src="../img/user-manual/result-browser_1-small.png" title="XLT Result Browser - Page Output" alt="XLT Result Browser - Page Output" /></a> <span class="caption"><span class="caps">XLT</span> Result Browser &#8211; Page Output</span></p>
+<p>If you click on one of the action names in the navigation, the result browser will show the respective page. When you double-click an action name, the navigation will expand to list all related requests. The listed requests are color-coded with black, <span style="color:grey;">grey</span>, <span style="color:red;">red</span>, <span style="color:blue;">blue</span>, <span style="color:#7D28C0;">lilac</span> and <span style="color:green;">green</span> based on the following algorithm:</p>
+<ul>
+	<li>If the request&#8217;s status code is 301 or 302 then set its color to <span style="color:grey;">grey</span> since it is a Redirect.</li>
+	<li>If the request&#8217;s status code is 0 or greater than equal to 400 then set its color to <span style="color:red;">red</span> because it is an Error.</li>
+	<li>Set the color initially to black and check the content type of the response if it matches the following criteria:
+	<ul>
+		<li>It contains the string <code>javascript</code> or is equal to <code>application/json</code>. If this is the case, change the color to <span style="color:#7D28C0;">lilac</span>.</li>
+		<li>It starts with the string <code>image</code>. In this case change the color to <span style="color:green;">green</span>.</li>
+		<li>It is equal to <code>text/css</code>. This content type denotes <span class="caps">CSS</span> and thus change the color to <span style="color:blue;">blue</span>.</li>
+	</ul></li>
+</ul>
+<blockquote class="warning">
+<p class="warning">Please note that the content type is determined by the appropriate <span class="caps">HTTP</span> response header value. Thus, if an JavaScript file is delivered as content type <code>text/plain</code> then this request will be color-coded with black.</p>
+</blockquote>
+<p>When you select one of the requests from the navigation, the page content will be replaced by detailed information about the request and the related response that you can access via the four tabs on top of the page. The following information is available:</p>
+<ul>
+	<li><strong>Request/Response Information</strong>
+	<ul>
+		<li>General Information</li>
+		<li>Request and Response Headers</li>
+		<li><span class="caps">URL</span> Query and <span class="caps">POST</span> Parameters (if any)</li>
+	</ul></li>
+	<li><strong>Request Body (Raw)</strong></li>
+	<li><strong>Response Content</strong></li>
+</ul>
+<p class="illustration"><a href="../img/user-manual/result-browser_2.png"><img src="../img/user-manual/result-browser_2-small.png" title="XLT Result Browser - Request Details" alt="XLT Result Browser - Request Details" /></a> <span class="caption"><span class="caps">XLT</span> Result Browser &#8211; Request Details</span></p>
+<h2>Create and Evaluate Test Reports</h2>
+<p>As the most important tool for analyzing the results of a load test run, <span class="caps">XLT</span> offers three types of load test reports, which are thoroughly illustrated in the sections below:</p>
+<ul>
+	<li><strong>Load and Performance Test Report</strong></li>
+	<li><strong>Performance Comparison Report</strong></li>
+	<li><strong>Performance Trend Report</strong></li>
+</ul>
+<p>To create the reports, download all load test results from the agent controllers to the master controller. See <a href="08-loadtest.html#toc-run-the-load-test">Run The Load Test</a> for details.</p>
+<p>As soon as you&#8217;ve downloaded the load test results to your local disk, you can create the test reports with the <span class="caps">XLT</span> report generator. Enter a command in the console following this pattern:</p>
+<pre class="bash"><code class="bash">cd &lt;XLT&gt;/bin
+./&lt;report-shortname&gt;.(sh/cmd) ../results/&lt;downloaded-results-dir&gt; [options]</code></pre>
+<p>The <code>&lt;downloaded-results-dir&gt;</code> and <code>&lt;report-shortname&gt;</code> have to be replaced with the appropriate values. For example:</p>
+<pre class="bash"><code class="bash">./create_report.sh ../results/20110503-152920</code></pre>
+<p>This tells the report generator to take the specified results directory as input for the report. By default, the generated report is saved to <code>&lt;XLT&gt;/reports</code>. The report subdirectory is named after the respective results directory.</p>
+<p>The report generator supports these options:</p>
+<ul>
+	<li><code>-o &lt;dir&gt;</code>: an alternative output directory (optional)</li>
+	<li><code>-from &lt;time&gt;</code>: ignore results generated before the given time (optional)</li>
+	<li><code>-to &lt;time&gt;</code>: ignore results generated after the given time (optional)</li>
+</ul>
+<p>Using the <code>-o</code> option, you can specify an alternative output directory. Keep in mind that you have to specify a target directory name including the final directory for your report. With <code>-o</code>, the directory name is not automatically set but your specified directory will be created instead. For example:</p>
+<pre class="bash"><code class="bash">./create_report.sh ../results/20110503-152920 -o /home/user/Test_Reports/MyLatestReport</code></pre>
+<p>If you&#8217;re only interested in creating a report for a particular time range, do the following:</p>
+<pre class="bash"><code class="bash">./create_report.sh ../results/20110503-152920 -from 20110503-152600 -to 20110503-152800</code></pre>
+<blockquote class="note">
+<p class="note">Note that <code>&lt;time&gt;</code> has to be specified in the format <em>yyyyMMdd-HHmmss</em> and that it has to match the time zone of your local machine. By default, the resulting report is rendered using your machine&#8217;s time zone.</p>
+</blockquote>
+<p>All this information is transferred to <span class="caps">HTML</span> pages that you can view using a standard web browser. When the report is generated, which may take a while depending on the amount of data gathered during the load test, you will find the file <code>index.html</code> in the root of the appropriate test report directory. Open it in a web browser to view the report.</p>
+<h2>Load and Performance Test Report</h2>
+<p>The <em>Load and Performance Test Report</em> gives you all the information needed for a detailed analysis of a load test run. It provides several sections, each consisting of at least one table and one or more charts visualizing the graphic development of relevant measurements over time.</p>
+<p class="illustration"><a href="../img/user-manual/load_test_report_1.png"><img src="../img/user-manual/load_test_report_1-small.png" title="Load and Performance Test Report" alt="Load and Performance Test Report" /></a> <span class="caption">Load and Performance Test Report</span></p>
+<p class="illustration"><a href="../img/user-manual/load_test_report_2.png"><img src="../img/user-manual/load_test_report_2-small.png" title="Load and Performance Test Report - Charts" alt="Load and Performance Test Report - Charts" /></a> <span class="caption">Load and Performance Test Report &#8211; Charts</span></p>
+<h3>Report Sections</h3>
+<h4>Overview</h4>
+<p>This section shows some general information about the load test (e.g. start and end time, duration), the load profile and the test comment (if any was given). It also displays a performance summary and network statistic for <span class="caps">HTTP</span>/<span class="caps">HTML</span>-based load tests.</p>
+<h4>Transactions</h4>
+<p>A transaction is a completed test case. The test case consists of one or more actions. The displayed transaction runtime includes the runtime of all actions within the test case, think times, and the processing time of the test code itself. If the test path of the test case is heavily randomized, the runtime of transactions might vary significantly. The average runtime shows the development of tests over time and especially helps to evaluate the outcome of long-running tests.</p>
+<h4>Actions</h4>
+<p>An action is part of a test case and consists of prevalidation, execution, and postvalidation. The data shown here indicates the time spent in the execution routine of an action. Therefore, its runtime includes the runtime of a request, e.g. an <span class="caps">HTTP</span> operation, and the time necessary to prepare, send, wait, and receive the data.</p>
+<h4>Requests</h4>
+<p>The request section is the most important statistics section when testing web applications. It directly reflects the loading time of pages or page components. Each row holds the data of one specific request. Its name is defined within the test case as timer name. The Count section of the table shows the total number of executions (Total), the calculated executions per seconds (1/s), minute (1/min), as well as projections or calculations of the executions per hour (1/h) and day (1/d). The Error section displays the total amount (Total) of errors that occurred throughout page or page component loading. The error count doesn&#8217;t include errors detected during the post-validation of the data received. Typical error situations are <span class="caps">HTTP</span> response codes such as 404 and 505, timeouts, or connection resets. The runtime section of the table shows the arithmetic mean, the minimum and maximum runtime encountered as well as the standard deviation of all data within that series. The runtime segmentation sections depicts several runtime segments and the number of requests within the segment&#8217;s definition. If the runtime of the test case is shorter than the displayed time period, e.g. test runtime was 30 min and the time period is hour, the numbers will be a linear projection. That means they will show a possible outcome of a longer test run if load and application behavior remained the same.</p>
+<h4>Network</h4>
+<p>The network section covers the areas of incoming and outgoing traffic during the load test. Sent Bytes is an estimated number based on the data given to the network layer. Cookies, for instance, are not included. Received Bytes is an accurate number because it&#8217;s based on the data received and includes <span class="caps">HTTP</span> header information. Depending on the test runtime, the numbers per hour and per day might be estimations based on a linear projection of the available data. If the test run included web activities or other activities returning an <span class="caps">HTTP</span> response code, it can be found here as well. Furthermore, all hosts that participated in the test run are listed in a separate table along with the appropriate number of requests that hit this host. Last but not least, this section contains a table that breaks down the received content to their announced type.</p>
+<h4>Custom Timers &amp; Values</h4>
+<p>The custom timers includes all timers that have been placed individually within the test code. The chart and data description is identical to the request section. In case custom samplers have been run during the test, the collected data is shown in the <em>Custom Values</em> subsection below.</p>
+<h4>External Data</h4>
+<p>All external data gathered by other tools during the test run is shown here according to the configuration. Please see <a href="09-reports.html#toc-external-data-report">External Data</a> for details on how to include external data in the report.</p>
+<h4>Errors &amp; Events</h4>
+<p>As its name suggests this section is made up of two parts: Errors and Events (events are used to indicate that the test has encountered a special situation that is not an error but too important to ignore or to write to the log only). The first part &#8211; Errors &#8211; shows a table that contains all errors and their stack traces thrown by the test cases along with an overview of all error types. The second part &#8211; Events &#8211; consists of a single table that lists all events that occurred during the test run including their name, amount, detail message and the name of the test case that produced this event.</p>
+<h4>Agents</h4>
+<p>This section reports the resource utilization of each user agent in terms of <span class="caps">CPU</span> and memory usage. It helps to identify potential resource bottlenecks that might have influenced the load test. Note that all data is local to the <span class="caps">JVM</span> of the agent and therefore only covers a process view.</p>
+<h4>Configuration</h4>
+<p>The configuration section lists the test configuration as well as the load profile used to run the test. It facilitates test reproduction and preserves the test settings for later test evaluation.</p>
+<h3>Create A Load And Performance Test Report</h3>
+<p>To generate a load and performance test report, use this command:</p>
+<pre class="bash"><code class="bash">./create_report.(sh/cmd) ../results/&lt;testDataDir&gt; [options]</code></pre>
+<p>For example:</p>
+<pre class="bash"><code class="bash">./create_report.sh ../results/20110503-160520</code></pre>
+<p>As an alternative to the command above, you can also create a load and performance test report with the <code>(c)</code> shortcut from the master controller&#8217;s command line menu. It creates a report of the least recently downloaded results.</p>
+<h3>Configuring the Report Generator</h3>
+<h4>Linking to Result Browser Directories</h4>
+<p>If an error occurred during the load test run, the corresponding error message and stack trace will be displayed in the <em>Errors</em> section of the load test report. If you enabled storing the visited pages to disk, you will also find a directory name as part of the error information. To view the visited pages, use this directory name to locate the corresponding result browser in the results directory of the load test.</p>
+<p>You can also access the result browsers directly from the load test report. This greatly speeds up error analysis because you would just have to click the directory name next to an error entry to open the respective result browser. To make this work, you first need to ensure that:</p>
+<ul>
+	<li>the results will be provided at the target location, and</li>
+	<li>the results directory will never be renamed oder moved.</li>
+</ul>
+<p>Otherwise, viewers of the report experience broken links.</p>
+<p>To let the report generator create links from the load report to the result browsers, set the property <code>com.xceptance.xlt.reportgenerator.linkToResultBrowsers</code> in <code>&lt;XLT&gt;/config/reportgenerator.properties</code> to <code>true</code>.</p>
+<p>By default, the report generator calculates the path from the report to the result browsers based on the results directory (given on the report generator&#8217;s command line) and the reports directory (either being the default directory or the one explicitly given as command line argument). The computed path will be a relative path if possible and an absolute path otherwise (on Windows, if report and results are on different drives).</p>
+<p>Sometimes the relative path approach is not suitable, for example, if you only send the report to your team members, not the results. In that case, the results must be made available somewhere on the net. Furthermore, the report generator needs to know about this location to appropriately generate the links. To this end, you configure a results base <span class="caps">URI</span>, for instance <code>http://myhost/results</code>. The <span class="caps">URI</span> is a <em>base</em> <span class="caps">URI</span> as it&#8217;s common for the results of all your load tests. The report generator automatically appends the name of the results directory (for example <code>20121106-111751</code>) to this <span class="caps">URI</span> when generating the links to the result browsers, so the resulting link might look like this: <code>http://myhost/results/20121106-111751/ac01_00/TSearch/126/output/1352194484275/index.html</code></p>
+<p>Using a base <span class="caps">URI</span>, you don&#8217;t need to reconfigure the report generator when generating the report for another load test, unless you choose to publish the results at a totally different location. To configure the base <span class="caps">URI</span>, set the property <code>com.xceptance.xlt.reportgenerator.resultsBaseUri</code> in <code>&lt;XLT&gt;/config/reportgenerator.properties</code> to the appropriate value.</p>
+<h4>Chart Scaling and Capping</h4>
+<p>Sometimes the runtime charts can have extremely high peaks. Since, by default, the charts are scaled such that the whole value range is visualized, an occasional spike may cause the interesting value range with the majority of the values to be shown within a few pixels only. However, there are two possibilities to get more meaningful charts.</p>
+<p>First, you may change the <em>scale</em> of the y-axis scale of the runtime charts from linear (the default) to logarithmic. Using this approach, the graphs in the charts are flattened and extreme peaks are compressed in their representation:</p>
+<pre class="ini"><code class="ini">com.xceptance.xlt.reportgenerator.charts.scale = logarithmic</code></pre>
+<p>Second, you may <em>cap</em> the runtime charts at a certain value. There are two methods to cap a chart. The first method is to specify the exact value [ms] at which the chart is to be capped:</p>
+<pre class="ini"><code class="ini">com.xceptance.xlt.reportgenerator.charts.cappingvalue = 5000</code></pre>
+<p>The second method is to specify a factor (a double) that, when applied to the mean of all values in the chart, will define the ultimate capping value:</p>
+<pre class="ini"><code class="ini">com.xceptance.xlt.reportgenerator.charts.cappingFactor = 5</code></pre>
+<p><strong>Example</strong>: The average runtime for a request is 250 milliseconds, but a few requests ran into a timeout with 30 seconds. Setting a factor of 3 results in the y-axis being capped at 750 milliseconds (3 times the average value).</p>
+<p>Each capping method has its pros and cons. With a fix capping value, all charts will have the same value range. This allows to easily compare multiple charts visually at a qualitative level (also between different test runs). On the other hand, if the runtimes vary significantly from run to run, you may need to adjust the capping value often. This won&#8217;t happen so often with a capping factor as the value range is adjusted automatically, but comparing charts is more difficult now as this requires you to look closely at the shown value range. So choose the method that suits you best.</p>
+<p>Note that, by default, the report generator tries to be smart and won&#8217;t cap a chart if a capping is not necessary at all, for instance if the maximum value in the chart is far below the configured capping value. But sometimes you may want to &#8220;cap&#8221; a chart deliberately at that higher value, for instance, to make charts comparable. Configure the wanted capping mode with the following setting:</p>
+<pre class="ini"><code class="ini">com.xceptance.xlt.reportgenerator.charts.cappingMode = smart | always</code></pre>
+<p>Sometimes it is necessary to have different capping settings for the different types of runtime charts. For example, the capping value for transaction charts will usually be higher than the one for requests. That&#8217;s why the capping value/factor/mode can also be specified per chart type, thereby overriding the default. See below for an example:</p>
+<pre class="ini"><code class="ini">com.xceptance.xlt.reportgenerator.charts.cappingValue = 15000
+com.xceptance.xlt.reportgenerator.charts.cappingValue.transactions = 50000
+com.xceptance.xlt.reportgenerator.charts.cappingValue.actions = 10000
+com.xceptance.xlt.reportgenerator.charts.cappingValue.requests = 5000
+#com.xceptance.xlt.reportgenerator.charts.cappingValue.custom = 5000    # commented out, so use default of 15000</code></pre>
+<blockquote class="note">
+<p class="note">Note that if you specify both a capping value and a capping factor (globally or for a certain chart type), the capping value will take precedence.</p>
+</blockquote>
+<h2>Performance Comparison Report</h2>
+<p>The <em>Performance Comparison Report</em> gives you a quick overview on performance improvements (green color tones) and performance declines (red color tones) between two test runs. The initial test run is labeled <strong>baseline</strong>. The test run being compared to the baseline is labeled <strong>measurement run</strong>.</p>
+<p>Every section of the comparison report displays a table with performance changes and is divided into three parts:</p>
+<ul>
+	<li><strong>Count</strong>: The percentage values show the development of the performance in comparison to the baseline. Positive numbers in the count section indicate an improvement of the throughput over the baseline. Negative values indicate a decrease in throughput.</li>
+	<li><strong>Errors</strong>: Positive numbers indicate an increase in the number of errors, negative numbers a decrease. An infinite sign indicates the occurrence of errors in comparison to an error-free baseline.</li>
+	<li><strong>Runtime</strong>: Positive values indicate a poorer performance, negative values an improvement (smaller runtime values) over the baseline.</li>
+</ul>
+<p>When you hover the mouse over the columns of the report table, you can see the actual measurement results, which lets you determine whether or not the reported percentage change is significant.</p>
+<p class="illustration"><a href="../img/user-manual/comparison_report_1.png"><img src="../img/user-manual/comparison_report_1-small.png" title="Performance Comparison Report - Overview" alt="Performance Comparison Report - Overview" /></a> <span class="caption">Performance Comparison Report &#8211; Overview</span></p>
+<p class="illustration"><a href="../img/user-manual/comparison_report_2.png"><img src="../img/user-manual/comparison_report_2-small.png" title="Performance Comparison Report" alt="Performance Comparison Report" /></a> <span class="caption">Performance Comparison Report</span></p>
+<h3>Sections</h3>
+<h4>Overview</h4>
+<p>The overview section shows general information about both load tests. It lets you compare settings, runtime, and profiles. In the later sections, the percentage values depict the development of the performance in comparison to the baseline. Note that the total columns (total throughput and total errors) might present misleading values if the load tests used different runtime configurations. All other values are normalized with respect to the runtime and therefore easily comparable. Positive numbers in the count section stand for an improvement of the throughput over the baseline, negative values for a decrease in throughput. An increase in the number of errors is indicated with positive numbers, a decrease with negative numbers. An infinite sign indicates the occurrence of errors in comparison to an error-free baseline. For all runtime numbers, positive values signify a poorer performance, negative values an improvement, or smaller runtime values, over the baseline. Added or removed transactions, actions, or requests are displayed, but for them no comparison is provided.</p>
+<h4>Transactions</h4>
+<ul>
+	<li>Count</li>
+	<li>Errors</li>
+	<li>Events</li>
+	<li>Runtime</li>
+</ul>
+<h4>Actions</h4>
+<ul>
+	<li>Count</li>
+	<li>Errors</li>
+	<li>Runtime</li>
+</ul>
+<h4>Requests</h4>
+<ul>
+	<li>Count</li>
+	<li>Errors</li>
+	<li>Runtime</li>
+</ul>
+<h4>Custom Timers</h4>
+<ul>
+	<li>Count</li>
+	<li>Errors</li>
+	<li>Runtime</li>
+</ul>
+<h3>Create a Performance Comparison Report</h3>
+<p>A performance comparison report can only be generated between two existing load and performance test reports. That is, you first have to create both of these reports.</p>
+<p>Then you can generate a performance comparison report using the following command:</p>
+<pre class="bash"><code class="bash">./create_diff_report.sh &lt;reportDir1&gt; &lt;reportDir2&gt; [options]</code></pre>
+<p>For example:</p>
+<pre class="bash"><code class="bash">./create_diff_report.sh ../reports/20110503-152920 ../reports/20110503-160520</code></pre>
+<h2>Performance Trend Report</h2>
+<p>A trend report depicts the development of the performance over time. Multiple measurements are taken into account and evaluated against each other. It shows how your system performs over time, how your tuning effort pays out, and how your live environment acts under a changing load situation if used as monitoring.</p>
+<p>Two trend report types are available:</p>
+<ul>
+	<li>Difference to First Run and</li>
+	<li>Difference to Previous Run.</li>
+</ul>
+<p>The Difference to the First Run reports the changes compared to your first test run, mostly referred to as baseline. Each table column displays the difference between your baseline run and the run you&#8217;re interested in. The quality of your baseline run defines how valuable this report may be. You can also look at it as a long-term performance trend report.</p>
+<p>The Difference to Previous Run visualizes the improvements between two adjacent test runs, which lets you recognize how your last change or tuning effort payed out in comparison to the previous run. It helps you to see whether or not you are on the right track regarding the improvement of your application&#8217;s performance. It also emphasizes sudden improvements or set-backs and can be seen as a short-term performance trend report.</p>
+<p>When you hover the mouse over the columns of the trend report table, you can see the actual measurement results. This will give you a better idea whether or not the reported percentage change is significant. Please keep in mind that changes up to 10% are measurement fluctuation most of the time.</p>
+<p class="illustration"><a href="../img/user-manual/performance_trend_1.png"><img src="../img/user-manual/performance_trend_1-small.png" title="Performance Trend Report - Overview" alt="Performance Trend Report - Overview" /></a> <span class="caption">Performance Trend Report &#8211; Overview</span></p>
+<p class="illustration"><a href="../img/user-manual/performance_trend_2.png"><img src="../img/user-manual/performance_trend_2-small.png" title="Performance Trend Report" alt="Performance Trend Report" /></a> <span class="caption">Performance Trend Report</span></p>
+<p>Similar to the other reports, the trend report is divided into the following sections, each containing the tables and charts mentioned above:</p>
+<ul>
+	<li><strong>Overview</strong></li>
+	<li><strong>Transactions</strong></li>
+	<li><strong>Actions</strong></li>
+	<li><strong>Requests</strong></li>
+	<li><strong>Custom Timers</strong></li>
+</ul>
+<h3>Create a Performance Trend Report</h3>
+<p>To generate a performance trend report on several test reports, use the command below:</p>
+<pre class="bash"><code class="bash">./create_trend_report.sh &lt;reportDir1&gt; ... &lt;reportDirN&gt; [options]</code></pre>
+<p>For example:</p>
+<pre class="bash"><code class="bash">./create_trend_report.sh ../reports/20110503-152920
+        ../reports/20110503-160520 \
+        ../reports/20110503-161030 \
+        ../reports/20110503-171030</code></pre>
+<h2>Custom Values</h2>
+<p>During a load test, <span class="caps">XLT</span> is logging a large amount of data relevant to the test run. Nevertheless, sometimes it comes in handy to log additional information about the system under test (<span class="caps">SUT</span>) directly during the load test run. For this purpose, <span class="caps">XLT</span> provides custom values.</p>
+<p><strong>Example</strong>: An eCommerce application is typically connected to several third-party systems to use external services like credit-worthiness check. The response time of these third-party systems can have a major impact on the SUT&#8217;s response to the client request. By default, this application-internal information isn&#8217;t visible to <span class="caps">XLT</span> during a load test. A typical example for custom values in this context is logging the response time of requests to third-party systems. To do so, you have to write custom code to access the relevant sources, for instance via remote connection to the application server. The additional data can then be logged by <span class="caps">XLT</span> during the load test runtime and is automatically integrated into the load and performance test report.</p>
+<h3>Sampler</h3>
+<p>Custom Samplers let you query custom sources and log data (<em>samples</em>) during the load test runtime. To this end, provide a custom sampler class extending <code>com.xceptance.xlt.api.engine.AbstractCustomSampler</code>. The sampler gets configured in the test suite configuration files. The recommended location for the relevant configuration is <em>project.properties</em>.</p>
+<p>The provided sampler must override the <code>execute()</code> method that is called after each interval time (see configuration). Furthermore, the sampler might override the methods <code>initialize()</code> or <code>shutdown()</code> getting called just once for the sampler. While <code>initialize()</code> is called before the first call of <code>execute()</code>, <code>shutdown()</code> is called on shutdown.</p>
+<p>The logged custom value is the return value of the <code>execute()</code> method.</p>
+<p>The <strong>AbstractCustomSampler</strong> can store any &#8216;double&#8217; value. The stored value indicates the absolute value at a certain point in time. The corresponding report chart directly shows the logged value.</p>
+<h3>Configuration</h3>
+<p>To configure samplers, provide these properties:</p>
+<pre class="ini"><code class="ini">com.xceptance.xlt.customSamplers.1.class = com.xceptance.xlt.samples.ValueSamplerDemo
+com.xceptance.xlt.customSamplers.1.name = ValueSamplerDemo
+com.xceptance.xlt.customSamplers.1.description = This sampler logs a custom value which is just a random number
+com.xceptance.xlt.customSamplers.1.interval = 1000
+com.xceptance.xlt.customSamplers.1.chart.title = ValueSamplerDemo
+com.xceptance.xlt.customSamplers.1.chart.yAxisTitle = Value
+#com.xceptance.xlt.customSamplers.1.property.foo = 123
+#com.xceptance.xlt.customSamplers.1.property.bar = abc
+...
+com.xceptance.xlt.customSamplers.9.class = ...
+com.xceptance.xlt.customSamplers.9.name = ...
+...</code></pre>
+<p>Where each property has the following meaning:</p>
+<ul>
+	<li><em>com.xceptance.xlt.customSamplers.n.</em> is the saved key for custom sampler properties. Each sampler configuration block must have a unique number (called <em>n</em> in this example). The numbers don&#8217;t need to be in strictly successive order.</li>
+	<li><em>class</em> points to the sampler class (including full package path).</li>
+	<li><em>name</em> is a customizable name of the sampler. This name <strong>must</strong> be used when instantiating a sample class (it&#8217;s recommended to use the method <code>getSamplerName()</code>).</li>
+	<li><em>interval</em> defines the period the sampler is started at (unit of time is milliseconds). The value must be positive (including 0). A new sampler will be started only if it is executed for the first time or if the previous sampler has come to an end.</li>
+	<li>Providing a chart title is optional. By default, the sampler name is used. <em>yAxisTitle</em> defines the title of the y-axis for the rendered chart.</li>
+	<li>Providing further sampler properties is optional. The properties can be accessed by calling the methods <code>getProperties()</code> or <code>getProperty(key)</code> (where <em>key</em> is the string in the configuration between <em>com.xceptance.xlt.customSamplers.n.property.</em> and the equals sign (<em>=</em>). In the present example, the keys are <em>foo</em> and <em>bar</em> with the value <em>123</em> and <em>abc</em>). Sampler property keys <strong>must not</strong> contain dots or whitespace. Apart from that they are free in name and count.</li>
+</ul>
+<h3>Example</h3>
+<p>The code below shows an example of a very simple custom sampler logging random values:</p>
+<pre class="java"><code class="java">public class ValueSamplerDemo extends AbstractCustomSampler
+{
+    public ValueSamplerDemo()
+    {
+        super();
+    }</code>
+
+<code class="java">    @Override
+    public void initialize()
+    {
+        // initialize
+    }</code>
+
+<code class="java">    @Override
+    public double execute()
+    {
+        // generate random value based on the configured limits</code>
+
+<code class="java">        // get properties
+        final String lowerLimitProp = getProperties().
+                    getProperty("generatedValueLowerLimit");
+        final String upperLimitProp = getProperties().
+                    getProperty("generatedValueUpperLimit");</code>
+
+<code class="java">        // convert to integer
+        try
+        {
+            final int lowerLimit = Integer.valueOf(lowerLimitProp);
+            final int upperLimit = Integer.valueOf(upperLimitProp);</code>
+
+<code class="java">            // return the value to be logged
+            return
+                XltRandom.nextInt(lowerLimit, upperLimit) +
+                XltRandom.nextDouble();
+        }
+        catch (final NumberFormatException e)
+        {
+            // log 0 in case of an exception
+            return 0;
+        }
+    }</code>
+
+<code class="java">    @Override
+    public void shutdown()
+    {
+        // clean up
+    }
+}</code></pre>
+<p>The resulting chart is automatically integrated into the <span class="caps">XLT</span> performance and load test report and can be accessed via the report navigation menu item <em>Custom Values</em>.</p>
+<p class="illustration"><a href="../img/user-manual/CustomSamplerReport.png"><img src="../img/user-manual/CustomSamplerReport-small.png" title="Custom sampler report" alt="Custom sampler report" /></a> <span class="caption">Custom Sampler Report</span></p>
+<h2>External Data</h2>
+<p>As an alternative to <a href="09-reports.html#toc-custom-values">custom values</a>, the <span class="caps">XLT</span> report generator lets you include externally gathered data in the load test report. Use this approach if it&#8217;s impossible to access the external data source directly during load testing time, but you would like to see that data as part of the test report.</p>
+<p>After a load test, you would gather any relevant data from other systems and make it available as data files in the same results folder as your regular load test result data. When generating the load test report, the report generator processes these additional data files and makes that data available in the load test report as data tables or charts on the <em>External Data</em> page.</p>
+<p>Note that <span class="caps">XLT</span> ships with a demo project for external data. This project does not only contain a load test result set enriched with external data files and the corresponding load test report, but also shows how to implement custom data file parsers and how to configure the report generator to produce the report. The demo project for external data is located in directory <code>&lt;xlt&gt;/samples/demo-external-data</code>.</p>
+<h3>Types of Data</h3>
+<p><span class="caps">XLT</span> supports two different types of external data.</p>
+<p><strong><em>Sampled data</em></strong> is data that was recorded periodically and that changes over time. Each sampled value <em>must</em> be accompanied by a timestamp. This type of data can be displayed as a graph, and from all the values some basic statistics (mean, minimum, maximum) can be calculated and shown in the report.</p>
+<p>Example: A data file with a timestamp/<span class="caps">CPU</span> usage value pair per line.</p>
+<p><strong><em>Precomputed data</em></strong> is data that results from an external value processing and aggregation task. This data is not timestamped, as there is only one aggregated value per data item. Any further data processing does not make sense so that data will simply be rendered as a table. Consequently, such data can neither be graphed, nor will any statistics be calculated.</p>
+<p>Example:  A file that contains the total number of requests per application tier with a tier/requests pair per line.</p>
+<h3>Data Parsers and Value Sets</h3>
+<p>To read and interpret external data files, a <em>Parser</em> class is needed for each type of file or format. The parser takes a line of input (with possibly multiple values) and parses it to a generic set of values. Typically, one line contains all data items of a value set. Sometimes, however, the values are spread across multiple lines. Certain tools, <em>iostat</em> for instance, produce such type of data files. In this case, the parser has to process multiple lines of input before a value set is complete.</p>
+<p>Typically, a data file contains many value sets. The parsed value sets for a certain file must have a uniform structure, i.e. they should all contain the same data items at the same position. Otherwise the report generator cannot process them correctly.</p>
+<p>A value set can optionally carry a timestamp. This timestamp is valid for all the data items in the value set. Whether or not a timestamp will be set is defined by the parser. If the timestamp is present, the report generator will treat the value set as sampled data, otherwise as precomputed data. Note that if the timestamp does not lie within the load testing period, the value set will be ignored. This way you don&#8217;t have to cut out the interesting part from your, say, daily logs.</p>
+<p>Later on, when configuring the data to show in the report, we need a way to select the values of interest in a value set. A certain value can always be accessed by an <em>index</em> (starting with 0). Alternatively, you may also use a <em>name</em> to address a data item. However, this requires the parser to store the item under that name. To this end, the parser could use a hard-coded name or it somehow retrieves the name to use right from the data file. For instance, a <span class="caps">CSV</span> file could provide a header line with all the value names.</p>
+<h4>Predefined Parsers</h4>
+<p><span class="caps">XLT</span> ships with a set of predefined parsers for <span class="caps">CSV</span> data files. In case you want to process <span class="caps">CSV</span> files with sampled data, use one of the following parsers:</p>
+<ul>
+	<li><strong>SimpleCsvParser</strong> &#8211; Extracts the data by splitting each line into a set of values and uses the column index as the value name.</li>
+	<li><strong>HeadedCsvParser</strong> &#8211; Like <em>SimpleCsvParser</em>, but takes the value names from the first line of the file.</li>
+</ul>
+<p>Note that these two parsers require the timestamp to be in the first column of the <span class="caps">CSV</span> data file.</p>
+<p>If the external <span class="caps">CSV</span> data is precomputed and just needs to be displayed as a data table, use the <strong>PlainDataTableCsvParser</strong> class.</p>
+<h4>Custom Parsers</h4>
+<p>If you need to use other input file formats than <span class="caps">CSV</span>, you have to write your own custom parser class. Your class must extend <code>com.xceptance.xlt.api.report.external.AbstractLineParser</code>.</p>
+<p>For an example of an advanced parser class that deals with sampled data, see the two parser implementations in the source directory of the demo project. They process the logs of the command line tool <em>iostat</em>.</p>
+<ul>
+	<li><strong>IostatCpuParser</strong> &#8211; Parses the <span class="caps">CPU</span> section of an <em>iostat</em> log.</li>
+	<li><strong>IostatDeviceParser</strong> &#8211; Parses the Device section of an <em>iostat</em> log.</li>
+</ul>
+<p>Note that if you need to write your own custom parsers, you will have to make the compiled parser classes available in the class path of <span class="caps">XLT</span> before the report generator can use them. The simplest way to do this is to deploy the classes packaged as a <span class="caps">JAR</span> file to <code>&lt;xlt&gt;/lib</code>.</p>
+<h3>Report Generator Configuration</h3>
+<p>Since external data is completely custom, there is also no standard or built-in way how to interpret and display this data. That&#8217;s why you need to help the report generator by providing a detailed configuration of how to parse the data, choosing the values of interest, and how to display them in the report.</p>
+<p>All this is configured in file <code>externaldataconfig.xml</code>. This file is expected in the results directory of the respective load test run, in particular in subdirectory <code>config</code>, where all the other load test configuration files live. If <span class="caps">XLT</span> can&#8217;t locate it there, it will try to find it in its configuration directory <code>&lt;xlt&gt;/config</code>.</p>
+<p>Because of the variety and complexity of the configuration options, the configuration file uses <span class="caps">XML</span> as the file format. The basic file structure is as follows:</p>
+<pre class="xml"><code class="xml">&lt;?xml version="1.0" encoding="UTF-8" standalone="yes"?&gt;
+&lt;config&gt;
+    &lt;files&gt;
+        &lt;file ... &gt;
+            &lt;headline&gt;...&lt;/headline&gt;
+            &lt;description&gt;...&lt;/description&gt;
+            &lt;tables&gt;
+                &lt;table ... &gt;
+                    &lt;rows&gt;
+                        &lt;row ... /&gt;
+                        &lt;row ... /&gt;
+                    &lt;/rows&gt;
+                &lt;/table&gt;
+            &lt;/tables&gt;
+            &lt;charts&gt;
+                &lt;chart ... &gt;
+                    &lt;seriesCollection&gt;
+                        &lt;series ... /&gt;
+                        &lt;series ... /&gt;
+                    &lt;/seriesCollection&gt;
+                &lt;/chart&gt;
+            &lt;/charts&gt;
+            &lt;properties&gt;
+                &lt;property ... /&gt;
+            &lt;/properties&gt;
+        &lt;/file&gt;
+    &lt;/files&gt;
+&lt;/config&gt;</code></pre>
+<p>As you can see, the configuration is centered around the various data files you want to be parsed, processed, and rendered. There can be one ore more input files. The data of each file will be presented in an own subsection in the load test report. For each file/subsection you can define a headline and a description, configure charts (each with one or more data series) or data tables (each with a different row or column definition) and additional properties to use when parsing the file or rendering the data. See the following subsections for a more detailed description of the core configuration elements.</p>
+<p><strong>file</strong></p>
+<p>Defines what file is to be processed and in which way.</p>
+<ul>
+	<li><strong>source</strong> &#8211; The path to the data file. If the path is relative, it will be resolved against the root directory of the current result set. [required]</li>
+	<li><strong>parserClass</strong> &#8211; The full class name of the parser class to use for parsing the data file. [required]</li>
+	<li><strong>encoding</strong> &#8211; The character encoding to use when reading the data file. [optional, defaults to &#8220;<span class="caps">UTF</span>-8&#8221;]</li>
+</ul>
+<p>Example:</p>
+<pre class="xml"><code class="xml">&lt;file source="embedded_00/CustomData/data.csv" encoding="UTF-8" parserClass="com.xceptance.xlt.api.report.external.SimpleCsvParser"&gt;...&lt;/file&gt;</code></pre>
+<p><strong>headline / description</strong></p>
+<p>Simply provide the text to show as the section header and section description.</p>
+<p><strong>table</strong></p>
+<p>Defines the properties of a data table.</p>
+<ul>
+	<li><strong>title</strong> &#8211; The title of the table. [required]</li>
+	<li><strong>type</strong> &#8211; The type of the table, either &#8220;minmaxavg&#8221; or &#8220;plain&#8221;. Use &#8220;minmaxavg&#8221; for sampled data only, in which case the table will show the mean, the minimum, and the maximum of the sampled values. Similarly, use &#8220;plain&#8221; for precomputed data only. [optional, defaults to &#8220;minmaxavg&#8221;]</li>
+</ul>
+<p>Example:</p>
+<pre class="xml"><code class="xml">&lt;table title="CPU Statistics" type="minmaxavg"&gt;...&lt;/table&gt;</code></pre>
+<p><strong>row / col</strong></p>
+<p>Defines the layout of a data table. Tables can be laid out either row-wise or column-wise. If you use rows, the selected values will be shown each in a new table row, otherwise in a new table column. Choose the method that better fits your needs. Both elements provide the same set of configuration options.</p>
+<ul>
+	<li><strong>valueName</strong> &#8211; The name/index of the value to show. [required]</li>
+	<li><strong>title</strong> &#8211; The title of the series. [optional, defaults to the value name]</li>
+	<li><strong>unit</strong> &#8211; The unit of measurement. [optional, defaults to none]</li>
+</ul>
+<p>Example:</p>
+<pre class="xml"><code class="xml">&lt;row valueName="idle" title="idle" unit="%"/&gt;</code></pre>
+<p><strong>chart</strong></p>
+<p>Defines the chart title and the axes titles.</p>
+<ul>
+	<li><strong>title</strong> &#8211; The title of the chart. [required, unique]</li>
+	<li><strong>xAxisTitle</strong> &#8211; The title of the x-axis. [optional, defaults to &#8220;Time&#8221;]</li>
+	<li><strong>yAxisTitle</strong> &#8211; The title of the first/left y-axis. [optional, defaults to &#8220;Values&#8221;]</li>
+	<li><strong>yAxisTitle2</strong> &#8211; The title of the second/right y-axis. [optional, defaults to empty in which case the axis is not shown]</li>
+</ul>
+<p>Example:</p>
+<pre class="xml"><code class="xml">&lt;chart title="QuadCore CPU" yAxisTitle="CPU Temperature [°C]" yAxisTitle2="CPU Usage [%]"&gt;...&lt;/chart&gt;</code></pre>
+<p><strong>series</strong></p>
+<p>Defines which value will be shown as a graph in the chart and how the graph will be styled.</p>
+<ul>
+	<li><strong>valueName</strong> &#8211; The name/index of the value to graph.</li>
+	<li><strong>title</strong> &#8211; The title of the series. [optional, defaults to value name]</li>
+	<li><strong>color</strong> &#8211; The color of the graph. [optional, by default a color from a predefined color set is chosen]</li>
+	<li><strong>axis</strong> &#8211; The axis to use for this series, either &#8220;1&#8221; for the first/left axis or &#8220;2&#8221; for the second/right axis. [optional, defaults to &#8220;1&#8221;]</li>
+	<li><strong>average</strong> &#8211; The percentage of values to use to calculate the moving average. [optional, defaults to empty in which case no moving average graph will be shown]</li>
+	<li><strong>averageColor</strong> &#8211; The color to use for the automatically added moving average graph. [optional, by default a color from a predefined color set is chosen]</li>
+</ul>
+<p>Example:</p>
+<pre class="xml"><code class="xml">&lt;series valueName="1" title="CPU Temperature" axis="1" color="#00FF00" average="10" averageColor="#008400"/&gt;</code></pre>
+<p><strong>property</strong></p>
+<p>Defines additional configuration options. Currently, these are parser settings only.</p>
+<ul>
+	<li><strong>key</strong> &#8211; The property name. [required]</li>
+	<li><strong>value</strong> &#8211; The property value. [required]</li>
+</ul>
+<p>Example:</p>
+<pre class="xml"><code class="xml">&lt;property key="parser.csv.separator" value=","/&gt;</code></pre>
+<p>The following property names are predefined by <span class="caps">XLT</span>, but note that your custom parser classes may define additional properties:</p>
+<ul>
+	<li><strong>parser.dateFormat.pattern</strong> &#8211; The date/time pattern to parse a time value. See <a href="http://docs.oracle.com/javase/8/docs/api/java/text/SimpleDateFormat.html">SimpleDateFormat</a> for more information on date/time patterns. [optional, in which case the time value is expected to be a Java timestamp]</li>
+	<li><strong>parser.dateFormat.timeZone</strong> &#8211; The time zone to use when interpreting time values. [optional, defaults to <span class="caps">GMT</span>/<span class="caps">UTC</span>]</li>
+	<li><strong>parser.csv.separator</strong> &#8211; The field separator character for <span class="caps">CSV</span> files. [optional, defaults to comma]</li>
+</ul>
+<blockquote class="note">
+<p class="note">For tab-separated <span class="caps">CSV</span> files, use &#8220;&amp;#x9;&#8221; as the value of <em>parser.csv.separator</em>.</p>
+</blockquote>
+<p>See the file <code>&lt;xlt&gt;/samples/demo-external-data/results/20110621-101041/config/externaldataconfig.xml</code> for a complete example configuration. Use this file as a starting point when adjusting the configuration to match your specific external data.</p>
+            <div id="footer">
+	<p>Copyright © 2017 by <a href="http://www.xceptance.com/">Xceptance Software Technologies</a>. All rights reserved.</p>
+</div>
+
+
+        </div>
+    </div>
+</div>
+
+<!-- Generate the part of the TOC that contains the headings of the currently displayed page -->
+<!-- createToc (selectedHeadlines, classesTarget, classes )-->
+
+<script>createToc('h1,h2,h3', '#toc > ul', '#sidenav nav sidenav')</script>
+
+
+</body>
+
+</html>

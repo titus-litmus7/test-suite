@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testcase xmlns="http://xlt.xceptance.com/xlt-script/2" version="7" id="ELEC00001" baseURL="http://demo-na01-tatcha.demandware.net">
+  <action name="OpenStartPage"/>
+  <command name="open" value="/s/SiteGenesis/electronics/televisions/?lang=en_US"/>
+  <action name="TcheckEachMenuItem-0"/>
+  <command name="clickAndWait" target="//nav[@id='navigation']/ul[1]/li[4]/div/ul/li[1]/a"/>
+  <action name="TcheckEachMenuItem-1"/>
+  <command name="clickAndWait" target="//nav[@id='navigation']/ul[1]/li[4]/div/ul/li[2]/a"/>
+  <action name="TcheckEachMenuItem-2"/>
+  <command name="clickAndWait" target="//nav[@id='navigation']/ul[1]/li[4]/div/ul/li[3]/a"/>
+  <action name="TcheckEachMenuItem-3"/>
+  <command name="clickAndWait" target="//nav[@id='navigation']/ul[1]/li[4]/div/ul/li[4]/a"/>
+  <action name="TcheckEachMenuItem-4"/>
+  <command name="clickAndWait" target="//nav[@id='navigation']/ul[1]/li[4]/div/ul/li[5]/a"/>
+</testcase>

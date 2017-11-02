@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html>
+
+
+
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Including Additional Property Files</title>
+  <meta name="description" content="Xceptance LoadTest - XLT, Documentation, Manual, Howto, FAQ">
+
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,700,400italic,300italic" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:100,300,400,500,700" rel="stylesheet" type="text/css">
+
+  <link href="../css/font-awesome.min.css" rel="stylesheet" media="all"  type="text/css" />
+  <link href="../css/lightbox.css" rel="stylesheet" media="all"  type="text/css" />
+
+  <link href="../css/highlightjs/default.css" rel="stylesheet" type="text/css" />
+  <link href="../css/highlightjs/mono-blue.css" rel="stylesheet" type="text/css" />
+
+  <link href="../css/xltdoc.css" rel="stylesheet" media="all"  type="text/css" />
+
+  <script type="text/javascript" src="../js/jquery-1.11.1.min.js"></script>
+  <script type="text/javascript" src="../js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="../js/toc.min.js"></script>
+  <script type="text/javascript" src="../js/lightbox.min.js"></script>
+  <script type="text/javascript" src="../js/headroom.min.js"></script>
+
+  <!-- <script type="text/javascript" src="../js/jquery.scrollIntoView.min.js"></script -->
+  <script type="text/javascript" src="../js/xltdoc.js"></script>
+
+  <script type="text/javascript" src="../js/highlight.pack.js"></script>
+</head>
+
+
+<body data-spy="scroll" data-target="#toc" data-offset="100" class="layout-manual how-to">
+
+    
+
+
+<!-- Fixed navbar -->
+<nav id="header" class="navbar navbar-default">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <a class="site-title" href="../index.html">
+            <img src="../img/XLTDoc-logo-transparent-165x82.png" id="product-logo" alt="XLT Product logo" title="Xceptance LoadTest"/>
+        </a>
+    </div>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    <div id="navbar" class="navbar-collapse collapse">
+        <!-- Links to external pages -->
+        <ul id="navbar-right" class="nav navbar-nav navbar-right navbar-text">
+	<li>
+		<a href="https://lab.xceptance.de/releases/xlt/latest/apidoc/" target="_blank" title="XLT API Documentation">
+			<i class="fa fa-external-link"></i>API</a>
+	</li>
+
+    <li>
+ 		<a href="https://ask.xceptance.de/" target="_blank" title="XLT Community Forum">
+ 			<i class="fa fa-external-link"></i>Forum</a>
+ 	</li> 
+    
+	<li>
+		<a href="https://www.xceptance.com/xlt/" target="_blank" title="XLT Website">
+			<i class="fa fa-external-link"></i>XLT Home</a>		
+	</li>			
+</ul>
+
+
+        <ul id="navbar-left" class="nav navbar-nav navbar-text">
+            <li class="inactive"><a href="../getting-started/index.html">Getting Started</a></li>
+            <li class="inactive"><a href="../user-manual/index.html">User Manual</a></li>
+            <li class="active"><a href="../how-to/index.html">How-To</a></li>
+            <li class="inactive"><a href="../release-notes/index.html">Release Notes</a></li>
+            <li class="inactive"><a href="../license.html">License</a></li>
+        </ul>
+
+    </div><!--/.nav-collapse -->
+
+</nav>
+
+
+
+
+<div id="breadcrumb" class="navbar navbar-default">
+  <div>
+    <ol class="breadcrumb">
+      
+
+      
+        <li><a href="../index.html"><i class="fa fa-home"></i>Docs</a></li>
+          
+            
+            <li><a href="../how-to/index.html">How-To</a></li>
+          
+      
+
+      <li class="active">Including Additional Property Files</li>
+    </ol>
+  </div>
+</div>
+
+
+    
+<div id="main" class="main container-fluid">
+    <div class="row">
+        <div class="hidden-xs col-sm-4 col-md-3 sidenav-col">
+            <nav id="sidenav" class="sidenav nav">
+                <!-- TOC of all available files/pages in folder  -->
+                <ul class="nav sidenav">
+                
+
+
+
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        
+            <li>
+            
+                <a href="../how-to/basic-rules-for-test-suite.html">Basic rules for a Script Developer Test Suite</a>
+                
+            </li>
+        
+    
+
+    
+        
+            <li>
+            
+                <a href="../how-to/choosing-a-test-approach.html">Choose a Test Suite Approach</a>
+                
+            </li>
+        
+    
+
+    
+        
+            <li>
+            
+                <a href="../how-to/graphite.html">Real-Time Reporting with Graphite</a>
+                
+            </li>
+        
+    
+
+    
+        
+            <li>
+            
+                <a href="../how-to/how-to-structure-test-suites.html">Structuring Test Suite and Test Cases</a>
+                
+            </li>
+        
+    
+
+    
+        
+            <li>
+            
+                <a href="../how-to/importing-XLT-projects-into-eclipse.html">Run Script Test Suite From Within Eclipse</a>
+                
+            </li>
+        
+    
+
+    
+
+    
+
+    
+
+    
+        
+    
+
+    
+
+    
+        
+            <li>
+            
+                <a href="../how-to/integrating-XLT-with-Maven-and-Ivy.html">Integrating XLT with Maven and Ivy</a>
+                
+            </li>
+        
+    
+
+    
+        
+            <li>
+            
+                <a href="../how-to/jenkins-plugin.html">Continuous Load Testing with XLT Plugin for Jenkins</a>
+                
+            </li>
+        
+    
+
+    
+
+    
+        
+            
+                <!-- Table of content from page headings for the currently loaded file-->
+                <li class="current-page">
+                    <a class="current-page" href="">Including Additional Property Files</a>
+                    <!-- Container for page headings TOC -->
+                    <div id="toc" class="sidenav"></div>
+                </li>
+            
+        
+    
+
+    
+
+
+                </ul>
+            </nav>
+        </div>
+
+        <div id="content" class="col-xs-12 col-sm-8 col-md-9 content-col">
+            <h1>Introduction</h1>
+<p>When dealing with different test environments, different load profiles, and/or different test data at the same time, managing different combinations of configuration settings can be challenging. To make this easier and less error-prone, properties can be included as a set. This allows to:</p>
+<ul>
+	<li>predefine the configuration of certain aspects with certain values in separate files, and</li>
+	<li>reuse and combine the predefined settings as needed with a single statement.</li>
+</ul>
+<p>To this end, the files <code>default.properties</code>, <code>project.properties</code>, <code>test.properties</code> (no matter if it&#8217;s been renamed using <code>com.xceptance.xlt.testPropertiesFile</code>), and <code>dev.properties</code> can include further property files. Each of these additional property files has to be placed either directly in the <code>config</code> folder or in one of its sub-directories. Furthermore, the name of all these files must end with <code>.properties</code>. Any included file may also define includes itself.</p>
+<h2>Include Other Properties Files</h2>
+<p>You can include another property file by adding the special <em>include</em> property</p>
+<pre class="ini"><code class="ini">com.xceptance.xlt.propertiesInclude.&lt;index&gt; = &lt;relativePathToPropFile&gt;</code></pre>
+<p>where <code>&lt;index&gt;</code> denotes an integer number. The value of the include property is the relative path to the file to include, starting from the directory in which the current file is located. You can also include all properties files in a certain directory at once by specifying the relative path to that directory:</p>
+<pre class="ini"><code class="ini">com.xceptance.xlt.propertiesInclude.&lt;index&gt; = &lt;relativePathToDir&gt;</code></pre>
+<p>In both cases, the relative path may also go upwards using &#8220;..&#8221; as long as you don&#8217;t leave the <code>config</code> directory of the test suite.</p>
+<blockquote class="note">
+<p class="note">Include properties are treated like normal properties. Thus, if there are two include properties having an identical index, only one of them will be applied.</p>
+</blockquote>
+<h2>Processing Order</h2>
+<p><code>default.properties</code>, <code>project.properties</code>, <code>test.properties</code>, and <code>dev.properties</code> form a hierarchy. So the processing order is as follows:</p>
+<ol>
+	<li><code>default.properties</code>, followed by its includes</li>
+	<li><code>project.properties</code>, followed by its includes</li>
+	<li><code>test.properties</code> (or any other test-run-specific properties file), followed by its includes</li>
+	<li><code>dev.properties</code>, followed by its includes (in development mode only)</li>
+</ol>
+<p>Includes will be resolved according to these rules:</p>
+<ul>
+	<li>Each property include will be processed recursively in depth-first mode.</li>
+	<li>If the include target is a directory, the properties files contained in that directory are processed in alphabetical order.</li>
+	<li>If there&#8217;s more than one property include in a file, they will be processed in ascending order sorted by their index.</li>
+</ul>
+<p>During that process, properties read in later will overwrite already existing settings.</p>
+<h2>Example</h2>
+<p>Assume the system under test is deployed to different environments, such as <em>development</em>, <em>live</em>, and <em>pre-live</em>. Each environment requires a different host in the start <span class="caps">URL</span> and different access credentials. Furthermore, different load profiles are required for certain types of load tests. Now assume the following directory layout in the test suite:</p>
+<pre class="ini"><code class="ini">--+ &lt;testsuite&gt;
+  |--- classes
+  |--+ config
+  |  |--- data
+  |  |--- effectiveSettings
+  |  |--+ environments
+  |  |  |--- development.properties
+  |  |  |--- live.properties
+  |  |  |--- pre-live.properties
+  |  |  `--- test.properties
+  |  |--+ loadProfiles
+  |  |  |--- smallLoad.properties
+  |  |  |--- halfLoad.properties
+  |  |  `--- fullLoad.properties
+  |  |--- default.properties
+  |  |--- project.properties
+  |  `--- test.properties
+  |--- lib
+  |--- results
+  |--- scripts
+  `--- src</code></pre>
+<p>As you can see, the load tester has prepared a property set for each environment and each load profile under the <code>config</code> directory. With these predefined property files, you can easily mix and match the environments and the load profiles as needed. For example, add/modify the following lines to your <code>test.properties</code> to apply the full target load to the pre-live environment:</p>
+<pre class="ini"><code class="ini">com.xceptance.xlt.propertiesInclude.1 = environments/pre-live.properties
+com.xceptance.xlt.propertiesInclude.2 = loadProfiles/fullLoad.properties</code></pre>
+<p>Alternatively, you may also define a certain directory to be always included:</p>
+<pre class="ini"><code class="ini">com.xceptance.xlt.propertiesInclude.1 = effectiveSettings</code></pre>
+<p>To apply a certain combination of settings, simply empty this directory first and copy the respective predefined property files to this directory (<code>pre-live.properties</code> and <code>fullLoad.properties</code>, for example).</p>
+            <div id="footer">
+	<p>Copyright © 2017 by <a href="http://www.xceptance.com/">Xceptance Software Technologies</a>. All rights reserved.</p>
+</div>
+
+
+        </div>
+    </div>
+</div>
+
+<!-- Generate the part of the TOC that contains the headings of the currently displayed page -->
+<!-- createToc (selectedHeadlines, classesTarget, classes )-->
+
+<script>createToc('h1,h2,h3', '#toc > ul', '#sidenav nav sidenav')</script>
+
+
+</body>
+
+</html>

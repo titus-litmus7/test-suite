@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html>
+
+
+
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Data-Driven Tests</title>
+  <meta name="description" content="Xceptance LoadTest - XLT, Documentation, Manual, Howto, FAQ">
+
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,700,400italic,300italic" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:100,300,400,500,700" rel="stylesheet" type="text/css">
+
+  <link href="../css/font-awesome.min.css" rel="stylesheet" media="all"  type="text/css" />
+  <link href="../css/lightbox.css" rel="stylesheet" media="all"  type="text/css" />
+
+  <link href="../css/highlightjs/default.css" rel="stylesheet" type="text/css" />
+  <link href="../css/highlightjs/mono-blue.css" rel="stylesheet" type="text/css" />
+
+  <link href="../css/xltdoc.css" rel="stylesheet" media="all"  type="text/css" />
+
+  <script type="text/javascript" src="../js/jquery-1.11.1.min.js"></script>
+  <script type="text/javascript" src="../js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="../js/toc.min.js"></script>
+  <script type="text/javascript" src="../js/lightbox.min.js"></script>
+  <script type="text/javascript" src="../js/headroom.min.js"></script>
+
+  <!-- <script type="text/javascript" src="../js/jquery.scrollIntoView.min.js"></script -->
+  <script type="text/javascript" src="../js/xltdoc.js"></script>
+
+  <script type="text/javascript" src="../js/highlight.pack.js"></script>
+</head>
+
+
+<body data-spy="scroll" data-target="#toc" data-offset="100" class="layout-manual ">
+
+    
+
+
+<!-- Fixed navbar -->
+<nav id="header" class="navbar navbar-default">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <a class="site-title" href="../index.html">
+            <img src="../img/XLTDoc-logo-transparent-165x82.png" id="product-logo" alt="XLT Product logo" title="Xceptance LoadTest"/>
+        </a>
+    </div>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    <div id="navbar" class="navbar-collapse collapse">
+        <!-- Links to external pages -->
+        <ul id="navbar-right" class="nav navbar-nav navbar-right navbar-text">
+	<li>
+		<a href="https://lab.xceptance.de/releases/xlt/latest/apidoc/" target="_blank" title="XLT API Documentation">
+			<i class="fa fa-external-link"></i>API</a>
+	</li>
+
+    <li>
+ 		<a href="https://ask.xceptance.de/" target="_blank" title="XLT Community Forum">
+ 			<i class="fa fa-external-link"></i>Forum</a>
+ 	</li> 
+    
+	<li>
+		<a href="https://www.xceptance.com/xlt/" target="_blank" title="XLT Website">
+			<i class="fa fa-external-link"></i>XLT Home</a>		
+	</li>			
+</ul>
+
+
+        <ul id="navbar-left" class="nav navbar-nav navbar-text">
+            <li class="inactive"><a href="../getting-started/index.html">Getting Started</a></li>
+            <li class="active"><a href="../user-manual/index.html">User Manual</a></li>
+            <li class="inactive"><a href="../how-to/index.html">How-To</a></li>
+            <li class="inactive"><a href="../release-notes/index.html">Release Notes</a></li>
+            <li class="inactive"><a href="../license.html">License</a></li>
+        </ul>
+
+    </div><!--/.nav-collapse -->
+
+</nav>
+
+
+
+
+<div id="breadcrumb" class="navbar navbar-default">
+  <div>
+    <ol class="breadcrumb">
+      
+
+      
+        <li><a href="../index.html"><i class="fa fa-home"></i>Docs</a></li>
+          
+            
+            <li><a href="../user-manual/index.html">User Manual</a></li>
+          
+      
+
+      <li class="active">Data-Driven Tests</li>
+    </ol>
+  </div>
+</div>
+
+
+    
+<div id="main" class="main container-fluid">
+    <div class="row">
+        <div class="hidden-xs col-sm-4 col-md-3 sidenav-col">
+            <nav id="sidenav" class="sidenav nav">
+                <!-- TOC of all available files/pages in folder  -->
+                <ul class="nav sidenav">
+                
+
+
+
+
+
+    
+        
+            <li>
+            
+                <a href="../user-manual/01-intro.html">Introduction</a>
+                
+            </li>
+        
+    
+
+    
+
+    
+        
+            <li>
+            
+                <a href="../user-manual/02-install.html">Installation</a>
+                
+            </li>
+        
+    
+
+    
+
+    
+        
+            <li>
+            
+                <a href="../user-manual/03-scriptdeveloper.html">Script Developer</a>
+                
+            </li>
+        
+    
+
+    
+        
+            <li>
+            
+                <a href="../user-manual/04-framework.html">XLT Framework</a>
+                
+            </li>
+        
+    
+
+    
+        
+            <li>
+            
+                <a href="../user-manual/05-framework-config.html">XLT Framework Configuration</a>
+                
+            </li>
+        
+    
+
+    
+        
+            
+                <!-- Table of content from page headings for the currently loaded file-->
+                <li class="current-page">
+                    <a class="current-page" href="">Data-Driven Tests</a>
+                    <!-- Container for page headings TOC -->
+                    <div id="toc" class="sidenav"></div>
+                </li>
+            
+        
+    
+
+    
+        
+            <li>
+            
+                <a href="../user-manual/07-posters.html">Demo Application</a>
+                
+            </li>
+        
+    
+
+    
+        
+            <li>
+            
+                <a href="../user-manual/08-loadtest.html">Load and Performance Testing</a>
+                
+            </li>
+        
+    
+
+    
+        
+            <li>
+            
+                <a href="../user-manual/09-reports.html">Test Results and Reports</a>
+                
+            </li>
+        
+    
+
+    
+        
+            <li>
+            
+                <a href="../user-manual/10-command-reference.html">Command Reference</a>
+                
+            </li>
+        
+    
+
+    
+        
+            <li>
+            
+                <a href="../user-manual/11-glossary.html">Glossary</a>
+                
+            </li>
+        
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+                </ul>
+            </nav>
+        </div>
+
+        <div id="content" class="col-xs-12 col-sm-8 col-md-9 content-col">
+            <h2>Introduction</h2>
+<p>Sometimes a certain test case needs to be executed not just once but multiple times, each time with a different set of test data. For instance, to check not only the &#8220;happy path&#8221; but also some border cases, you might want to specify multiple test data sets automatically recognized by the test framework and used to execute the test case once per specified data set. The test case executions are thus independent from each other and each produces a separate result in the test report. This concept can be referred to as <em>data-driven test</em>.</p>
+<p><span class="caps">XLT</span> will support data-driven tests for any kind of test case (plain Java and scripts) if you run them as (part of) a functional test using a JUnit test runner. Data-driven tests can&#8217;t be used during load testing. For load tests, other parameters  define how long/often a test will be executed, such as measurement time and arrival rate.</p>
+<p>Typically, test data can be classified as constant or variable test data. <em>Constant test data</em> is fixed for all runs of a test case in a data-driven test. It is either hard-coded into the test case or kept separate from the test code in a data file. <em>Variable test data</em> is different for each run of the test case, which is why it is organized as a list of separate data sets. Each data set contains all variable test data needed for exactly one test run. The number of data sets determines the number of test runs.</p>
+<p>Where do these data sets come from? For a data-driven test, <span class="caps">XLT</span> retrieves test data sets from an additional source, which can be, for example, another data file or a database. To be more specific, <span class="caps">XLT</span> accesses a data source via <em>data set providers</em> that implement a uniform interface and return a data set as a simple key/value map.</p>
+<p>During test execution, the framework reads the next data set from the configured data set provider, passes it on to the test case instance, and then runs the test. The test instance is responsible for the appropriate application of the test data. This procedure is repeated until all variable data sets have been processed.</p>
+<h2>Data Set Providers</h2>
+<h3>Built-in Providers</h3>
+<p><span class="caps">XLT</span> supports three common sources for test data sets out of the box:</p>
+<h4><span class="caps">XML</span> Files</h4>
+<p>Data sets can be stored as <span class="caps">XML</span> data file with a three-level element structure. <span class="caps">XML</span> assigns a single top-level element. The elements on the 2nd level define the data sets, the elements on the 3rd level define the values. A data file with two sets of user data might look like this:</p>
+<pre class="xml"><code class="xml">&lt;?xml version="1.0" encoding="utf-8"?&gt;
+&lt;data-sets&gt;
+    &lt;data-set&gt;
+        &lt;userName&gt;fred&lt;/userName&gt;
+        &lt;password&gt;topsecret&lt;/password&gt;
+    &lt;/data-set&gt;
+    &lt;data-set&gt;
+        &lt;userName&gt;wilma&lt;/userName&gt;
+        &lt;password&gt;cantremember&lt;/password&gt;
+    &lt;/data-set&gt;
+&lt;/data-sets&gt;</code></pre>
+<p>Note that you can name the root element (here: <code>data-sets</code>) and the 2nd-level elements (here: <code>data-set</code>) as you like since only the structure matters. However, the tag names on the 3rd level always define the parameter names, so these tag names must be used consistently across all data sets.</p>
+<h4><span class="caps">CSV</span> Files</h4>
+<p>Data sets can also be stored as <span class="caps">CSV</span> data files, organized as lines of separated values. The values in the 1st line define the parameter names, the values of all following lines define the values of each data set. The previous example would thus look like this:</p>
+<pre class="ini"><code class="ini">userName,password
+fred,topsecret
+wilma,cantremember</code></pre>
+<p>You can configure the separator used in the <span class="caps">CSV</span> file (typically comma or semicolon) with an <span class="caps">XLT</span> property. For example:</p>
+<pre class="ini"><code class="ini">## Sets the field separator character for CSV files (defaults to ",").
+com.xceptance.xlt.data.dataSetProviders.csv.separator = ;</code></pre>
+<p>Note that there&#8217;s no way to specify character encoding information in a <span class="caps">CSV</span> file. By default, <span class="caps">XLT</span> reads <span class="caps">CSV</span> files using <span class="caps">UTF</span>-8. To override this default, use the following property:</p>
+<pre class="ini"><code class="ini">com.xceptance.xlt.data.dataSetProviders.csv.encoding = ISO-8859-1</code></pre>
+<h4><span class="caps">JDBC</span> Data Sources</h4>
+<p>There is also a &#8220;data file&#8221; for <span class="caps">JDBC</span> data sources, yet it doesn&#8217;t directly specify the data sets. Instead, it contains an <span class="caps">SQL</span> query that retrieves the data sets when being executed. A query file for user data sets may look like this:</p>
+<pre class="sql"><code class="sql">select login as "userName", password as "password" from users;</code></pre>
+<p>Each row returned from the database is converted to one data set. The alias names in the query define the resulting parameter names.</p>
+<p>Note that the <span class="caps">SQL</span> data set provider needs additional setup before it can be used. First, an appropriate <span class="caps">JDBC</span> driver has to be present on the class path of your test suite. Copy the respective <span class="caps">JAR</span> file to <code>&lt;testsuite&gt;/lib</code> and you are done. Second, configure the <span class="caps">URL</span> and credentials of your <span class="caps">JDBC</span> database connection that should be used when executing the query:</p>
+<pre class="ini"><code class="ini">com.xceptance.xlt.data.dataSetProviders.jdbc.url = jdbc:h2:tcp://localhost/test
+com.xceptance.xlt.data.dataSetProviders.jdbc.userName = sa
+com.xceptance.xlt.data.dataSetProviders.jdbc.password = YourPassword</code></pre>
+<h3>Custom Data Set Providers</h3>
+<p>If the built-in data set providers are not sufficient, you can write your own. Your custom data set provider must implement the general <code>DataSetProvider</code> interface:</p>
+<pre class="java"><code class="java">public interface DataSetProvider
+{
+    public List&lt;Map&lt;String, String&gt;&gt; getAllDataSets(File dataFile)
+            throws DataSetProviderException;
+}</code></pre>
+<p>To register your own data provider implementation with <span class="caps">XLT</span>, add a property to your configuration:</p>
+<pre class="ini"><code class="ini">com.xceptance.xlt.data.dataSetProviders.foo = com.yourcompany.FooDataSetProvider</code></pre>
+<p>This tells <span class="caps">XLT</span> to use the class <code>com.yourcompany.FooDataSetProvider</code> for data files with the extension <code>.foo</code>. Note that this way you can also override the built-in providers.</p>
+<h2>Test Data Set File Lookup</h2>
+<p>As outlined above, there is always some kind of &#8220;data&#8221; file involved. Typically, these data files are named after the test case (the script name for script-based test cases or the simple class name for Java-based test cases). For instance, if a test script is named <code>TSearch</code>, then the <span class="caps">XLT</span> framework will automatically look for files like <code>TSearch_datasets.&lt;ext&gt;</code>, where <code>&lt;ext&gt;</code> is one of the file extensions for which a data set provider has been registered. Accordingly, the resulting list of file name candidates is: <code>TSearch_datasets.csv</code>, <code>TSearch_datasets.xml</code>, <code>TSearch_datasets.sql</code> (and <code>TSearch_datasets.foo</code>).</p>
+<p>The lookup order of data files is defined as:</p>
+<ol>
+	<li><code>.csv</code></li>
+	<li><code>.xml</code></li>
+	<li><code>.sql</code></li>
+	<li>(<code>.foo</code>)</li>
+</ol>
+<p>However, test data files can also have arbitrary names or paths. If so, you have to configure which data file belongs to which test case. Map the data set file name (or path) to the test case&#8217;s Java class using the following notation:</p>
+<pre class="ini"><code class="ini">&lt;class_name&gt;.dataSetFile = &lt;data_set_file_path&gt;</code></pre>
+<p>For example:</p>
+<pre class="ini"><code class="ini">com.mycompany.xlt.tests.MyTest1.dataSetsFile = Test1.xml
+com.mycompany.xlt.tests.MyTest2.dataSetsFile = ./subdir/Test2.csv
+com.mycompany.xlt.tests.MyTest3.dataSetsFile = c:/tmp/Test3.sql</code></pre>
+<blockquote class="warning">
+<p class="warning">Keep in mind that all property files are Java-style property files. Thus, when you use backslashes on Windows, you have to quote it with another backslash, for instance <code>c:\\tmp\\Test3.sql</code>.</p>
+</blockquote>
+<p>Regardless of the test data file being given explicitly or deriving from the test case, the <span class="caps">XLT</span> framework looks for such a file in several locations:</p>
+<ol>
+	<li>In the current directory (typically <code>&lt;testsuite&gt;</code>),</li>
+	<li>in the directory specified by the property <code>com.xceptance.xlt.data.dataSets.dir</code> [this property is set to <code>./config/data)</code> but commented out by default; remove the hash character when you want to use this location],</li>
+	<li>in the default script test case directory <code>&lt;testsuite&gt;/scripts</code> (for script-based tests only), and</li>
+	<li>in the class path (for Java-based tests only).</li>
+</ol>
+<p>As soon as a suitable file is found, the lookup stops.</p>
+<p>Note that if the test case has a qualified name, that is if it has a package part, the data set file also needs to have that package to be found. If there is a test case named <code>your.package.TAuthor</code> (be it a script or a Java test case), the framework will therefore search the aforementioned directories for a corresponding data set file using the file path <code>&lt;dir&gt;/your/package/TAuthor_datasets.&lt;ext&gt;</code> or, alternatively, the file name <code>&lt;dir&gt;/your.package.TAuthor_datasets.&lt;ext&gt;</code>.</p>
+<h2>Access Data In Your Test Case</h2>
+<p>The <span class="caps">XLT</span> framework makes the current test data set available to your test case. For script test cases, the key/value pairs from the test data set are automatically added to the internal pool of variables and can be accessed in your scripts using the <code>${varName}</code> syntax.</p>
+<p>If you prefer using Java as your scripting language, call the method <code>getTestDataSet()</code> of the super class <code>AbstractTestCase</code> in your test code to access the current test data set as a map of strings representing the key/value pairs. You are responsible to pass the respective values to the pieces of code where they are needed.</p>
+<h2>Run Data-Driven Tests via JUnit</h2>
+<p>Running data-driven tests via JUnit isn&#8217;t any different from running normal test cases. You simply add the test cases in question (directly or indirectly) to the list of classes to be run by JUnit. If <span class="caps">XLT</span> finds a data set file for a certain test case, it will be passed on to the right data set provider, which returns all data sets. The test case will then be executed once for each data set. This works because all test cases extend the class <code>AbstractTestCase</code>, and this class has all the magic built-in. The same is true for the generic script test case suite class <code>ScriptTestCaseSuite</code>.</p>
+<p>See the demo test suite in directory <code>&lt;xlt&gt;/samples/testsuite-posters</code> for an example of how to configure Ant&#8217;s <code>junit</code> task to run <span class="caps">XLT</span> test cases.</p>
+<p>If you want to temporarily disable a data-driven test and let the test cases run only once in spite of data set files, configure the following setting in <code>default.properties</code>:</p>
+<pre class="ini"><code class="ini">com.xceptance.xlt.data.dataDrivenTests.enabled = false</code></pre>
+<p>That being the case, be aware that your test case must provide some default test data.</p>
+            <div id="footer">
+	<p>Copyright © 2017 by <a href="http://www.xceptance.com/">Xceptance Software Technologies</a>. All rights reserved.</p>
+</div>
+
+
+        </div>
+    </div>
+</div>
+
+<!-- Generate the part of the TOC that contains the headings of the currently displayed page -->
+<!-- createToc (selectedHeadlines, classesTarget, classes )-->
+
+<script>createToc('h1,h2,h3', '#toc > ul', '#sidenav nav sidenav')</script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html>
+
+
+
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Getting Started with Load & Performance Testing</title>
+  <meta name="description" content="Xceptance LoadTest - XLT, Documentation, Manual, Howto, FAQ">
+
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,700,400italic,300italic" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:100,300,400,500,700" rel="stylesheet" type="text/css">
+
+  <link href="../css/font-awesome.min.css" rel="stylesheet" media="all"  type="text/css" />
+  <link href="../css/lightbox.css" rel="stylesheet" media="all"  type="text/css" />
+
+  <link href="../css/highlightjs/default.css" rel="stylesheet" type="text/css" />
+  <link href="../css/highlightjs/mono-blue.css" rel="stylesheet" type="text/css" />
+
+  <link href="../css/xltdoc.css" rel="stylesheet" media="all"  type="text/css" />
+
+  <script type="text/javascript" src="../js/jquery-1.11.1.min.js"></script>
+  <script type="text/javascript" src="../js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="../js/toc.min.js"></script>
+  <script type="text/javascript" src="../js/lightbox.min.js"></script>
+  <script type="text/javascript" src="../js/headroom.min.js"></script>
+
+  <!-- <script type="text/javascript" src="../js/jquery.scrollIntoView.min.js"></script -->
+  <script type="text/javascript" src="../js/xltdoc.js"></script>
+
+  <script type="text/javascript" src="../js/highlight.pack.js"></script>
+</head>
+
+
+<body data-spy="scroll" data-target="#toc" data-offset="100"
+    class="layout-manual getting-started">
+
+    
+
+
+<!-- Fixed navbar -->
+<nav id="header" class="navbar navbar-default">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <a class="site-title" href="../index.html">
+            <img src="../img/XLTDoc-logo-transparent-165x82.png" id="product-logo" alt="XLT Product logo" title="Xceptance LoadTest"/>
+        </a>
+    </div>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    <div id="navbar" class="navbar-collapse collapse">
+        <!-- Links to external pages -->
+        <ul id="navbar-right" class="nav navbar-nav navbar-right navbar-text">
+	<li>
+		<a href="https://lab.xceptance.de/releases/xlt/latest/apidoc/" target="_blank" title="XLT API Documentation">
+			<i class="fa fa-external-link"></i>API</a>
+	</li>
+
+    <li>
+ 		<a href="https://ask.xceptance.de/" target="_blank" title="XLT Community Forum">
+ 			<i class="fa fa-external-link"></i>Forum</a>
+ 	</li> 
+    
+	<li>
+		<a href="https://www.xceptance.com/xlt/" target="_blank" title="XLT Website">
+			<i class="fa fa-external-link"></i>XLT Home</a>		
+	</li>			
+</ul>
+
+
+        <ul id="navbar-left" class="nav navbar-nav navbar-text">
+            <li class="active"><a href="../getting-started/index.html">Getting Started</a></li>
+            <li class="inactive"><a href="../user-manual/index.html">User Manual</a></li>
+            <li class="inactive"><a href="../how-to/index.html">How-To</a></li>
+            <li class="inactive"><a href="../release-notes/index.html">Release Notes</a></li>
+            <li class="inactive"><a href="../license.html">License</a></li>
+        </ul>
+
+    </div><!--/.nav-collapse -->
+
+</nav>
+
+
+
+
+<div id="breadcrumb" class="navbar navbar-default">
+  <div>
+    <ol class="breadcrumb">
+      
+
+      
+        <li><a href="../index.html"><i class="fa fa-home"></i>Docs</a></li>
+          
+            
+            <li><a href="../getting-started/index.html">Getting Started</a></li>
+          
+      
+
+      <li class="active">Getting Started with Load & Performance Testing</li>
+    </ol>
+  </div>
+</div>
+
+
+
+    
+<div id="main" class="main container-fluid">
+    <div class="row">
+        <div class="hidden-xs col-sm-4 col-md-3 sidenav-col">
+            <nav id="sidenav" class="sidenav nav">
+                <!-- TOC of all available files/pages in folder  -->
+                <ul class="nav sidenav">
+                
+
+
+
+
+
+    
+
+    
+        
+            <li>
+            
+                <a href="../getting-started/01-test-automation.html">Getting Started with Test Automation</a>
+                
+            </li>
+        
+    
+
+    
+
+    
+        
+            
+                <!-- Table of content from page headings for the currently loaded file-->
+                <li class="current-page">
+                    <a class="current-page" href="">Getting Started with Load & Performance Testing</a>
+                    <!-- Container for page headings TOC -->
+                    <div id="toc" class="sidenav"></div>
+                </li>
+            
+        
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+                </ul>
+            </nav>
+        </div>
+
+        <div id="content" class="col-xs-12 col-sm-8 col-md-9 content-col">
+            <h2>New to <span class="caps">XLT</span>?</h2>
+<p>Before being able to run a load test <span class="caps">XLT</span> needs to be installed and you need to have a test suite at hand, of course. If installation is already done, you&#8217;re familiar with writing functional tests with <span class="caps">XLT</span> and just want to learn how to run them as a load test then you can directly jump to <a href="02-performance-testing.html#toc-the-big-picture">The Big Picture</a>.</p>
+<p>Otherwise, if you&#8217;re completely new to <span class="caps">XLT</span> and do not have an installation and test cases yet that should run as a load test we recommend to follow the installation steps below and use the demo test suite that is shipped together with <span class="caps">XLT</span> to run your first load test.</p>
+<h2>Installation</h2>
+<p>After <a href="https://www.xceptance.com/en/xlt/download.html">downloading the <span class="caps">XLT</span> archive</a> unzip it to a file system location of your choice. The root directory is part of the archive, so you don&#8217;t need to create it separately. In all examples below this directory is referred to as <code>&lt;xlt&gt;</code></p>
+<p>Make sure the executable directory of your Java installation is listed in your <code>PATH</code> environment variable so that the <span class="caps">XLT</span> start scripts can find the <span class="caps">JVM</span> runtime.</p>
+<h2>Run the Demo Application</h2>
+<p><span class="caps">XLT</span> ships with a real-world demo web application (<em>Posters</em>) as the system under test and a test suite to test this application. It can be found in the directory <code>&lt;XLT&gt;/samples</code>.</p>
+<p><em>Posters</em> is a shop software written in Java. Being small and easy to deploy, it is well suited to demonstrate testing with <span class="caps">XLT</span>.</p>
+<p>To start the demo application open a terminal (or command prompt window) and type the following command sequence:</p>
+<p>Unix-based systems:</p>
+<pre class="bash"><code class="bash">cd &lt;XLT&gt;/samples/app-server/bin
+./start.sh</code></pre>
+<p>Windows:</p>
+<pre class="dos"><code class="dos">cd &lt;XLT&gt;/samples/app-server/bin
+start.cmd</code></pre>
+<p>This starts an application server containing the <em>Posters</em> application. To access it, open a browser with this <span class="caps">URL</span>: <a href="http://localhost:8080/posters/">http://localhost:8080/posters/</a>.</p>
+<h2>Import Test Suite into Eclipse</h2>
+<blockquote class="note">
+<p class="note">We are using Eclipse <span class="caps">IDE</span> in this example. If you prefer another Java <span class="caps">IDE</span> some of the steps below might differ but the principles are the same.</p>
+</blockquote>
+<h3>Import Demo Test Project</h3>
+<ol>
+	<li>Open Eclipse</li>
+	<li>Click <em>File | Import</em> in main menu</li>
+	<li>Select <em>Import existing project into workspace</em> from the list (can be found in folder <em>General</em>) and click <em>Next</em></li>
+	<li>In the next dialog window click button <em>Browse</em> and select <code>&lt;xlt&gt;/samples/testsuite-posters</code> directory</li>
+	<li>Click button <em>Finish</em>. The demo test suite should now be imported as an Eclipse project. With errors, though. We&#8217;ll fix this in a minute.</li>
+</ol>
+<p class="illustration"><a href="../img/quickstart/QuickStart_EclipseImport.png"><img src="../img/quickstart/QuickStart_EclipseImport-small.png" title="Import project into Eclipse" alt="Import project into Eclipse" /></a></p>
+<h3>Add <span class="caps">XLT</span> Libraries</h3>
+<p>To get rid of the displayed build errors for our test suite we have to add the <span class="caps">XLT</span> libraries to the project. Like so:</p>
+<ol>
+	<li>Right-click on the project name and select <em>Properties</em></li>
+	<li>In the properties dialog select <em>Java Build Path</em> on the left side</li>
+	<li>Select the <em>Libraries</em> tab and click button <em>Add External JARs&#8230;</em></li>
+	<li>In the <em><span class="caps">JAR</span> selection</em> dialog browse to the <span class="caps">XLT</span> installation directory. Got to <code>&lt;xlt&gt;/lib</code> sub-directory and and select all files in there (e.g. press <kbd>Ctrl</kbd>+<kbd>A</kbd>).</li>
+	<li>Confirm by clicking OK in both of the opened dialogs</li>
+</ol>
+<p class="illustration"><a href="../img/quickstart/QuickStart_AddLibs.png"><img src="../img/quickstart/QuickStart_AddLibs-small.png" title="Add XLT Libraries to Test Suite" alt="Add XLT Libraries to Test Suite" /></a></p>
+<h2>The Big Picture</h2>
+<p>To generate enough load, usually a distributed load generation environment made up of a cluster of test machines is required. But don&#8217;t worry. It is also possible to generate low load without any remote machines. That&#8217;s what we do in this quick-start. Everything that can be seen in the following illustration will happen on your local machine for now.</p>
+<p class="illustration"><a href="../img/user-manual/load-generation-environment.png"><img src="../img/user-manual/load-generation-environment-small.jpg" title="Load generation environment" alt="Load generation environment" /></a> <span class="caption">Load generation environment</span></p>
+<ul>
+	<li><strong>Master controller</strong>: Can be seen as the &#8220;brain&#8221; of the load test environment. Deploys the test suite to all load machines, evenly distributes the load, and starts/stops the load test. A test cluster may only have one master controller.</li>
+	<li><strong>Agent controller</strong>: Since the master controller doesn&#8217;t have direct access to the remote load machines, it needs the agent controller as counterpart on these machines. It acts on behalf of the master controller.</li>
+	<li><strong>Agent</strong>: Actually executes the test suite against the system under test. All agents are started and stopped by the agent controller.</li>
+</ul>
+<h2>Configuration</h2>
+<p><span class="caps">XLT</span> uses <a href="http://en.wikipedia.org/wiki/.properties">Java properties files</a> to configure the main components of the load generation environment and your load test suite.</p>
+<p>Before you start the load test, you should know about some of the configuration options. We will introduce just the real basic stuff here. For more information on optional properties see the <a href="../user-manual/05-framework-config.html">User Manual</a> or the related properties files itself where all the options are explained in detail.</p>
+<h3>Master Controller</h3>
+<h4>Test Suite Location</h4>
+<p>Inside the master controller configuration file (located at <code>&lt;XLT&gt;/config/mastercontroller.properties</code>), you can define the test suite location.</p>
+<p>To determine the test suite you want to use for the load test, you need to specify its location either as absolute path or relative to your <span class="caps">XLT</span> installation by setting the following property:</p>
+<pre class="java"><code class="java">com.xceptance.xlt.mastercontroller.testSuitePath = samples/testsuite-posters</code></pre>
+<blockquote class="note">
+<p class="note">When running the load test on and from Windows, make sure to use the correct encoding for backslashes because the property file format uses backslashes to quote other special characters. Thus, quote the backslash with an additional backslash to ensure its original meaning, e.g. <code>c:\\test\\mysuite</code>.</p>
+</blockquote>
+<h3>Test Project</h3>
+<p>The test suite is configured independently from the master controller. All properties are read from the <code>&lt;test-suite&gt;/config</code> directory. To configure the <em>Posters</em> demo test project, edit the file <code>&lt;xlt&gt;/samples/testsuite-posters/config/project.properties</code>.</p>
+<h4>Test Class Mapping</h4>
+<p>One of the important project settings is the test class mapping. This maps the test case class onto a load test name. The test name will be referenced later in the load configuration.</p>
+<pre class="ini"><code class="ini">com.xceptance.xlt.loadtests.&lt;name&gt;.class = &lt;fully qualified class name&gt;</code></pre>
+<p>For example:</p>
+<pre class="ini"><code class="ini">com.xceptance.xlt.loadtests.TOrder.class = com.xceptance.xlt.samples.tests.TOrder</code></pre>
+<h3>Load Profile</h3>
+<p>Test-run-specific settings like the load profile configuration are done inside the <code>&lt;xlt&gt;/samples/testsuite-posters/config/test.properties</code> file. I.e., you can define the test cases that should be executed during the load test, the number of virtual users and the test duration.</p>
+<p>A sample load profile configuration is given below. This would define a 5 minutes load test with 5 concurrent virtual users executing the TOrder test case.</p>
+<pre class="ini"><code class="ini">com.xceptance.xlt.loadtests = TOrder
+com.xceptance.xlt.loadtests.TOrder.users = 5
+com.xceptance.xlt.loadtests.TOrder.measurementPeriod = 5m</code></pre>
+<p>If you want to run several test cases simultaneously, specify the test case names as value for the property <code>com.xceptance.xlt.loadtests</code> in form of a space-separated list:</p>
+<pre class="ini"><code class="ini">com.xceptance.xlt.loadtests = TOrder TBrowse TSearch
+com.xceptance.xlt.loadtests.TOrder.users = 1
+com.xceptance.xlt.loadtests.TBrowse.users = 3
+com.xceptance.xlt.loadtests.TSearch.users = 1
+com.xceptance.xlt.loadtests.TOrder.measurementPeriod = 5m</code></pre>
+<blockquote class="note">
+<p class="note"><span class="caps">XLT</span> is completly free for any functional testing whereas load testing with more than 5 concurrent virtual users requires a <a href="https://www.xceptance.com/en/xlt/licensing-and-pricing.html">license</a>. All of the examples in this document are limited to 5 virtual users to be able to run without a license.</p>
+</blockquote>
+<h2>Run the Load Test</h2>
+<p>You can start the master controller in different modes (see the <a href="../user-manual/08-loadtest.html"><span class="caps">XLT</span> User Manual</a> for details). Recommended mode for beginners is <em>auto</em> with options -embedded and -report.</p>
+<ul>
+	<li><code>-auto</code> mode automatically runs a typical sequence of steps to be executed when running a load test without any user interaction.</li>
+	<li>Option <code>-embedded</code>  is used if the load generating machine is just the local machine and no other remote machine is used.</li>
+	<li>If the command is followed by the option <code>-report</code> , a load test and performance report will be automatically generated after the test has finished.</li>
+</ul>
+<p>To start the <span class="caps">XLT</span> load test in this mode, open a terminal (or command prompt window) and type the following commands:</p>
+<p>Unix-based systems:</p>
+<pre class="bash"><code class="bash">cd &lt;xlt&gt;/bin
+./mastercontroller.sh -auto -embedded -report</code></pre>
+<p>Windows:</p>
+<pre class="dos"><code class="dos">cd &lt;xlt&gt;\bin
+mastercontroller.cmd -auto -embedded -report</code></pre>
+<p><span class="caps">XLT</span> automatically refreshes the agent status on a regular basis. As soon as the test has finished, the test results are saved, the report is generated and <span class="caps">XLT</span> master controller quits.</p>
+<h2>View the report</h2>
+<p>The default target folder for load test reports is  <code>&lt;xlt&gt;/reports/&lt;timestamp&gt;</code>.</p>
+<p>Just open the <code>index.html</code> file of the latest report in a browser to see the report.</p>
+            <div id="footer">
+	<p>Copyright © 2017 by <a href="http://www.xceptance.com/">Xceptance Software Technologies</a>. All rights reserved.</p>
+</div>
+
+
+        </div>
+    </div>
+</div>
+
+<!-- Generate the part of the TOC that contains the headings of the currently displayed page -->
+<!-- createToc (selectedHeadlines, classesTarget, classes )-->
+
+<script>createToc('h1,h2,h3', '#toc > ul', '#sidenav nav sidenav')</script>
+
+</body>
+
+</html>

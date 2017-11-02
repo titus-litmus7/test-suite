@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html>
+
+
+
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Choose a Test Suite Approach</title>
+  <meta name="description" content="Xceptance LoadTest - XLT, Documentation, Manual, Howto, FAQ">
+
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,700,400italic,300italic" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:100,300,400,500,700" rel="stylesheet" type="text/css">
+
+  <link href="../css/font-awesome.min.css" rel="stylesheet" media="all"  type="text/css" />
+  <link href="../css/lightbox.css" rel="stylesheet" media="all"  type="text/css" />
+
+  <link href="../css/highlightjs/default.css" rel="stylesheet" type="text/css" />
+  <link href="../css/highlightjs/mono-blue.css" rel="stylesheet" type="text/css" />
+
+  <link href="../css/xltdoc.css" rel="stylesheet" media="all"  type="text/css" />
+
+  <script type="text/javascript" src="../js/jquery-1.11.1.min.js"></script>
+  <script type="text/javascript" src="../js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="../js/toc.min.js"></script>
+  <script type="text/javascript" src="../js/lightbox.min.js"></script>
+  <script type="text/javascript" src="../js/headroom.min.js"></script>
+
+  <!-- <script type="text/javascript" src="../js/jquery.scrollIntoView.min.js"></script -->
+  <script type="text/javascript" src="../js/xltdoc.js"></script>
+
+  <script type="text/javascript" src="../js/highlight.pack.js"></script>
+</head>
+
+
+<body data-spy="scroll" data-target="#toc" data-offset="100" class="layout-manual how-to">
+
+    
+
+
+<!-- Fixed navbar -->
+<nav id="header" class="navbar navbar-default">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <a class="site-title" href="../index.html">
+            <img src="../img/XLTDoc-logo-transparent-165x82.png" id="product-logo" alt="XLT Product logo" title="Xceptance LoadTest"/>
+        </a>
+    </div>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    <div id="navbar" class="navbar-collapse collapse">
+        <!-- Links to external pages -->
+        <ul id="navbar-right" class="nav navbar-nav navbar-right navbar-text">
+	<li>
+		<a href="https://lab.xceptance.de/releases/xlt/latest/apidoc/" target="_blank" title="XLT API Documentation">
+			<i class="fa fa-external-link"></i>API</a>
+	</li>
+
+    <li>
+ 		<a href="https://ask.xceptance.de/" target="_blank" title="XLT Community Forum">
+ 			<i class="fa fa-external-link"></i>Forum</a>
+ 	</li> 
+    
+	<li>
+		<a href="https://www.xceptance.com/xlt/" target="_blank" title="XLT Website">
+			<i class="fa fa-external-link"></i>XLT Home</a>		
+	</li>			
+</ul>
+
+
+        <ul id="navbar-left" class="nav navbar-nav navbar-text">
+            <li class="inactive"><a href="../getting-started/index.html">Getting Started</a></li>
+            <li class="inactive"><a href="../user-manual/index.html">User Manual</a></li>
+            <li class="active"><a href="../how-to/index.html">How-To</a></li>
+            <li class="inactive"><a href="../release-notes/index.html">Release Notes</a></li>
+            <li class="inactive"><a href="../license.html">License</a></li>
+        </ul>
+
+    </div><!--/.nav-collapse -->
+
+</nav>
+
+
+
+
+<div id="breadcrumb" class="navbar navbar-default">
+  <div>
+    <ol class="breadcrumb">
+      
+
+      
+        <li><a href="../index.html"><i class="fa fa-home"></i>Docs</a></li>
+          
+            
+            <li><a href="../how-to/index.html">How-To</a></li>
+          
+      
+
+      <li class="active">Choose a Test Suite Approach</li>
+    </ol>
+  </div>
+</div>
+
+
+    
+<div id="main" class="main container-fluid">
+    <div class="row">
+        <div class="hidden-xs col-sm-4 col-md-3 sidenav-col">
+            <nav id="sidenav" class="sidenav nav">
+                <!-- TOC of all available files/pages in folder  -->
+                <ul class="nav sidenav">
+                
+
+
+
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        
+            <li>
+            
+                <a href="../how-to/basic-rules-for-test-suite.html">Basic rules for a Script Developer Test Suite</a>
+                
+            </li>
+        
+    
+
+    
+        
+            
+                <!-- Table of content from page headings for the currently loaded file-->
+                <li class="current-page">
+                    <a class="current-page" href="">Choose a Test Suite Approach</a>
+                    <!-- Container for page headings TOC -->
+                    <div id="toc" class="sidenav"></div>
+                </li>
+            
+        
+    
+
+    
+        
+            <li>
+            
+                <a href="../how-to/graphite.html">Real-Time Reporting with Graphite</a>
+                
+            </li>
+        
+    
+
+    
+        
+            <li>
+            
+                <a href="../how-to/how-to-structure-test-suites.html">Structuring Test Suite and Test Cases</a>
+                
+            </li>
+        
+    
+
+    
+        
+            <li>
+            
+                <a href="../how-to/importing-XLT-projects-into-eclipse.html">Run Script Test Suite From Within Eclipse</a>
+                
+            </li>
+        
+    
+
+    
+
+    
+
+    
+
+    
+        
+    
+
+    
+
+    
+        
+            <li>
+            
+                <a href="../how-to/integrating-XLT-with-Maven-and-Ivy.html">Integrating XLT with Maven and Ivy</a>
+                
+            </li>
+        
+    
+
+    
+        
+            <li>
+            
+                <a href="../how-to/jenkins-plugin.html">Continuous Load Testing with XLT Plugin for Jenkins</a>
+                
+            </li>
+        
+    
+
+    
+
+    
+        
+            <li>
+            
+                <a href="../how-to/properties-include-concept.html">Including Additional Property Files</a>
+                
+            </li>
+        
+    
+
+    
+
+
+                </ul>
+            </nav>
+        </div>
+
+        <div id="content" class="col-xs-12 col-sm-8 col-md-9 content-col">
+            <h2>Choose a Suitable Approach</h2>
+<p><span class="caps">XLT</span> is powerful tool and offers several approaches and APIs when writing your own test cases. This How-To helps you to find the right approach for you.</p>
+<p>The following questions will help you decide which approach and which <span class="caps">API</span> best fits your web test project:</p>
+<h3>What is the goal of your test suite?</h3>
+<ul>
+	<li>Pure functional test suite</li>
+	<li>Functional test suite with some basic load testing</li>
+	<li>Load test project</li>
+</ul>
+<h3>How good are your programming skills?</h3>
+<ul>
+	<li>Non-programmer</li>
+	<li>Basic programming skills</li>
+	<li>Good Java programming skills</li>
+</ul>
+<h3>Which browsers have to be simulated?</h3>
+<ul>
+	<li>Do you have to use different browsers in a functional test suite?</li>
+</ul>
+<h3>How much randomness is required?</h3>
+<ul>
+	<li>Do you need random factors in your test cases and do you have to handle conditions?</li>
+</ul>
+<h2>Stand-Alone Script Developer Test Suite</h2>
+<p>Recording your tests with Script Developer and continuing without using any Java code will be a good option if&#8230;</p>
+<ul>
+	<li>you need a functional test suite you want to run from time to time,</li>
+	<li>you have no or just basic Java programming skills,</li>
+	<li>it&#8217;s sufficient to use Firefox and if there&#8217;s no need to simulate other browsers,</li>
+	<li>you&#8217;re okay with exactly repeating test cases and you don&#8217;t have to handle conditions,</li>
+	<li>you don&#8217;t need any advanced random factors or data-driven tests.</li>
+</ul>
+<p>Script Developer lets you record and manually replay the test cases. There&#8217;s no need to write any Java code or to use any tool or <span class="caps">IDE</span> other than Script Developer.</p>
+<h2>Executing Script Test Cases Outside Script Developer</h2>
+<p>When you need to run the tests outside Script Developer, e.g. in Eclipse or during a build process, Script Developer is the best to start with. Simply enable generating Java wrapper classes for the script test cases. With these automatically generated wrapper classes, you can also run a load test &#8211; as long as you&#8217;re fine with the limitations listed above. Again, you don&#8217;t need to write any Java code. Everything is based on Script Developer commands and Firefox context menu validations.</p>
+<p>Note that executing script test cases outside Script Developer also allows you to run data-driven tests and to simulate different browsers.</p>
+<h2>Script Developer Export, <span class="caps">XLT</span> Scripting <span class="caps">API</span> and WebDriver</h2>
+<p>If you need to overcome the limitations of script test cases by switching to Java as the programming language, Script Developer again is the best point to start from because it easily lets you create prototype scripts you can <strong>export to Java</strong>. This results in a test case class that uses the <span class="caps">XLT</span> Scripting <span class="caps">API</span> and that can be expanded with the WebDriver <span class="caps">API</span>. Another option is an export with the resulting Java code being based on the <span class="caps">XLT</span> Action <span class="caps">API</span>. This approach will be a good option if&#8230;</p>
+<ul>
+	<li>you want to benefit from the advantages of Script Developer,</li>
+	<li>you want to overcome the limitations imposed by Script Developer,</li>
+	<li>you have basic or good Java programming skills,</li>
+	<li>you need to simulate different browsers for a functional test,</li>
+	<li>data-driven tests are required,</li>
+	<li>you want to handle conditions and execution branches in your test cases,</li>
+	<li>the planned load testing profile is not causing any resource and timing problems.</li>
+</ul>
+<h2>WebDriver from Scratch</h2>
+<p>Within the <span class="caps">XLT</span> context, you can also directly resort to the WebDriver <span class="caps">API</span> without using the <span class="caps">XLT</span> Scripting <span class="caps">API</span> abstraction level. That&#8217;s a common approach for advanced users and will be a good option if&#8230;</p>
+<ul>
+	<li>the web test project meets the requirements listed in the section above,</li>
+	<li>you&#8217;re happy writing your test cases from scratch without any recording feature,</li>
+	<li>you have good Java programming skills.</li>
+</ul>
+<h2><span class="caps">XLT</span> Action <span class="caps">API</span> and HtmlUnit</h2>
+<p>Compared to a low-level <span class="caps">API</span>, high-level APIs have a certain overhead that may affect the test performance. In some situations it makes sense to skip the high-level APIs listed above and program the test using HtmlUnit, for instance, when running load tests for which heavy network traffic is required. If so, the <span class="caps">XLT</span> Action <span class="caps">API</span> serves as a framework that supports the action concept and validations as well as the structuring of your code. You don&#8217;t even need to waive the Script Developer recording feature since exporting the script test cases to Java lets you generate code based on the <span class="caps">XLT</span> Action <span class="caps">API</span>. The <span class="caps">XLT</span> Action <span class="caps">API</span> will be a good option if&#8230;</p>
+<ul>
+	<li>your test suite is meant to work as a high performance load test,</li>
+	<li>you have to carefully handle the available resources to generate enough load,</li>
+	<li>you need full control over requests and responses on the low-level HtmlUnit <span class="caps">API</span>,</li>
+	<li>it&#8217;s sufficient to use a headless browser and if there&#8217;s no need to simulate other browsers.</li>
+</ul>
+<p>If you decide to use the <span class="caps">XLT</span> Action <span class="caps">API</span> as the surrounding framework, you are bound to use the HtmlUnit <span class="caps">API</span> to code your tests. Note that this is not true for the other way around; thus, if you use one of the other approaches as the surrounding framework, such as WebDriver, you can still go down to the HtmlUnit level for sections of your test cases.</p>
+            <div id="footer">
+	<p>Copyright © 2017 by <a href="http://www.xceptance.com/">Xceptance Software Technologies</a>. All rights reserved.</p>
+</div>
+
+
+        </div>
+    </div>
+</div>
+
+<!-- Generate the part of the TOC that contains the headings of the currently displayed page -->
+<!-- createToc (selectedHeadlines, classesTarget, classes )-->
+
+<script>createToc('h1,h2,h3', '#toc > ul', '#sidenav nav sidenav')</script>
+
+
+</body>
+
+</html>

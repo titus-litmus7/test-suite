@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html>
+
+
+
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>4.5.x</title>
+  <meta name="description" content="Xceptance LoadTest - XLT, Documentation, Manual, Howto, FAQ">
+
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,700,400italic,300italic" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:100,300,400,500,700" rel="stylesheet" type="text/css">
+
+  <link href="../css/font-awesome.min.css" rel="stylesheet" media="all"  type="text/css" />
+  <link href="../css/lightbox.css" rel="stylesheet" media="all"  type="text/css" />
+
+  <link href="../css/highlightjs/default.css" rel="stylesheet" type="text/css" />
+  <link href="../css/highlightjs/mono-blue.css" rel="stylesheet" type="text/css" />
+
+  <link href="../css/xltdoc.css" rel="stylesheet" media="all"  type="text/css" />
+
+  <script type="text/javascript" src="../js/jquery-1.11.1.min.js"></script>
+  <script type="text/javascript" src="../js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="../js/toc.min.js"></script>
+  <script type="text/javascript" src="../js/lightbox.min.js"></script>
+  <script type="text/javascript" src="../js/headroom.min.js"></script>
+
+  <!-- <script type="text/javascript" src="../js/jquery.scrollIntoView.min.js"></script -->
+  <script type="text/javascript" src="../js/xltdoc.js"></script>
+
+  <script type="text/javascript" src="../js/highlight.pack.js"></script>
+</head>
+
+
+<body data-spy="scroll" data-target="#toc" data-offset="100" class="layout-manual ">
+
+    
+
+
+<!-- Fixed navbar -->
+<nav id="header" class="navbar navbar-default">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <a class="site-title" href="../index.html">
+            <img src="../img/XLTDoc-logo-transparent-165x82.png" id="product-logo" alt="XLT Product logo" title="Xceptance LoadTest"/>
+        </a>
+    </div>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    <div id="navbar" class="navbar-collapse collapse">
+        <!-- Links to external pages -->
+        <ul id="navbar-right" class="nav navbar-nav navbar-right navbar-text">
+	<li>
+		<a href="https://lab.xceptance.de/releases/xlt/latest/apidoc/" target="_blank" title="XLT API Documentation">
+			<i class="fa fa-external-link"></i>API</a>
+	</li>
+
+    <li>
+ 		<a href="https://ask.xceptance.de/" target="_blank" title="XLT Community Forum">
+ 			<i class="fa fa-external-link"></i>Forum</a>
+ 	</li> 
+    
+	<li>
+		<a href="https://www.xceptance.com/xlt/" target="_blank" title="XLT Website">
+			<i class="fa fa-external-link"></i>XLT Home</a>		
+	</li>			
+</ul>
+
+
+        <ul id="navbar-left" class="nav navbar-nav navbar-text">
+            <li class="inactive"><a href="../getting-started/index.html">Getting Started</a></li>
+            <li class="inactive"><a href="../user-manual/index.html">User Manual</a></li>
+            <li class="inactive"><a href="../how-to/index.html">How-To</a></li>
+            <li class="active"><a href="../release-notes/index.html">Release Notes</a></li>
+            <li class="inactive"><a href="../license.html">License</a></li>
+        </ul>
+
+    </div><!--/.nav-collapse -->
+
+</nav>
+
+
+
+
+<div id="breadcrumb" class="navbar navbar-default">
+  <div>
+    <ol class="breadcrumb">
+      
+
+      
+        <li><a href="../index.html"><i class="fa fa-home"></i>Docs</a></li>
+          
+            
+            <li><a href="../release-notes/index.html">Release Notes</a></li>
+          
+      
+
+      <li class="active">4.5.x</li>
+    </ol>
+  </div>
+</div>
+
+
+    
+<div id="main" class="main container-fluid">
+    <div class="row">
+        <div class="hidden-xs col-sm-4 col-md-3 sidenav-col">
+            <nav id="sidenav" class="sidenav nav">
+                <!-- TOC of all available files/pages in folder  -->
+                <ul class="nav sidenav">
+                
+
+
+
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        
+            <li>
+            
+                <a href="../release-notes/4.9.x.html">4.9.x</a>
+                
+            </li>
+        
+    
+
+    
+        
+            <li>
+            
+                <a href="../release-notes/4.8.x.html">4.8.x</a>
+                
+            </li>
+        
+    
+
+    
+        
+            <li>
+            
+                <a href="../release-notes/4.7.x.html">4.7.x</a>
+                
+            </li>
+        
+    
+
+    
+        
+            <li>
+            
+                <a href="../release-notes/4.6.x.html">4.6.x</a>
+                
+            </li>
+        
+    
+
+    
+        
+            
+                <!-- Table of content from page headings for the currently loaded file-->
+                <li class="current-page">
+                    <a class="current-page" href="">4.5.x</a>
+                    <!-- Container for page headings TOC -->
+                    <div id="toc" class="sidenav"></div>
+                </li>
+            
+        
+    
+
+    
+        
+            <li>
+            
+                <a href="../release-notes/4.4.x.html">4.4.x</a>
+                
+            </li>
+        
+    
+
+    
+        
+            <li>
+            
+                <a href="../release-notes/4.3.x.html">4.3.x</a>
+                
+            </li>
+        
+    
+
+    
+        
+            <li>
+            
+                <a href="../release-notes/4.2.x.html">4.2.x</a>
+                
+            </li>
+        
+    
+
+    
+        
+            <li>
+            
+                <a href="../release-notes/4.1.x.html">4.1.x</a>
+                
+            </li>
+        
+    
+
+    
+        
+            <li>
+            
+                <a href="../release-notes/4.0.x.html">4.0.x</a>
+                
+            </li>
+        
+    
+
+    
+        
+            <li>
+            
+                <a href="../release-notes/3.3.x.html">3.3.x</a>
+                
+            </li>
+        
+    
+
+    
+        
+            <li>
+            
+                <a href="../release-notes/3.2.x.html">3.2.x</a>
+                
+            </li>
+        
+    
+
+
+                </ul>
+            </nav>
+        </div>
+
+        <div id="content" class="col-xs-12 col-sm-8 col-md-9 content-col">
+            <h2><span class="caps">XLT</span> 4.5.8</h2>
+<p class="abstract">This section lists and documents all improvements and important fixes of Xceptance LoadTest 4.5.8. Registered customers can see an overview of changes and view the current roadmap in the <a href="https://lab.xceptance.de/versions/107"><span class="caps">XLT</span> Information Center</a>.</p>
+<h3>Script Developer</h3>
+<h4>Support of Firefox 42 (#2538)</h4>
+<p>Script Developer has been made compatible with Firefox 42. It now supports Firefox 31/<span class="caps">ESR</span> to 42.</p>
+<h3>Framework</h3>
+<h4>Extended the scope of dynamic test data (#2531)</h4>
+<p>It is possible to customize the Java wrapper classes for <span class="caps">XML</span> script test cases to run additional prepare scripts before or cleanup scripts after the actual test script. In such a scenario, any dynamic test data (that is data created with <code>store...</code> commands) was available in the current script only, but not in the following scripts. Now all scripts executed from the same wrapper class share the same scope for dynamic test data and thus can access data created in earlier stages. This makes certain tasks, especially cleanup tasks, a lot easier.</p>
+<p>Note that exported script test cases have always had a shared scope for test data so this change also unifies the behavior of <span class="caps">XML</span>-based and Java-based script test cases.</p>
+<h2><span class="caps">XLT</span> 4.5.7</h2>
+<p class="abstract">This section lists and documents all improvements and important fixes of Xceptance LoadTest 4.5.7. Registered customers can see an overview of changes and view the current roadmap in the <a href="https://lab.xceptance.de/versions/106"><span class="caps">XLT</span> Information Center</a>.</p>
+<h3>Script Developer</h3>
+<h4>Support of Firefox 41 (#2524)</h4>
+<p>Script Developer has been made compatible with Firefox 41. It now supports Firefox 31 <span class="caps">ESR</span> to 41.</p>
+<p>Note that beginning with Firefox 40, Mozilla introduced a code-signing mechanism to prevent abuse by malicious extensions and to improve security and privacy. This means that each Firefox extension needs to be signed by Mozilla, otherwise it can be installed only after clicking away a warning message (Firefox 40 to 42) or it won&#8217;t install at all (Firefox 43+). To accommodate this, Script Developer is signed now as well.</p>
+<p>In this course, Script Developer has also got a new extension ID. However, this new ID will make it impossible for Firefox to auto-update Script Developer to version 4.5.7. You will need to do this manually. Please uninstall the currently installed version first and afterwards install the new version by simply dragging and dropping the file <code>&lt;xlt&gt;/tools/xlt-scriptdeveloper-4.5.7.xpi</code> onto Firefox. Note that this manual process has to be done only once. Beginning with version 4.5.8, auto-update will work as usual again.</p>
+<h4>Empty module class generated for Java modules (#2505)</h4>
+<p>An <span class="caps">XML</span> script test case may call custom Java modules. When exporting this script test case to Java (Scripting <span class="caps">API</span>), the code to call this custom Java module will be generated correctly. However, same as for regular script modules, Script Developer created an (empty) module class for custom modules as well. This class is not needed at all as the custom module is already available as Java code.</p>
+<h4>Removing a project not possible on Mac (#2520)</h4>
+<p>To remove a test project from Script Developer, you have to click the project drop-down list, hover over the project in question, and press the <kbd>Delete</kbd> key (or any of its equivalents on Macs without a full-size keyboard). However, on a Mac nothing happened and the project was still there. Fixed now.</p>
+<h3>Load Testing</h3>
+<h4>More flexible test suite directory layout (#2516)</h4>
+<p>Previously, the load test agent searched for compiled classes and libraries in <code>&lt;testsuite&gt;/classes</code> and <code>&lt;testsuite&gt;/lib</code> only. However, some build tools (e.g. Maven) or IDEs (e.g. Eclipse) use other output directories by default. In order to relieve the user from having to reconfigure the default directories, the agent will now look for classes and libraries in all of the &#8220;usual suspects&#8221;:</p>
+<p><strong>Classes</strong></p>
+<ul>
+	<li><code>&lt;testsuite&gt;/classes</code> (<span class="caps">XLT</span> default)</li>
+	<li><code>&lt;testsuite&gt;/target/classes</code> (Maven)</li>
+	<li><code>&lt;testsuite&gt;/target/test-classes</code> (Maven)</li>
+	<li><code>&lt;testsuite&gt;/bin</code> (Eclipse)</li>
+</ul>
+<p><strong>Libraries</strong></p>
+<ul>
+	<li><code>&lt;testsuite&gt;/lib</code> (<span class="caps">XLT</span> default)</li>
+	<li><code>&lt;testsuite&gt;/target/dependency</code> (Maven)</li>
+</ul>
+<h4>Empty host names when listing <span class="caps">AWS</span> instances (#2513)</h4>
+<p><code>ec2_admin</code> can list the agent controller URLs for all/selected <span class="caps">AWS</span> instances. However, instances of certain types (for example <code>m4.xlarge</code>) may not always have a public host name assigned, so the host part in the URLs was empty. Now the public IP address will be used as a fallback.</p>
+<h3>Framework</h3>
+<h4>Empty result browser if taking screenshots fails (#2502)</h4>
+<p>When taking screenshots, the browser may fail with an exception, for instance, if the configured window size is too small. The framework does not abort the test run in such cases, but as a side effect the generated result browser was completely empty. Now the result browser shows the list of executed actions again, and if a screenshot is not available it will be replaced with an empty placeholder image.</p>
+<h4>Broken result browser (#2509)</h4>
+<p>In case the value of a request/response header or request parameter is null or missing, the result browser failed to initialize and was not usable. Fixed now.</p>
+<h2><span class="caps">XLT</span> 4.5.6</h2>
+<p class="lead">This section lists and documents all improvements and important fixes of Xceptance LoadTest 4.5.6. Registered customers can see an overview of changes and view the current roadmap in the <a href="https://lab.xceptance.de/versions/105"><span class="caps">XLT</span> Information Center</a>.</p>
+<h3>Script Developer</h3>
+<h4>Incomplete script migration (#2484)</h4>
+<p>When (re-)loading a test suite, Script Developer checks if the scripts need to be migrated to a newer script version. If so and the user confirms, all the scripts will be rewritten and the version number in the scripts will be updated. However, this did not happen for Java modules. So when reloading an already migrated suite, Script Developer prompted for migration once again as the previous migration was incomplete.</p>
+<h3>Load Testing</h3>
+<h4>Custom value graphs showed averaged values only (#2477)</h4>
+<p>In the load test report, the custom value charts represented all the values measured for a certain second as a simple average value only, but not as a min/max value. This way, spikes were hardly visible and the shown value range in the charts did not match the minimum/maximum values in the data table. Fixed.</p>
+<h4>Client-performance data didn&#8217;t show up in Graphite (#2472)</h4>
+<p>When running client-performance tests via Firefox with script test cases that have been exported to Java, client-performance data was gathered successfully, but wasn&#8217;t reported to Graphite.</p>
+<h4>Unzipping a just uploaded test suite archive failed (#2494)</h4>
+<p>It could happen that an agent controller failed to unzip a freshly uploaded test suite if there are multiple <span class="caps">XLT</span> installations on the same machine and the agent controllers are all active and in use. In such a scenario, one agent controller could overwrite/delete the test suite archive of another agent controller as all agent controllers used the same file name in the <code>tmp</code> directory.</p>
+<h4>Master controller stuck during upload (#2483)</h4>
+<p>In case an agent controller had problems installing a test suite after an upload operation, the processing status was not updated correctly so the master controller waited forever for the agent controller to finish.</p>
+<h4>Upload and download may fail (#2487)</h4>
+<p>The communication between master and agent controllers is protected by a password. If the configured password contains non-<span class="caps">ASCII</span> characters, then parts of the communication (upload and download, that is) could fail depending on the platform&#8217;s default character encoding. Fixed now.</p>
+<h3>Framework</h3>
+<h4>Retry a command if the target element is reported as stale (#2489)</h4>
+<p>Sometimes parts of an <span class="caps">HTML</span> page are updated asynchronously by removing an element and afterwards adding a similar element, but with updated content. In this situation, a test case could have successfully looked up the old element, but may no longer access it/interact with it because it has become &#8220;stale&#8221; in the meantime (i.e. it was replaced by the new element). A test case designer has to deal with this situation. The usual approach is to retry the lookup and the operation.</p>
+<p>For <span class="caps">XML</span> script test cases, this issue is now handled transparently by the <span class="caps">XLT</span> framework. By default, a command that failed because of a stale element will now be retried once, but you can reconfigure the number of retries as follows:</p>
+<pre class="ini"><code class="ini">com.xceptance.xlt.scripting.commandRetries = 1</code></pre>
+<p>In case the command still fails after the last retry, the test case will fail.</p>
+<h4>Line numbers in script stack traces incorrect (#2466)</h4>
+<p>In case an <span class="caps">XML</span> script test case failed when being replayed via the <span class="caps">XLT</span> framework, the corresponding script stack trace contains the line number of the offending command. However, this line number could be smaller than the command&#8217;s actual line number as shown in Script Developer. This happened if inline comments were used in the script or if there have been disabled module calls. Now the line numbers are correct again.</p>
+<h4>Handshake failed for some servers (#2478)</h4>
+<p>In case a server is more restrictive regarding the supported encryption protocols, <span class="caps">XLT</span> may fail to establish a secure connection. The reason is that the <span class="caps">JRE</span> limits the set of enabled protocols to SSLv3 and TLSv1 by default. So if the server supports TLSv1.1 or TLSv1.2 only, the handshake will fail. Luckily, the <span class="caps">JRE</span> supports a wider range of protocols, namely SSLv2Hello, SSLv3, TLSv1, TLSv1.1, and TLSv1.2. They just need to be enabled. To reconfigure the set of enabled protocols, use the following setting:</p>
+<pre class="ini"><code class="ini">com.xceptance.xlt.ssl.protocols = SSLv3, TLSv1, TLSv1.1, TLSv1.2</code></pre>
+<h2><span class="caps">XLT</span> 4.5.5</h2>
+<p class="lead">This section lists and documents all improvements and important fixes of Xceptance LoadTest 4.5.5. Registered customers can see an overview of changes and view the current roadmap in the <a href="https://lab.xceptance.de/versions/102"><span class="caps">XLT</span> Information Center</a>.</p>
+<h3>Script Developer</h3>
+<h4>Support of Firefox 39 (#2463)</h4>
+<p>Script Developer has been made compatible with Firefox 39. It now supports Firefox 31 <span class="caps">ESR</span> to 39.</p>
+<h4>Delete domain cookies as well (#2458)</h4>
+<p>When executing the command <code>deleteAllVisibleCookies</code>, Script Developer does now not only delete the cookies set for the current host, but also those set for the current domain.</p>
+<h4>Speed slider not working on OS X (#2421/2423)</h4>
+<p>When using Script Developer on Macs, the replay speed slider could not be dragged. Also, the &#8216;+&#8217; key to increase the replay speed did not work. Fixed.</p>
+<h3>Load Testing</h3>
+<h4>Lost iterations when using the arrival rate model (#2287)</h4>
+<p>If the system under test responds slowly, the available number of virtual users may not be sufficient to maintain the configured arrival rate. This is normal. In this case, the behavior of the arrival rate load model turns into that of the user count load model. However, the finally achieved number of transactions was not as high as when using the user count load model directly. Fixed now.</p>
+<h3>Framework</h3>
+<h4>Delete visible cookies only (#2458)</h4>
+<p>Previously, <code>XltDriver.manage().deleteAllCookies()</code> deleted all cookies, but does now delete the cookies for the current host/domain only. This change was necessary to be compatible with the Web drivers for native browsers. Likewise, when replaying the script command <code>deleteAllVisibleCookies</code> only the cookies set for the current host/domain are deleted.</p>
+<h2><span class="caps">XLT</span> 4.5.4</h2>
+<p class="lead">This section lists and documents all improvements and important fixes of Xceptance LoadTest 4.5.4. Registered customers can see an overview of changes and view the current roadmap in the <a href="https://lab.xceptance.de/versions/100"><span class="caps">XLT</span> Information Center</a>.</p>
+<h3>Script Developer</h3>
+<h4>Support of Firefox 38 (#2444)</h4>
+<p>Script Developer has been made compatible with Firefox 38. It now supports Firefox 31 <span class="caps">ESR</span> to 38.</p>
+<h4>Different results when executing a text matching condition and testing it (#2424)</h4>
+<p>The condition of <code>assert...</code> or <code>waitFor...</code> commands can be tested against the current browser page in the <em>Edit Command</em> dialog. Just press the <em>Evaluate</em> button in the <em>Try It Out</em> section. Obviously, the evaluation result is supposed to be the same as when really executing the command during test case replay. However, for text matching conditions this was not always the case. Fixed.</p>
+<h4>Selected text trimmed when recording text assertion (#2446)</h4>
+<p>When recording a text assertion using the appropriate item in the context menu and the user has selected some text, this text was recorded with leading and trailing whitespace trimmed. This could be problematic if the user wants to explicitly check for the presence of whitespace. For instance, with the selected search text &quot; bar &quot; trimmed, the command would have accepted test texts such as &#8220;foo bar baz&#8221;, but also &#8220;foobarbaz&#8221;, which was not intended. Fixed.</p>
+<h3>Load Testing</h3>
+<h4>Load profile table showed wrong total ramp-up period value (#2418)</h4>
+<p>If a load profile contains a test case that defines a ramp-up period and another one that does not, the total ramp-up period value shown in the footer row of the load profile table in the test report was wrong. It was, for instance, <code>-01:-01:-01...00:00:30</code>, but should have been <code>00:00:00...00:00:30</code> instead. Fixed.</p>
+<h3>Framework</h3>
+<h4>Check for transaction termination requests whenever a new action begins (#2200)</h4>
+<p>At the end of the shutdown period, any still running user thread is requested to abort its current transaction gracefully. The same happens to transactions that exceed the transaction runtime limit. A user thread has to regularly check whether such a termination request is pending and respond accordingly. <span class="caps">XLT</span> performs such a check automatically at various places in the framework code, and now it does so also when starting a new action. This way, test cases that do not involve much <span class="caps">XLT</span> code (such as plain WebDriver tests that use a <code>FirefoxDriver</code>) are now able to respond to termination requests more quickly.</p>
+<h4>Headless Firefox tests occasionally failed at startup (#2429)</h4>
+<p>When running tests with a real Firefox in headless mode, it could happen that the tests immediately failed at browser start-up with an error message like this one: <code>Error: cannot open display :40</code>. This is fixed now.</p>
+<h4>Newlines or tabs in class attributes prevented element lookup by class name (#2430)</h4>
+<p>HtmlUnit / XltDriver supports finding elements by <span class="caps">CSS</span> selectors, for instance, by class name. If the <code>class</code> attribute of the targeted element contains tabs or newlines (instead of regular spaces) to separate multiple class names from each other, the lookup failed. Fixed.</p>
+<h2><span class="caps">XLT</span> 4.5.3</h2>
+<p class="lead">This section lists and documents all improvements and important fixes of Xceptance LoadTest 4.5.3. Registered customers can see an overview of changes and view the current roadmap in the <a href="https://lab.xceptance.de/versions/99"><span class="caps">XLT</span> Information Center</a>.</p>
+<h3>Script Developer</h3>
+<h4>Support of Firefox 37 (#2397)</h4>
+<p>Script Developer has been made compatible with Firefox 37. It now supports Firefox 31 <span class="caps">ESR</span> to 37.</p>
+<h4>Permit to save currently invalid locators (#2369)</h4>
+<p>It is perfectly valid for locator expressions to contain variables. However, if a variable could not be resolved, the command editor dialog complained with an error message and refused to save the command. This was a little bit too restrictive, as variables defined by <code>store</code> commands receive their value exactly at the moment of their execution and are therefore always undefined during edit time. Now Script Developer warns you if it encounters an undefined variable, but lets you save the command.</p>
+<h4>Character escaping rules for Java properties files not applied (#2388)</h4>
+<p>Script Developer uses Java properties files for test data defined globally or at package level. Unfortunately, Script Developer wrote the data unmodified to these files, ignoring any character escaping rules defined for Java properties files. This could cause problems when replaying tests with the <span class="caps">XLT</span> framework.</p>
+<p>Imagine a test data item holding a Windows-like path <code>c:\temp</code>. When replaying the test with the <span class="caps">XLT</span> framework, the Java code converts the <code>\t</code> to a tab character. If the data item had correctly been <code>c:\\temp</code>, all would have been fine.</p>
+<p>This has been fixed and Script Developer now applies the same character escaping rules as Java when reading and writing properties files.</p>
+<h4>Data sets file not handled properly when deleting or refactoring a script (#2392)</h4>
+<p>A script file <code>TFoo.xml</code> may be accompanied by a data file <code>TFoo_data.xml</code>, but also by a data sets file <code>TFoo_datasets.xml</code> (or other variants, such as <code>TFoo_datasets.csv</code>). When renaming/moving/copying/deleting the script, the data file was renamed/moved/copied/deleted accordingly, but the data sets file was not (or at least not consistently). Fixed.</p>
+<h3>Load Testing</h3>
+<h4>Process did not terminate when agent controller failed to start (#2384)</h4>
+<p>It might happen that an agent controller cannot start successfully, for instance when the configured port is already in use. In such cases, the Java process did not terminate and needed to be killed manually. Now the process terminates immediately in such a case and returns an appropriate error code.</p>
+<h4>Report updated metrics to Graphite before agent shutdown (#2391)</h4>
+<p>All updated metrics are sent to the configured Graphite host periodically as a batch. However, if a load test has finished somewhere in the middle between two reporting times, the data gathered since the last reporting time was lost. Now the agent reports any pending data right before it shuts down. The time-stamp attached to the sent data will always be the next regular reporting time, regardless of the actual amount of time passed since the last reporting time.</p>
+<h3>Test Reports</h3>
+<h4>Total <span class="caps">CPU</span> usage was always 0 with Java 8 (#2386)</h4>
+<p>The load test report does not only show the <span class="caps">CPU</span> usage of an agent process, but also the total <span class="caps">CPU</span> usage of the agent machine. However, the latter value was always reported as 0 when the test has been run using a Java 8 runtime. Fixed.</p>
+<h4>Optionally extend the value range of trend charts to include 0 (#2400)</h4>
+<p>The trend report uses charts to visualize the trend graphically. Currently, the charts show the effective value range only (min to max). As a consequence, even steady trends may <em>appear</em> fluctuating heavily, and only when looking at the runtime axis will you see that the differences are actually small. To make it easier for you to assess the significance of deviations at a glance, the charts&#8217; value range may now be optionally extended to include the value 0. This way, larger deviations can still be recognized easily, while smaller deviations don&#8217;t stand out anymore.</p>
+<p>Whether the value range should start at 0 can be configured in <code>&lt;xlt&gt;/config/trendreportgenerator.properties</code> using a new property:</p>
+<pre class="ini"><code class="ini">com.xceptance.xlt.trendreportgenerator.charts.autoRangeIncludesZero = true</code></pre>
+<h3>Framework</h3>
+<h4>Typing into file inputs failed for native Web Drivers (#2387)</h4>
+<p>Uploading a file is usually done by typing the file name into a file input element and submitting the form afterwards. While typing into a file input with the <code>type</code> script command worked well in Script Developer and <code>XltDriver</code>, the Web Drivers for native browsers threw an exception. Fixed.</p>
+<h3>Script Doc Generator</h3>
+<h4>Mark a disabled module in test steps (#2375)</h4>
+<p>In Script Developer, disabled module calls are shown crossed out. In the generated script documentation of a test case, a disabled module call will now be shown crossed out, too.</p>
+<h2><span class="caps">XLT</span> 4.5.2</h2>
+<p class="lead">This section lists and documents all improvements and important fixes of Xceptance LoadTest 4.5.2. Registered customers can see an overview of changes and view the current roadmap in the <a href="https://lab.xceptance.de/versions/97"><span class="caps">XLT</span> Information Center</a>.</p>
+<h3>Framework</h3>
+<h4>Selenium updated (#2382)</h4>
+<p>Selenium has been updated to v2.45.0. This version fixes an issue in Selenium when using <code>FirefoxDriver</code> in combination with Firefox 35 or higher. The result of a JavaScript expression passed to <code>FirefoxDriver</code> for execution was always <code>undefined</code>. See <a href="https://code.google.com/p/selenium/issues/detail?id=8390">Firefox 35: Passing arguments to executeScript isn&#8217;t working</a>. Consequently, a script test case containing any of the <code>*Eval</code> commands (<code>assertEval</code>, <code>storeEval</code>, etc.) failed when being replayed with <code>FirefoxDriver</code>.</p>
+<h2><span class="caps">XLT</span> 4.5.1</h2>
+<p class="lead">This section lists and documents all improvements and important fixes of Xceptance LoadTest 4.5.1. Registered customers can see an overview of changes and view the current roadmap in the <a href="https://lab.xceptance.de/versions/93"><span class="caps">XLT</span> Information Center</a>.</p>
+<h3>Script Developer</h3>
+<h4>Support of Firefox 36 (#2371)</h4>
+<p>Script Developer has been made compatible with Firefox 36. It now supports Firefox 31 <span class="caps">ESR</span> to 36.</p>
+<h4>Unresponsive Script message when migrating a test suite (#2357)</h4>
+<p>When opening an existing test suite, Script Developer may need to migrate all the scripts of that test suite. For larger suites, this migration can take some time and Firefox might complain about an &#8220;unresponsive script&#8221; (note: Script Developer is implemented in <em>JavaScript</em>). Script Developer has been modified to avoid this message, even when migrating large test suites. The migration process has been tuned as well. Additionally, a newly introduced progress bar shows the state of the migration or loading of the test suite now.</p>
+<h4>Test suite mix up (#2318)</h4>
+<p>Previously, it was possible to switch to another test suite while the current test suite was still being loaded. This could have caused a mixed-up package tree with scripts from both test suites. Now all essential UI controls are locked while loading a test suite.</p>
+<h4>Variables created by storeElementCount command reported as undefined (#2349)</h4>
+<p>Before replaying a test case, all used test data placeholders are verified. A message is shown in case some of them could not be resolved. Variables defined by <code>store*</code> commands inside the script don&#8217;t count as undefined test data placeholders. Unfortunately, the command <code>storeElementCount</code> was skipped and all variables defined by this command were reported as undefined. Fixed.</p>
+<h4>Empty test data definitions reported as undefined (#2368)</h4>
+<p>Test data items with an empty string as value were reported as undefined. Fixed.</p>
+<h4>Test data names not allowed to start with underscore (#2344)</h4>
+<p>Previously, names of test data items couldn&#8217;t start with an underscore character. This restriction was not really needed. Now you can use the underscore character to prefix your test data items.</p>
+<h4>Values of renamed test data items aren&#8217;t shown in script editor (#2340)</h4>
+<p>The script editor normally shows the actual value of a test data item instead of its name when hovering over it. This sometimes didn&#8217;t work when the test data item was just renamed. Fixed.</p>
+<h4>Module test data not available to called modules (#2359)</h4>
+<p>A script module can define its own test data items. These test data items are supposed to be available for all modules called by this module. Unfortunately, this did not work correctly for the entire call chain. Fixed.</p>
+<h4>Non-element nodes returned by XPath element locators should be ignored (#2331)</h4>
+<p>Element locators should, as the name suggests, locate element nodes only. However, certain expressions in XPath element locators may result in text or number nodes being returned, for instance <code>text()</code> or <code>count()</code> functions. Any such node will be filtered out from the result set now.</p>
+<h3>Load Testing</h3>
+<h4>ec2_admin sporadically failed to tag freshly created instances (#2350)</h4>
+<p>Sometimes <code>ec2_admin</code> failed to assign a name tag to a machine instance that was just created. It complained that the instance didn&#8217;t exist. <span class="caps">AWS</span> instances are created in the background and may not be available instantly. Therefore, <code>ec2_admin</code> will now wait for an instance to become available before tagging it.</p>
+<h4>ec2_admin did not always return with an error code in case of errors (#2364)</h4>
+<p>With the new non-interactive mode, the <code>ec2_admin</code> tool can also be used in scripts now. Therefore it is essential that the tool indicates any error condition by returning an appropriate return code. This was not always the case. Fixed.</p>
+<h4>Cannot run traditional scenarios and client-performance test scenarios together (#2352)</h4>
+<p>In a load test, test cases flagged as <code>clientPerformanceTest</code> in their load profile configuration are deployed to only those agent controllers that are flagged as <code>clientPerformance</code> in the agent controller configuration. All other test cases are deployed to the remaining agent controllers. However, when mixing regular and client-performance tests, an exception was thrown and the load test aborted.</p>
+<h3>Framework</h3>
+<h4>Sanitize the name of a metric before sending it to Graphite (#2360)</h4>
+<p>Graphite does not define what characters are allowed for naming a metric. Even if a metric was received and stored on disk successfully, it doesn&#8217;t automatically mean that the metric can be queried. Therefore we have restricted the range of characters to letters, numbers, the underscore character, and the dash. Any other character is replaced with an underscore before the metric is sent to Graphite.</p>
+<h4>Status code missing in client-performance timer data (#2351)</h4>
+<p>When measuring the client performance, the collected timer data is stored in a <span class="caps">CSV</span> file. However, sometimes the status code field for requests was empty and the load report generator had problems when parsing this data. Now the value 0 is set in case a status code was unavailable.</p>
+<h3><span class="caps">XLT</span> Plug-In for Jenkins</h3>
+<h4>Agent controller connect timeout configurable in the UI (#2360)</h4>
+<p>The <span class="caps">XLT</span> plug-in can be configured to start load agents in Amazon&#8217;s compute cloud. It can take a while until the agent controllers are up and running. Therefore the plug-in has to wait for the agent controllers to become available. This time period can now be configured in the <span class="caps">XLT</span> section of the load test job&#8217;s configuration page.</p>
+<h3>Known Issues</h3>
+<p>If a script test case contains any <code>*Eval</code> commands (<code>assertEval</code>, <code>storeEval</code>, etc.) and this test case is executed in Firefox 35+ via the <code>FirefoxDriver</code>, the test case will likely fail since the result of the JavaScript expression passed to this command will always be <code>undefined</code>. The reason is a known bug in the WebDriver plug-in for Firefox. Unfortunately, a new Selenium release with a bug fix is not available yet. See <a href="https://code.google.com/p/selenium/issues/detail?id=8390">Firefox 35: Passing arguments to executeScript isn&#8217;t working</a>.</p>
+<h2><span class="caps">XLT</span> 4.5.0</h2>
+<p>This section lists and documents all new features and improvements of Xceptance LoadTest 4.5.0. Registered customers can see an overview of changes and view the current roadmap in the <a href="https://lab.xceptance.de/versions/75"><span class="caps">XLT</span> Information Center</a>.</p>
+<h3>Release Overview</h3>
+<p><span class="caps">XLT</span> 4.5.0 comes with many new and improved functionalities.</p>
+<p>Script Developer has been enhanced to let you maintain the documentation of your script library directly in Script Developer. To this end, all description/comment fields have been enlarged and support the MarkDown syntax for rich-text descriptions. From all the descriptions in your scripts, an extensive <span class="caps">HTML</span> documentation of your script library can be generated, ready to be shared with your team and your clients. The newly introduced in-line comments enable you to document a sequence of commands and visually structure your test scripts at the same time.</p>
+<p>Load testing is more fun now. <span class="caps">XLT</span> load agents can send performance metrics to Graphite, a data collection and graphing tool. This allows you to watch the most important performance results in real time while a load test is still running. The load test report including all performance details has been improved as well. Most notably, the runtime charts now visualize the distribution of values and show how this distribution varies over time. Also, generating the load test report is much faster now on multi-core machines. Users of Amazon&#8217;s EC2 cloud will be glad to hear that the <code>ec2_admin</code> tool can now also be used in scripted processes, making it possible to fully automate the starting and stopping of Amazon machines.</p>
+<p>The scripting capabilities in Script Developer and the <span class="caps">XLT</span> framework have been extended. There are new commands to operate an application&#8217;s context menu. If you need to switch browser windows, you can use wild cards or regular expressions to locate the target window. Package-level test data, which was previously accessible to script test cases only, can now be used from script modules as well.</p>
+<p>As usual for a major release, the technology stack the <span class="caps">XLT</span> framework is built upon has been updated and provides latest WebDriver support. Last but not least, the <span class="caps">XLT</span> Jenkins plug-in supports build nodes now and may automatically start and stop agent machines in Amazon&#8217;s compute cloud.</p>
+<p>See below for a more detailed introduction to the most important features and improvements. The new release contains various other enhancements and fixes, so we strongly recommend to upgrade your <span class="caps">XLT</span> installation as soon as possible.</p>
+<h3>Script Developer</h3>
+<h4>Script Documentation</h4>
+<p>As always, good documentation is key, especially when working with large test suites. It helps you avoid redundant code and it facilitates the learning progress of new team members. We encourage you to write elaborate test case and module descriptions. That&#8217;s why we extended the documentation possibilities in Script Developer:</p>
+<ul>
+	<li>Comments fields have been turned into multi-line text areas, so they can hold longer texts.</li>
+	<li>Description/comment text areas now support the <a href="https://help.github.com/articles/github-flavored-markdown/">MarkDown</a> syntax (GitHub flavor) for rich-text descriptions. The formatted text can later be viewed in the <em>Information</em> panel.</li>
+	<li>The parameters of modules can now be documented in dedicated fields.</li>
+	<li>Test cases have an additional ID field. Use this field to maintain an alternative, maybe externally defined name or ID.</li>
+</ul>
+<p>From all the descriptions and meta data in the scripts an extensive <span class="caps">HTML</span> documentation of your script library can be generated. This gives you a good overview on all available test cases and all already existing modules, which form the building blocks for your new test cases. For each script, the documentation contains:</p>
+<ul>
+	<li>name and description,</li>
+	<li>description of parameters (for modules only),</li>
+	<li>basic steps (automatically excerpted from the code),</li>
+	<li>any test data used, and</li>
+	<li>any variables created.</li>
+</ul>
+<p>To build the <span class="caps">HTML</span> documentation, run the script documentation generator as follows:</p>
+<pre class="ini"><code class="ini">cd &lt;xlt&gt;/bin
+create_scriptdoc.sh &lt;path_to_testsuite&gt;</code></pre>
+<p>By default, the documentation for your test suite will be generated to a newly created <code>scriptdoc</code> sub-directory in your test suite. To specify a target directory other than the default directory, use the <code>-o &lt;output_dir&gt;</code> command line option.</p>
+<p>The <span class="caps">HTML</span> output can be customized if needed. See the page templates in <code>&lt;xlt&gt;/config/scriptdoc/templates</code> and the accompanying <span class="caps">CSS</span> stylesheets in <code>&lt;xlt&gt;/config/scriptdoc/resources/css</code>.</p>
+<blockquote class="note">
+<p class="note">The script documentation generator uses <a href="http://freemarker.org/">FreeMarker</a> as the template engine. See their website for more information about the template language.</p>
+</blockquote>
+<h4>In-line Comments</h4>
+<p>Script Developer supports in-line comments now. Use such comments to document the purpose of a sequence of commands and to visually structure the code at the same time. No need to misuse action markers for this purpose anymore!</p>
+<h4>New and Extended Commands</h4>
+<p>Script Developer supports new commands:</p>
+<ul>
+	<li><code>contextMenu</code> &#8211; simulates clicking the right mouse button on the specified element</li>
+	<li><code>contextMenuAt</code> &#8211; simulates clicking the right mouse button on the specified element at the given offset coordinates</li>
+</ul>
+<p>The <code>selectWindow</code> command has been extended to accept wild cards or regular expressions in window locators. This makes it easier to select a certain browser window if the window&#8217;s name/title contains variable parts.</p>
+<p>See the User Manual for more details and usage examples.</p>
+<h4>Package-Level Test Data for Modules</h4>
+<p>Script Developer allows to define test data not only on script level and globally, but also on package level. Previously, only test cases could access package-level test data. It is now available for modules as well.</p>
+<h4>Usability Improvements</h4>
+<p>From now on, Script Developer maintains an always empty last line in a script editor tab. This line makes it easy to insert commands, module calls, comments, and actions at the end of the script.</p>
+<h4>Supported Firefox Versions</h4>
+<p>Script Developer has been made compatible with the latest available Firefox version (as of January 2015), while outdated versions are not supported any longer. Thus, Script Developer runs on Firefox 31 <span class="caps">ESR</span> up to 35 now.</p>
+<h3>Load Testing</h3>
+<h4>Real-Time Reporting via Graphite</h4>
+<p>While a load test is running, the master controller only shows basic information about the status. In interactive mode, it allows to get intermediate results, so you can download them and generate a report to see how the test is going. In automated environments, however, you would have to wait until the test run is finished before you can actually do so.</p>
+<p>Wouldn&#8217;t it be great if you could watch the results in real time and see how the performance varies over time while the test is still running? To this end, we have added the support of <a href="http://graphite.readthedocs.org/en/latest/overview.html">Graphite</a>, a well-known data collection and graphing tool. During a load test, <span class="caps">XLT</span> pushes selected metrics to Graphite. Using Graphite&#8217;s graphing capabilities or another graphing/dashboard tool on top of Graphite, you can watch the most important performance data instantly:</p>
+<p class="illustration"><img src="../img/releasenotes/xlt450/realtime-reporting.png" title="Load Testing Dashboard" alt="Load Testing Dashboard" /></p>
+<p>See below for the <span class="caps">XLT</span> settings needed to enable and configure real-time reporting:</p>
+<pre class="ini"><code class="ini">xlt.reporting.enabled = true
+xlt.reporting.interval = 15
+xlt.reporting.metricNamePrefix = xlt.MyProject.
+xlt.reporting.graphite.host = my.grahite.machine
+xlt.reporting.graphite.port = 2003</code></pre>
+<p>If enabled, <span class="caps">XLT</span> reports the following metrics to Graphite:</p>
+<ul>
+	<li>runtime statistics (in total and per name), errors (in total and per name) and counts (in total) for
+	<ul>
+		<li>transactions,</li>
+		<li>actions,</li>
+		<li>requests, and</li>
+		<li>custom timers,</li>
+	</ul></li>
+	<li>arrival rates (in total and per transaction name),</li>
+	<li>bytes/sent received (in total and per request name),</li>
+	<li>event count (in total), and</li>
+	<li>agent metrics such as the total <span class="caps">CPU</span> usage and heap usage.</li>
+</ul>
+<p>Since not all performance details are sent to Graphite, you will only get a first impression of the application&#8217;s behavior. For a detailed analysis, the load test report is still the tool of choice.</p>
+<blockquote class="note">
+<p class="note"><a href="http://graphite.readthedocs.org/en/latest/install.html">Graphite</a> is not bundled with <span class="caps">XLT</span>. You need to install, configure, and run it yourself.</p>
+</blockquote>
+<h4>Load Test Report</h4>
+<h5>Visualization of Value Clustering</h5>
+<p>Quite often, the measured values are not equally distributed, but form certain clusters. To make this clustering visible, charts show the values not only as line graphs, but also as dots now. While the line graph perfectly visualizes the value range at a certain point in time, the dotted representation naturally builds the clusters. Areas with no or only a few dots will be lighter, areas with a higher concentration of dots will be darker.</p>
+<p class="illustration"><img src="../img/releasenotes/xlt450/new_chart.png" title="New Chart" alt="New Chart" /></p>
+<p>We believe that the enhanced charts will give you new insights into the behavior of your web application, especially with respect to the distribution of the values and how this distribution varies over time. While the former aspect can also be seen in the histogram charts, the latter hasn&#8217;t been visible until now.</p>
+<h5>Other Improvements</h5>
+<ul>
+	<li>Runtime charts now provide a small histogram next to the runtime graphs. This histogram lets you quickly assess the distribution of values without having to consult the separate histogram chart first.</li>
+	<li>The transaction charts have been extended to show not only the error count, but also a (smoothed) error rate. Use the error rate graph to get the percentage of the transactions that failed at a certain time.</li>
+	<li>The <em>Network</em> chart for a request has been replaced by the <em>Response Size</em> chart that shows whether and how much the size of the entire <span class="caps">HTTP</span> response varies.</li>
+	<li>The <em>Events</em> section includes an overview table, much like the one that already exists for errors. It summarizes the total number/percentage per event type.</li>
+</ul>
+<h4>Load Test Report Generator</h4>
+<h5>Faster Report Creation on Multi-<span class="caps">CPU</span> Machines</h5>
+<p>The load test report generator makes use of all available CPUs now when generating charts, when reading, parsing and pre-processing data records, and while generating the <span class="caps">HTML</span> report pages. Especially result sets with many or very sophisticated request merge rules will be processed much faster.</p>
+<p>In case you want to limit the number of CPUs used during report generation, set the property <code>com.xceptance.xlt.reportgenerator.threads</code> in <code>&lt;xlt&gt;/config/reportgenerator.properties</code> to an appropriate value.</p>
+<h5>New Ways to Specify the Report Calculation Period</h5>
+<p>The load test report generator allows you to create a report for the total time of the test as well as for a shorter period. This is useful to exclude the ramp-up period from the report or to &#8220;zoom into&#8221; an especially interesting period, for instance. In former versions of <span class="caps">XLT</span>, this could be done by specifying an absolute date/time value as the in/out time, e.g.:</p>
+<pre class="bash"><code class="bash">create_report -from 20141210-140000 -to 20141210-150000 ...</code></pre>
+<p>The in/out times can now also be given as time <em>offsets</em> relative to the beginning (+x) or the ending (-x) of the test. In the following example, we omit both the first 15 minutes and the last 10 minutes of the test:</p>
+<pre class="bash"><code class="bash">create_report -from +15m -to -10m ...</code></pre>
+<p>Compared to the absolute notation, this is much shorter and doesn&#8217;t require you to calculate the in/out times based on the test&#8217;s start/end time.</p>
+<p>Another common use case is to create the report for a certain duration. Again, you don&#8217;t need to calculate the out time any longer since the duration can now be specified directly. For example:</p>
+<pre class="bash"><code class="bash">create_report -from 20141210-140000 -l 1h ...
+create_report -from +15m -l 1h ...</code></pre>
+<p>In the first example, you will get a report for exactly the time between 14:00:00 and 15:00:00. In the second example, you will also get a report for exactly an hour, but this time the report starts 15 minutes after the test has been started, no matter when that was.</p>
+<blockquote class="note">
+<p class="note">To specify time periods, you may not only use the &#8220;1h15m10s&#8221; syntax as in the examples above, but also the &#8220;1:15:10&#8221; syntax.</p>
+</blockquote>
+<h4>ec2_admin</h4>
+<p><code>ec2_admin</code>, our tool to manage Amazon EC2 machine instances, has been extended with a non-interactive mode where all required parameters have to be passed on to the tool&#8217;s command line. This allows you to automate the management of Amazon machines.</p>
+<ul>
+	<li>To start machines: <code>ec2_admin.sh   run   &lt;region&gt;   &lt;instance-type&gt;   &lt;ami-id&gt;   &lt;instance-count&gt;   &lt;tag&gt;</code></li>
+	<li>To stop machines: <code>ec2_admin.sh   terminate   &lt;region&gt;   &lt;tag&gt;</code></li>
+</ul>
+<p>But starting and stopping machines is only half the story. The master controller also needs to know about the freshly started agent machines so it can use them for a load test. To this end, <code>ec2_admin</code> emits the corresponding agent machine configuration right after the machines were started. By default, it prints this configuration to the console. Alternatively, the configuration can also be written to a certain file via the <code>-o</code> option. We recommend the latter approach since the master controller can read the agent configuration directly from this file later on.</p>
+<p>For a fully automated load testing process with Amazon machines, use a sequence of commands (in a script) similar to the following one:</p>
+<pre class="bash"><code class="bash">ec2_admin.sh  run  eu-central-1  c3.2xlarge  ami-de5dcdb6  5  Posters  -o agents.properties
+mastercontroller.sh  -auto  -report  -pf agents.properties
+ec2_admin.sh  terminate  eu-central-1  Posters</code></pre>
+<p>Note how <code>ec2_admin</code> writes the agent machine configuration to the file <code>agents.properties</code> which in turn is passed on to the master controller as input. Be aware, though, that it may take a while until the agent controllers are up and running on the freshly started machines. To stop the master controller from complaining too early about unreachable agent controllers, you should configure an appropriate waiting time in <code>mastercontroller.properties</code>, one minute, for example:</p>
+<pre class="ini"><code class="ini">com.xceptance.xlt.mastercontroller.initialResponseTimeout = 60000</code></pre>
+<h3>Framework</h3>
+<h4>New Script Commands and Package-Level Test Data</h4>
+<p>As mentioned above, Script Developer introduces some new commands and the ability to use package-level test data for modules. The <span class="caps">XLT</span> framework has been extended to support these new features as well when replaying script test cases.</p>
+<h3><span class="caps">XLT</span> Plug-In for Jenkins</h3>
+<h4>Support for <span class="caps">AWS</span> EC2 machines</h4>
+<p>Typically, larger load tests require a couple of dedicated load agent machines. On-demand machines as offered by Amazon&#8217;s EC2 service are a perfect choice for this purpose. That&#8217;s why the <span class="caps">XLT</span> plug-in also supports Amazon machines now as an alternative to using a fixed set of local machines. All you need to do is to configure the region where the machines will be located, the number of machines to use, the machine type, and the machine image. The plug-in will automatically start these machines before the load test, configure the master controller to use these machines for the test, and terminate them once the test has finished.</p>
+<h4>Running on Build Nodes</h4>
+<p>Jenkins supports the distributed execution of build jobs on dedicated slave machines known as &#8220;build nodes&#8221;. The <span class="caps">XLT</span> plug-in has been extended to successfully run on such build nodes as well.</p>
+            <div id="footer">
+	<p>Copyright © 2017 by <a href="http://www.xceptance.com/">Xceptance Software Technologies</a>. All rights reserved.</p>
+</div>
+
+
+        </div>
+    </div>
+</div>
+
+<!-- Generate the part of the TOC that contains the headings of the currently displayed page -->
+<!-- createToc (selectedHeadlines, classesTarget, classes )-->
+
+<script>createToc('h1,h2,h3', '#toc > ul', '#sidenav nav sidenav')</script>
+
+
+</body>
+
+</html>

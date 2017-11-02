@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html>
+
+
+
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>XLT Framework Configuration</title>
+  <meta name="description" content="Xceptance LoadTest - XLT, Documentation, Manual, Howto, FAQ">
+
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,700,400italic,300italic" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:100,300,400,500,700" rel="stylesheet" type="text/css">
+
+  <link href="../css/font-awesome.min.css" rel="stylesheet" media="all"  type="text/css" />
+  <link href="../css/lightbox.css" rel="stylesheet" media="all"  type="text/css" />
+
+  <link href="../css/highlightjs/default.css" rel="stylesheet" type="text/css" />
+  <link href="../css/highlightjs/mono-blue.css" rel="stylesheet" type="text/css" />
+
+  <link href="../css/xltdoc.css" rel="stylesheet" media="all"  type="text/css" />
+
+  <script type="text/javascript" src="../js/jquery-1.11.1.min.js"></script>
+  <script type="text/javascript" src="../js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="../js/toc.min.js"></script>
+  <script type="text/javascript" src="../js/lightbox.min.js"></script>
+  <script type="text/javascript" src="../js/headroom.min.js"></script>
+
+  <!-- <script type="text/javascript" src="../js/jquery.scrollIntoView.min.js"></script -->
+  <script type="text/javascript" src="../js/xltdoc.js"></script>
+
+  <script type="text/javascript" src="../js/highlight.pack.js"></script>
+</head>
+
+
+<body data-spy="scroll" data-target="#toc" data-offset="100" class="layout-manual ">
+
+    
+
+
+<!-- Fixed navbar -->
+<nav id="header" class="navbar navbar-default">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <a class="site-title" href="../index.html">
+            <img src="../img/XLTDoc-logo-transparent-165x82.png" id="product-logo" alt="XLT Product logo" title="Xceptance LoadTest"/>
+        </a>
+    </div>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    <div id="navbar" class="navbar-collapse collapse">
+        <!-- Links to external pages -->
+        <ul id="navbar-right" class="nav navbar-nav navbar-right navbar-text">
+	<li>
+		<a href="https://lab.xceptance.de/releases/xlt/latest/apidoc/" target="_blank" title="XLT API Documentation">
+			<i class="fa fa-external-link"></i>API</a>
+	</li>
+
+    <li>
+ 		<a href="https://ask.xceptance.de/" target="_blank" title="XLT Community Forum">
+ 			<i class="fa fa-external-link"></i>Forum</a>
+ 	</li> 
+    
+	<li>
+		<a href="https://www.xceptance.com/xlt/" target="_blank" title="XLT Website">
+			<i class="fa fa-external-link"></i>XLT Home</a>		
+	</li>			
+</ul>
+
+
+        <ul id="navbar-left" class="nav navbar-nav navbar-text">
+            <li class="inactive"><a href="../getting-started/index.html">Getting Started</a></li>
+            <li class="active"><a href="../user-manual/index.html">User Manual</a></li>
+            <li class="inactive"><a href="../how-to/index.html">How-To</a></li>
+            <li class="inactive"><a href="../release-notes/index.html">Release Notes</a></li>
+            <li class="inactive"><a href="../license.html">License</a></li>
+        </ul>
+
+    </div><!--/.nav-collapse -->
+
+</nav>
+
+
+
+
+<div id="breadcrumb" class="navbar navbar-default">
+  <div>
+    <ol class="breadcrumb">
+      
+
+      
+        <li><a href="../index.html"><i class="fa fa-home"></i>Docs</a></li>
+          
+            
+            <li><a href="../user-manual/index.html">User Manual</a></li>
+          
+      
+
+      <li class="active">XLT Framework Configuration</li>
+    </ol>
+  </div>
+</div>
+
+
+    
+<div id="main" class="main container-fluid">
+    <div class="row">
+        <div class="hidden-xs col-sm-4 col-md-3 sidenav-col">
+            <nav id="sidenav" class="sidenav nav">
+                <!-- TOC of all available files/pages in folder  -->
+                <ul class="nav sidenav">
+                
+
+
+
+
+
+    
+        
+            <li>
+            
+                <a href="../user-manual/01-intro.html">Introduction</a>
+                
+            </li>
+        
+    
+
+    
+
+    
+        
+            <li>
+            
+                <a href="../user-manual/02-install.html">Installation</a>
+                
+            </li>
+        
+    
+
+    
+
+    
+        
+            <li>
+            
+                <a href="../user-manual/03-scriptdeveloper.html">Script Developer</a>
+                
+            </li>
+        
+    
+
+    
+        
+            <li>
+            
+                <a href="../user-manual/04-framework.html">XLT Framework</a>
+                
+            </li>
+        
+    
+
+    
+        
+            
+                <!-- Table of content from page headings for the currently loaded file-->
+                <li class="current-page">
+                    <a class="current-page" href="">XLT Framework Configuration</a>
+                    <!-- Container for page headings TOC -->
+                    <div id="toc" class="sidenav"></div>
+                </li>
+            
+        
+    
+
+    
+        
+            <li>
+            
+                <a href="../user-manual/06-datadriven.html">Data-Driven Tests</a>
+                
+            </li>
+        
+    
+
+    
+        
+            <li>
+            
+                <a href="../user-manual/07-posters.html">Demo Application</a>
+                
+            </li>
+        
+    
+
+    
+        
+            <li>
+            
+                <a href="../user-manual/08-loadtest.html">Load and Performance Testing</a>
+                
+            </li>
+        
+    
+
+    
+        
+            <li>
+            
+                <a href="../user-manual/09-reports.html">Test Results and Reports</a>
+                
+            </li>
+        
+    
+
+    
+        
+            <li>
+            
+                <a href="../user-manual/10-command-reference.html">Command Reference</a>
+                
+            </li>
+        
+    
+
+    
+        
+            <li>
+            
+                <a href="../user-manual/11-glossary.html">Glossary</a>
+                
+            </li>
+        
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+                </ul>
+            </nav>
+        </div>
+
+        <div id="content" class="col-xs-12 col-sm-8 col-md-9 content-col">
+            <h2>Introduction</h2>
+<blockquote class="note">
+<p class="note">When solely using Script Developer for recording/writing and replaying script test cases, the following section doesn&#8217;t apply. Yet a configuration of the test suite and framework by changing properties files may be necessary if you write or run test cases from inside Eclipse as JUnit tests or if you want to perform load tests.</p>
+</blockquote>
+<p>To configure the test environment and the test suite, <span class="caps">XLT</span> uses <a href="http://en.wikipedia.org/wiki/.properties">Java properties files</a>. The basic characteristics and syntax of this format are also valid for the <span class="caps">XLT</span> properties files.</p>
+<p>When reading the properties, <span class="caps">XLT</span> distinguishes between <em>load test mode</em> and <em>development mode</em>. As its name implies, the <em>load test mode</em> is active when test cases are executed as load tests by the <span class="caps">XLT</span> master controller/agent controller. When test cases are executed as JUnit tests in Eclipse or any other JUnit test runner, they run in <em>development mode</em>. Even though the <em>development mode</em> is mainly used for test case development, it will also be active if your test suite is meant to perform an automated functional test manually triggered from time to time or integrated in a build process.</p>
+<p><span class="caps">XLT</span> makes use of a hierarchical file system so that properties can be distributed to several files with different priorities. Properties from different files complement each other. Furthermore, properties from a file with higher priority can overwrite identical properties from a file with lower priority. This mechanism allows general default values to be specialized for different test run scenarios or projects. It&#8217;s also possible to prepare several configurations in different files and activate one of these configurations by switching between the files.</p>
+<p>All properties are read from the <code>&lt;testsuite&gt;/config/</code> directory. The existing properties files are listed below, sorted by priority from lowest to highest. See the following sections for details.</p>
+<ul>
+	<li><strong>default.properties</strong>: default configuration of the <span class="caps">XLT</span> test framework</li>
+	<li><strong>project.properties</strong>: configuration of your test project</li>
+	<li><strong>test.properties</strong>: configuration of a specific load test profile</li>
+	<li><strong>dev.properties</strong>: properties only read in development mode</li>
+	<li><strong>dev-log4j.properties</strong>: log4j logger settings used in development mode</li>
+	<li><strong>log4j.properties</strong>: log4j logger settings used in load test mode</li>
+	<li><strong>jvmargs.cfg</strong>: <span class="caps">JVM</span> setting for the agents and therefore only used in load test mode</li>
+</ul>
+<h2>Default Framework Configuration</h2>
+<p>The properties in <code>default.properties</code> represent the general <span class="caps">XLT</span> framework settings that are all set to their respective default value. They are neither specific for a single test project nor for a single test run.</p>
+<p>If you need to change one of these properties, copy it to the <code>project.properties</code> or <code>test.properties</code> and change the value there to overwrite the value in <code>default.properties</code>. Each of the properties in <code>default.properties</code> can be overridden since they have the lowest priority.</p>
+<p>When updating <span class="caps">XLT</span> to a newer version, it is recommended you update the <code>default.properties</code> file as well because newly available properties can be found there, along with their default value and description.<br />
+Even though this file isn&#8217;t read-only, it should be treated as such. You can use it as documentation of available <span class="caps">XLT</span> framework properties that also defines the default values for these properties.</p>
+<p>The properties listed in <code>default.properties</code> are separated into the following groups (look into the file itself for details):</p>
+<ul>
+	<li><span class="caps">HTTP</span>/Protocol Settings</li>
+	<li>Browser Emulation Settings</li>
+	<li>JavaScript Settings</li>
+	<li><span class="caps">CSS</span> Settings</li>
+	<li>Test Data Management Settings</li>
+	<li>Result Settings</li>
+	<li>Test Execution Settings</li>
+	<li>Script Engine Settings</li>
+	<li>Miscellaneous Settings</li>
+</ul>
+<h2>Test Project Configuration</h2>
+<p>The file <code>project.properties</code> contains project-specific settings. The first and most important property is the reference to <code>test.properties</code>  that should be applied (e.g. <code>com.xceptance.xlt.testPropertiesFile = test-1.properties</code>). Changing the value for this property, you can easily switch between different load test profiles configurations.</p>
+<p>By default, the file stores the test case mapping that maps the test case class onto a load test name. The load test name will be referenced later in the load test configuration.</p>
+<p>It&#8217;s also the best place for all your test case-specific custom properties, such as URLs, credentials, search phrases, or any other data you want to extract from your test cases as properties. See <a href="07-posters.html">Demo test suite posters</a> for examples on how to use properties in test cases.</p>
+<h2>Load Test Profile Configuration</h2>
+<p>The settings required to configure a particular load test profile are collected in a separate file. See <a href="08-loadtest.html">Load tests</a> or the properties file itself for details of available load test settings.</p>
+<p>The default name of this file is <code>test.properties</code>. However, it&#8217;s variable and several files with different load test profile configurations may exist. The one file applied for a test run is referenced by a property in <code>project.properties</code> mentioned above.</p>
+<h2>Development Environment Configuration</h2>
+<p>The file <code>dev.properties</code> contains development mode settings. Use this file to modify the configuration so that it suits your needs during test case development, that is when you create and debug test cases from within your <span class="caps">IDE</span>.</p>
+<p>It&#8217;s read in development mode only, but not during load testing. For development mode, the values in this file have highest priority. Any setting defined here will overwrite the corresponding setting from the other properties files: &#8220;default.properties&#8221;, &#8220;project.properties&#8221;, and the test run-specific properties file, e.g. &#8220;test.properties&#8221;.</p>
+<p>A typical example for differing development settings is <code>com.xceptance.xlt.loadStaticContent = true</code> to enable loading images and other static content in development mode for debugging. The default value ( <code>=false</code> ) for this property is switching off loading static content to save resources during load testing.</p>
+<p>If the default values suffice as development settings for your test suite, <code>dev.properties</code> can also be empty.</p>
+<h2>Including Additional Property Files</h2>
+<p>When dealing with different test environments, different load profiles, and/or different test data at the same time, managing different combinations of configuration settings can be challenging. To make this easier and less error-prone, properties can be included as a set. This allows to:</p>
+<ul>
+	<li>predefine the configuration of certain aspects with certain values in separate files, and</li>
+	<li>reuse and combine the predefined settings as needed with a single statement.</li>
+</ul>
+<p>To this end, the files <code>default.properties</code>, <code>project.properties</code>, <code>test.properties</code> (no matter if it&#8217;s been renamed using <code>com.xceptance.xlt.testPropertiesFile</code>), and <code>dev.properties</code> can include further property files. Each of these additional property files has to be placed either directly in the <code>config</code> folder or in one of its sub-directories. Furthermore, the name of all these files must end with <code>.properties</code>. Any included file may also define includes itself.</p>
+<h3>How to Include Other Properties Files</h3>
+<p>You can include another property file by adding the special <em>include</em> property</p>
+<pre class="ini"><code class="ini">com.xceptance.xlt.propertiesInclude.&lt;index&gt; = &lt;relativePathToPropFile&gt;</code></pre>
+<p>where <code>&lt;index&gt;</code> denotes an integer number. The value of the include property is the relative path to the file to include, starting from the directory in which the current file is located. You can also include all properties files in a certain directory at once by specifying the relative path to that directory:</p>
+<pre class="ini"><code class="ini">com.xceptance.xlt.propertiesInclude.&lt;index&gt; = &lt;relativePathToDir&gt;</code></pre>
+<p>In both cases, the relative path may also go upwards using &#8220;..&#8221; as long as you don&#8217;t leave the <code>config</code> directory of the test suite.</p>
+<p>Include properties are treated like normal properties. Thus, if there are two include properties having an identical index, only one of them will be applied.</p>
+<h3>Processing Order of (Included) Property Files</h3>
+<p><code>default.properties</code>, <code>project.properties</code>, <code>test.properties</code>, and <code>dev.properties</code> form a hierarchy. So the processing order is as follows:</p>
+<ol>
+	<li><code>default.properties</code>, followed by its includes</li>
+	<li><code>project.properties</code>, followed by its includes</li>
+	<li><code>test.properties</code> (or any other test-run-specific properties file), followed by its includes</li>
+	<li><code>dev.properties</code>, followed by its includes (in development mode only)</li>
+</ol>
+<p>Includes will be resolved according to these rules:</p>
+<ul>
+	<li>Each property include will be processed recursively in depth-first mode.</li>
+	<li>If the include target is a directory, the properties files contained in that directory are processed in alphabetical order.</li>
+	<li>If there&#8217;s more than one property include in a file, they will be processed in ascending order sorted by their index.</li>
+</ul>
+<p>During that process, properties read in later will overwrite already existing settings.</p>
+<h3>Example</h3>
+<p>Assume the system under test is deployed to different environments, such as <em>development</em>, <em>live</em>, and <em>pre-live</em>. Each environment requires a different host in the start <span class="caps">URL</span> and different access credentials. Furthermore, different load profiles are required for certain types of load tests. Now assume the following directory layout in the test suite:</p>
+<pre class="ini"><code class="ini">--+ &lt;testsuite&gt;
+  |--- classes
+  |--+ config
+  |  |--- data
+  |  |--- effectiveSettings
+  |  |--+ environments
+  |  |  |--- development.properties
+  |  |  |--- live.properties
+  |  |  |--- pre-live.properties
+  |  |  `--- test.properties
+  |  |--+ loadProfiles
+  |  |  |--- smallLoad.properties
+  |  |  |--- halfLoad.properties
+  |  |  `--- fullLoad.properties
+  |  |--- default.properties
+  |  |--- project.properties
+  |  `--- test.properties
+  |--- lib
+  |--- results
+  |--- scripts
+  `--- src</code></pre>
+<p>As you can see, the load tester has prepared a property set for each environment and each load profile under the <code>config</code> directory. With these predefined property files, you can easily mix and match the environments and the load profiles as needed. For example, add/modify the following lines to your <code>test.properties</code> to apply the full target load to the pre-live environment:</p>
+<pre class="ini"><code class="ini">com.xceptance.xlt.propertiesInclude.1 = environments/pre-live.properties
+com.xceptance.xlt.propertiesInclude.2 = loadProfiles/fullLoad.properties</code></pre>
+<p>Alternatively, you may also define a certain directory to be always included:</p>
+<pre class="ini"><code class="ini">com.xceptance.xlt.propertiesInclude.1 = effectiveSettings</code></pre>
+<p>To apply a certain combination of settings, simply empty this directory first and copy the respective predefined property files to this directory (<code>pre-live.properties</code> and <code>fullLoad.properties</code>, for example).</p>
+<h2>Additional Configuration Files</h2>
+<p>In addition to the files described above, you can find three other files in <code>&lt;testsuite&gt;/config/</code>:</p>
+<ul>
+	<li><strong>dev-log4j.properties</strong>: log4j logger settings used in development mode</li>
+	<li><strong>log4j.properties</strong>: log4j logger settings used in load test mode</li>
+	<li><strong>jvmargs.cfg</strong>: <span class="caps">JVM</span> settings for the agents and therefore only used in load test mode, e.g. settings for Java garbage collector tuning</li>
+</ul>
+<p>Also see <a href="http://logging.apache.org/log4j/1.2/apidocs/index.html">Apache Log4j <span class="caps">API</span> Docs</a> for more information on log4j settings.</p>
+<h2>Property Replacements</h2>
+<p>In all <span class="caps">XLT</span> properties files, you can work with property replacements based on a <strong>${}</strong> syntax. You can define a property and then assign a value to another property by referring to the first property.</p>
+<p>This is especially convenient for <code>project.properties</code> where properties are often defined for each test case to gain flexibility, but where, for example, the login data is identical for all test cases by default.</p>
+<pre class="ini"><code class="ini">username = MyUsername
+password = MySecretPassword
+com.xceptance.xlt.samples.tests.TSearch.username = ${username}
+com.xceptance.xlt.samples.tests.TSearch.password = ${password}
+com.xceptance.xlt.samples.tests.webdriver.TSearch.username = ${username}
+com.xceptance.xlt.samples.tests.webdriver.TSearch.password = ${password}</code></pre>
+<h2>Resolving Property Keys</h2>
+<p>When a test case reads a certain setting from the configuration – let’s say userName &#8211; the framework uses a fallback strategy when running the property look-up. The strategy performs also a look-up step, based on the transaction name (the short name to which the full class name is mapped).</p>
+<pre class="ini"><code class="ini">TMyTestCase.userName = john # property name qualified by transaction name
+com.company.tests.TMyTestCase.userName = john # property name qualified by full test class name
+userName = john # plain property name</code>
+
+<code class="ini">This lets you parameterize different transactions differently, even if they are mapped to the same class and therefore share the same code. The look-up will take place in this order, from a very narrow scope (the transaction) to a wide scope (a general property).</code></pre>
+<blockquote class="note">
+<p class="note">Note that this will work for load tests only since mapped transaction names are not available outside the load test environment (Eclipse, Ant, etc.).</p>
+</blockquote>
+            <div id="footer">
+	<p>Copyright © 2017 by <a href="http://www.xceptance.com/">Xceptance Software Technologies</a>. All rights reserved.</p>
+</div>
+
+
+        </div>
+    </div>
+</div>
+
+<!-- Generate the part of the TOC that contains the headings of the currently displayed page -->
+<!-- createToc (selectedHeadlines, classesTarget, classes )-->
+
+<script>createToc('h1,h2,h3', '#toc > ul', '#sidenav nav sidenav')</script>
+
+
+</body>
+
+</html>
